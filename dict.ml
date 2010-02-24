@@ -82,15 +82,31 @@ module RBTreeDict(D:DICT_ARG) : (DICT with type key = D.key
     type key = D.key
     type value = D.value 
 
-    type dict = Leaf | Node of dict * (key * value) * dict ;;
+		type color = Red | Black
+    type dict = Leaf | Node of dict * (key * value * color) * dict ;;
 
     exception ImplementMe ;;
 
-    let empty : dict = raise ImplementMe
+		let rotate_left (d:dict) : dict =
+			match d with
+				| Leaf -> Leaf
+				| Node(Leaf, (k, v, c), Leaf) -> raise ImplementMe
+				| Node(Leaf, (k, v, c), r) -> raise ImplementMe
+				| Node(l, (k, v, c), Leaf) -> raise ImplementMe
+				| Node(l, (k, v, c), r) -> raise ImplementMe
+		
+    let empty : dict =
+			Leaf
     ;;
 
-    let insert (d:dict) (k:key) (v:value) : dict = 
-      raise ImplementMe 
+    let rec insert (d:dict) (k:key) (v:value) : dict = 
+      match d with
+				| Leaf -> Node(Leaf, (k, v, Red), Leaf)
+				| Node (l, (k2, v2, c), r) -> 
+						match D.compare k k2 with
+							| Eq -> d
+							| Less -> Node(insert l k v, (k2, v2, c), r)
+							| Greater -> Node(l, (k2, v2, c), insert r k v)
     ;;
 
     let lookup (d:dict) (k:key) : value option = 

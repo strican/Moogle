@@ -86,14 +86,17 @@ module RBTreeDict(D:DICT_ARG) : (DICT with type key = D.key
     type dict = Leaf | Node of dict * (key * value * color) * dict ;;
 
     exception ImplementMe ;;
+		exception ArgumentError of string ;;
 
 		let rotate_left (d:dict) : dict =
 			match d with
 				| Leaf -> Leaf
-				| Node(Leaf, (k, v, c), Leaf) -> raise ImplementMe
-				| Node(Leaf, (k, v, c), r) -> raise ImplementMe
-				| Node(l, (k, v, c), Leaf) -> raise ImplementMe
-				| Node(l, (k, v, c), r) -> raise ImplementMe
+				| Node(l, (k1, v1, c1), r) -> 
+					match r with
+						| Leaf -> raise(ArgumentError "Cannot left-rotate
+                             a node with nil as its right child.")
+						| Node(rl, (k2, v2, c2), rr) -> ((l, (k1, v1, Red), rl), (k2, v2, c1), rr)
+		;;
 		
     let empty : dict =
 			Leaf

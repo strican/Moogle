@@ -121,9 +121,6 @@ ident(
   int_ref k1 "Moogle\\dict.ml" 41 1254 1265 "Moogle\\dict.ml" 41 1254 1267
 )
 "Moogle\\dict.ml" 41 1254 1286 "Moogle\\dict.ml" 41 1254 1300
-call(
-  stack
-)
 type(
   Order.order
 )
@@ -244,9 +241,6 @@ ident(
   int_ref v "Moogle\\dict.ml" 38 1182 1205 "Moogle\\dict.ml" 38 1182 1206
 )
 "Moogle\\dict.ml" 44 1400 1450 "Moogle\\dict.ml" 44 1400 1465
-call(
-  stack
-)
 type(
   (D.key * 'b) list
 )
@@ -349,9 +343,6 @@ ident(
   int_ref k1 "Moogle\\dict.ml" 49 1541 1552 "Moogle\\dict.ml" 49 1541 1554
 )
 "Moogle\\dict.ml" 49 1541 1573 "Moogle\\dict.ml" 49 1541 1587
-call(
-  stack
-)
 type(
   Order.order
 )
@@ -396,9 +387,6 @@ ident(
   int_ref k "Moogle\\dict.ml" 46 1474 1495 "Moogle\\dict.ml" 46 1474 1496
 )
 "Moogle\\dict.ml" 51 1637 1678 "Moogle\\dict.ml" 51 1637 1689
-call(
-  tail
-)
 type(
   'c option
 )
@@ -461,9 +449,6 @@ ident(
   int_ref k "Moogle\\dict.ml" 54 1739 1756 "Moogle\\dict.ml" 54 1739 1757
 )
 "Moogle\\dict.ml" 54 1739 1766 "Moogle\\dict.ml" 54 1739 1776
-call(
-  stack
-)
 type(
   'd option
 )
@@ -578,9 +563,6 @@ ident(
   int_ref k1 "Moogle\\dict.ml" 59 1887 1898 "Moogle\\dict.ml" 59 1887 1900
 )
 "Moogle\\dict.ml" 59 1887 1919 "Moogle\\dict.ml" 59 1887 1933
-call(
-  stack
-)
 type(
   Order.order
 )
@@ -639,9 +621,6 @@ ident(
   int_ref k "Moogle\\dict.ml" 56 1822 1843 "Moogle\\dict.ml" 56 1822 1844
 )
 "Moogle\\dict.ml" 61 1979 2029 "Moogle\\dict.ml" 61 1979 2042
-call(
-  stack
-)
 type(
   (D.key * 'e) list
 )
@@ -841,9 +820,6 @@ ident(
   int_ref a "Moogle\\dict.ml" 69 2196 2235 "Moogle\\dict.ml" 69 2196 2236
 )
 "Moogle\\dict.ml" 69 2196 2246 "Moogle\\dict.ml" 69 2196 2253
-call(
-  tail
-)
 type(
   'j
 )
@@ -859,790 +835,231 @@ ident(
   int_ref e "Moogle\\dict.ml" 69 2196 2211 "Moogle\\dict.ml" 69 2196 2212
 )
 "Moogle\\dict.ml" 69 2196 2215 "Moogle\\dict.ml" 69 2196 2256
-call(
-  tail
-)
 type(
   ('h * 'i) list -> 'j
 )
-"Moogle\\dict.ml" 90 2949 2955 "Moogle\\dict.ml" 90 2949 2966
+"Moogle\\dict.ml" 91 2988 2994 "Moogle\\dict.ml" 91 2988 3005
 type(
-  dict -> dict
+  dict -> '_a
 )
 ident(
-  def rotate_left "Moogle\\dict.ml" 98 3231 3235 "Moogle\\dict.ml" 131 4000 4005
+  def rotate_left "Moogle\\dict.ml" 101 3324 3328 "Moogle\\dict.ml" 134 4093 4098
 )
-"Moogle\\dict.ml" 90 2949 2968 "Moogle\\dict.ml" 90 2949 2969
-type(
-  dict
-)
-ident(
-  def d "Moogle\\dict.ml" 90 2949 2976 "Moogle\\dict.ml" 96 3179 3227
-)
-"Moogle\\dict.ml" 91 2985 2994 "Moogle\\dict.ml" 91 2985 2995
+"Moogle\\dict.ml" 91 2988 3007 "Moogle\\dict.ml" 91 2988 3008
 type(
   dict
 )
 ident(
-  int_ref d "Moogle\\dict.ml" 90 2949 2968 "Moogle\\dict.ml" 90 2949 2969
+  def d "Moogle\\dict.ml" 91 2988 3015 "Moogle\\dict.ml" 98 3235 3315
 )
-"Moogle\\dict.ml" 92 3001 3007 "Moogle\\dict.ml" 92 3001 3011
+"Moogle\\dict.ml" 92 3024 3033 "Moogle\\dict.ml" 92 3024 3034
 type(
   dict
 )
-"Moogle\\dict.ml" 92 3001 3015 "Moogle\\dict.ml" 92 3001 3019
+ident(
+  int_ref d "Moogle\\dict.ml" 91 2988 3007 "Moogle\\dict.ml" 91 2988 3008
+)
+"Moogle\\dict.ml" 93 3040 3046 "Moogle\\dict.ml" 93 3040 3050
 type(
   dict
 )
-"Moogle\\dict.ml" 93 3020 3031 "Moogle\\dict.ml" 93 3020 3035
+"Moogle\\dict.ml" 93 3040 3054 "Moogle\\dict.ml" 93 3040 3058
 type(
   dict
 )
-"Moogle\\dict.ml" 93 3020 3038 "Moogle\\dict.ml" 93 3020 3039
+"Moogle\\dict.ml" 94 3059 3070 "Moogle\\dict.ml" 94 3059 3071
+type(
+  dict
+)
+ident(
+  def l "Moogle\\dict.ml" 95 3094 3099 "Moogle\\dict.ml" 98 3235 3315
+)
+"Moogle\\dict.ml" 94 3059 3074 "Moogle\\dict.ml" 94 3059 3076
 type(
   key
 )
 ident(
-  def k "Moogle\\dict.ml" 93 3020 3057 "Moogle\\dict.ml" 93 3020 3074
+  def k1 "Moogle\\dict.ml" 95 3094 3099 "Moogle\\dict.ml" 98 3235 3315
 )
-"Moogle\\dict.ml" 93 3020 3041 "Moogle\\dict.ml" 93 3020 3042
+"Moogle\\dict.ml" 94 3059 3078 "Moogle\\dict.ml" 94 3059 3080
 type(
   value
 )
 ident(
-  def v "Moogle\\dict.ml" 93 3020 3057 "Moogle\\dict.ml" 93 3020 3074
+  def v1 "Moogle\\dict.ml" 95 3094 3099 "Moogle\\dict.ml" 98 3235 3315
 )
-"Moogle\\dict.ml" 93 3020 3044 "Moogle\\dict.ml" 93 3020 3045
+"Moogle\\dict.ml" 94 3059 3082 "Moogle\\dict.ml" 94 3059 3084
 type(
   color
 )
 ident(
-  def c "Moogle\\dict.ml" 93 3020 3057 "Moogle\\dict.ml" 93 3020 3074
+  def c1 "Moogle\\dict.ml" 95 3094 3099 "Moogle\\dict.ml" 98 3235 3315
 )
-"Moogle\\dict.ml" 93 3020 3037 "Moogle\\dict.ml" 93 3020 3046
+"Moogle\\dict.ml" 94 3059 3073 "Moogle\\dict.ml" 94 3059 3085
 type(
   key * value * color
 )
-"Moogle\\dict.ml" 93 3020 3048 "Moogle\\dict.ml" 93 3020 3052
+"Moogle\\dict.ml" 94 3059 3087 "Moogle\\dict.ml" 94 3059 3088
 type(
   dict
 )
-"Moogle\\dict.ml" 93 3020 3026 "Moogle\\dict.ml" 93 3020 3053
+ident(
+  def r "Moogle\\dict.ml" 95 3094 3099 "Moogle\\dict.ml" 98 3235 3315
+)
+"Moogle\\dict.ml" 94 3059 3065 "Moogle\\dict.ml" 94 3059 3089
 type(
   dict
 )
-"Moogle\\dict.ml" 93 3020 3057 "Moogle\\dict.ml" 93 3020 3062
+"Moogle\\dict.ml" 95 3094 3105 "Moogle\\dict.ml" 95 3094 3106
 type(
-  exn -> dict
+  dict
+)
+ident(
+  int_ref r "Moogle\\dict.ml" 94 3059 3087 "Moogle\\dict.ml" 94 3059 3088
+)
+"Moogle\\dict.ml" 96 3112 3120 "Moogle\\dict.ml" 96 3112 3124
+type(
+  dict
+)
+"Moogle\\dict.ml" 96 3112 3128 "Moogle\\dict.ml" 96 3112 3133
+type(
+  exn -> (dict * (key * value * color) * dict) * (key * value * color) * dict
 )
 ident(
   ext_ref Pervasives.raise
 )
-"Moogle\\dict.ml" 93 3020 3063 "Moogle\\dict.ml" 93 3020 3074
+"Moogle\\dict.ml" 96 3112 3148 "Moogle\\dict.ml" 97 3168 3233
+type(
+  string
+)
+"Moogle\\dict.ml" 96 3112 3133 "Moogle\\dict.ml" 97 3168 3234
 type(
   exn
 )
-"Moogle\\dict.ml" 93 3020 3057 "Moogle\\dict.ml" 93 3020 3074
+"Moogle\\dict.ml" 96 3112 3128 "Moogle\\dict.ml" 97 3168 3234
+type(
+  (dict * (key * value * color) * dict) * (key * value * color) * dict
+)
+"Moogle\\dict.ml" 98 3235 3248 "Moogle\\dict.ml" 98 3235 3250
 type(
   dict
 )
-"Moogle\\dict.ml" 94 3075 3086 "Moogle\\dict.ml" 94 3075 3090
-type(
-  dict
+ident(
+  def rl "Moogle\\dict.ml" 98 3235 3273 "Moogle\\dict.ml" 98 3235 3315
 )
-"Moogle\\dict.ml" 94 3075 3093 "Moogle\\dict.ml" 94 3075 3094
+"Moogle\\dict.ml" 98 3235 3253 "Moogle\\dict.ml" 98 3235 3255
 type(
   key
 )
 ident(
-  def k "Moogle\\dict.ml" 94 3075 3109 "Moogle\\dict.ml" 94 3075 3126
+  def k2 "Moogle\\dict.ml" 98 3235 3273 "Moogle\\dict.ml" 98 3235 3315
 )
-"Moogle\\dict.ml" 94 3075 3096 "Moogle\\dict.ml" 94 3075 3097
+"Moogle\\dict.ml" 98 3235 3257 "Moogle\\dict.ml" 98 3235 3259
 type(
   value
 )
 ident(
-  def v "Moogle\\dict.ml" 94 3075 3109 "Moogle\\dict.ml" 94 3075 3126
+  def v2 "Moogle\\dict.ml" 98 3235 3273 "Moogle\\dict.ml" 98 3235 3315
 )
-"Moogle\\dict.ml" 94 3075 3099 "Moogle\\dict.ml" 94 3075 3100
+"Moogle\\dict.ml" 98 3235 3261 "Moogle\\dict.ml" 98 3235 3263
 type(
   color
 )
 ident(
-  def c "Moogle\\dict.ml" 94 3075 3109 "Moogle\\dict.ml" 94 3075 3126
+  def c2 "Moogle\\dict.ml" 98 3235 3273 "Moogle\\dict.ml" 98 3235 3315
 )
-"Moogle\\dict.ml" 94 3075 3092 "Moogle\\dict.ml" 94 3075 3101
+"Moogle\\dict.ml" 98 3235 3252 "Moogle\\dict.ml" 98 3235 3264
 type(
   key * value * color
 )
-"Moogle\\dict.ml" 94 3075 3103 "Moogle\\dict.ml" 94 3075 3104
+"Moogle\\dict.ml" 98 3235 3266 "Moogle\\dict.ml" 98 3235 3268
 type(
   dict
 )
 ident(
-  def r "Moogle\\dict.ml" 94 3075 3109 "Moogle\\dict.ml" 94 3075 3126
+  def rr "Moogle\\dict.ml" 98 3235 3273 "Moogle\\dict.ml" 98 3235 3315
 )
-"Moogle\\dict.ml" 94 3075 3081 "Moogle\\dict.ml" 94 3075 3105
+"Moogle\\dict.ml" 98 3235 3243 "Moogle\\dict.ml" 98 3235 3269
 type(
   dict
 )
-"Moogle\\dict.ml" 94 3075 3109 "Moogle\\dict.ml" 94 3075 3114
-type(
-  exn -> dict
-)
-ident(
-  ext_ref Pervasives.raise
-)
-"Moogle\\dict.ml" 94 3075 3115 "Moogle\\dict.ml" 94 3075 3126
-type(
-  exn
-)
-"Moogle\\dict.ml" 94 3075 3109 "Moogle\\dict.ml" 94 3075 3126
-type(
-  dict
-)
-"Moogle\\dict.ml" 95 3127 3138 "Moogle\\dict.ml" 95 3127 3139
+"Moogle\\dict.ml" 98 3235 3275 "Moogle\\dict.ml" 98 3235 3276
 type(
   dict
 )
 ident(
-  def l "Moogle\\dict.ml" 95 3127 3161 "Moogle\\dict.ml" 95 3127 3178
+  int_ref l "Moogle\\dict.ml" 94 3059 3070 "Moogle\\dict.ml" 94 3059 3071
 )
-"Moogle\\dict.ml" 95 3127 3142 "Moogle\\dict.ml" 95 3127 3143
+"Moogle\\dict.ml" 98 3235 3279 "Moogle\\dict.ml" 98 3235 3281
 type(
   key
 )
 ident(
-  def k "Moogle\\dict.ml" 95 3127 3161 "Moogle\\dict.ml" 95 3127 3178
+  int_ref k1 "Moogle\\dict.ml" 94 3059 3074 "Moogle\\dict.ml" 94 3059 3076
 )
-"Moogle\\dict.ml" 95 3127 3145 "Moogle\\dict.ml" 95 3127 3146
+"Moogle\\dict.ml" 98 3235 3283 "Moogle\\dict.ml" 98 3235 3285
 type(
   value
 )
 ident(
-  def v "Moogle\\dict.ml" 95 3127 3161 "Moogle\\dict.ml" 95 3127 3178
+  int_ref v1 "Moogle\\dict.ml" 94 3059 3078 "Moogle\\dict.ml" 94 3059 3080
 )
-"Moogle\\dict.ml" 95 3127 3148 "Moogle\\dict.ml" 95 3127 3149
+"Moogle\\dict.ml" 98 3235 3287 "Moogle\\dict.ml" 98 3235 3290
+type(
+  color
+)
+"Moogle\\dict.ml" 98 3235 3278 "Moogle\\dict.ml" 98 3235 3291
+type(
+  key * value * color
+)
+"Moogle\\dict.ml" 98 3235 3293 "Moogle\\dict.ml" 98 3235 3295
+type(
+  dict
+)
+ident(
+  int_ref rl "Moogle\\dict.ml" 98 3235 3248 "Moogle\\dict.ml" 98 3235 3250
+)
+"Moogle\\dict.ml" 98 3235 3274 "Moogle\\dict.ml" 98 3235 3296
+type(
+  dict * (key * value * color) * dict
+)
+"Moogle\\dict.ml" 98 3235 3299 "Moogle\\dict.ml" 98 3235 3301
+type(
+  key
+)
+ident(
+  int_ref k2 "Moogle\\dict.ml" 98 3235 3253 "Moogle\\dict.ml" 98 3235 3255
+)
+"Moogle\\dict.ml" 98 3235 3303 "Moogle\\dict.ml" 98 3235 3305
+type(
+  value
+)
+ident(
+  int_ref v2 "Moogle\\dict.ml" 98 3235 3257 "Moogle\\dict.ml" 98 3235 3259
+)
+"Moogle\\dict.ml" 98 3235 3307 "Moogle\\dict.ml" 98 3235 3309
 type(
   color
 )
 ident(
-  def c "Moogle\\dict.ml" 95 3127 3161 "Moogle\\dict.ml" 95 3127 3178
+  int_ref c1 "Moogle\\dict.ml" 94 3059 3082 "Moogle\\dict.ml" 94 3059 3084
 )
-"Moogle\\dict.ml" 95 3127 3141 "Moogle\\dict.ml" 95 3127 3150
+"Moogle\\dict.ml" 98 3235 3298 "Moogle\\dict.ml" 98 3235 3310
 type(
   key * value * color
 )
-"Moogle\\dict.ml" 95 3127 3152 "Moogle\\dict.ml" 95 3127 3156
-type(
-  dict
-)
-"Moogle\\dict.ml" 95 3127 3133 "Moogle\\dict.ml" 95 3127 3157
-type(
-  dict
-)
-"Moogle\\dict.ml" 95 3127 3161 "Moogle\\dict.ml" 95 3127 3166
-type(
-  exn -> dict
-)
-ident(
-  ext_ref Pervasives.raise
-)
-"Moogle\\dict.ml" 95 3127 3167 "Moogle\\dict.ml" 95 3127 3178
-type(
-  exn
-)
-"Moogle\\dict.ml" 95 3127 3161 "Moogle\\dict.ml" 95 3127 3178
-type(
-  dict
-)
-"Moogle\\dict.ml" 96 3179 3190 "Moogle\\dict.ml" 96 3179 3191
+"Moogle\\dict.ml" 98 3235 3312 "Moogle\\dict.ml" 98 3235 3314
 type(
   dict
 )
 ident(
-  def l "Moogle\\dict.ml" 96 3179 3210 "Moogle\\dict.ml" 96 3179 3227
+  int_ref rr "Moogle\\dict.ml" 98 3235 3266 "Moogle\\dict.ml" 98 3235 3268
 )
-"Moogle\\dict.ml" 96 3179 3194 "Moogle\\dict.ml" 96 3179 3195
+"Moogle\\dict.ml" 98 3235 3273 "Moogle\\dict.ml" 98 3235 3315
 type(
-  key
+  (dict * (key * value * color) * dict) * (key * value * color) * dict
 )
-ident(
-  def k "Moogle\\dict.ml" 96 3179 3210 "Moogle\\dict.ml" 96 3179 3227
-)
-"Moogle\\dict.ml" 96 3179 3197 "Moogle\\dict.ml" 96 3179 3198
-type(
-  value
-)
-ident(
-  def v "Moogle\\dict.ml" 96 3179 3210 "Moogle\\dict.ml" 96 3179 3227
-)
-"Moogle\\dict.ml" 96 3179 3200 "Moogle\\dict.ml" 96 3179 3201
-type(
-  color
-)
-ident(
-  def c "Moogle\\dict.ml" 96 3179 3210 "Moogle\\dict.ml" 96 3179 3227
-)
-"Moogle\\dict.ml" 96 3179 3193 "Moogle\\dict.ml" 96 3179 3202
-type(
-  key * value * color
-)
-"Moogle\\dict.ml" 96 3179 3204 "Moogle\\dict.ml" 96 3179 3205
-type(
-  dict
-)
-ident(
-  def r "Moogle\\dict.ml" 96 3179 3210 "Moogle\\dict.ml" 96 3179 3227
-)
-"Moogle\\dict.ml" 96 3179 3185 "Moogle\\dict.ml" 96 3179 3206
-type(
-  dict
-)
-"Moogle\\dict.ml" 96 3179 3210 "Moogle\\dict.ml" 96 3179 3215
-type(
-  exn -> dict
-)
-ident(
-  ext_ref Pervasives.raise
-)
-"Moogle\\dict.ml" 96 3179 3216 "Moogle\\dict.ml" 96 3179 3227
-type(
-  exn
-)
-"Moogle\\dict.ml" 96 3179 3210 "Moogle\\dict.ml" 96 3179 3227
-type(
-  dict
-)
-"Moogle\\dict.ml" 91 2985 2988 "Moogle\\dict.ml" 96 3179 3227
-type(
-  dict
-)
-type(
-  dict
-)
-"Moogle\\dict.ml" 98 3231 3239 "Moogle\\dict.ml" 98 3231 3244
-type(
-  dict
-)
-ident(
-  def empty "Moogle\\dict.ml" 102 3270 3274 "Moogle\\dict.ml" 131 4000 4005
-)
-"Moogle\\dict.ml" 99 3254 3257 "Moogle\\dict.ml" 99 3254 3261
-type(
-  dict
-)
-type(
-  dict
-)
-"Moogle\\dict.ml" 102 3270 3282 "Moogle\\dict.ml" 102 3270 3288
-type(
-  dict -> key -> value -> dict
-)
-ident(
-  def insert "Moogle\\dict.ml" 102 3270 3274 "Moogle\\dict.ml" 131 4000 4005
-)
-"Moogle\\dict.ml" 102 3270 3290 "Moogle\\dict.ml" 102 3270 3291
-type(
-  dict
-)
-ident(
-  def d "Moogle\\dict.ml" 102 3270 3298 "Moogle\\dict.ml" 109 3525 3579
-)
-"Moogle\\dict.ml" 102 3270 3299 "Moogle\\dict.ml" 102 3270 3300
-type(
-  key
-)
-ident(
-  def k "Moogle\\dict.ml" 102 3270 3306 "Moogle\\dict.ml" 109 3525 3579
-)
-"Moogle\\dict.ml" 102 3270 3307 "Moogle\\dict.ml" 102 3270 3308
-type(
-  value
-)
-ident(
-  def v "Moogle\\dict.ml" 102 3270 3316 "Moogle\\dict.ml" 109 3525 3579
-)
-"Moogle\\dict.ml" 103 3326 3338 "Moogle\\dict.ml" 103 3326 3339
-type(
-  dict
-)
-ident(
-  int_ref d "Moogle\\dict.ml" 102 3270 3290 "Moogle\\dict.ml" 102 3270 3291
-)
-"Moogle\\dict.ml" 104 3345 3351 "Moogle\\dict.ml" 104 3345 3355
-type(
-  dict
-)
-"Moogle\\dict.ml" 104 3345 3364 "Moogle\\dict.ml" 104 3345 3368
-type(
-  dict
-)
-"Moogle\\dict.ml" 104 3345 3371 "Moogle\\dict.ml" 104 3345 3372
-type(
-  key
-)
-ident(
-  int_ref k "Moogle\\dict.ml" 102 3270 3299 "Moogle\\dict.ml" 102 3270 3300
-)
-"Moogle\\dict.ml" 104 3345 3374 "Moogle\\dict.ml" 104 3345 3375
-type(
-  value
-)
-ident(
-  int_ref v "Moogle\\dict.ml" 102 3270 3307 "Moogle\\dict.ml" 102 3270 3308
-)
-"Moogle\\dict.ml" 104 3345 3377 "Moogle\\dict.ml" 104 3345 3380
-type(
-  color
-)
-"Moogle\\dict.ml" 104 3345 3370 "Moogle\\dict.ml" 104 3345 3381
-type(
-  key * value * color
-)
-"Moogle\\dict.ml" 104 3345 3383 "Moogle\\dict.ml" 104 3345 3387
-type(
-  dict
-)
-"Moogle\\dict.ml" 104 3345 3359 "Moogle\\dict.ml" 104 3345 3388
-type(
-  dict
-)
-"Moogle\\dict.ml" 105 3389 3401 "Moogle\\dict.ml" 105 3389 3402
-type(
-  dict
-)
-ident(
-  def l "Moogle\\dict.ml" 106 3424 3430 "Moogle\\dict.ml" 109 3525 3579
-)
-"Moogle\\dict.ml" 105 3389 3405 "Moogle\\dict.ml" 105 3389 3407
-type(
-  key
-)
-ident(
-  def k2 "Moogle\\dict.ml" 106 3424 3430 "Moogle\\dict.ml" 109 3525 3579
-)
-"Moogle\\dict.ml" 105 3389 3409 "Moogle\\dict.ml" 105 3389 3411
-type(
-  value
-)
-ident(
-  def v2 "Moogle\\dict.ml" 106 3424 3430 "Moogle\\dict.ml" 109 3525 3579
-)
-"Moogle\\dict.ml" 105 3389 3413 "Moogle\\dict.ml" 105 3389 3414
-type(
-  color
-)
-ident(
-  def c "Moogle\\dict.ml" 106 3424 3430 "Moogle\\dict.ml" 109 3525 3579
-)
-"Moogle\\dict.ml" 105 3389 3404 "Moogle\\dict.ml" 105 3389 3415
-type(
-  key * value * color
-)
-"Moogle\\dict.ml" 105 3389 3417 "Moogle\\dict.ml" 105 3389 3418
-type(
-  dict
-)
-ident(
-  def r "Moogle\\dict.ml" 106 3424 3430 "Moogle\\dict.ml" 109 3525 3579
-)
-"Moogle\\dict.ml" 105 3389 3395 "Moogle\\dict.ml" 105 3389 3419
-type(
-  dict
-)
-"Moogle\\dict.ml" 106 3424 3436 "Moogle\\dict.ml" 106 3424 3445
-type(
-  key -> key -> Order.order
-)
-ident(
-  ext_ref D.compare
-)
-"Moogle\\dict.ml" 106 3424 3446 "Moogle\\dict.ml" 106 3424 3447
-type(
-  key
-)
-ident(
-  int_ref k "Moogle\\dict.ml" 102 3270 3299 "Moogle\\dict.ml" 102 3270 3300
-)
-"Moogle\\dict.ml" 106 3424 3448 "Moogle\\dict.ml" 106 3424 3450
-type(
-  key
-)
-ident(
-  int_ref k2 "Moogle\\dict.ml" 105 3389 3405 "Moogle\\dict.ml" 105 3389 3407
-)
-"Moogle\\dict.ml" 106 3424 3436 "Moogle\\dict.ml" 106 3424 3450
-call(
-  stack
-)
-type(
-  Order.order
-)
-"Moogle\\dict.ml" 107 3456 3465 "Moogle\\dict.ml" 107 3456 3467
-type(
-  Order.order
-)
-"Moogle\\dict.ml" 107 3456 3471 "Moogle\\dict.ml" 107 3456 3472
-type(
-  dict
-)
-ident(
-  int_ref d "Moogle\\dict.ml" 102 3270 3290 "Moogle\\dict.ml" 102 3270 3291
-)
-"Moogle\\dict.ml" 108 3473 3482 "Moogle\\dict.ml" 108 3473 3486
-type(
-  Order.order
-)
-"Moogle\\dict.ml" 108 3473 3495 "Moogle\\dict.ml" 108 3473 3501
-type(
-  dict -> key -> value -> dict
-)
-ident(
-  int_ref insert "Moogle\\dict.ml" 102 3270 3282 "Moogle\\dict.ml" 102 3270 3288
-)
-"Moogle\\dict.ml" 108 3473 3502 "Moogle\\dict.ml" 108 3473 3503
-type(
-  dict
-)
-ident(
-  int_ref l "Moogle\\dict.ml" 105 3389 3401 "Moogle\\dict.ml" 105 3389 3402
-)
-"Moogle\\dict.ml" 108 3473 3504 "Moogle\\dict.ml" 108 3473 3505
-type(
-  key
-)
-ident(
-  int_ref k "Moogle\\dict.ml" 102 3270 3299 "Moogle\\dict.ml" 102 3270 3300
-)
-"Moogle\\dict.ml" 108 3473 3506 "Moogle\\dict.ml" 108 3473 3507
-type(
-  value
-)
-ident(
-  int_ref v "Moogle\\dict.ml" 102 3270 3307 "Moogle\\dict.ml" 102 3270 3308
-)
-"Moogle\\dict.ml" 108 3473 3495 "Moogle\\dict.ml" 108 3473 3507
-call(
-  stack
-)
-type(
-  dict
-)
-"Moogle\\dict.ml" 108 3473 3510 "Moogle\\dict.ml" 108 3473 3512
-type(
-  key
-)
-ident(
-  int_ref k2 "Moogle\\dict.ml" 105 3389 3405 "Moogle\\dict.ml" 105 3389 3407
-)
-"Moogle\\dict.ml" 108 3473 3514 "Moogle\\dict.ml" 108 3473 3516
-type(
-  value
-)
-ident(
-  int_ref v2 "Moogle\\dict.ml" 105 3389 3409 "Moogle\\dict.ml" 105 3389 3411
-)
-"Moogle\\dict.ml" 108 3473 3518 "Moogle\\dict.ml" 108 3473 3519
-type(
-  color
-)
-ident(
-  int_ref c "Moogle\\dict.ml" 105 3389 3413 "Moogle\\dict.ml" 105 3389 3414
-)
-"Moogle\\dict.ml" 108 3473 3509 "Moogle\\dict.ml" 108 3473 3520
-type(
-  key * value * color
-)
-"Moogle\\dict.ml" 108 3473 3522 "Moogle\\dict.ml" 108 3473 3523
-type(
-  dict
-)
-ident(
-  int_ref r "Moogle\\dict.ml" 105 3389 3417 "Moogle\\dict.ml" 105 3389 3418
-)
-"Moogle\\dict.ml" 108 3473 3490 "Moogle\\dict.ml" 108 3473 3524
-type(
-  dict
-)
-"Moogle\\dict.ml" 109 3525 3534 "Moogle\\dict.ml" 109 3525 3541
-type(
-  Order.order
-)
-"Moogle\\dict.ml" 109 3525 3550 "Moogle\\dict.ml" 109 3525 3551
-type(
-  dict
-)
-ident(
-  int_ref l "Moogle\\dict.ml" 105 3389 3401 "Moogle\\dict.ml" 105 3389 3402
-)
-"Moogle\\dict.ml" 109 3525 3554 "Moogle\\dict.ml" 109 3525 3556
-type(
-  key
-)
-ident(
-  int_ref k2 "Moogle\\dict.ml" 105 3389 3405 "Moogle\\dict.ml" 105 3389 3407
-)
-"Moogle\\dict.ml" 109 3525 3558 "Moogle\\dict.ml" 109 3525 3560
-type(
-  value
-)
-ident(
-  int_ref v2 "Moogle\\dict.ml" 105 3389 3409 "Moogle\\dict.ml" 105 3389 3411
-)
-"Moogle\\dict.ml" 109 3525 3562 "Moogle\\dict.ml" 109 3525 3563
-type(
-  color
-)
-ident(
-  int_ref c "Moogle\\dict.ml" 105 3389 3413 "Moogle\\dict.ml" 105 3389 3414
-)
-"Moogle\\dict.ml" 109 3525 3553 "Moogle\\dict.ml" 109 3525 3564
-type(
-  key * value * color
-)
-"Moogle\\dict.ml" 109 3525 3566 "Moogle\\dict.ml" 109 3525 3572
-type(
-  dict -> key -> value -> dict
-)
-ident(
-  int_ref insert "Moogle\\dict.ml" 102 3270 3282 "Moogle\\dict.ml" 102 3270 3288
-)
-"Moogle\\dict.ml" 109 3525 3573 "Moogle\\dict.ml" 109 3525 3574
-type(
-  dict
-)
-ident(
-  int_ref r "Moogle\\dict.ml" 105 3389 3417 "Moogle\\dict.ml" 105 3389 3418
-)
-"Moogle\\dict.ml" 109 3525 3575 "Moogle\\dict.ml" 109 3525 3576
-type(
-  key
-)
-ident(
-  int_ref k "Moogle\\dict.ml" 102 3270 3299 "Moogle\\dict.ml" 102 3270 3300
-)
-"Moogle\\dict.ml" 109 3525 3577 "Moogle\\dict.ml" 109 3525 3578
-type(
-  value
-)
-ident(
-  int_ref v "Moogle\\dict.ml" 102 3270 3307 "Moogle\\dict.ml" 102 3270 3308
-)
-"Moogle\\dict.ml" 109 3525 3566 "Moogle\\dict.ml" 109 3525 3578
-call(
-  stack
-)
-type(
-  dict
-)
-"Moogle\\dict.ml" 109 3525 3545 "Moogle\\dict.ml" 109 3525 3579
-type(
-  dict
-)
-"Moogle\\dict.ml" 106 3424 3430 "Moogle\\dict.ml" 109 3525 3579
-type(
-  dict
-)
-"Moogle\\dict.ml" 103 3326 3332 "Moogle\\dict.ml" 109 3525 3579
-type(
-  dict
-)
-type(
-  dict
-)
-"Moogle\\dict.ml" 112 3588 3596 "Moogle\\dict.ml" 112 3588 3602
-type(
-  dict -> key -> value option
-)
-ident(
-  def lookup "Moogle\\dict.ml" 116 3670 3674 "Moogle\\dict.ml" 131 4000 4005
-)
-"Moogle\\dict.ml" 112 3588 3604 "Moogle\\dict.ml" 112 3588 3605
-type(
-  dict
-)
-ident(
-  def d "Moogle\\dict.ml" 112 3588 3612 "Moogle\\dict.ml" 113 3638 3661
-)
-"Moogle\\dict.ml" 112 3588 3613 "Moogle\\dict.ml" 112 3588 3614
-type(
-  key
-)
-ident(
-  def k "Moogle\\dict.ml" 112 3588 3620 "Moogle\\dict.ml" 113 3638 3661
-)
-"Moogle\\dict.ml" 113 3638 3644 "Moogle\\dict.ml" 113 3638 3649
-type(
-  exn -> value option
-)
-ident(
-  ext_ref Pervasives.raise
-)
-"Moogle\\dict.ml" 113 3638 3650 "Moogle\\dict.ml" 113 3638 3661
-type(
-  exn
-)
-"Moogle\\dict.ml" 113 3638 3644 "Moogle\\dict.ml" 113 3638 3661
-type(
-  value option
-)
-type(
-  value option
-)
-"Moogle\\dict.ml" 116 3670 3678 "Moogle\\dict.ml" 116 3670 3684
-type(
-  dict -> key -> bool
-)
-ident(
-  def member "Moogle\\dict.ml" 120 3744 3748 "Moogle\\dict.ml" 131 4000 4005
-)
-"Moogle\\dict.ml" 116 3670 3686 "Moogle\\dict.ml" 116 3670 3687
-type(
-  dict
-)
-ident(
-  def d "Moogle\\dict.ml" 116 3670 3694 "Moogle\\dict.ml" 117 3712 3735
-)
-"Moogle\\dict.ml" 116 3670 3695 "Moogle\\dict.ml" 116 3670 3696
-type(
-  key
-)
-ident(
-  def k "Moogle\\dict.ml" 116 3670 3702 "Moogle\\dict.ml" 117 3712 3735
-)
-"Moogle\\dict.ml" 117 3712 3718 "Moogle\\dict.ml" 117 3712 3723
-type(
-  exn -> bool
-)
-ident(
-  ext_ref Pervasives.raise
-)
-"Moogle\\dict.ml" 117 3712 3724 "Moogle\\dict.ml" 117 3712 3735
-type(
-  exn
-)
-"Moogle\\dict.ml" 117 3712 3718 "Moogle\\dict.ml" 117 3712 3735
-type(
-  bool
-)
-type(
-  bool
-)
-"Moogle\\dict.ml" 120 3744 3752 "Moogle\\dict.ml" 120 3744 3758
-type(
-  dict -> key -> dict
-)
-ident(
-  def remove "Moogle\\dict.ml" 124 3818 3822 "Moogle\\dict.ml" 131 4000 4005
-)
-"Moogle\\dict.ml" 120 3744 3760 "Moogle\\dict.ml" 120 3744 3761
-type(
-  dict
-)
-ident(
-  def d "Moogle\\dict.ml" 120 3744 3768 "Moogle\\dict.ml" 121 3786 3809
-)
-"Moogle\\dict.ml" 120 3744 3769 "Moogle\\dict.ml" 120 3744 3770
-type(
-  key
-)
-ident(
-  def k "Moogle\\dict.ml" 120 3744 3776 "Moogle\\dict.ml" 121 3786 3809
-)
-"Moogle\\dict.ml" 121 3786 3792 "Moogle\\dict.ml" 121 3786 3797
-type(
-  exn -> dict
-)
-ident(
-  ext_ref Pervasives.raise
-)
-"Moogle\\dict.ml" 121 3786 3798 "Moogle\\dict.ml" 121 3786 3809
-type(
-  exn
-)
-"Moogle\\dict.ml" 121 3786 3792 "Moogle\\dict.ml" 121 3786 3809
-type(
-  dict
-)
-type(
-  dict
-)
-"Moogle\\dict.ml" 124 3818 3826 "Moogle\\dict.ml" 124 3818 3832
-type(
-  dict -> (key * value * dict) option
-)
-ident(
-  def choose "Moogle\\dict.ml" 128 3903 3907 "Moogle\\dict.ml" 131 4000 4005
-)
-"Moogle\\dict.ml" 124 3818 3834 "Moogle\\dict.ml" 124 3818 3835
-type(
-  dict
-)
-ident(
-  def d "Moogle\\dict.ml" 124 3818 3842 "Moogle\\dict.ml" 125 3871 3894
-)
-"Moogle\\dict.ml" 125 3871 3877 "Moogle\\dict.ml" 125 3871 3882
-type(
-  exn -> (key * value * dict) option
-)
-ident(
-  ext_ref Pervasives.raise
-)
-"Moogle\\dict.ml" 125 3871 3883 "Moogle\\dict.ml" 125 3871 3894
-type(
-  exn
-)
-"Moogle\\dict.ml" 125 3871 3877 "Moogle\\dict.ml" 125 3871 3894
-type(
-  (key * value * dict) option
-)
-type(
-  (key * value * dict) option
-)
-"Moogle\\dict.ml" 128 3903 3911 "Moogle\\dict.ml" 128 3903 3915
-type(
-  (key -> value -> 'a -> 'a) -> 'a -> dict -> 'a
-)
-ident(
-  def fold "Moogle\\dict.ml" 129 3969 3992 "Moogle\\dict.ml" 131 4000 4005
-)
-"Moogle\\dict.ml" 128 3903 3917 "Moogle\\dict.ml" 128 3903 3918
-type(
-  key -> value -> 'a -> 'a
-)
-ident(
-  def f "Moogle\\dict.ml" 128 3903 3945 "Moogle\\dict.ml" 129 3969 3992
-)
-"Moogle\\dict.ml" 128 3903 3946 "Moogle\\dict.ml" 128 3903 3947
-type(
-  'a
-)
-ident(
-  def u "Moogle\\dict.ml" 128 3903 3952 "Moogle\\dict.ml" 129 3969 3992
-)
-"Moogle\\dict.ml" 128 3903 3953 "Moogle\\dict.ml" 128 3903 3954
-type(
-  dict
-)
-ident(
-  def d "Moogle\\dict.ml" 128 3903 3961 "Moogle\\dict.ml" 129 3969 3992
-)
-"Moogle\\dict.ml" 129 3969 3975 "Moogle\\dict.ml" 129 3969 3980
-type(
-  exn -> 'a
-)
-ident(
-  ext_ref Pervasives.raise
-)
-"Moogle\\dict.ml" 129 3969 3981 "Moogle\\dict.ml" 129 3969 3992
-type(
-  exn
-)
-"Moogle\\dict.ml" 129 3969 3975 "Moogle\\dict.ml" 129 3969 3992
-type(
-  'a
-)
+"Moogle\\dict.ml" 95 3094 3099 "Moogle\\dict.ml" 98 3235 3315
 type(
-  'a
+  (dict * (key * value * color) * dict) * (key * value * color) * dict
 )

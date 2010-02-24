@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>Moogle</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>Ocaml.ocamlbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>ocaml.ocamlnature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>External files/array.mli</name>
+			<type>1</type>
+			<location>C:/Program Files (x86)/Objective Caml/lib/array.mli</location>
+		</link>
+		<link>
+			<name>External files/filename.mli</name>
+			<type>1</type>
+			<location>C:/Program Files (x86)/Objective Caml/lib/filename.mli</location>
+		</link>
+		<link>
+			<name>External files/list.mli</name>
+			<type>1</type>
+			<location>C:/Program Files (x86)/Objective Caml/lib/list.mli</location>
+		</link>
+		<link>
+			<name>External files/printf.mli</name>
+			<type>1</type>
+			<location>C:/Program Files (x86)/Objective Caml/lib/printf.mli</location>
+		</link>
+		<link>
+			<name>External files/set.mli</name>
+			<type>1</type>
+			<location>C:/Program Files (x86)/Objective Caml/lib/set.mli</location>
+		</link>
+		<link>
+			<name>External files/str.mli</name>
+			<type>1</type>
+			<location>C:/Program Files (x86)/Objective Caml/lib/str.mli</location>
+		</link>
+		<link>
+			<name>External files/string.mli</name>
+			<type>1</type>
+			<location>C:/Program Files (x86)/Objective Caml/lib/string.mli</location>
+		</link>
+		<link>
+			<name>External files/sys.mli</name>
+			<type>1</type>
+			<location>C:/Program Files (x86)/Objective Caml/lib/sys.mli</location>
+		</link>
+		<link>
+			<name>External files/unix.mli</name>
+			<type>1</type>
+			<location>C:/Program Files (x86)/Objective Caml/lib/unix.mli</location>
+		</link>
+	</linkedResources>
+</projectDescription>

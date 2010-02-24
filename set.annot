@@ -1,0 +1,1014 @@
+"Moogle\\set.ml" 52 1550 1558 "Moogle\\set.ml" 52 1550 1563
+type(
+  'a list
+)
+ident(
+  def empty "Moogle\\set.ml" 53 1569 1573 "Moogle\\set.ml" 93 2933 2938
+)
+"Moogle\\set.ml" 52 1550 1566 "Moogle\\set.ml" 52 1550 1568
+type(
+  'a list
+)
+"Moogle\\set.ml" 53 1569 1577 "Moogle\\set.ml" 53 1569 1585
+type(
+  'b list -> bool
+)
+ident(
+  def is_empty "Moogle\\set.ml" 57 1655 1659 "Moogle\\set.ml" 93 2933 2938
+)
+"Moogle\\set.ml" 53 1569 1586 "Moogle\\set.ml" 53 1569 1588
+type(
+  'b list
+)
+ident(
+  def xs "Moogle\\set.ml" 54 1592 1598 "Moogle\\set.ml" 56 1634 1654
+)
+"Moogle\\set.ml" 54 1592 1604 "Moogle\\set.ml" 54 1592 1606
+type(
+  'b list
+)
+ident(
+  int_ref xs "Moogle\\set.ml" 53 1569 1586 "Moogle\\set.ml" 53 1569 1588
+)
+"Moogle\\set.ml" 55 1613 1623 "Moogle\\set.ml" 55 1613 1625
+type(
+  'b list
+)
+"Moogle\\set.ml" 55 1613 1629 "Moogle\\set.ml" 55 1613 1633
+type(
+  bool
+)
+"Moogle\\set.ml" 56 1634 1644 "Moogle\\set.ml" 56 1634 1645
+type(
+  'b list
+)
+"Moogle\\set.ml" 56 1634 1649 "Moogle\\set.ml" 56 1634 1654
+type(
+  bool
+)
+"Moogle\\set.ml" 54 1592 1598 "Moogle\\set.ml" 56 1634 1654
+type(
+  bool
+)
+"Moogle\\set.ml" 57 1655 1663 "Moogle\\set.ml" 57 1655 1672
+type(
+  'c -> 'c list
+)
+ident(
+  def singleton "Moogle\\set.ml" 58 1681 1685 "Moogle\\set.ml" 93 2933 2938
+)
+"Moogle\\set.ml" 57 1655 1673 "Moogle\\set.ml" 57 1655 1674
+type(
+  'c
+)
+ident(
+  def x "Moogle\\set.ml" 57 1655 1677 "Moogle\\set.ml" 57 1655 1680
+)
+"Moogle\\set.ml" 57 1655 1678 "Moogle\\set.ml" 57 1655 1679
+type(
+  'c
+)
+ident(
+  int_ref x "Moogle\\set.ml" 57 1655 1673 "Moogle\\set.ml" 57 1655 1674
+)
+"Moogle\\set.ml" 57 1655 1677 "Moogle\\set.ml" 57 1655 1680
+type(
+  'c list
+)
+"Moogle\\set.ml" 58 1681 1693 "Moogle\\set.ml" 58 1681 1699
+type(
+  C.t -> C.t list -> C.t list
+)
+ident(
+  def insert "Moogle\\set.ml" 58 1681 1685 "Moogle\\set.ml" 93 2933 2938
+)
+"Moogle\\set.ml" 58 1681 1700 "Moogle\\set.ml" 58 1681 1701
+type(
+  C.t
+)
+ident(
+  def x "Moogle\\set.ml" 58 1681 1702 "Moogle\\set.ml" 64 1880 1918
+)
+"Moogle\\set.ml" 58 1681 1702 "Moogle\\set.ml" 58 1681 1704
+type(
+  C.t list
+)
+ident(
+  def xs "Moogle\\set.ml" 59 1708 1714 "Moogle\\set.ml" 64 1880 1918
+)
+"Moogle\\set.ml" 59 1708 1720 "Moogle\\set.ml" 59 1708 1722
+type(
+  C.t list
+)
+ident(
+  int_ref xs "Moogle\\set.ml" 58 1681 1702 "Moogle\\set.ml" 58 1681 1704
+)
+"Moogle\\set.ml" 60 1729 1739 "Moogle\\set.ml" 60 1729 1741
+type(
+  C.t list
+)
+"Moogle\\set.ml" 60 1729 1746 "Moogle\\set.ml" 60 1729 1747
+type(
+  C.t
+)
+ident(
+  int_ref x "Moogle\\set.ml" 58 1681 1700 "Moogle\\set.ml" 58 1681 1701
+)
+"Moogle\\set.ml" 60 1729 1745 "Moogle\\set.ml" 60 1729 1748
+type(
+  C.t list
+)
+"Moogle\\set.ml" 61 1749 1759 "Moogle\\set.ml" 61 1749 1760
+type(
+  C.t
+)
+ident(
+  def y "Moogle\\set.ml" 61 1749 1768 "Moogle\\set.ml" 64 1880 1918
+)
+"Moogle\\set.ml" 61 1749 1762 "Moogle\\set.ml" 61 1749 1764
+type(
+  C.t list
+)
+ident(
+  def ys "Moogle\\set.ml" 61 1749 1768 "Moogle\\set.ml" 64 1880 1918
+)
+"Moogle\\set.ml" 61 1749 1759 "Moogle\\set.ml" 61 1749 1764
+type(
+  C.t list
+)
+"Moogle\\set.ml" 61 1749 1775 "Moogle\\set.ml" 61 1749 1784
+type(
+  C.t -> C.t -> Order.order
+)
+ident(
+  ext_ref C.compare
+)
+"Moogle\\set.ml" 61 1749 1785 "Moogle\\set.ml" 61 1749 1786
+type(
+  C.t
+)
+ident(
+  int_ref x "Moogle\\set.ml" 58 1681 1700 "Moogle\\set.ml" 58 1681 1701
+)
+"Moogle\\set.ml" 61 1749 1787 "Moogle\\set.ml" 61 1749 1788
+type(
+  C.t
+)
+ident(
+  int_ref y "Moogle\\set.ml" 61 1749 1759 "Moogle\\set.ml" 61 1749 1760
+)
+"Moogle\\set.ml" 61 1749 1775 "Moogle\\set.ml" 61 1749 1788
+call(
+  stack
+)
+type(
+  Order.order
+)
+"Moogle\\set.ml" 62 1795 1819 "Moogle\\set.ml" 62 1795 1826
+type(
+  Order.order
+)
+"Moogle\\set.ml" 62 1795 1830 "Moogle\\set.ml" 62 1795 1831
+type(
+  C.t
+)
+ident(
+  int_ref y "Moogle\\set.ml" 61 1749 1759 "Moogle\\set.ml" 61 1749 1760
+)
+"Moogle\\set.ml" 62 1795 1834 "Moogle\\set.ml" 62 1795 1840
+type(
+  C.t -> C.t list -> C.t list
+)
+ident(
+  int_ref insert "Moogle\\set.ml" 58 1681 1693 "Moogle\\set.ml" 58 1681 1699
+)
+"Moogle\\set.ml" 62 1795 1841 "Moogle\\set.ml" 62 1795 1842
+type(
+  C.t
+)
+ident(
+  int_ref x "Moogle\\set.ml" 58 1681 1700 "Moogle\\set.ml" 58 1681 1701
+)
+"Moogle\\set.ml" 62 1795 1843 "Moogle\\set.ml" 62 1795 1845
+type(
+  C.t list
+)
+ident(
+  int_ref ys "Moogle\\set.ml" 61 1749 1762 "Moogle\\set.ml" 61 1749 1764
+)
+"Moogle\\set.ml" 62 1795 1833 "Moogle\\set.ml" 62 1795 1846
+call(
+  stack
+)
+type(
+  C.t list
+)
+"Moogle\\set.ml" 62 1795 1830 "Moogle\\set.ml" 62 1795 1846
+type(
+  C.t list
+)
+"Moogle\\set.ml" 63 1847 1871 "Moogle\\set.ml" 63 1847 1873
+type(
+  Order.order
+)
+"Moogle\\set.ml" 63 1847 1877 "Moogle\\set.ml" 63 1847 1879
+type(
+  C.t list
+)
+ident(
+  int_ref xs "Moogle\\set.ml" 58 1681 1702 "Moogle\\set.ml" 58 1681 1704
+)
+"Moogle\\set.ml" 64 1880 1904 "Moogle\\set.ml" 64 1880 1908
+type(
+  Order.order
+)
+"Moogle\\set.ml" 64 1880 1912 "Moogle\\set.ml" 64 1880 1913
+type(
+  C.t
+)
+ident(
+  int_ref x "Moogle\\set.ml" 58 1681 1700 "Moogle\\set.ml" 58 1681 1701
+)
+"Moogle\\set.ml" 64 1880 1915 "Moogle\\set.ml" 64 1880 1917
+type(
+  C.t list
+)
+ident(
+  int_ref xs "Moogle\\set.ml" 58 1681 1702 "Moogle\\set.ml" 58 1681 1704
+)
+"Moogle\\set.ml" 64 1880 1912 "Moogle\\set.ml" 64 1880 1917
+type(
+  C.t list
+)
+"Moogle\\set.ml" 61 1749 1768 "Moogle\\set.ml" 64 1880 1918
+type(
+  C.t list
+)
+"Moogle\\set.ml" 59 1708 1714 "Moogle\\set.ml" 64 1880 1918
+type(
+  C.t list
+)
+"Moogle\\set.ml" 65 1919 1927 "Moogle\\set.ml" 65 1919 1932
+type(
+  C.t list -> C.t list -> C.t list
+)
+ident(
+  def union "Moogle\\set.ml" 66 1970 1974 "Moogle\\set.ml" 93 2933 2938
+)
+"Moogle\\set.ml" 65 1919 1933 "Moogle\\set.ml" 65 1919 1935
+type(
+  C.t list
+)
+ident(
+  def xs "Moogle\\set.ml" 65 1919 1936 "Moogle\\set.ml" 65 1919 1969
+)
+"Moogle\\set.ml" 65 1919 1936 "Moogle\\set.ml" 65 1919 1938
+type(
+  C.t list
+)
+ident(
+  def ys "Moogle\\set.ml" 65 1919 1941 "Moogle\\set.ml" 65 1919 1969
+)
+"Moogle\\set.ml" 65 1919 1941 "Moogle\\set.ml" 65 1919 1956
+type(
+  (C.t -> C.t list -> C.t list) -> C.t list -> C.t list -> C.t list
+)
+ident(
+  ext_ref List.fold_right
+)
+"Moogle\\set.ml" 65 1919 1957 "Moogle\\set.ml" 65 1919 1963
+type(
+  C.t -> C.t list -> C.t list
+)
+ident(
+  int_ref insert "Moogle\\set.ml" 58 1681 1693 "Moogle\\set.ml" 58 1681 1699
+)
+"Moogle\\set.ml" 65 1919 1964 "Moogle\\set.ml" 65 1919 1966
+type(
+  C.t list
+)
+ident(
+  int_ref xs "Moogle\\set.ml" 65 1919 1933 "Moogle\\set.ml" 65 1919 1935
+)
+"Moogle\\set.ml" 65 1919 1967 "Moogle\\set.ml" 65 1919 1969
+type(
+  C.t list
+)
+ident(
+  int_ref ys "Moogle\\set.ml" 65 1919 1936 "Moogle\\set.ml" 65 1919 1938
+)
+"Moogle\\set.ml" 65 1919 1941 "Moogle\\set.ml" 65 1919 1969
+call(
+  tail
+)
+type(
+  C.t list
+)
+"Moogle\\set.ml" 66 1970 1982 "Moogle\\set.ml" 66 1970 1988
+type(
+  C.t -> C.t list -> C.t list
+)
+ident(
+  def remove "Moogle\\set.ml" 66 1970 1974 "Moogle\\set.ml" 93 2933 2938
+)
+"Moogle\\set.ml" 66 1970 1989 "Moogle\\set.ml" 66 1970 1990
+type(
+  C.t
+)
+ident(
+  def y "Moogle\\set.ml" 66 1970 1991 "Moogle\\set.ml" 72 2153 2206
+)
+"Moogle\\set.ml" 66 1970 1991 "Moogle\\set.ml" 66 1970 1993
+type(
+  C.t list
+)
+ident(
+  def xs "Moogle\\set.ml" 67 1997 2003 "Moogle\\set.ml" 72 2153 2206
+)
+"Moogle\\set.ml" 67 1997 2009 "Moogle\\set.ml" 67 1997 2011
+type(
+  C.t list
+)
+ident(
+  int_ref xs "Moogle\\set.ml" 66 1970 1991 "Moogle\\set.ml" 66 1970 1993
+)
+"Moogle\\set.ml" 68 2018 2028 "Moogle\\set.ml" 68 2018 2030
+type(
+  C.t list
+)
+"Moogle\\set.ml" 68 2018 2034 "Moogle\\set.ml" 68 2018 2036
+type(
+  C.t list
+)
+"Moogle\\set.ml" 69 2037 2047 "Moogle\\set.ml" 69 2037 2048
+type(
+  C.t
+)
+ident(
+  def x "Moogle\\set.ml" 69 2037 2057 "Moogle\\set.ml" 72 2153 2206
+)
+"Moogle\\set.ml" 69 2037 2050 "Moogle\\set.ml" 69 2037 2053
+type(
+  C.t list
+)
+ident(
+  def xs1 "Moogle\\set.ml" 69 2037 2057 "Moogle\\set.ml" 72 2153 2206
+)
+"Moogle\\set.ml" 69 2037 2047 "Moogle\\set.ml" 69 2037 2053
+type(
+  C.t list
+)
+"Moogle\\set.ml" 69 2037 2064 "Moogle\\set.ml" 69 2037 2073
+type(
+  C.t -> C.t -> Order.order
+)
+ident(
+  ext_ref C.compare
+)
+"Moogle\\set.ml" 69 2037 2074 "Moogle\\set.ml" 69 2037 2075
+type(
+  C.t
+)
+ident(
+  int_ref y "Moogle\\set.ml" 66 1970 1989 "Moogle\\set.ml" 66 1970 1990
+)
+"Moogle\\set.ml" 69 2037 2076 "Moogle\\set.ml" 69 2037 2077
+type(
+  C.t
+)
+ident(
+  int_ref x "Moogle\\set.ml" 69 2037 2047 "Moogle\\set.ml" 69 2037 2048
+)
+"Moogle\\set.ml" 69 2037 2064 "Moogle\\set.ml" 69 2037 2077
+call(
+  stack
+)
+type(
+  Order.order
+)
+"Moogle\\set.ml" 70 2084 2108 "Moogle\\set.ml" 70 2084 2110
+type(
+  Order.order
+)
+"Moogle\\set.ml" 70 2084 2114 "Moogle\\set.ml" 70 2084 2117
+type(
+  C.t list
+)
+ident(
+  int_ref xs1 "Moogle\\set.ml" 69 2037 2050 "Moogle\\set.ml" 69 2037 2053
+)
+"Moogle\\set.ml" 71 2118 2142 "Moogle\\set.ml" 71 2118 2146
+type(
+  Order.order
+)
+"Moogle\\set.ml" 71 2118 2150 "Moogle\\set.ml" 71 2118 2152
+type(
+  C.t list
+)
+ident(
+  int_ref xs "Moogle\\set.ml" 66 1970 1991 "Moogle\\set.ml" 66 1970 1993
+)
+"Moogle\\set.ml" 72 2153 2177 "Moogle\\set.ml" 72 2153 2184
+type(
+  Order.order
+)
+"Moogle\\set.ml" 72 2153 2188 "Moogle\\set.ml" 72 2153 2189
+type(
+  C.t
+)
+ident(
+  int_ref x "Moogle\\set.ml" 69 2037 2047 "Moogle\\set.ml" 69 2037 2048
+)
+"Moogle\\set.ml" 72 2153 2192 "Moogle\\set.ml" 72 2153 2198
+type(
+  C.t -> C.t list -> C.t list
+)
+ident(
+  int_ref remove "Moogle\\set.ml" 66 1970 1982 "Moogle\\set.ml" 66 1970 1988
+)
+"Moogle\\set.ml" 72 2153 2199 "Moogle\\set.ml" 72 2153 2200
+type(
+  C.t
+)
+ident(
+  int_ref y "Moogle\\set.ml" 66 1970 1989 "Moogle\\set.ml" 66 1970 1990
+)
+"Moogle\\set.ml" 72 2153 2201 "Moogle\\set.ml" 72 2153 2204
+type(
+  C.t list
+)
+ident(
+  int_ref xs1 "Moogle\\set.ml" 69 2037 2050 "Moogle\\set.ml" 69 2037 2053
+)
+"Moogle\\set.ml" 72 2153 2191 "Moogle\\set.ml" 72 2153 2205
+call(
+  stack
+)
+type(
+  C.t list
+)
+"Moogle\\set.ml" 72 2153 2188 "Moogle\\set.ml" 72 2153 2205
+type(
+  C.t list
+)
+"Moogle\\set.ml" 69 2037 2057 "Moogle\\set.ml" 72 2153 2206
+type(
+  C.t list
+)
+"Moogle\\set.ml" 67 1997 2003 "Moogle\\set.ml" 72 2153 2206
+type(
+  C.t list
+)
+"Moogle\\set.ml" 73 2207 2219 "Moogle\\set.ml" 73 2207 2228
+type(
+  C.t list -> C.t list -> C.t list
+)
+ident(
+  def intersect "Moogle\\set.ml" 73 2207 2211 "Moogle\\set.ml" 93 2933 2938
+)
+"Moogle\\set.ml" 73 2207 2229 "Moogle\\set.ml" 73 2207 2231
+type(
+  C.t list
+)
+ident(
+  def xs "Moogle\\set.ml" 73 2207 2232 "Moogle\\set.ml" 80 2482 2542
+)
+"Moogle\\set.ml" 73 2207 2232 "Moogle\\set.ml" 73 2207 2234
+type(
+  C.t list
+)
+ident(
+  def ys "Moogle\\set.ml" 74 2238 2244 "Moogle\\set.ml" 80 2482 2542
+)
+"Moogle\\set.ml" 74 2238 2250 "Moogle\\set.ml" 74 2238 2252
+type(
+  C.t list
+)
+ident(
+  int_ref xs "Moogle\\set.ml" 73 2207 2229 "Moogle\\set.ml" 73 2207 2231
+)
+"Moogle\\set.ml" 74 2238 2254 "Moogle\\set.ml" 74 2238 2256
+type(
+  C.t list
+)
+ident(
+  int_ref ys "Moogle\\set.ml" 73 2207 2232 "Moogle\\set.ml" 73 2207 2234
+)
+"Moogle\\set.ml" 74 2238 2250 "Moogle\\set.ml" 74 2238 2256
+type(
+  C.t list * C.t list
+)
+"Moogle\\set.ml" 75 2263 2273 "Moogle\\set.ml" 75 2263 2275
+type(
+  C.t list
+)
+"Moogle\\set.ml" 75 2263 2277 "Moogle\\set.ml" 75 2263 2278
+type(
+  C.t list
+)
+"Moogle\\set.ml" 75 2263 2273 "Moogle\\set.ml" 75 2263 2278
+type(
+  C.t list * C.t list
+)
+"Moogle\\set.ml" 75 2263 2282 "Moogle\\set.ml" 75 2263 2284
+type(
+  C.t list
+)
+"Moogle\\set.ml" 76 2285 2295 "Moogle\\set.ml" 76 2285 2296
+type(
+  C.t list
+)
+"Moogle\\set.ml" 76 2285 2298 "Moogle\\set.ml" 76 2285 2300
+type(
+  C.t list
+)
+"Moogle\\set.ml" 76 2285 2295 "Moogle\\set.ml" 76 2285 2300
+type(
+  C.t list * C.t list
+)
+"Moogle\\set.ml" 76 2285 2304 "Moogle\\set.ml" 76 2285 2306
+type(
+  C.t list
+)
+"Moogle\\set.ml" 77 2307 2317 "Moogle\\set.ml" 77 2307 2319
+type(
+  C.t
+)
+ident(
+  def xh "Moogle\\set.ml" 77 2307 2335 "Moogle\\set.ml" 80 2482 2542
+)
+"Moogle\\set.ml" 77 2307 2321 "Moogle\\set.ml" 77 2307 2323
+type(
+  C.t list
+)
+ident(
+  def xt "Moogle\\set.ml" 77 2307 2335 "Moogle\\set.ml" 80 2482 2542
+)
+"Moogle\\set.ml" 77 2307 2317 "Moogle\\set.ml" 77 2307 2323
+type(
+  C.t list
+)
+"Moogle\\set.ml" 77 2307 2325 "Moogle\\set.ml" 77 2307 2327
+type(
+  C.t
+)
+ident(
+  def yh "Moogle\\set.ml" 77 2307 2335 "Moogle\\set.ml" 80 2482 2542
+)
+"Moogle\\set.ml" 77 2307 2329 "Moogle\\set.ml" 77 2307 2331
+type(
+  C.t list
+)
+ident(
+  def yt "Moogle\\set.ml" 77 2307 2335 "Moogle\\set.ml" 80 2482 2542
+)
+"Moogle\\set.ml" 77 2307 2325 "Moogle\\set.ml" 77 2307 2331
+type(
+  C.t list
+)
+"Moogle\\set.ml" 77 2307 2317 "Moogle\\set.ml" 77 2307 2331
+type(
+  C.t list * C.t list
+)
+"Moogle\\set.ml" 77 2307 2342 "Moogle\\set.ml" 77 2307 2351
+type(
+  C.t -> C.t -> Order.order
+)
+ident(
+  ext_ref C.compare
+)
+"Moogle\\set.ml" 77 2307 2352 "Moogle\\set.ml" 77 2307 2354
+type(
+  C.t
+)
+ident(
+  int_ref xh "Moogle\\set.ml" 77 2307 2317 "Moogle\\set.ml" 77 2307 2319
+)
+"Moogle\\set.ml" 77 2307 2355 "Moogle\\set.ml" 77 2307 2357
+type(
+  C.t
+)
+ident(
+  int_ref yh "Moogle\\set.ml" 77 2307 2325 "Moogle\\set.ml" 77 2307 2327
+)
+"Moogle\\set.ml" 77 2307 2342 "Moogle\\set.ml" 77 2307 2357
+call(
+  stack
+)
+type(
+  Order.order
+)
+"Moogle\\set.ml" 78 2364 2397 "Moogle\\set.ml" 78 2364 2399
+type(
+  Order.order
+)
+"Moogle\\set.ml" 78 2364 2403 "Moogle\\set.ml" 78 2364 2405
+type(
+  C.t
+)
+ident(
+  int_ref xh "Moogle\\set.ml" 77 2307 2317 "Moogle\\set.ml" 77 2307 2319
+)
+"Moogle\\set.ml" 78 2364 2408 "Moogle\\set.ml" 78 2364 2417
+type(
+  C.t list -> C.t list -> C.t list
+)
+ident(
+  int_ref intersect "Moogle\\set.ml" 73 2207 2219 "Moogle\\set.ml" 73 2207 2228
+)
+"Moogle\\set.ml" 78 2364 2418 "Moogle\\set.ml" 78 2364 2420
+type(
+  C.t list
+)
+ident(
+  int_ref xt "Moogle\\set.ml" 77 2307 2321 "Moogle\\set.ml" 77 2307 2323
+)
+"Moogle\\set.ml" 78 2364 2421 "Moogle\\set.ml" 78 2364 2423
+type(
+  C.t list
+)
+ident(
+  int_ref yt "Moogle\\set.ml" 77 2307 2329 "Moogle\\set.ml" 77 2307 2331
+)
+"Moogle\\set.ml" 78 2364 2407 "Moogle\\set.ml" 78 2364 2424
+call(
+  stack
+)
+type(
+  C.t list
+)
+"Moogle\\set.ml" 78 2364 2403 "Moogle\\set.ml" 78 2364 2424
+type(
+  C.t list
+)
+"Moogle\\set.ml" 79 2425 2458 "Moogle\\set.ml" 79 2425 2462
+type(
+  Order.order
+)
+"Moogle\\set.ml" 79 2425 2466 "Moogle\\set.ml" 79 2425 2475
+type(
+  C.t list -> C.t list -> C.t list
+)
+ident(
+  int_ref intersect "Moogle\\set.ml" 73 2207 2219 "Moogle\\set.ml" 73 2207 2228
+)
+"Moogle\\set.ml" 79 2425 2476 "Moogle\\set.ml" 79 2425 2478
+type(
+  C.t list
+)
+ident(
+  int_ref xt "Moogle\\set.ml" 77 2307 2321 "Moogle\\set.ml" 77 2307 2323
+)
+"Moogle\\set.ml" 79 2425 2479 "Moogle\\set.ml" 79 2425 2481
+type(
+  C.t list
+)
+ident(
+  int_ref ys "Moogle\\set.ml" 73 2207 2232 "Moogle\\set.ml" 73 2207 2234
+)
+"Moogle\\set.ml" 79 2425 2466 "Moogle\\set.ml" 79 2425 2481
+call(
+  tail
+)
+type(
+  C.t list
+)
+"Moogle\\set.ml" 80 2482 2515 "Moogle\\set.ml" 80 2482 2522
+type(
+  Order.order
+)
+"Moogle\\set.ml" 80 2482 2526 "Moogle\\set.ml" 80 2482 2535
+type(
+  C.t list -> C.t list -> C.t list
+)
+ident(
+  int_ref intersect "Moogle\\set.ml" 73 2207 2219 "Moogle\\set.ml" 73 2207 2228
+)
+"Moogle\\set.ml" 80 2482 2536 "Moogle\\set.ml" 80 2482 2538
+type(
+  C.t list
+)
+ident(
+  int_ref xs "Moogle\\set.ml" 73 2207 2229 "Moogle\\set.ml" 73 2207 2231
+)
+"Moogle\\set.ml" 80 2482 2539 "Moogle\\set.ml" 80 2482 2541
+type(
+  C.t list
+)
+ident(
+  int_ref yt "Moogle\\set.ml" 77 2307 2329 "Moogle\\set.ml" 77 2307 2331
+)
+"Moogle\\set.ml" 80 2482 2526 "Moogle\\set.ml" 80 2482 2541
+call(
+  tail
+)
+type(
+  C.t list
+)
+"Moogle\\set.ml" 77 2307 2335 "Moogle\\set.ml" 80 2482 2542
+type(
+  C.t list
+)
+"Moogle\\set.ml" 74 2238 2244 "Moogle\\set.ml" 80 2482 2542
+type(
+  C.t list
+)
+"Moogle\\set.ml" 81 2543 2555 "Moogle\\set.ml" 81 2543 2561
+type(
+  C.t list -> C.t -> bool
+)
+ident(
+  def member "Moogle\\set.ml" 81 2543 2547 "Moogle\\set.ml" 93 2933 2938
+)
+"Moogle\\set.ml" 81 2543 2562 "Moogle\\set.ml" 81 2543 2564
+type(
+  C.t list
+)
+ident(
+  def xs "Moogle\\set.ml" 81 2543 2565 "Moogle\\set.ml" 87 2740 2778
+)
+"Moogle\\set.ml" 81 2543 2565 "Moogle\\set.ml" 81 2543 2566
+type(
+  C.t
+)
+ident(
+  def x "Moogle\\set.ml" 82 2570 2576 "Moogle\\set.ml" 87 2740 2778
+)
+"Moogle\\set.ml" 82 2570 2582 "Moogle\\set.ml" 82 2570 2584
+type(
+  C.t list
+)
+ident(
+  int_ref xs "Moogle\\set.ml" 81 2543 2562 "Moogle\\set.ml" 81 2543 2564
+)
+"Moogle\\set.ml" 83 2591 2601 "Moogle\\set.ml" 83 2591 2603
+type(
+  C.t list
+)
+"Moogle\\set.ml" 83 2591 2607 "Moogle\\set.ml" 83 2591 2612
+type(
+  bool
+)
+"Moogle\\set.ml" 84 2613 2623 "Moogle\\set.ml" 84 2613 2624
+type(
+  C.t
+)
+ident(
+  def y "Moogle\\set.ml" 84 2613 2632 "Moogle\\set.ml" 87 2740 2778
+)
+"Moogle\\set.ml" 84 2613 2626 "Moogle\\set.ml" 84 2613 2628
+type(
+  C.t list
+)
+ident(
+  def ys "Moogle\\set.ml" 84 2613 2632 "Moogle\\set.ml" 87 2740 2778
+)
+"Moogle\\set.ml" 84 2613 2623 "Moogle\\set.ml" 84 2613 2628
+type(
+  C.t list
+)
+"Moogle\\set.ml" 84 2613 2639 "Moogle\\set.ml" 84 2613 2648
+type(
+  C.t -> C.t -> Order.order
+)
+ident(
+  ext_ref C.compare
+)
+"Moogle\\set.ml" 84 2613 2649 "Moogle\\set.ml" 84 2613 2650
+type(
+  C.t
+)
+ident(
+  int_ref x "Moogle\\set.ml" 81 2543 2565 "Moogle\\set.ml" 81 2543 2566
+)
+"Moogle\\set.ml" 84 2613 2651 "Moogle\\set.ml" 84 2613 2652
+type(
+  C.t
+)
+ident(
+  int_ref y "Moogle\\set.ml" 84 2613 2623 "Moogle\\set.ml" 84 2613 2624
+)
+"Moogle\\set.ml" 84 2613 2639 "Moogle\\set.ml" 84 2613 2652
+call(
+  stack
+)
+type(
+  Order.order
+)
+"Moogle\\set.ml" 85 2658 2682 "Moogle\\set.ml" 85 2658 2684
+type(
+  Order.order
+)
+"Moogle\\set.ml" 85 2658 2688 "Moogle\\set.ml" 85 2658 2692
+type(
+  bool
+)
+"Moogle\\set.ml" 86 2693 2717 "Moogle\\set.ml" 86 2693 2724
+type(
+  Order.order
+)
+"Moogle\\set.ml" 86 2693 2728 "Moogle\\set.ml" 86 2693 2734
+type(
+  C.t list -> C.t -> bool
+)
+ident(
+  int_ref member "Moogle\\set.ml" 81 2543 2555 "Moogle\\set.ml" 81 2543 2561
+)
+"Moogle\\set.ml" 86 2693 2735 "Moogle\\set.ml" 86 2693 2737
+type(
+  C.t list
+)
+ident(
+  int_ref ys "Moogle\\set.ml" 84 2613 2626 "Moogle\\set.ml" 84 2613 2628
+)
+"Moogle\\set.ml" 86 2693 2738 "Moogle\\set.ml" 86 2693 2739
+type(
+  C.t
+)
+ident(
+  int_ref x "Moogle\\set.ml" 81 2543 2565 "Moogle\\set.ml" 81 2543 2566
+)
+"Moogle\\set.ml" 86 2693 2728 "Moogle\\set.ml" 86 2693 2739
+call(
+  tail
+)
+type(
+  bool
+)
+"Moogle\\set.ml" 87 2740 2764 "Moogle\\set.ml" 87 2740 2768
+type(
+  Order.order
+)
+"Moogle\\set.ml" 87 2740 2772 "Moogle\\set.ml" 87 2740 2777
+type(
+  bool
+)
+"Moogle\\set.ml" 84 2613 2632 "Moogle\\set.ml" 87 2740 2778
+type(
+  bool
+)
+"Moogle\\set.ml" 82 2570 2576 "Moogle\\set.ml" 87 2740 2778
+type(
+  bool
+)
+"Moogle\\set.ml" 88 2779 2787 "Moogle\\set.ml" 88 2779 2793
+type(
+  'd list -> ('d * 'd list) option
+)
+ident(
+  def choose "Moogle\\set.ml" 92 2877 2881 "Moogle\\set.ml" 93 2933 2938
+)
+"Moogle\\set.ml" 88 2779 2794 "Moogle\\set.ml" 88 2779 2796
+type(
+  'd list
+)
+ident(
+  def xs "Moogle\\set.ml" 89 2800 2806 "Moogle\\set.ml" 91 2842 2876
+)
+"Moogle\\set.ml" 89 2800 2812 "Moogle\\set.ml" 89 2800 2814
+type(
+  'd list
+)
+ident(
+  int_ref xs "Moogle\\set.ml" 88 2779 2794 "Moogle\\set.ml" 88 2779 2796
+)
+"Moogle\\set.ml" 90 2821 2831 "Moogle\\set.ml" 90 2821 2833
+type(
+  'd list
+)
+"Moogle\\set.ml" 90 2821 2837 "Moogle\\set.ml" 90 2821 2841
+type(
+  ('d * 'd list) option
+)
+"Moogle\\set.ml" 91 2842 2852 "Moogle\\set.ml" 91 2842 2853
+type(
+  'd
+)
+ident(
+  def x "Moogle\\set.ml" 91 2842 2863 "Moogle\\set.ml" 91 2842 2876
+)
+"Moogle\\set.ml" 91 2842 2855 "Moogle\\set.ml" 91 2842 2859
+type(
+  'd list
+)
+ident(
+  def rest "Moogle\\set.ml" 91 2842 2863 "Moogle\\set.ml" 91 2842 2876
+)
+"Moogle\\set.ml" 91 2842 2852 "Moogle\\set.ml" 91 2842 2859
+type(
+  'd list
+)
+"Moogle\\set.ml" 91 2842 2869 "Moogle\\set.ml" 91 2842 2870
+type(
+  'd
+)
+ident(
+  int_ref x "Moogle\\set.ml" 91 2842 2852 "Moogle\\set.ml" 91 2842 2853
+)
+"Moogle\\set.ml" 91 2842 2871 "Moogle\\set.ml" 91 2842 2875
+type(
+  'd list
+)
+ident(
+  int_ref rest "Moogle\\set.ml" 91 2842 2855 "Moogle\\set.ml" 91 2842 2859
+)
+"Moogle\\set.ml" 91 2842 2868 "Moogle\\set.ml" 91 2842 2876
+type(
+  'd * 'd list
+)
+"Moogle\\set.ml" 91 2842 2863 "Moogle\\set.ml" 91 2842 2876
+type(
+  ('d * 'd list) option
+)
+"Moogle\\set.ml" 89 2800 2806 "Moogle\\set.ml" 91 2842 2876
+type(
+  ('d * 'd list) option
+)
+"Moogle\\set.ml" 92 2877 2885 "Moogle\\set.ml" 92 2877 2889
+type(
+  ('e -> 'f -> 'f) -> 'f -> 'e list -> 'f
+)
+ident(
+  def fold "Moogle\\set.ml" 92 2877 2931 "Moogle\\set.ml" 93 2933 2938
+)
+"Moogle\\set.ml" 92 2877 2890 "Moogle\\set.ml" 92 2877 2891
+type(
+  'e -> 'f -> 'f
+)
+ident(
+  def f "Moogle\\set.ml" 92 2877 2892 "Moogle\\set.ml" 92 2877 2931
+)
+"Moogle\\set.ml" 92 2877 2892 "Moogle\\set.ml" 92 2877 2893
+type(
+  'f
+)
+ident(
+  def e "Moogle\\set.ml" 92 2877 2896 "Moogle\\set.ml" 92 2877 2931
+)
+"Moogle\\set.ml" 92 2877 2896 "Moogle\\set.ml" 92 2877 2910
+type(
+  ('f -> 'e -> 'f) -> 'f -> 'e list -> 'f
+)
+ident(
+  ext_ref List.fold_left
+)
+"Moogle\\set.ml" 92 2877 2916 "Moogle\\set.ml" 92 2877 2917
+type(
+  'f
+)
+ident(
+  def a "Moogle\\set.ml" 92 2877 2918 "Moogle\\set.ml" 92 2877 2928
+)
+"Moogle\\set.ml" 92 2877 2918 "Moogle\\set.ml" 92 2877 2919
+type(
+  'e
+)
+ident(
+  def x "Moogle\\set.ml" 92 2877 2923 "Moogle\\set.ml" 92 2877 2928
+)
+"Moogle\\set.ml" 92 2877 2923 "Moogle\\set.ml" 92 2877 2924
+type(
+  'e -> 'f -> 'f
+)
+ident(
+  int_ref f "Moogle\\set.ml" 92 2877 2890 "Moogle\\set.ml" 92 2877 2891
+)
+"Moogle\\set.ml" 92 2877 2925 "Moogle\\set.ml" 92 2877 2926
+type(
+  'e
+)
+ident(
+  int_ref x "Moogle\\set.ml" 92 2877 2918 "Moogle\\set.ml" 92 2877 2919
+)
+"Moogle\\set.ml" 92 2877 2927 "Moogle\\set.ml" 92 2877 2928
+type(
+  'f
+)
+ident(
+  int_ref a "Moogle\\set.ml" 92 2877 2916 "Moogle\\set.ml" 92 2877 2917
+)
+"Moogle\\set.ml" 92 2877 2923 "Moogle\\set.ml" 92 2877 2928
+call(
+  tail
+)
+type(
+  'f
+)
+"Moogle\\set.ml" 92 2877 2911 "Moogle\\set.ml" 92 2877 2929
+type(
+  'f -> 'e -> 'f
+)
+"Moogle\\set.ml" 92 2877 2930 "Moogle\\set.ml" 92 2877 2931
+type(
+  'f
+)
+ident(
+  int_ref e "Moogle\\set.ml" 92 2877 2892 "Moogle\\set.ml" 92 2877 2893
+)
+"Moogle\\set.ml" 92 2877 2896 "Moogle\\set.ml" 92 2877 2931
+call(
+  tail
+)
+type(
+  'e list -> 'f
+)

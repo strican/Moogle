@@ -1,0 +1,1133 @@
+"Moogle\\dict.ml" 37 1160 1168 "Moogle\\dict.ml" 37 1160 1173
+type(
+  'a list
+)
+ident(
+  def empty "Moogle\\dict.ml" 38 1182 1186 "Moogle\\dict.ml" 71 2265 2270
+)
+"Moogle\\dict.ml" 37 1160 1176 "Moogle\\dict.ml" 37 1160 1178
+type(
+  'a list
+)
+"Moogle\\dict.ml" 38 1182 1194 "Moogle\\dict.ml" 38 1182 1200
+type(
+  (D.key * 'b) list -> D.key -> 'b -> (D.key * 'b) list
+)
+ident(
+  def insert "Moogle\\dict.ml" 38 1182 1186 "Moogle\\dict.ml" 71 2265 2270
+)
+"Moogle\\dict.ml" 38 1182 1201 "Moogle\\dict.ml" 38 1182 1202
+type(
+  (D.key * 'b) list
+)
+ident(
+  def d "Moogle\\dict.ml" 38 1182 1203 "Moogle\\dict.ml" 44 1400 1466
+)
+"Moogle\\dict.ml" 38 1182 1203 "Moogle\\dict.ml" 38 1182 1204
+type(
+  D.key
+)
+ident(
+  def k "Moogle\\dict.ml" 38 1182 1205 "Moogle\\dict.ml" 44 1400 1466
+)
+"Moogle\\dict.ml" 38 1182 1205 "Moogle\\dict.ml" 38 1182 1206
+type(
+  'b
+)
+ident(
+  def v "Moogle\\dict.ml" 39 1210 1216 "Moogle\\dict.ml" 44 1400 1466
+)
+"Moogle\\dict.ml" 39 1210 1222 "Moogle\\dict.ml" 39 1210 1223
+type(
+  (D.key * 'b) list
+)
+ident(
+  int_ref d "Moogle\\dict.ml" 38 1182 1201 "Moogle\\dict.ml" 38 1182 1202
+)
+"Moogle\\dict.ml" 40 1230 1240 "Moogle\\dict.ml" 40 1230 1242
+type(
+  (D.key * 'b) list
+)
+"Moogle\\dict.ml" 40 1230 1248 "Moogle\\dict.ml" 40 1230 1249
+type(
+  D.key
+)
+ident(
+  int_ref k "Moogle\\dict.ml" 38 1182 1203 "Moogle\\dict.ml" 38 1182 1204
+)
+"Moogle\\dict.ml" 40 1230 1250 "Moogle\\dict.ml" 40 1230 1251
+type(
+  'b
+)
+ident(
+  int_ref v "Moogle\\dict.ml" 38 1182 1205 "Moogle\\dict.ml" 38 1182 1206
+)
+"Moogle\\dict.ml" 40 1230 1247 "Moogle\\dict.ml" 40 1230 1252
+type(
+  D.key * 'b
+)
+"Moogle\\dict.ml" 40 1230 1246 "Moogle\\dict.ml" 40 1230 1253
+type(
+  (D.key * 'b) list
+)
+"Moogle\\dict.ml" 41 1254 1265 "Moogle\\dict.ml" 41 1254 1267
+type(
+  D.key
+)
+ident(
+  def k1 "Moogle\\dict.ml" 41 1254 1279 "Moogle\\dict.ml" 44 1400 1466
+)
+"Moogle\\dict.ml" 41 1254 1268 "Moogle\\dict.ml" 41 1254 1270
+type(
+  'b
+)
+ident(
+  def v1 "Moogle\\dict.ml" 41 1254 1279 "Moogle\\dict.ml" 44 1400 1466
+)
+"Moogle\\dict.ml" 41 1254 1264 "Moogle\\dict.ml" 41 1254 1271
+type(
+  D.key * 'b
+)
+"Moogle\\dict.ml" 41 1254 1273 "Moogle\\dict.ml" 41 1254 1275
+type(
+  (D.key * 'b) list
+)
+ident(
+  def d1 "Moogle\\dict.ml" 41 1254 1279 "Moogle\\dict.ml" 44 1400 1466
+)
+"Moogle\\dict.ml" 41 1254 1264 "Moogle\\dict.ml" 41 1254 1275
+type(
+  (D.key * 'b) list
+)
+"Moogle\\dict.ml" 41 1254 1286 "Moogle\\dict.ml" 41 1254 1295
+type(
+  D.key -> D.key -> Order.order
+)
+ident(
+  ext_ref D.compare
+)
+"Moogle\\dict.ml" 41 1254 1296 "Moogle\\dict.ml" 41 1254 1297
+type(
+  D.key
+)
+ident(
+  int_ref k "Moogle\\dict.ml" 38 1182 1203 "Moogle\\dict.ml" 38 1182 1204
+)
+"Moogle\\dict.ml" 41 1254 1298 "Moogle\\dict.ml" 41 1254 1300
+type(
+  D.key
+)
+ident(
+  int_ref k1 "Moogle\\dict.ml" 41 1254 1265 "Moogle\\dict.ml" 41 1254 1267
+)
+"Moogle\\dict.ml" 41 1254 1286 "Moogle\\dict.ml" 41 1254 1300
+call(
+  stack
+)
+type(
+  Order.order
+)
+"Moogle\\dict.ml" 42 1307 1337 "Moogle\\dict.ml" 42 1307 1341
+type(
+  Order.order
+)
+"Moogle\\dict.ml" 42 1307 1346 "Moogle\\dict.ml" 42 1307 1347
+type(
+  D.key
+)
+ident(
+  int_ref k "Moogle\\dict.ml" 38 1182 1203 "Moogle\\dict.ml" 38 1182 1204
+)
+"Moogle\\dict.ml" 42 1307 1348 "Moogle\\dict.ml" 42 1307 1349
+type(
+  'b
+)
+ident(
+  int_ref v "Moogle\\dict.ml" 38 1182 1205 "Moogle\\dict.ml" 38 1182 1206
+)
+"Moogle\\dict.ml" 42 1307 1345 "Moogle\\dict.ml" 42 1307 1350
+type(
+  D.key * 'b
+)
+"Moogle\\dict.ml" 42 1307 1352 "Moogle\\dict.ml" 42 1307 1353
+type(
+  (D.key * 'b) list
+)
+ident(
+  int_ref d "Moogle\\dict.ml" 38 1182 1201 "Moogle\\dict.ml" 38 1182 1202
+)
+"Moogle\\dict.ml" 42 1307 1345 "Moogle\\dict.ml" 42 1307 1353
+type(
+  (D.key * 'b) list
+)
+"Moogle\\dict.ml" 43 1354 1384 "Moogle\\dict.ml" 43 1354 1386
+type(
+  Order.order
+)
+"Moogle\\dict.ml" 43 1354 1391 "Moogle\\dict.ml" 43 1354 1392
+type(
+  D.key
+)
+ident(
+  int_ref k "Moogle\\dict.ml" 38 1182 1203 "Moogle\\dict.ml" 38 1182 1204
+)
+"Moogle\\dict.ml" 43 1354 1393 "Moogle\\dict.ml" 43 1354 1394
+type(
+  'b
+)
+ident(
+  int_ref v "Moogle\\dict.ml" 38 1182 1205 "Moogle\\dict.ml" 38 1182 1206
+)
+"Moogle\\dict.ml" 43 1354 1390 "Moogle\\dict.ml" 43 1354 1395
+type(
+  D.key * 'b
+)
+"Moogle\\dict.ml" 43 1354 1397 "Moogle\\dict.ml" 43 1354 1399
+type(
+  (D.key * 'b) list
+)
+ident(
+  int_ref d1 "Moogle\\dict.ml" 41 1254 1273 "Moogle\\dict.ml" 41 1254 1275
+)
+"Moogle\\dict.ml" 43 1354 1390 "Moogle\\dict.ml" 43 1354 1399
+type(
+  (D.key * 'b) list
+)
+"Moogle\\dict.ml" 44 1400 1430 "Moogle\\dict.ml" 44 1400 1437
+type(
+  Order.order
+)
+"Moogle\\dict.ml" 44 1400 1442 "Moogle\\dict.ml" 44 1400 1444
+type(
+  D.key
+)
+ident(
+  int_ref k1 "Moogle\\dict.ml" 41 1254 1265 "Moogle\\dict.ml" 41 1254 1267
+)
+"Moogle\\dict.ml" 44 1400 1445 "Moogle\\dict.ml" 44 1400 1447
+type(
+  'b
+)
+ident(
+  int_ref v1 "Moogle\\dict.ml" 41 1254 1268 "Moogle\\dict.ml" 41 1254 1270
+)
+"Moogle\\dict.ml" 44 1400 1441 "Moogle\\dict.ml" 44 1400 1448
+type(
+  D.key * 'b
+)
+"Moogle\\dict.ml" 44 1400 1451 "Moogle\\dict.ml" 44 1400 1457
+type(
+  (D.key * 'b) list -> D.key -> 'b -> (D.key * 'b) list
+)
+ident(
+  int_ref insert "Moogle\\dict.ml" 38 1182 1194 "Moogle\\dict.ml" 38 1182 1200
+)
+"Moogle\\dict.ml" 44 1400 1458 "Moogle\\dict.ml" 44 1400 1460
+type(
+  (D.key * 'b) list
+)
+ident(
+  int_ref d1 "Moogle\\dict.ml" 41 1254 1273 "Moogle\\dict.ml" 41 1254 1275
+)
+"Moogle\\dict.ml" 44 1400 1461 "Moogle\\dict.ml" 44 1400 1462
+type(
+  D.key
+)
+ident(
+  int_ref k "Moogle\\dict.ml" 38 1182 1203 "Moogle\\dict.ml" 38 1182 1204
+)
+"Moogle\\dict.ml" 44 1400 1463 "Moogle\\dict.ml" 44 1400 1464
+type(
+  'b
+)
+ident(
+  int_ref v "Moogle\\dict.ml" 38 1182 1205 "Moogle\\dict.ml" 38 1182 1206
+)
+"Moogle\\dict.ml" 44 1400 1450 "Moogle\\dict.ml" 44 1400 1465
+call(
+  stack
+)
+type(
+  (D.key * 'b) list
+)
+"Moogle\\dict.ml" 44 1400 1441 "Moogle\\dict.ml" 44 1400 1465
+type(
+  (D.key * 'b) list
+)
+"Moogle\\dict.ml" 41 1254 1279 "Moogle\\dict.ml" 44 1400 1466
+type(
+  (D.key * 'b) list
+)
+"Moogle\\dict.ml" 39 1210 1216 "Moogle\\dict.ml" 44 1400 1466
+type(
+  (D.key * 'b) list
+)
+"Moogle\\dict.ml" 46 1474 1486 "Moogle\\dict.ml" 46 1474 1492
+type(
+  (D.key * 'c) list -> D.key -> 'c option
+)
+ident(
+  def lookup "Moogle\\dict.ml" 46 1474 1478 "Moogle\\dict.ml" 71 2265 2270
+)
+"Moogle\\dict.ml" 46 1474 1493 "Moogle\\dict.ml" 46 1474 1494
+type(
+  (D.key * 'c) list
+)
+ident(
+  def d "Moogle\\dict.ml" 46 1474 1495 "Moogle\\dict.ml" 52 1691 1731
+)
+"Moogle\\dict.ml" 46 1474 1495 "Moogle\\dict.ml" 46 1474 1496
+type(
+  D.key
+)
+ident(
+  def k "Moogle\\dict.ml" 47 1500 1506 "Moogle\\dict.ml" 52 1691 1731
+)
+"Moogle\\dict.ml" 47 1500 1512 "Moogle\\dict.ml" 47 1500 1513
+type(
+  (D.key * 'c) list
+)
+ident(
+  int_ref d "Moogle\\dict.ml" 46 1474 1493 "Moogle\\dict.ml" 46 1474 1494
+)
+"Moogle\\dict.ml" 48 1520 1530 "Moogle\\dict.ml" 48 1520 1532
+type(
+  (D.key * 'c) list
+)
+"Moogle\\dict.ml" 48 1520 1536 "Moogle\\dict.ml" 48 1520 1540
+type(
+  'c option
+)
+"Moogle\\dict.ml" 49 1541 1552 "Moogle\\dict.ml" 49 1541 1554
+type(
+  D.key
+)
+ident(
+  def k1 "Moogle\\dict.ml" 49 1541 1566 "Moogle\\dict.ml" 52 1691 1731
+)
+"Moogle\\dict.ml" 49 1541 1555 "Moogle\\dict.ml" 49 1541 1557
+type(
+  'c
+)
+ident(
+  def v1 "Moogle\\dict.ml" 49 1541 1566 "Moogle\\dict.ml" 52 1691 1731
+)
+"Moogle\\dict.ml" 49 1541 1551 "Moogle\\dict.ml" 49 1541 1558
+type(
+  D.key * 'c
+)
+"Moogle\\dict.ml" 49 1541 1560 "Moogle\\dict.ml" 49 1541 1562
+type(
+  (D.key * 'c) list
+)
+ident(
+  def d1 "Moogle\\dict.ml" 49 1541 1566 "Moogle\\dict.ml" 52 1691 1731
+)
+"Moogle\\dict.ml" 49 1541 1551 "Moogle\\dict.ml" 49 1541 1562
+type(
+  (D.key * 'c) list
+)
+"Moogle\\dict.ml" 49 1541 1573 "Moogle\\dict.ml" 49 1541 1582
+type(
+  D.key -> D.key -> Order.order
+)
+ident(
+  ext_ref D.compare
+)
+"Moogle\\dict.ml" 49 1541 1583 "Moogle\\dict.ml" 49 1541 1584
+type(
+  D.key
+)
+ident(
+  int_ref k "Moogle\\dict.ml" 46 1474 1495 "Moogle\\dict.ml" 46 1474 1496
+)
+"Moogle\\dict.ml" 49 1541 1585 "Moogle\\dict.ml" 49 1541 1587
+type(
+  D.key
+)
+ident(
+  int_ref k1 "Moogle\\dict.ml" 49 1541 1552 "Moogle\\dict.ml" 49 1541 1554
+)
+"Moogle\\dict.ml" 49 1541 1573 "Moogle\\dict.ml" 49 1541 1587
+call(
+  stack
+)
+type(
+  Order.order
+)
+"Moogle\\dict.ml" 50 1593 1623 "Moogle\\dict.ml" 50 1593 1625
+type(
+  Order.order
+)
+"Moogle\\dict.ml" 50 1593 1634 "Moogle\\dict.ml" 50 1593 1636
+type(
+  'c
+)
+ident(
+  int_ref v1 "Moogle\\dict.ml" 49 1541 1555 "Moogle\\dict.ml" 49 1541 1557
+)
+"Moogle\\dict.ml" 50 1593 1629 "Moogle\\dict.ml" 50 1593 1636
+type(
+  'c option
+)
+"Moogle\\dict.ml" 51 1637 1667 "Moogle\\dict.ml" 51 1637 1674
+type(
+  Order.order
+)
+"Moogle\\dict.ml" 51 1637 1678 "Moogle\\dict.ml" 51 1637 1684
+type(
+  (D.key * 'c) list -> D.key -> 'c option
+)
+ident(
+  int_ref lookup "Moogle\\dict.ml" 46 1474 1486 "Moogle\\dict.ml" 46 1474 1492
+)
+"Moogle\\dict.ml" 51 1637 1685 "Moogle\\dict.ml" 51 1637 1687
+type(
+  (D.key * 'c) list
+)
+ident(
+  int_ref d1 "Moogle\\dict.ml" 49 1541 1560 "Moogle\\dict.ml" 49 1541 1562
+)
+"Moogle\\dict.ml" 51 1637 1688 "Moogle\\dict.ml" 51 1637 1689
+type(
+  D.key
+)
+ident(
+  int_ref k "Moogle\\dict.ml" 46 1474 1495 "Moogle\\dict.ml" 46 1474 1496
+)
+"Moogle\\dict.ml" 51 1637 1678 "Moogle\\dict.ml" 51 1637 1689
+call(
+  tail
+)
+type(
+  'c option
+)
+"Moogle\\dict.ml" 52 1691 1721 "Moogle\\dict.ml" 52 1691 1722
+type(
+  Order.order
+)
+"Moogle\\dict.ml" 52 1691 1726 "Moogle\\dict.ml" 52 1691 1730
+type(
+  'c option
+)
+"Moogle\\dict.ml" 49 1541 1566 "Moogle\\dict.ml" 52 1691 1731
+type(
+  'c option
+)
+"Moogle\\dict.ml" 47 1500 1506 "Moogle\\dict.ml" 52 1691 1731
+type(
+  'c option
+)
+"Moogle\\dict.ml" 54 1739 1747 "Moogle\\dict.ml" 54 1739 1753
+type(
+  (D.key * 'd) list -> D.key -> bool
+)
+ident(
+  def member "Moogle\\dict.ml" 56 1822 1826 "Moogle\\dict.ml" 71 2265 2270
+)
+"Moogle\\dict.ml" 54 1739 1754 "Moogle\\dict.ml" 54 1739 1755
+type(
+  (D.key * 'd) list
+)
+ident(
+  def d "Moogle\\dict.ml" 54 1739 1756 "Moogle\\dict.ml" 54 1739 1814
+)
+"Moogle\\dict.ml" 54 1739 1756 "Moogle\\dict.ml" 54 1739 1757
+type(
+  D.key
+)
+ident(
+  def k "Moogle\\dict.ml" 54 1739 1760 "Moogle\\dict.ml" 54 1739 1814
+)
+"Moogle\\dict.ml" 54 1739 1766 "Moogle\\dict.ml" 54 1739 1772
+type(
+  (D.key * 'd) list -> D.key -> 'd option
+)
+ident(
+  int_ref lookup "Moogle\\dict.ml" 46 1474 1486 "Moogle\\dict.ml" 46 1474 1492
+)
+"Moogle\\dict.ml" 54 1739 1773 "Moogle\\dict.ml" 54 1739 1774
+type(
+  (D.key * 'd) list
+)
+ident(
+  int_ref d "Moogle\\dict.ml" 54 1739 1754 "Moogle\\dict.ml" 54 1739 1755
+)
+"Moogle\\dict.ml" 54 1739 1775 "Moogle\\dict.ml" 54 1739 1776
+type(
+  D.key
+)
+ident(
+  int_ref k "Moogle\\dict.ml" 54 1739 1756 "Moogle\\dict.ml" 54 1739 1757
+)
+"Moogle\\dict.ml" 54 1739 1766 "Moogle\\dict.ml" 54 1739 1776
+call(
+  stack
+)
+type(
+  'd option
+)
+"Moogle\\dict.ml" 54 1739 1784 "Moogle\\dict.ml" 54 1739 1788
+type(
+  'd option
+)
+"Moogle\\dict.ml" 54 1739 1792 "Moogle\\dict.ml" 54 1739 1797
+type(
+  bool
+)
+"Moogle\\dict.ml" 54 1739 1805 "Moogle\\dict.ml" 54 1739 1806
+type(
+  'd
+)
+"Moogle\\dict.ml" 54 1739 1800 "Moogle\\dict.ml" 54 1739 1806
+type(
+  'd option
+)
+"Moogle\\dict.ml" 54 1739 1810 "Moogle\\dict.ml" 54 1739 1814
+type(
+  bool
+)
+"Moogle\\dict.ml" 54 1739 1760 "Moogle\\dict.ml" 54 1739 1814
+type(
+  bool
+)
+"Moogle\\dict.ml" 56 1822 1834 "Moogle\\dict.ml" 56 1822 1840
+type(
+  (D.key * 'e) list -> D.key -> (D.key * 'e) list
+)
+ident(
+  def remove "Moogle\\dict.ml" 56 1822 1826 "Moogle\\dict.ml" 71 2265 2270
+)
+"Moogle\\dict.ml" 56 1822 1841 "Moogle\\dict.ml" 56 1822 1842
+type(
+  (D.key * 'e) list
+)
+ident(
+  def d "Moogle\\dict.ml" 56 1822 1843 "Moogle\\dict.ml" 62 2043 2080
+)
+"Moogle\\dict.ml" 56 1822 1843 "Moogle\\dict.ml" 56 1822 1844
+type(
+  D.key
+)
+ident(
+  def k "Moogle\\dict.ml" 57 1848 1854 "Moogle\\dict.ml" 62 2043 2080
+)
+"Moogle\\dict.ml" 57 1848 1860 "Moogle\\dict.ml" 57 1848 1861
+type(
+  (D.key * 'e) list
+)
+ident(
+  int_ref d "Moogle\\dict.ml" 56 1822 1841 "Moogle\\dict.ml" 56 1822 1842
+)
+"Moogle\\dict.ml" 58 1868 1878 "Moogle\\dict.ml" 58 1868 1880
+type(
+  (D.key * 'e) list
+)
+"Moogle\\dict.ml" 58 1868 1884 "Moogle\\dict.ml" 58 1868 1886
+type(
+  (D.key * 'e) list
+)
+"Moogle\\dict.ml" 59 1887 1898 "Moogle\\dict.ml" 59 1887 1900
+type(
+  D.key
+)
+ident(
+  def k1 "Moogle\\dict.ml" 59 1887 1912 "Moogle\\dict.ml" 62 2043 2080
+)
+"Moogle\\dict.ml" 59 1887 1901 "Moogle\\dict.ml" 59 1887 1903
+type(
+  'e
+)
+ident(
+  def v1 "Moogle\\dict.ml" 59 1887 1912 "Moogle\\dict.ml" 62 2043 2080
+)
+"Moogle\\dict.ml" 59 1887 1897 "Moogle\\dict.ml" 59 1887 1904
+type(
+  D.key * 'e
+)
+"Moogle\\dict.ml" 59 1887 1906 "Moogle\\dict.ml" 59 1887 1908
+type(
+  (D.key * 'e) list
+)
+ident(
+  def d1 "Moogle\\dict.ml" 59 1887 1912 "Moogle\\dict.ml" 62 2043 2080
+)
+"Moogle\\dict.ml" 59 1887 1897 "Moogle\\dict.ml" 59 1887 1908
+type(
+  (D.key * 'e) list
+)
+"Moogle\\dict.ml" 59 1887 1919 "Moogle\\dict.ml" 59 1887 1928
+type(
+  D.key -> D.key -> Order.order
+)
+ident(
+  ext_ref D.compare
+)
+"Moogle\\dict.ml" 59 1887 1929 "Moogle\\dict.ml" 59 1887 1930
+type(
+  D.key
+)
+ident(
+  int_ref k "Moogle\\dict.ml" 56 1822 1843 "Moogle\\dict.ml" 56 1822 1844
+)
+"Moogle\\dict.ml" 59 1887 1931 "Moogle\\dict.ml" 59 1887 1933
+type(
+  D.key
+)
+ident(
+  int_ref k1 "Moogle\\dict.ml" 59 1887 1898 "Moogle\\dict.ml" 59 1887 1900
+)
+"Moogle\\dict.ml" 59 1887 1919 "Moogle\\dict.ml" 59 1887 1933
+call(
+  stack
+)
+type(
+  Order.order
+)
+"Moogle\\dict.ml" 60 1940 1970 "Moogle\\dict.ml" 60 1940 1972
+type(
+  Order.order
+)
+"Moogle\\dict.ml" 60 1940 1976 "Moogle\\dict.ml" 60 1940 1978
+type(
+  (D.key * 'e) list
+)
+ident(
+  int_ref d1 "Moogle\\dict.ml" 59 1887 1906 "Moogle\\dict.ml" 59 1887 1908
+)
+"Moogle\\dict.ml" 61 1979 2009 "Moogle\\dict.ml" 61 1979 2016
+type(
+  Order.order
+)
+"Moogle\\dict.ml" 61 1979 2021 "Moogle\\dict.ml" 61 1979 2023
+type(
+  D.key
+)
+ident(
+  int_ref k1 "Moogle\\dict.ml" 59 1887 1898 "Moogle\\dict.ml" 59 1887 1900
+)
+"Moogle\\dict.ml" 61 1979 2024 "Moogle\\dict.ml" 61 1979 2026
+type(
+  'e
+)
+ident(
+  int_ref v1 "Moogle\\dict.ml" 59 1887 1901 "Moogle\\dict.ml" 59 1887 1903
+)
+"Moogle\\dict.ml" 61 1979 2020 "Moogle\\dict.ml" 61 1979 2027
+type(
+  D.key * 'e
+)
+"Moogle\\dict.ml" 61 1979 2030 "Moogle\\dict.ml" 61 1979 2036
+type(
+  (D.key * 'e) list -> D.key -> (D.key * 'e) list
+)
+ident(
+  int_ref remove "Moogle\\dict.ml" 56 1822 1834 "Moogle\\dict.ml" 56 1822 1840
+)
+"Moogle\\dict.ml" 61 1979 2037 "Moogle\\dict.ml" 61 1979 2039
+type(
+  (D.key * 'e) list
+)
+ident(
+  int_ref d1 "Moogle\\dict.ml" 59 1887 1906 "Moogle\\dict.ml" 59 1887 1908
+)
+"Moogle\\dict.ml" 61 1979 2040 "Moogle\\dict.ml" 61 1979 2041
+type(
+  D.key
+)
+ident(
+  int_ref k "Moogle\\dict.ml" 56 1822 1843 "Moogle\\dict.ml" 56 1822 1844
+)
+"Moogle\\dict.ml" 61 1979 2029 "Moogle\\dict.ml" 61 1979 2042
+call(
+  stack
+)
+type(
+  (D.key * 'e) list
+)
+"Moogle\\dict.ml" 61 1979 2020 "Moogle\\dict.ml" 61 1979 2042
+type(
+  (D.key * 'e) list
+)
+"Moogle\\dict.ml" 62 2043 2073 "Moogle\\dict.ml" 62 2043 2074
+type(
+  Order.order
+)
+"Moogle\\dict.ml" 62 2043 2078 "Moogle\\dict.ml" 62 2043 2079
+type(
+  (D.key * 'e) list
+)
+ident(
+  int_ref d "Moogle\\dict.ml" 56 1822 1841 "Moogle\\dict.ml" 56 1822 1842
+)
+"Moogle\\dict.ml" 59 1887 1912 "Moogle\\dict.ml" 62 2043 2080
+type(
+  (D.key * 'e) list
+)
+"Moogle\\dict.ml" 57 1848 1854 "Moogle\\dict.ml" 62 2043 2080
+type(
+  (D.key * 'e) list
+)
+"Moogle\\dict.ml" 64 2088 2096 "Moogle\\dict.ml" 64 2088 2102
+type(
+  ('f * 'g) list -> ('f * 'g * ('f * 'g) list) option
+)
+ident(
+  def choose "Moogle\\dict.ml" 69 2196 2200 "Moogle\\dict.ml" 71 2265 2270
+)
+"Moogle\\dict.ml" 64 2088 2103 "Moogle\\dict.ml" 64 2088 2104
+type(
+  ('f * 'g) list
+)
+ident(
+  def d "Moogle\\dict.ml" 65 2108 2114 "Moogle\\dict.ml" 67 2149 2188
+)
+"Moogle\\dict.ml" 65 2108 2120 "Moogle\\dict.ml" 65 2108 2121
+type(
+  ('f * 'g) list
+)
+ident(
+  int_ref d "Moogle\\dict.ml" 64 2088 2103 "Moogle\\dict.ml" 64 2088 2104
+)
+"Moogle\\dict.ml" 66 2128 2138 "Moogle\\dict.ml" 66 2128 2140
+type(
+  ('f * 'g) list
+)
+"Moogle\\dict.ml" 66 2128 2144 "Moogle\\dict.ml" 66 2128 2148
+type(
+  ('f * 'g * ('f * 'g) list) option
+)
+"Moogle\\dict.ml" 67 2149 2160 "Moogle\\dict.ml" 67 2149 2161
+type(
+  'f
+)
+ident(
+  def k "Moogle\\dict.ml" 67 2149 2174 "Moogle\\dict.ml" 67 2149 2188
+)
+"Moogle\\dict.ml" 67 2149 2162 "Moogle\\dict.ml" 67 2149 2163
+type(
+  'g
+)
+ident(
+  def v "Moogle\\dict.ml" 67 2149 2174 "Moogle\\dict.ml" 67 2149 2188
+)
+"Moogle\\dict.ml" 67 2149 2159 "Moogle\\dict.ml" 67 2149 2164
+type(
+  'f * 'g
+)
+"Moogle\\dict.ml" 67 2149 2166 "Moogle\\dict.ml" 67 2149 2170
+type(
+  ('f * 'g) list
+)
+ident(
+  def rest "Moogle\\dict.ml" 67 2149 2174 "Moogle\\dict.ml" 67 2149 2188
+)
+"Moogle\\dict.ml" 67 2149 2159 "Moogle\\dict.ml" 67 2149 2170
+type(
+  ('f * 'g) list
+)
+"Moogle\\dict.ml" 67 2149 2179 "Moogle\\dict.ml" 67 2149 2180
+type(
+  'f
+)
+ident(
+  int_ref k "Moogle\\dict.ml" 67 2149 2160 "Moogle\\dict.ml" 67 2149 2161
+)
+"Moogle\\dict.ml" 67 2149 2181 "Moogle\\dict.ml" 67 2149 2182
+type(
+  'g
+)
+ident(
+  int_ref v "Moogle\\dict.ml" 67 2149 2162 "Moogle\\dict.ml" 67 2149 2163
+)
+"Moogle\\dict.ml" 67 2149 2183 "Moogle\\dict.ml" 67 2149 2187
+type(
+  ('f * 'g) list
+)
+ident(
+  int_ref rest "Moogle\\dict.ml" 67 2149 2166 "Moogle\\dict.ml" 67 2149 2170
+)
+"Moogle\\dict.ml" 67 2149 2178 "Moogle\\dict.ml" 67 2149 2188
+type(
+  'f * 'g * ('f * 'g) list
+)
+"Moogle\\dict.ml" 67 2149 2174 "Moogle\\dict.ml" 67 2149 2188
+type(
+  ('f * 'g * ('f * 'g) list) option
+)
+"Moogle\\dict.ml" 65 2108 2114 "Moogle\\dict.ml" 67 2149 2188
+type(
+  ('f * 'g * ('f * 'g) list) option
+)
+"Moogle\\dict.ml" 69 2196 2204 "Moogle\\dict.ml" 69 2196 2208
+type(
+  ('h -> 'i -> 'j -> 'j) -> 'j -> ('h * 'i) list -> 'j
+)
+ident(
+  def fold "Moogle\\dict.ml" 69 2196 2256 "Moogle\\dict.ml" 71 2265 2270
+)
+"Moogle\\dict.ml" 69 2196 2209 "Moogle\\dict.ml" 69 2196 2210
+type(
+  'h -> 'i -> 'j -> 'j
+)
+ident(
+  def f "Moogle\\dict.ml" 69 2196 2211 "Moogle\\dict.ml" 69 2196 2256
+)
+"Moogle\\dict.ml" 69 2196 2211 "Moogle\\dict.ml" 69 2196 2212
+type(
+  'j
+)
+ident(
+  def e "Moogle\\dict.ml" 69 2196 2215 "Moogle\\dict.ml" 69 2196 2256
+)
+"Moogle\\dict.ml" 69 2196 2215 "Moogle\\dict.ml" 69 2196 2229
+type(
+  ('j -> 'h * 'i -> 'j) -> 'j -> ('h * 'i) list -> 'j
+)
+ident(
+  ext_ref List.fold_left
+)
+"Moogle\\dict.ml" 69 2196 2235 "Moogle\\dict.ml" 69 2196 2236
+type(
+  'j
+)
+ident(
+  def a "Moogle\\dict.ml" 69 2196 2237 "Moogle\\dict.ml" 69 2196 2253
+)
+"Moogle\\dict.ml" 69 2196 2238 "Moogle\\dict.ml" 69 2196 2239
+type(
+  'h
+)
+ident(
+  def k "Moogle\\dict.ml" 69 2196 2246 "Moogle\\dict.ml" 69 2196 2253
+)
+"Moogle\\dict.ml" 69 2196 2240 "Moogle\\dict.ml" 69 2196 2241
+type(
+  'i
+)
+ident(
+  def v "Moogle\\dict.ml" 69 2196 2246 "Moogle\\dict.ml" 69 2196 2253
+)
+"Moogle\\dict.ml" 69 2196 2237 "Moogle\\dict.ml" 69 2196 2242
+type(
+  'h * 'i
+)
+"Moogle\\dict.ml" 69 2196 2246 "Moogle\\dict.ml" 69 2196 2247
+type(
+  'h -> 'i -> 'j -> 'j
+)
+ident(
+  int_ref f "Moogle\\dict.ml" 69 2196 2209 "Moogle\\dict.ml" 69 2196 2210
+)
+"Moogle\\dict.ml" 69 2196 2248 "Moogle\\dict.ml" 69 2196 2249
+type(
+  'h
+)
+ident(
+  int_ref k "Moogle\\dict.ml" 69 2196 2238 "Moogle\\dict.ml" 69 2196 2239
+)
+"Moogle\\dict.ml" 69 2196 2250 "Moogle\\dict.ml" 69 2196 2251
+type(
+  'i
+)
+ident(
+  int_ref v "Moogle\\dict.ml" 69 2196 2240 "Moogle\\dict.ml" 69 2196 2241
+)
+"Moogle\\dict.ml" 69 2196 2252 "Moogle\\dict.ml" 69 2196 2253
+type(
+  'j
+)
+ident(
+  int_ref a "Moogle\\dict.ml" 69 2196 2235 "Moogle\\dict.ml" 69 2196 2236
+)
+"Moogle\\dict.ml" 69 2196 2246 "Moogle\\dict.ml" 69 2196 2253
+call(
+  tail
+)
+type(
+  'j
+)
+"Moogle\\dict.ml" 69 2196 2230 "Moogle\\dict.ml" 69 2196 2254
+type(
+  'j -> 'h * 'i -> 'j
+)
+"Moogle\\dict.ml" 69 2196 2255 "Moogle\\dict.ml" 69 2196 2256
+type(
+  'j
+)
+ident(
+  int_ref e "Moogle\\dict.ml" 69 2196 2211 "Moogle\\dict.ml" 69 2196 2212
+)
+"Moogle\\dict.ml" 69 2196 2215 "Moogle\\dict.ml" 69 2196 2256
+call(
+  tail
+)
+type(
+  ('h * 'i) list -> 'j
+)
+"Moogle\\dict.ml" 89 2914 2922 "Moogle\\dict.ml" 89 2914 2927
+type(
+  dict
+)
+ident(
+  def empty "Moogle\\dict.ml" 92 2963 2967 "Moogle\\dict.ml" 115 3460 3465
+)
+"Moogle\\dict.ml" 89 2914 2937 "Moogle\\dict.ml" 89 2914 2942
+type(
+  exn -> dict
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"Moogle\\dict.ml" 89 2914 2943 "Moogle\\dict.ml" 89 2914 2954
+type(
+  exn
+)
+"Moogle\\dict.ml" 89 2914 2937 "Moogle\\dict.ml" 89 2914 2954
+type(
+  dict
+)
+type(
+  dict
+)
+"Moogle\\dict.ml" 92 2963 2971 "Moogle\\dict.ml" 92 2963 2977
+type(
+  dict -> key -> value -> dict
+)
+ident(
+  def insert "Moogle\\dict.ml" 96 3048 3052 "Moogle\\dict.ml" 115 3460 3465
+)
+"Moogle\\dict.ml" 92 2963 2979 "Moogle\\dict.ml" 92 2963 2980
+type(
+  dict
+)
+ident(
+  def d "Moogle\\dict.ml" 92 2963 2987 "Moogle\\dict.ml" 93 3015 3038
+)
+"Moogle\\dict.ml" 92 2963 2988 "Moogle\\dict.ml" 92 2963 2989
+type(
+  key
+)
+ident(
+  def k "Moogle\\dict.ml" 92 2963 2995 "Moogle\\dict.ml" 93 3015 3038
+)
+"Moogle\\dict.ml" 92 2963 2996 "Moogle\\dict.ml" 92 2963 2997
+type(
+  value
+)
+ident(
+  def v "Moogle\\dict.ml" 92 2963 3005 "Moogle\\dict.ml" 93 3015 3038
+)
+"Moogle\\dict.ml" 93 3015 3021 "Moogle\\dict.ml" 93 3015 3026
+type(
+  exn -> dict
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"Moogle\\dict.ml" 93 3015 3027 "Moogle\\dict.ml" 93 3015 3038
+type(
+  exn
+)
+"Moogle\\dict.ml" 93 3015 3021 "Moogle\\dict.ml" 93 3015 3038
+type(
+  dict
+)
+type(
+  dict
+)
+"Moogle\\dict.ml" 96 3048 3056 "Moogle\\dict.ml" 96 3048 3062
+type(
+  dict -> key -> value option
+)
+ident(
+  def lookup "Moogle\\dict.ml" 100 3130 3134 "Moogle\\dict.ml" 115 3460 3465
+)
+"Moogle\\dict.ml" 96 3048 3064 "Moogle\\dict.ml" 96 3048 3065
+type(
+  dict
+)
+ident(
+  def d "Moogle\\dict.ml" 96 3048 3072 "Moogle\\dict.ml" 97 3098 3121
+)
+"Moogle\\dict.ml" 96 3048 3073 "Moogle\\dict.ml" 96 3048 3074
+type(
+  key
+)
+ident(
+  def k "Moogle\\dict.ml" 96 3048 3080 "Moogle\\dict.ml" 97 3098 3121
+)
+"Moogle\\dict.ml" 97 3098 3104 "Moogle\\dict.ml" 97 3098 3109
+type(
+  exn -> value option
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"Moogle\\dict.ml" 97 3098 3110 "Moogle\\dict.ml" 97 3098 3121
+type(
+  exn
+)
+"Moogle\\dict.ml" 97 3098 3104 "Moogle\\dict.ml" 97 3098 3121
+type(
+  value option
+)
+type(
+  value option
+)
+"Moogle\\dict.ml" 100 3130 3138 "Moogle\\dict.ml" 100 3130 3144
+type(
+  dict -> key -> bool
+)
+ident(
+  def member "Moogle\\dict.ml" 104 3204 3208 "Moogle\\dict.ml" 115 3460 3465
+)
+"Moogle\\dict.ml" 100 3130 3146 "Moogle\\dict.ml" 100 3130 3147
+type(
+  dict
+)
+ident(
+  def d "Moogle\\dict.ml" 100 3130 3154 "Moogle\\dict.ml" 101 3172 3195
+)
+"Moogle\\dict.ml" 100 3130 3155 "Moogle\\dict.ml" 100 3130 3156
+type(
+  key
+)
+ident(
+  def k "Moogle\\dict.ml" 100 3130 3162 "Moogle\\dict.ml" 101 3172 3195
+)
+"Moogle\\dict.ml" 101 3172 3178 "Moogle\\dict.ml" 101 3172 3183
+type(
+  exn -> bool
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"Moogle\\dict.ml" 101 3172 3184 "Moogle\\dict.ml" 101 3172 3195
+type(
+  exn
+)
+"Moogle\\dict.ml" 101 3172 3178 "Moogle\\dict.ml" 101 3172 3195
+type(
+  bool
+)
+type(
+  bool
+)
+"Moogle\\dict.ml" 104 3204 3212 "Moogle\\dict.ml" 104 3204 3218
+type(
+  dict -> key -> dict
+)
+ident(
+  def remove "Moogle\\dict.ml" 108 3278 3282 "Moogle\\dict.ml" 115 3460 3465
+)
+"Moogle\\dict.ml" 104 3204 3220 "Moogle\\dict.ml" 104 3204 3221
+type(
+  dict
+)
+ident(
+  def d "Moogle\\dict.ml" 104 3204 3228 "Moogle\\dict.ml" 105 3246 3269
+)
+"Moogle\\dict.ml" 104 3204 3229 "Moogle\\dict.ml" 104 3204 3230
+type(
+  key
+)
+ident(
+  def k "Moogle\\dict.ml" 104 3204 3236 "Moogle\\dict.ml" 105 3246 3269
+)
+"Moogle\\dict.ml" 105 3246 3252 "Moogle\\dict.ml" 105 3246 3257
+type(
+  exn -> dict
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"Moogle\\dict.ml" 105 3246 3258 "Moogle\\dict.ml" 105 3246 3269
+type(
+  exn
+)
+"Moogle\\dict.ml" 105 3246 3252 "Moogle\\dict.ml" 105 3246 3269
+type(
+  dict
+)
+type(
+  dict
+)
+"Moogle\\dict.ml" 108 3278 3286 "Moogle\\dict.ml" 108 3278 3292
+type(
+  dict -> (key * value * dict) option
+)
+ident(
+  def choose "Moogle\\dict.ml" 112 3363 3367 "Moogle\\dict.ml" 115 3460 3465
+)
+"Moogle\\dict.ml" 108 3278 3294 "Moogle\\dict.ml" 108 3278 3295
+type(
+  dict
+)
+ident(
+  def d "Moogle\\dict.ml" 108 3278 3302 "Moogle\\dict.ml" 109 3331 3354
+)
+"Moogle\\dict.ml" 109 3331 3337 "Moogle\\dict.ml" 109 3331 3342
+type(
+  exn -> (key * value * dict) option
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"Moogle\\dict.ml" 109 3331 3343 "Moogle\\dict.ml" 109 3331 3354
+type(
+  exn
+)
+"Moogle\\dict.ml" 109 3331 3337 "Moogle\\dict.ml" 109 3331 3354
+type(
+  (key * value * dict) option
+)
+type(
+  (key * value * dict) option
+)
+"Moogle\\dict.ml" 112 3363 3371 "Moogle\\dict.ml" 112 3363 3375
+type(
+  (key -> value -> 'a -> 'a) -> 'a -> dict -> 'a
+)
+ident(
+  def fold "Moogle\\dict.ml" 113 3429 3452 "Moogle\\dict.ml" 115 3460 3465
+)
+"Moogle\\dict.ml" 112 3363 3377 "Moogle\\dict.ml" 112 3363 3378
+type(
+  key -> value -> 'a -> 'a
+)
+ident(
+  def f "Moogle\\dict.ml" 112 3363 3405 "Moogle\\dict.ml" 113 3429 3452
+)
+"Moogle\\dict.ml" 112 3363 3406 "Moogle\\dict.ml" 112 3363 3407
+type(
+  'a
+)
+ident(
+  def u "Moogle\\dict.ml" 112 3363 3412 "Moogle\\dict.ml" 113 3429 3452
+)
+"Moogle\\dict.ml" 112 3363 3413 "Moogle\\dict.ml" 112 3363 3414
+type(
+  dict
+)
+ident(
+  def d "Moogle\\dict.ml" 112 3363 3421 "Moogle\\dict.ml" 113 3429 3452
+)
+"Moogle\\dict.ml" 113 3429 3435 "Moogle\\dict.ml" 113 3429 3440
+type(
+  exn -> 'a
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"Moogle\\dict.ml" 113 3429 3441 "Moogle\\dict.ml" 113 3429 3452
+type(
+  exn
+)
+"Moogle\\dict.ml" 113 3429 3435 "Moogle\\dict.ml" 113 3429 3452
+type(
+  'a
+)
+type(
+  'a
+)

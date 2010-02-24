@@ -1,0 +1,2013 @@
+"Moogle\\moogle.ml" 3 42 46 "Moogle\\moogle.ml" 3 42 54
+type(
+  string
+)
+ident(
+  def partner1 "Moogle\\moogle.ml" 4 69 69 --
+)
+"Moogle\\moogle.ml" 3 42 57 "Moogle\\moogle.ml" 3 42 66
+type(
+  string
+)
+"Moogle\\moogle.ml" 4 69 73 "Moogle\\moogle.ml" 4 69 81
+type(
+  string
+)
+ident(
+  def partner2 "Moogle\\moogle.ml" 6 98 98 --
+)
+"Moogle\\moogle.ml" 4 69 84 "Moogle\\moogle.ml" 4 69 94
+type(
+  string
+)
+"Moogle\\moogle.ml" 10 154 158 "Moogle\\moogle.ml" 10 154 170
+type(
+  Util.CrawlerServices.link -> Util.CrawlerServices.link -> Order.order
+)
+ident(
+  def link_compare "Moogle\\moogle.ml" 24 605 605 --
+)
+"Moogle\\moogle.ml" 10 154 172 "Moogle\\moogle.ml" 10 154 173
+type(
+  Util.CrawlerServices.link
+)
+ident(
+  def x "Moogle\\moogle.ml" 10 154 180 "Moogle\\moogle.ml" 18 459 475
+)
+"Moogle\\moogle.ml" 10 154 181 "Moogle\\moogle.ml" 10 154 182
+type(
+  Util.CrawlerServices.link
+)
+ident(
+  def y "Moogle\\moogle.ml" 10 154 189 "Moogle\\moogle.ml" 18 459 475
+)
+"Moogle\\moogle.ml" 11 200 208 "Moogle\\moogle.ml" 11 200 222
+type(
+  String.t -> String.t -> Order.order
+)
+ident(
+  ext_ref Order.string_compare
+)
+"Moogle\\moogle.ml" 11 200 223 "Moogle\\moogle.ml" 11 200 224
+type(
+  Util.CrawlerServices.link
+)
+ident(
+  int_ref x "Moogle\\moogle.ml" 10 154 172 "Moogle\\moogle.ml" 10 154 173
+)
+"Moogle\\moogle.ml" 11 200 223 "Moogle\\moogle.ml" 11 200 229
+type(
+  String.t
+)
+"Moogle\\moogle.ml" 11 200 230 "Moogle\\moogle.ml" 11 200 231
+type(
+  Util.CrawlerServices.link
+)
+ident(
+  int_ref y "Moogle\\moogle.ml" 10 154 181 "Moogle\\moogle.ml" 10 154 182
+)
+"Moogle\\moogle.ml" 11 200 230 "Moogle\\moogle.ml" 11 200 236
+type(
+  String.t
+)
+"Moogle\\moogle.ml" 11 200 208 "Moogle\\moogle.ml" 11 200 236
+call(
+  stack
+)
+type(
+  Order.order
+)
+"Moogle\\moogle.ml" 12 243 249 "Moogle\\moogle.ml" 12 243 251
+type(
+  Order.order
+)
+"Moogle\\moogle.ml" 13 256 271 "Moogle\\moogle.ml" 13 256 282
+type(
+  int -> int -> Order.order
+)
+ident(
+  ext_ref Order.int_compare
+)
+"Moogle\\moogle.ml" 13 256 283 "Moogle\\moogle.ml" 13 256 284
+type(
+  Util.CrawlerServices.link
+)
+ident(
+  int_ref x "Moogle\\moogle.ml" 10 154 172 "Moogle\\moogle.ml" 10 154 173
+)
+"Moogle\\moogle.ml" 13 256 283 "Moogle\\moogle.ml" 13 256 289
+type(
+  int
+)
+"Moogle\\moogle.ml" 13 256 290 "Moogle\\moogle.ml" 13 256 291
+type(
+  Util.CrawlerServices.link
+)
+ident(
+  int_ref y "Moogle\\moogle.ml" 10 154 181 "Moogle\\moogle.ml" 10 154 182
+)
+"Moogle\\moogle.ml" 13 256 290 "Moogle\\moogle.ml" 13 256 296
+type(
+  int
+)
+"Moogle\\moogle.ml" 13 256 271 "Moogle\\moogle.ml" 13 256 296
+call(
+  stack
+)
+type(
+  Order.order
+)
+"Moogle\\moogle.ml" 14 303 316 "Moogle\\moogle.ml" 14 303 318
+type(
+  Order.order
+)
+"Moogle\\moogle.ml" 14 303 329 "Moogle\\moogle.ml" 14 303 343
+type(
+  String.t -> String.t -> Order.order
+)
+ident(
+  ext_ref Order.string_compare
+)
+"Moogle\\moogle.ml" 14 303 344 "Moogle\\moogle.ml" 14 303 345
+type(
+  Util.CrawlerServices.link
+)
+ident(
+  int_ref x "Moogle\\moogle.ml" 10 154 172 "Moogle\\moogle.ml" 10 154 173
+)
+"Moogle\\moogle.ml" 14 303 344 "Moogle\\moogle.ml" 14 303 350
+type(
+  String.t
+)
+"Moogle\\moogle.ml" 14 303 351 "Moogle\\moogle.ml" 14 303 352
+type(
+  Util.CrawlerServices.link
+)
+ident(
+  int_ref y "Moogle\\moogle.ml" 10 154 181 "Moogle\\moogle.ml" 10 154 182
+)
+"Moogle\\moogle.ml" 14 303 351 "Moogle\\moogle.ml" 14 303 357
+type(
+  String.t
+)
+"Moogle\\moogle.ml" 14 303 329 "Moogle\\moogle.ml" 14 303 357
+call(
+  stack
+)
+type(
+  Order.order
+)
+"Moogle\\moogle.ml" 15 364 388 "Moogle\\moogle.ml" 15 364 390
+type(
+  Order.order
+)
+"Moogle\\moogle.ml" 15 364 394 "Moogle\\moogle.ml" 15 364 396
+type(
+  Order.order
+)
+"Moogle\\moogle.ml" 16 398 422 "Moogle\\moogle.ml" 16 398 425
+type(
+  Order.order
+)
+ident(
+  def ans "Moogle\\moogle.ml" 16 398 429 "Moogle\\moogle.ml" 16 398 432
+)
+"Moogle\\moogle.ml" 16 398 429 "Moogle\\moogle.ml" 16 398 432
+type(
+  Order.order
+)
+ident(
+  int_ref ans "Moogle\\moogle.ml" 16 398 422 "Moogle\\moogle.ml" 16 398 425
+)
+"Moogle\\moogle.ml" 14 303 322 "Moogle\\moogle.ml" 16 398 433
+type(
+  Order.order
+)
+"Moogle\\moogle.ml" 17 434 447 "Moogle\\moogle.ml" 17 434 450
+type(
+  Order.order
+)
+ident(
+  def ans "Moogle\\moogle.ml" 17 434 454 "Moogle\\moogle.ml" 17 434 457
+)
+"Moogle\\moogle.ml" 17 434 454 "Moogle\\moogle.ml" 17 434 457
+type(
+  Order.order
+)
+ident(
+  int_ref ans "Moogle\\moogle.ml" 17 434 447 "Moogle\\moogle.ml" 17 434 450
+)
+"Moogle\\moogle.ml" 13 256 264 "Moogle\\moogle.ml" 17 434 458
+type(
+  Order.order
+)
+"Moogle\\moogle.ml" 18 459 465 "Moogle\\moogle.ml" 18 459 468
+type(
+  Order.order
+)
+ident(
+  def ans "Moogle\\moogle.ml" 18 459 472 "Moogle\\moogle.ml" 18 459 475
+)
+"Moogle\\moogle.ml" 18 459 472 "Moogle\\moogle.ml" 18 459 475
+type(
+  Order.order
+)
+ident(
+  int_ref ans "Moogle\\moogle.ml" 18 459 465 "Moogle\\moogle.ml" 18 459 468
+)
+"Moogle\\moogle.ml" 11 200 202 "Moogle\\moogle.ml" 18 459 475
+type(
+  Order.order
+)
+type(
+  Order.order
+)
+"Moogle\\moogle.ml" 26 687 722 "Moogle\\moogle.ml" 26 687 729
+type(
+  Util.CrawlerServices.link -> Util.CrawlerServices.link -> Order.order
+)
+ident(
+  def compare "Moogle\\moogle.ml" 26 687 744 "Moogle\\moogle.ml" 27 745 777
+)
+"Moogle\\moogle.ml" 26 687 732 "Moogle\\moogle.ml" 26 687 744
+type(
+  Util.CrawlerServices.link -> Util.CrawlerServices.link -> Order.order
+)
+ident(
+  int_ref link_compare "Moogle\\moogle.ml" 10 154 158 "Moogle\\moogle.ml" 10 154 170
+)
+"Moogle\\moogle.ml" 24 605 622 "Moogle\\moogle.ml" 27 745 778
+call(
+  stack
+)
+"Moogle\\moogle.ml" 35 1115 1158 "Moogle\\moogle.ml" 35 1115 1165
+type(
+  String.t -> String.t -> Order.order
+)
+ident(
+  def compare "Moogle\\moogle.ml" 35 1115 1182 "Moogle\\moogle.ml" 36 1183 1223
+)
+"Moogle\\moogle.ml" 35 1115 1168 "Moogle\\moogle.ml" 35 1115 1182
+type(
+  String.t -> String.t -> Order.order
+)
+ident(
+  ext_ref Order.string_compare
+)
+"Moogle\\moogle.ml" 32 949 967 "Moogle\\moogle.ml" 36 1183 1224
+call(
+  stack
+)
+"Moogle\\moogle.ml" 39 1281 1292 "Moogle\\moogle.ml" 43 1427 1451
+call(
+  stack
+)
+"Moogle\\moogle.ml" 57 2024 2028 "Moogle\\moogle.ml" 57 2024 2035
+type(
+  unit -> WordDict.dict
+)
+ident(
+  def crawler "Moogle\\moogle.ml" 64 2285 2285 --
+)
+"Moogle\\moogle.ml" 57 2024 2036 "Moogle\\moogle.ml" 57 2024 2038
+type(
+  unit
+)
+"Moogle\\moogle.ml" 60 2125 2127 "Moogle\\moogle.ml" 60 2125 2142
+type(
+  WordDict.dict -> WordDict.key -> WordDict.value -> WordDict.dict
+)
+ident(
+  ext_ref WordDict.insert
+)
+"Moogle\\moogle.ml" 60 2125 2143 "Moogle\\moogle.ml" 60 2125 2157
+type(
+  WordDict.dict
+)
+ident(
+  ext_ref WordDict.empty
+)
+"Moogle\\moogle.ml" 60 2125 2158 "Moogle\\moogle.ml" 60 2125 2166
+type(
+  WordDict.key
+)
+"Moogle\\moogle.ml" 60 2125 2168 "Moogle\\moogle.ml" 60 2125 2185
+type(
+  LinkSet.elt -> WordDict.value
+)
+ident(
+  ext_ref LinkSet.singleton
+)
+"Moogle\\moogle.ml" 60 2125 2186 "Moogle\\moogle.ml" 60 2125 2198
+type(
+  LinkSet.elt
+)
+ident(
+  ext_ref Util.CrawlerServices.initial_link
+)
+"Moogle\\moogle.ml" 60 2125 2167 "Moogle\\moogle.ml" 60 2125 2199
+call(
+  stack
+)
+type(
+  WordDict.value
+)
+"Moogle\\moogle.ml" 60 2125 2127 "Moogle\\moogle.ml" 60 2125 2199
+call(
+  tail
+)
+type(
+  WordDict.dict
+)
+"Moogle\\moogle.ml" 64 2285 2289 "Moogle\\moogle.ml" 64 2285 2308
+type(
+  string
+)
+ident(
+  def std_response_header "Moogle\\moogle.ml" 72 2474 2474 --
+)
+"Moogle\\moogle.ml" 65 2312 2314 "Moogle\\moogle.ml" 65 2312 2335
+type(
+  string
+)
+"Moogle\\moogle.ml" 65 2312 2336 "Moogle\\moogle.ml" 65 2312 2337
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.^
+)
+"Moogle\\moogle.ml" 66 2338 2340 "Moogle\\moogle.ml" 66 2338 2362
+type(
+  string
+)
+"Moogle\\moogle.ml" 66 2338 2363 "Moogle\\moogle.ml" 66 2338 2364
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.^
+)
+"Moogle\\moogle.ml" 67 2365 2367 "Moogle\\moogle.ml" 67 2365 2409
+type(
+  string
+)
+"Moogle\\moogle.ml" 67 2365 2410 "Moogle\\moogle.ml" 67 2365 2411
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.^
+)
+"Moogle\\moogle.ml" 68 2412 2414 "Moogle\\moogle.ml" 68 2412 2441
+type(
+  string
+)
+"Moogle\\moogle.ml" 68 2412 2442 "Moogle\\moogle.ml" 68 2412 2443
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.^
+)
+"Moogle\\moogle.ml" 69 2444 2446 "Moogle\\moogle.ml" 69 2444 2469
+type(
+  string
+)
+"Moogle\\moogle.ml" 68 2412 2414 "Moogle\\moogle.ml" 69 2444 2469
+call(
+  stack
+)
+type(
+  string
+)
+"Moogle\\moogle.ml" 67 2365 2367 "Moogle\\moogle.ml" 69 2444 2469
+call(
+  stack
+)
+type(
+  string
+)
+"Moogle\\moogle.ml" 66 2338 2340 "Moogle\\moogle.ml" 69 2444 2469
+call(
+  stack
+)
+type(
+  string
+)
+"Moogle\\moogle.ml" 65 2312 2314 "Moogle\\moogle.ml" 69 2444 2469
+call(
+  stack
+)
+type(
+  string
+)
+"Moogle\\moogle.ml" 72 2474 2478 "Moogle\\moogle.ml" 72 2474 2494
+type(
+  string
+)
+ident(
+  def moogle_home_page "Moogle\\moogle.ml" 76 2601 2601 --
+)
+"Moogle\\moogle.ml" 72 2474 2497 "Moogle\\moogle.ml" 72 2474 2512
+type(
+  string
+)
+"Moogle\\moogle.ml" 76 2601 2609 "Moogle\\moogle.ml" 76 2601 2620
+type(
+  in_channel -> string list -> string list
+)
+ident(
+  def input_lines "Moogle\\moogle.ml" 76 2601 2601 --
+)
+"Moogle\\moogle.ml" 76 2601 2621 "Moogle\\moogle.ml" 76 2601 2627
+type(
+  in_channel
+)
+ident(
+  def inchan "Moogle\\moogle.ml" 76 2601 2628 "Moogle\\moogle.ml" 79 2696 2732
+)
+"Moogle\\moogle.ml" 76 2601 2628 "Moogle\\moogle.ml" 76 2601 2633
+type(
+  string list
+)
+ident(
+  def lines "Moogle\\moogle.ml" 77 2637 2639 "Moogle\\moogle.ml" 79 2696 2732
+)
+"Moogle\\moogle.ml" 78 2644 2648 "Moogle\\moogle.ml" 78 2644 2659
+type(
+  in_channel -> string list -> string list
+)
+ident(
+  int_ref input_lines "Moogle\\moogle.ml" 76 2601 2609 "Moogle\\moogle.ml" 76 2601 2620
+)
+"Moogle\\moogle.ml" 78 2644 2660 "Moogle\\moogle.ml" 78 2644 2666
+type(
+  in_channel
+)
+ident(
+  int_ref inchan "Moogle\\moogle.ml" 76 2601 2621 "Moogle\\moogle.ml" 76 2601 2627
+)
+"Moogle\\moogle.ml" 78 2644 2669 "Moogle\\moogle.ml" 78 2644 2679
+type(
+  in_channel -> string
+)
+ident(
+  ext_ref Pervasives.input_line
+)
+"Moogle\\moogle.ml" 78 2644 2680 "Moogle\\moogle.ml" 78 2644 2686
+type(
+  in_channel
+)
+ident(
+  int_ref inchan "Moogle\\moogle.ml" 76 2601 2621 "Moogle\\moogle.ml" 76 2601 2627
+)
+"Moogle\\moogle.ml" 78 2644 2668 "Moogle\\moogle.ml" 78 2644 2687
+call(
+  stack
+)
+type(
+  string
+)
+"Moogle\\moogle.ml" 78 2644 2689 "Moogle\\moogle.ml" 78 2644 2694
+type(
+  string list
+)
+ident(
+  int_ref lines "Moogle\\moogle.ml" 76 2601 2628 "Moogle\\moogle.ml" 76 2601 2633
+)
+"Moogle\\moogle.ml" 78 2644 2667 "Moogle\\moogle.ml" 78 2644 2695
+type(
+  string list
+)
+"Moogle\\moogle.ml" 78 2644 2648 "Moogle\\moogle.ml" 78 2644 2695
+call(
+  stack
+)
+type(
+  string list
+)
+"Moogle\\moogle.ml" 79 2696 2703 "Moogle\\moogle.ml" 79 2696 2714
+type(
+  exn
+)
+"Moogle\\moogle.ml" 79 2696 2718 "Moogle\\moogle.ml" 79 2696 2726
+type(
+  string list -> string list
+)
+ident(
+  ext_ref List.rev
+)
+"Moogle\\moogle.ml" 79 2696 2727 "Moogle\\moogle.ml" 79 2696 2732
+type(
+  string list
+)
+ident(
+  int_ref lines "Moogle\\moogle.ml" 76 2601 2628 "Moogle\\moogle.ml" 76 2601 2633
+)
+"Moogle\\moogle.ml" 79 2696 2718 "Moogle\\moogle.ml" 79 2696 2732
+call(
+  tail
+)
+type(
+  string list
+)
+"Moogle\\moogle.ml" 77 2637 2639 "Moogle\\moogle.ml" 79 2696 2732
+type(
+  string list
+)
+"Moogle\\moogle.ml" 85 2893 2897 "Moogle\\moogle.ml" 85 2893 2909
+type(
+  string
+)
+ident(
+  def std_response "Moogle\\moogle.ml" 93 3129 3129 --
+)
+"Moogle\\moogle.ml" 86 2913 2919 "Moogle\\moogle.ml" 86 2913 2921
+type(
+  in_channel
+)
+"Moogle\\moogle.ml" 86 2913 2924 "Moogle\\moogle.ml" 86 2913 2931
+type(
+  string -> in_channel
+)
+ident(
+  ext_ref Pervasives.open_in
+)
+"Moogle\\moogle.ml" 86 2913 2932 "Moogle\\moogle.ml" 86 2913 2948
+type(
+  string
+)
+ident(
+  int_ref moogle_home_page "Moogle\\moogle.ml" 72 2474 2478 "Moogle\\moogle.ml" 72 2474 2494
+)
+"Moogle\\moogle.ml" 86 2913 2924 "Moogle\\moogle.ml" 86 2913 2948
+call(
+  stack
+)
+type(
+  in_channel
+)
+"Moogle\\moogle.ml" 87 2953 2959 "Moogle\\moogle.ml" 87 2953 2964
+type(
+  string list
+)
+"Moogle\\moogle.ml" 87 2953 2967 "Moogle\\moogle.ml" 87 2953 2978
+type(
+  in_channel -> string list -> string list
+)
+ident(
+  int_ref input_lines "Moogle\\moogle.ml" 76 2601 2609 "Moogle\\moogle.ml" 76 2601 2620
+)
+"Moogle\\moogle.ml" 87 2953 2979 "Moogle\\moogle.ml" 87 2953 2981
+type(
+  in_channel
+)
+ident(
+  int_ref ch "Moogle\\moogle.ml" 86 2913 2919 "Moogle\\moogle.ml" 86 2913 2921
+)
+"Moogle\\moogle.ml" 87 2953 2982 "Moogle\\moogle.ml" 87 2953 2984
+type(
+  string list
+)
+"Moogle\\moogle.ml" 87 2953 2967 "Moogle\\moogle.ml" 87 2953 2984
+call(
+  stack
+)
+type(
+  string list
+)
+"Moogle\\moogle.ml" 88 2989 2995 "Moogle\\moogle.ml" 88 2989 2999
+type(
+  string
+)
+"Moogle\\moogle.ml" 88 2989 3002 "Moogle\\moogle.ml" 88 2989 3021
+type(
+  string
+)
+ident(
+  int_ref std_response_header "Moogle\\moogle.ml" 64 2285 2289 "Moogle\\moogle.ml" 64 2285 2308
+)
+"Moogle\\moogle.ml" 88 2989 3022 "Moogle\\moogle.ml" 88 2989 3023
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.^
+)
+"Moogle\\moogle.ml" 88 2989 3025 "Moogle\\moogle.ml" 88 2989 3038
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref String.concat
+)
+"Moogle\\moogle.ml" 88 2989 3039 "Moogle\\moogle.ml" 88 2989 3041
+type(
+  string
+)
+"Moogle\\moogle.ml" 88 2989 3042 "Moogle\\moogle.ml" 88 2989 3047
+type(
+  string list
+)
+ident(
+  int_ref lines "Moogle\\moogle.ml" 87 2953 2959 "Moogle\\moogle.ml" 87 2953 2964
+)
+"Moogle\\moogle.ml" 88 2989 3024 "Moogle\\moogle.ml" 88 2989 3048
+call(
+  stack
+)
+type(
+  string
+)
+"Moogle\\moogle.ml" 88 2989 3002 "Moogle\\moogle.ml" 88 2989 3048
+call(
+  stack
+)
+type(
+  string
+)
+"Moogle\\moogle.ml" 89 3052 3056 "Moogle\\moogle.ml" 89 3052 3064
+type(
+  in_channel -> unit
+)
+ident(
+  ext_ref Pervasives.close_in
+)
+"Moogle\\moogle.ml" 89 3052 3065 "Moogle\\moogle.ml" 89 3052 3067
+type(
+  in_channel
+)
+ident(
+  int_ref ch "Moogle\\moogle.ml" 86 2913 2919 "Moogle\\moogle.ml" 86 2913 2921
+)
+"Moogle\\moogle.ml" 89 3052 3056 "Moogle\\moogle.ml" 89 3052 3067
+call(
+  stack
+)
+type(
+  unit
+)
+"Moogle\\moogle.ml" 89 3052 3070 "Moogle\\moogle.ml" 89 3052 3074
+type(
+  string
+)
+ident(
+  int_ref resp "Moogle\\moogle.ml" 88 2989 2995 "Moogle\\moogle.ml" 88 2989 2999
+)
+"Moogle\\moogle.ml" 89 3052 3056 "Moogle\\moogle.ml" 89 3052 3074
+type(
+  string
+)
+"Moogle\\moogle.ml" 88 2989 2991 "Moogle\\moogle.ml" 89 3052 3074
+type(
+  string
+)
+"Moogle\\moogle.ml" 87 2953 2955 "Moogle\\moogle.ml" 89 3052 3074
+type(
+  string
+)
+"Moogle\\moogle.ml" 86 2913 2915 "Moogle\\moogle.ml" 89 3052 3074
+type(
+  string
+)
+"Moogle\\moogle.ml" 93 3129 3133 "Moogle\\moogle.ml" 93 3129 3154
+type(
+  string
+)
+ident(
+  def query_response_header "Moogle\\moogle.ml" 102 3454 3454 --
+)
+"Moogle\\moogle.ml" 94 3158 3160 "Moogle\\moogle.ml" 94 3158 3179
+type(
+  string
+)
+ident(
+  int_ref std_response_header "Moogle\\moogle.ml" 64 2285 2289 "Moogle\\moogle.ml" 64 2285 2308
+)
+"Moogle\\moogle.ml" 94 3158 3180 "Moogle\\moogle.ml" 94 3158 3181
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.^
+)
+"Moogle\\moogle.ml" 95 3183 3185 "Moogle\\moogle.ml" 95 3183 3235
+type(
+  string
+)
+"Moogle\\moogle.ml" 95 3183 3236 "Moogle\\moogle.ml" 95 3183 3237
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.^
+)
+"Moogle\\moogle.ml" 96 3238 3242 "Moogle\\moogle.ml" 96 3238 3301
+type(
+  string
+)
+"Moogle\\moogle.ml" 96 3238 3302 "Moogle\\moogle.ml" 96 3238 3303
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.^
+)
+"Moogle\\moogle.ml" 97 3304 3308 "Moogle\\moogle.ml" 97 3304 3354
+type(
+  string
+)
+"Moogle\\moogle.ml" 96 3238 3242 "Moogle\\moogle.ml" 97 3304 3354
+call(
+  stack
+)
+type(
+  string
+)
+"Moogle\\moogle.ml" 95 3183 3185 "Moogle\\moogle.ml" 97 3304 3354
+call(
+  stack
+)
+type(
+  string
+)
+"Moogle\\moogle.ml" 94 3158 3160 "Moogle\\moogle.ml" 97 3304 3354
+call(
+  stack
+)
+type(
+  string
+)
+"Moogle\\moogle.ml" 102 3454 3458 "Moogle\\moogle.ml" 102 3454 3472
+type(
+  LinkSet.set -> string
+)
+ident(
+  def html_of_urlset "Moogle\\moogle.ml" 109 3727 3727 --
+)
+"Moogle\\moogle.ml" 103 3500 3502 "Moogle\\moogle.ml" 103 3500 3514
+type(
+  (LinkSet.elt -> string -> string) -> string -> LinkSet.set -> string
+)
+ident(
+  ext_ref LinkSet.fold
+)
+"Moogle\\moogle.ml" 103 3500 3520 "Moogle\\moogle.ml" 103 3500 3524
+type(
+  LinkSet.elt
+)
+ident(
+  def link "Moogle\\moogle.ml" 103 3500 3525 "Moogle\\moogle.ml" 105 3601 3658
+)
+"Moogle\\moogle.ml" 103 3500 3525 "Moogle\\moogle.ml" 103 3500 3526
+type(
+  string
+)
+ident(
+  def s "Moogle\\moogle.ml" 103 3500 3530 "Moogle\\moogle.ml" 105 3601 3658
+)
+"Moogle\\moogle.ml" 103 3500 3530 "Moogle\\moogle.ml" 103 3500 3546
+type(
+  string
+)
+"Moogle\\moogle.ml" 103 3500 3547 "Moogle\\moogle.ml" 103 3500 3548
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.^
+)
+"Moogle\\moogle.ml" 104 3550 3569 "Moogle\\moogle.ml" 104 3550 3583
+type(
+  LinkSet.elt -> string
+)
+ident(
+  ext_ref Util.CrawlerServices.string_of_link
+)
+"Moogle\\moogle.ml" 104 3550 3584 "Moogle\\moogle.ml" 104 3550 3588
+type(
+  LinkSet.elt
+)
+ident(
+  int_ref link "Moogle\\moogle.ml" 103 3500 3520 "Moogle\\moogle.ml" 103 3500 3524
+)
+"Moogle\\moogle.ml" 104 3550 3568 "Moogle\\moogle.ml" 104 3550 3589
+call(
+  stack
+)
+type(
+  string
+)
+"Moogle\\moogle.ml" 104 3550 3590 "Moogle\\moogle.ml" 104 3550 3591
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.^
+)
+"Moogle\\moogle.ml" 104 3550 3592 "Moogle\\moogle.ml" 104 3550 3597
+type(
+  string
+)
+"Moogle\\moogle.ml" 104 3550 3598 "Moogle\\moogle.ml" 104 3550 3599
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.^
+)
+"Moogle\\moogle.ml" 105 3601 3620 "Moogle\\moogle.ml" 105 3601 3634
+type(
+  LinkSet.elt -> string
+)
+ident(
+  ext_ref Util.CrawlerServices.string_of_link
+)
+"Moogle\\moogle.ml" 105 3601 3635 "Moogle\\moogle.ml" 105 3601 3639
+type(
+  LinkSet.elt
+)
+ident(
+  int_ref link "Moogle\\moogle.ml" 103 3500 3520 "Moogle\\moogle.ml" 103 3500 3524
+)
+"Moogle\\moogle.ml" 105 3601 3619 "Moogle\\moogle.ml" 105 3601 3640
+call(
+  stack
+)
+type(
+  string
+)
+"Moogle\\moogle.ml" 105 3601 3641 "Moogle\\moogle.ml" 105 3601 3642
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.^
+)
+"Moogle\\moogle.ml" 105 3601 3643 "Moogle\\moogle.ml" 105 3601 3654
+type(
+  string
+)
+"Moogle\\moogle.ml" 105 3601 3655 "Moogle\\moogle.ml" 105 3601 3656
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.^
+)
+"Moogle\\moogle.ml" 105 3601 3657 "Moogle\\moogle.ml" 105 3601 3658
+type(
+  string
+)
+ident(
+  int_ref s "Moogle\\moogle.ml" 103 3500 3525 "Moogle\\moogle.ml" 103 3500 3526
+)
+"Moogle\\moogle.ml" 105 3601 3643 "Moogle\\moogle.ml" 105 3601 3658
+call(
+  stack
+)
+type(
+  string
+)
+"Moogle\\moogle.ml" 105 3601 3619 "Moogle\\moogle.ml" 105 3601 3658
+call(
+  stack
+)
+type(
+  string
+)
+"Moogle\\moogle.ml" 104 3550 3592 "Moogle\\moogle.ml" 105 3601 3658
+call(
+  stack
+)
+type(
+  string
+)
+"Moogle\\moogle.ml" 104 3550 3568 "Moogle\\moogle.ml" 105 3601 3658
+call(
+  stack
+)
+type(
+  string
+)
+"Moogle\\moogle.ml" 103 3500 3530 "Moogle\\moogle.ml" 105 3601 3658
+call(
+  tail
+)
+type(
+  string
+)
+"Moogle\\moogle.ml" 103 3500 3515 "Moogle\\moogle.ml" 105 3601 3659
+type(
+  LinkSet.elt -> string -> string
+)
+"Moogle\\moogle.ml" 105 3601 3660 "Moogle\\moogle.ml" 105 3601 3662
+type(
+  string
+)
+"Moogle\\moogle.ml" 103 3500 3502 "Moogle\\moogle.ml" 105 3601 3662
+call(
+  stack
+)
+type(
+  LinkSet.set -> string
+)
+type(
+  LinkSet.set -> string
+)
+"Moogle\\moogle.ml" 109 3727 3731 "Moogle\\moogle.ml" 109 3727 3752
+type(
+  string
+)
+ident(
+  def query_response_footer "Moogle\\moogle.ml" 112 3785 3785 --
+)
+"Moogle\\moogle.ml" 109 3727 3755 "Moogle\\moogle.ml" 109 3727 3780
+type(
+  string
+)
+"Moogle\\moogle.ml" 112 3785 3789 "Moogle\\moogle.ml" 112 3785 3806
+type(
+  Unix.file_descr -> int
+)
+ident(
+  def send_std_response "Moogle\\moogle.ml" 116 3893 3893 --
+)
+"Moogle\\moogle.ml" 112 3785 3807 "Moogle\\moogle.ml" 112 3785 3816
+type(
+  Unix.file_descr
+)
+ident(
+  def client_fd "Moogle\\moogle.ml" 113 3820 3822 "Moogle\\moogle.ml" 113 3820 3888
+)
+"Moogle\\moogle.ml" 113 3820 3822 "Moogle\\moogle.ml" 113 3820 3831
+type(
+  Unix.file_descr -> string -> int -> int -> Unix.msg_flag list -> int
+)
+ident(
+  ext_ref Unix.send
+)
+"Moogle\\moogle.ml" 113 3820 3832 "Moogle\\moogle.ml" 113 3820 3841
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref client_fd "Moogle\\moogle.ml" 112 3785 3807 "Moogle\\moogle.ml" 112 3785 3816
+)
+"Moogle\\moogle.ml" 113 3820 3842 "Moogle\\moogle.ml" 113 3820 3854
+type(
+  string
+)
+ident(
+  int_ref std_response "Moogle\\moogle.ml" 85 2893 2897 "Moogle\\moogle.ml" 85 2893 2909
+)
+"Moogle\\moogle.ml" 113 3820 3855 "Moogle\\moogle.ml" 113 3820 3856
+type(
+  int
+)
+"Moogle\\moogle.ml" 113 3820 3858 "Moogle\\moogle.ml" 113 3820 3871
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"Moogle\\moogle.ml" 113 3820 3872 "Moogle\\moogle.ml" 113 3820 3884
+type(
+  string
+)
+ident(
+  int_ref std_response "Moogle\\moogle.ml" 85 2893 2897 "Moogle\\moogle.ml" 85 2893 2909
+)
+"Moogle\\moogle.ml" 113 3820 3857 "Moogle\\moogle.ml" 113 3820 3885
+type(
+  int
+)
+"Moogle\\moogle.ml" 113 3820 3886 "Moogle\\moogle.ml" 113 3820 3888
+type(
+  Unix.msg_flag list
+)
+"Moogle\\moogle.ml" 113 3820 3822 "Moogle\\moogle.ml" 113 3820 3888
+call(
+  tail
+)
+type(
+  int
+)
+"Moogle\\moogle.ml" 116 3893 3897 "Moogle\\moogle.ml" 116 3893 3908
+type(
+  Str.regexp
+)
+ident(
+  def http_get_re "Moogle\\moogle.ml" 127 4475 4475 --
+)
+"Moogle\\moogle.ml" 117 3912 3914 "Moogle\\moogle.ml" 117 3912 3934
+type(
+  string -> Str.regexp
+)
+ident(
+  ext_ref Str.regexp_case_fold
+)
+"Moogle\\moogle.ml" 117 3912 3935 "Moogle\\moogle.ml" 117 3912 3980
+type(
+  string
+)
+"Moogle\\moogle.ml" 117 3912 3914 "Moogle\\moogle.ml" 117 3912 3980
+call(
+  stack
+)
+type(
+  Str.regexp
+)
+"Moogle\\moogle.ml" 127 4475 4479 "Moogle\\moogle.ml" 127 4475 4494
+type(
+  Unix.file_descr -> string -> WordDict.dict -> int
+)
+ident(
+  def process_request "Moogle\\moogle.ml" 144 5143 5143 --
+)
+"Moogle\\moogle.ml" 127 4475 4495 "Moogle\\moogle.ml" 127 4475 4504
+type(
+  Unix.file_descr
+)
+ident(
+  def client_fd "Moogle\\moogle.ml" 127 4475 4505 "Moogle\\moogle.ml" 137 4934 4973
+)
+"Moogle\\moogle.ml" 127 4475 4505 "Moogle\\moogle.ml" 127 4475 4512
+type(
+  string
+)
+ident(
+  def request "Moogle\\moogle.ml" 127 4475 4513 "Moogle\\moogle.ml" 137 4934 4973
+)
+"Moogle\\moogle.ml" 127 4475 4513 "Moogle\\moogle.ml" 127 4475 4518
+type(
+  WordDict.dict
+)
+ident(
+  def index "Moogle\\moogle.ml" 128 4522 4524 "Moogle\\moogle.ml" 137 4934 4973
+)
+"Moogle\\moogle.ml" 129 4529 4537 "Moogle\\moogle.ml" 129 4529 4538
+type(
+  int
+)
+"Moogle\\moogle.ml" 129 4529 4541 "Moogle\\moogle.ml" 129 4529 4559
+type(
+  Str.regexp -> string -> int -> int
+)
+ident(
+  ext_ref Str.search_forward
+)
+"Moogle\\moogle.ml" 129 4529 4560 "Moogle\\moogle.ml" 129 4529 4571
+type(
+  Str.regexp
+)
+ident(
+  int_ref http_get_re "Moogle\\moogle.ml" 116 3893 3897 "Moogle\\moogle.ml" 116 3893 3908
+)
+"Moogle\\moogle.ml" 129 4529 4572 "Moogle\\moogle.ml" 129 4529 4579
+type(
+  string
+)
+ident(
+  int_ref request "Moogle\\moogle.ml" 127 4475 4505 "Moogle\\moogle.ml" 127 4475 4512
+)
+"Moogle\\moogle.ml" 129 4529 4580 "Moogle\\moogle.ml" 129 4529 4581
+type(
+  int
+)
+"Moogle\\moogle.ml" 129 4529 4541 "Moogle\\moogle.ml" 129 4529 4581
+call(
+  stack
+)
+type(
+  int
+)
+"Moogle\\moogle.ml" 130 4585 4593 "Moogle\\moogle.ml" 130 4585 4605
+type(
+  string
+)
+ident(
+  def query_string "Moogle\\moogle.ml" 131 4639 4643 "Moogle\\moogle.ml" 136 4868 4932
+)
+"Moogle\\moogle.ml" 130 4585 4608 "Moogle\\moogle.ml" 130 4585 4625
+type(
+  int -> string -> string
+)
+ident(
+  ext_ref Str.matched_group
+)
+"Moogle\\moogle.ml" 130 4585 4626 "Moogle\\moogle.ml" 130 4585 4627
+type(
+  int
+)
+"Moogle\\moogle.ml" 130 4585 4628 "Moogle\\moogle.ml" 130 4585 4635
+type(
+  string
+)
+ident(
+  int_ref request "Moogle\\moogle.ml" 127 4475 4505 "Moogle\\moogle.ml" 127 4475 4512
+)
+"Moogle\\moogle.ml" 130 4585 4608 "Moogle\\moogle.ml" 130 4585 4635
+call(
+  stack
+)
+type(
+  string
+)
+"Moogle\\moogle.ml" 131 4639 4647 "Moogle\\moogle.ml" 131 4639 4652
+type(
+  Q.query
+)
+ident(
+  def query "Moogle\\moogle.ml" 132 4685 4689 "Moogle\\moogle.ml" 136 4868 4932
+)
+"Moogle\\moogle.ml" 131 4639 4655 "Moogle\\moogle.ml" 131 4639 4668
+type(
+  string -> Q.query
+)
+ident(
+  ext_ref Q.parse_query
+)
+"Moogle\\moogle.ml" 131 4639 4669 "Moogle\\moogle.ml" 131 4639 4681
+type(
+  string
+)
+ident(
+  int_ref query_string "Moogle\\moogle.ml" 130 4585 4593 "Moogle\\moogle.ml" 130 4585 4605
+)
+"Moogle\\moogle.ml" 131 4639 4655 "Moogle\\moogle.ml" 131 4639 4681
+call(
+  stack
+)
+type(
+  Q.query
+)
+"Moogle\\moogle.ml" 132 4685 4693 "Moogle\\moogle.ml" 132 4685 4698
+type(
+  LinkSet.set
+)
+ident(
+  def links "Moogle\\moogle.ml" 133 4729 4733 "Moogle\\moogle.ml" 136 4868 4932
+)
+"Moogle\\moogle.ml" 132 4685 4701 "Moogle\\moogle.ml" 132 4685 4713
+type(
+  WordDict.dict -> Q.query -> LinkSet.set
+)
+ident(
+  ext_ref Q.eval_query
+)
+"Moogle\\moogle.ml" 132 4685 4714 "Moogle\\moogle.ml" 132 4685 4719
+type(
+  WordDict.dict
+)
+ident(
+  int_ref index "Moogle\\moogle.ml" 127 4475 4513 "Moogle\\moogle.ml" 127 4475 4518
+)
+"Moogle\\moogle.ml" 132 4685 4720 "Moogle\\moogle.ml" 132 4685 4725
+type(
+  Q.query
+)
+ident(
+  int_ref query "Moogle\\moogle.ml" 131 4639 4647 "Moogle\\moogle.ml" 131 4639 4652
+)
+"Moogle\\moogle.ml" 132 4685 4701 "Moogle\\moogle.ml" 132 4685 4725
+call(
+  stack
+)
+type(
+  LinkSet.set
+)
+"Moogle\\moogle.ml" 133 4729 4737 "Moogle\\moogle.ml" 133 4729 4750
+type(
+  string
+)
+ident(
+  def response_body "Moogle\\moogle.ml" 134 4777 4781 "Moogle\\moogle.ml" 136 4868 4932
+)
+"Moogle\\moogle.ml" 133 4729 4753 "Moogle\\moogle.ml" 133 4729 4767
+type(
+  LinkSet.set -> string
+)
+ident(
+  int_ref html_of_urlset "Moogle\\moogle.ml" 102 3454 3458 "Moogle\\moogle.ml" 102 3454 3472
+)
+"Moogle\\moogle.ml" 133 4729 4768 "Moogle\\moogle.ml" 133 4729 4773
+type(
+  LinkSet.set
+)
+ident(
+  int_ref links "Moogle\\moogle.ml" 132 4685 4693 "Moogle\\moogle.ml" 132 4685 4698
+)
+"Moogle\\moogle.ml" 133 4729 4753 "Moogle\\moogle.ml" 133 4729 4773
+call(
+  stack
+)
+type(
+  string
+)
+"Moogle\\moogle.ml" 134 4777 4785 "Moogle\\moogle.ml" 134 4777 4793
+type(
+  string
+)
+ident(
+  def response "Moogle\\moogle.ml" 136 4868 4874 "Moogle\\moogle.ml" 136 4868 4932
+)
+"Moogle\\moogle.ml" 135 4797 4803 "Moogle\\moogle.ml" 135 4797 4824
+type(
+  string
+)
+ident(
+  int_ref query_response_header "Moogle\\moogle.ml" 93 3129 3133 "Moogle\\moogle.ml" 93 3129 3154
+)
+"Moogle\\moogle.ml" 135 4797 4825 "Moogle\\moogle.ml" 135 4797 4826
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.^
+)
+"Moogle\\moogle.ml" 135 4797 4827 "Moogle\\moogle.ml" 135 4797 4840
+type(
+  string
+)
+ident(
+  int_ref response_body "Moogle\\moogle.ml" 133 4729 4737 "Moogle\\moogle.ml" 133 4729 4750
+)
+"Moogle\\moogle.ml" 135 4797 4841 "Moogle\\moogle.ml" 135 4797 4842
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.^
+)
+"Moogle\\moogle.ml" 135 4797 4843 "Moogle\\moogle.ml" 135 4797 4864
+type(
+  string
+)
+ident(
+  int_ref query_response_footer "Moogle\\moogle.ml" 109 3727 3731 "Moogle\\moogle.ml" 109 3727 3752
+)
+"Moogle\\moogle.ml" 135 4797 4827 "Moogle\\moogle.ml" 135 4797 4864
+call(
+  stack
+)
+type(
+  string
+)
+"Moogle\\moogle.ml" 135 4797 4803 "Moogle\\moogle.ml" 135 4797 4864
+call(
+  stack
+)
+type(
+  string
+)
+"Moogle\\moogle.ml" 136 4868 4874 "Moogle\\moogle.ml" 136 4868 4883
+type(
+  Unix.file_descr -> string -> int -> int -> Unix.msg_flag list -> int
+)
+ident(
+  ext_ref Unix.send
+)
+"Moogle\\moogle.ml" 136 4868 4884 "Moogle\\moogle.ml" 136 4868 4893
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref client_fd "Moogle\\moogle.ml" 127 4475 4495 "Moogle\\moogle.ml" 127 4475 4504
+)
+"Moogle\\moogle.ml" 136 4868 4894 "Moogle\\moogle.ml" 136 4868 4902
+type(
+  string
+)
+ident(
+  int_ref response "Moogle\\moogle.ml" 134 4777 4785 "Moogle\\moogle.ml" 134 4777 4793
+)
+"Moogle\\moogle.ml" 136 4868 4903 "Moogle\\moogle.ml" 136 4868 4904
+type(
+  int
+)
+"Moogle\\moogle.ml" 136 4868 4906 "Moogle\\moogle.ml" 136 4868 4919
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"Moogle\\moogle.ml" 136 4868 4920 "Moogle\\moogle.ml" 136 4868 4928
+type(
+  string
+)
+ident(
+  int_ref response "Moogle\\moogle.ml" 134 4777 4785 "Moogle\\moogle.ml" 134 4777 4793
+)
+"Moogle\\moogle.ml" 136 4868 4905 "Moogle\\moogle.ml" 136 4868 4929
+type(
+  int
+)
+"Moogle\\moogle.ml" 136 4868 4930 "Moogle\\moogle.ml" 136 4868 4932
+type(
+  Unix.msg_flag list
+)
+"Moogle\\moogle.ml" 136 4868 4874 "Moogle\\moogle.ml" 136 4868 4932
+call(
+  stack
+)
+type(
+  int
+)
+"Moogle\\moogle.ml" 134 4777 4781 "Moogle\\moogle.ml" 136 4868 4932
+type(
+  int
+)
+"Moogle\\moogle.ml" 133 4729 4733 "Moogle\\moogle.ml" 136 4868 4932
+type(
+  int
+)
+"Moogle\\moogle.ml" 132 4685 4689 "Moogle\\moogle.ml" 136 4868 4932
+type(
+  int
+)
+"Moogle\\moogle.ml" 131 4639 4643 "Moogle\\moogle.ml" 136 4868 4932
+type(
+  int
+)
+"Moogle\\moogle.ml" 130 4585 4589 "Moogle\\moogle.ml" 136 4868 4932
+type(
+  int
+)
+"Moogle\\moogle.ml" 129 4529 4533 "Moogle\\moogle.ml" 136 4868 4932
+type(
+  int
+)
+"Moogle\\moogle.ml" 137 4934 4941 "Moogle\\moogle.ml" 137 4934 4942
+type(
+  exn
+)
+"Moogle\\moogle.ml" 137 4934 4946 "Moogle\\moogle.ml" 137 4934 4963
+type(
+  Unix.file_descr -> int
+)
+ident(
+  int_ref send_std_response "Moogle\\moogle.ml" 112 3785 3789 "Moogle\\moogle.ml" 112 3785 3806
+)
+"Moogle\\moogle.ml" 137 4934 4964 "Moogle\\moogle.ml" 137 4934 4973
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref client_fd "Moogle\\moogle.ml" 127 4475 4495 "Moogle\\moogle.ml" 127 4475 4504
+)
+"Moogle\\moogle.ml" 137 4934 4946 "Moogle\\moogle.ml" 137 4934 4973
+call(
+  tail
+)
+type(
+  int
+)
+"Moogle\\moogle.ml" 128 4522 4524 "Moogle\\moogle.ml" 137 4934 4973
+type(
+  int
+)
+"Moogle\\moogle.ml" 144 5143 5147 "Moogle\\moogle.ml" 144 5143 5153
+type(
+  WordDict.dict -> 'a
+)
+ident(
+  def server "Moogle\\moogle.ml" 162 5871 5871 --
+)
+"Moogle\\moogle.ml" 144 5143 5155 "Moogle\\moogle.ml" 144 5143 5160
+type(
+  WordDict.dict
+)
+ident(
+  def index "Moogle\\moogle.ml" 145 5179 5181 "Moogle\\moogle.ml" 158 5779 5796
+)
+"Moogle\\moogle.ml" 145 5179 5185 "Moogle\\moogle.ml" 145 5179 5187
+type(
+  Unix.file_descr
+)
+"Moogle\\moogle.ml" 145 5179 5190 "Moogle\\moogle.ml" 145 5179 5201
+type(
+  Unix.socket_domain -> Unix.socket_type -> int -> Unix.file_descr
+)
+ident(
+  ext_ref Unix.socket
+)
+"Moogle\\moogle.ml" 145 5179 5202 "Moogle\\moogle.ml" 145 5179 5214
+type(
+  Unix.socket_domain
+)
+"Moogle\\moogle.ml" 145 5179 5215 "Moogle\\moogle.ml" 145 5179 5231
+type(
+  Unix.socket_type
+)
+"Moogle\\moogle.ml" 145 5179 5232 "Moogle\\moogle.ml" 145 5179 5233
+type(
+  int
+)
+"Moogle\\moogle.ml" 145 5179 5190 "Moogle\\moogle.ml" 145 5179 5233
+call(
+  stack
+)
+type(
+  Unix.file_descr
+)
+"Moogle\\moogle.ml" 146 5238 5244 "Moogle\\moogle.ml" 146 5238 5253
+type(
+  Unix.sockaddr
+)
+"Moogle\\moogle.ml" 146 5238 5272 "Moogle\\moogle.ml" 146 5238 5290
+type(
+  Unix.inet_addr
+)
+ident(
+  ext_ref Unix.inet_addr_any
+)
+"Moogle\\moogle.ml" 146 5238 5292 "Moogle\\moogle.ml" 146 5238 5303
+type(
+  int
+)
+ident(
+  ext_ref Util.CrawlerServices.server_port
+)
+"Moogle\\moogle.ml" 146 5238 5256 "Moogle\\moogle.ml" 146 5238 5304
+type(
+  Unix.sockaddr
+)
+"Moogle\\moogle.ml" 147 5309 5315 "Moogle\\moogle.ml" 147 5309 5316
+type(
+  unit
+)
+"Moogle\\moogle.ml" 147 5309 5319 "Moogle\\moogle.ml" 147 5309 5328
+type(
+  Unix.file_descr -> Unix.sockaddr -> unit
+)
+ident(
+  ext_ref Unix.bind
+)
+"Moogle\\moogle.ml" 147 5309 5329 "Moogle\\moogle.ml" 147 5309 5331
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref fd "Moogle\\moogle.ml" 145 5179 5185 "Moogle\\moogle.ml" 145 5179 5187
+)
+"Moogle\\moogle.ml" 147 5309 5332 "Moogle\\moogle.ml" 147 5309 5341
+type(
+  Unix.sockaddr
+)
+ident(
+  int_ref sock_addr "Moogle\\moogle.ml" 146 5238 5244 "Moogle\\moogle.ml" 146 5238 5253
+)
+"Moogle\\moogle.ml" 147 5309 5319 "Moogle\\moogle.ml" 147 5309 5341
+call(
+  stack
+)
+type(
+  unit
+)
+"Moogle\\moogle.ml" 148 5345 5351 "Moogle\\moogle.ml" 148 5345 5352
+type(
+  unit
+)
+"Moogle\\moogle.ml" 148 5345 5355 "Moogle\\moogle.ml" 148 5345 5366
+type(
+  Unix.file_descr -> int -> unit
+)
+ident(
+  ext_ref Unix.listen
+)
+"Moogle\\moogle.ml" 148 5345 5367 "Moogle\\moogle.ml" 148 5345 5369
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref fd "Moogle\\moogle.ml" 145 5179 5185 "Moogle\\moogle.ml" 145 5179 5187
+)
+"Moogle\\moogle.ml" 148 5345 5370 "Moogle\\moogle.ml" 148 5345 5371
+type(
+  int
+)
+"Moogle\\moogle.ml" 148 5345 5355 "Moogle\\moogle.ml" 148 5345 5371
+call(
+  stack
+)
+type(
+  unit
+)
+"Moogle\\moogle.ml" 149 5408 5418 "Moogle\\moogle.ml" 149 5408 5429
+type(
+  unit -> 'b
+)
+"Moogle\\moogle.ml" 149 5408 5430 "Moogle\\moogle.ml" 149 5408 5432
+type(
+  unit
+)
+"Moogle\\moogle.ml" 151 5472 5481 "Moogle\\moogle.ml" 151 5472 5490
+type(
+  Unix.file_descr
+)
+"Moogle\\moogle.ml" 151 5472 5492 "Moogle\\moogle.ml" 151 5472 5503
+type(
+  Unix.sockaddr
+)
+"Moogle\\moogle.ml" 151 5472 5480 "Moogle\\moogle.ml" 151 5472 5504
+type(
+  Unix.file_descr * Unix.sockaddr
+)
+"Moogle\\moogle.ml" 151 5472 5507 "Moogle\\moogle.ml" 151 5472 5518
+type(
+  Unix.file_descr -> Unix.file_descr * Unix.sockaddr
+)
+ident(
+  ext_ref Unix.accept
+)
+"Moogle\\moogle.ml" 151 5472 5519 "Moogle\\moogle.ml" 151 5472 5521
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref fd "Moogle\\moogle.ml" 145 5179 5185 "Moogle\\moogle.ml" 145 5179 5187
+)
+"Moogle\\moogle.ml" 151 5472 5507 "Moogle\\moogle.ml" 151 5472 5521
+call(
+  stack
+)
+type(
+  Unix.file_descr * Unix.sockaddr
+)
+"Moogle\\moogle.ml" 152 5526 5534 "Moogle\\moogle.ml" 152 5526 5537
+type(
+  string
+)
+"Moogle\\moogle.ml" 152 5526 5540 "Moogle\\moogle.ml" 152 5526 5553
+type(
+  int -> string
+)
+ident(
+  ext_ref String.create
+)
+"Moogle\\moogle.ml" 152 5526 5554 "Moogle\\moogle.ml" 152 5526 5558
+type(
+  int
+)
+"Moogle\\moogle.ml" 152 5526 5540 "Moogle\\moogle.ml" 152 5526 5558
+type(
+  string
+)
+"Moogle\\moogle.ml" 153 5562 5570 "Moogle\\moogle.ml" 153 5562 5573
+type(
+  int
+)
+"Moogle\\moogle.ml" 153 5562 5576 "Moogle\\moogle.ml" 153 5562 5585
+type(
+  Unix.file_descr -> string -> int -> int -> Unix.msg_flag list -> int
+)
+ident(
+  ext_ref Unix.recv
+)
+"Moogle\\moogle.ml" 153 5562 5586 "Moogle\\moogle.ml" 153 5562 5595
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref client_fd "Moogle\\moogle.ml" 151 5472 5481 "Moogle\\moogle.ml" 151 5472 5490
+)
+"Moogle\\moogle.ml" 153 5562 5596 "Moogle\\moogle.ml" 153 5562 5599
+type(
+  string
+)
+ident(
+  int_ref buf "Moogle\\moogle.ml" 152 5526 5534 "Moogle\\moogle.ml" 152 5526 5537
+)
+"Moogle\\moogle.ml" 153 5562 5600 "Moogle\\moogle.ml" 153 5562 5601
+type(
+  int
+)
+"Moogle\\moogle.ml" 153 5562 5603 "Moogle\\moogle.ml" 153 5562 5616
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"Moogle\\moogle.ml" 153 5562 5617 "Moogle\\moogle.ml" 153 5562 5620
+type(
+  string
+)
+ident(
+  int_ref buf "Moogle\\moogle.ml" 152 5526 5534 "Moogle\\moogle.ml" 152 5526 5537
+)
+"Moogle\\moogle.ml" 153 5562 5602 "Moogle\\moogle.ml" 153 5562 5621
+type(
+  int
+)
+"Moogle\\moogle.ml" 153 5562 5622 "Moogle\\moogle.ml" 153 5562 5624
+type(
+  Unix.msg_flag list
+)
+"Moogle\\moogle.ml" 153 5562 5576 "Moogle\\moogle.ml" 153 5562 5624
+call(
+  stack
+)
+type(
+  int
+)
+"Moogle\\moogle.ml" 154 5628 5636 "Moogle\\moogle.ml" 154 5628 5643
+type(
+  string
+)
+"Moogle\\moogle.ml" 154 5628 5646 "Moogle\\moogle.ml" 154 5628 5656
+type(
+  string -> int -> int -> string
+)
+ident(
+  ext_ref String.sub
+)
+"Moogle\\moogle.ml" 154 5628 5657 "Moogle\\moogle.ml" 154 5628 5660
+type(
+  string
+)
+ident(
+  int_ref buf "Moogle\\moogle.ml" 152 5526 5534 "Moogle\\moogle.ml" 152 5526 5537
+)
+"Moogle\\moogle.ml" 154 5628 5661 "Moogle\\moogle.ml" 154 5628 5662
+type(
+  int
+)
+"Moogle\\moogle.ml" 154 5628 5663 "Moogle\\moogle.ml" 154 5628 5666
+type(
+  int
+)
+ident(
+  int_ref len "Moogle\\moogle.ml" 153 5562 5570 "Moogle\\moogle.ml" 153 5562 5573
+)
+"Moogle\\moogle.ml" 154 5628 5646 "Moogle\\moogle.ml" 154 5628 5666
+call(
+  stack
+)
+type(
+  string
+)
+"Moogle\\moogle.ml" 155 5670 5678 "Moogle\\moogle.ml" 155 5670 5679
+type(
+  int
+)
+"Moogle\\moogle.ml" 155 5670 5682 "Moogle\\moogle.ml" 155 5670 5697
+type(
+  Unix.file_descr -> string -> WordDict.dict -> int
+)
+ident(
+  int_ref process_request "Moogle\\moogle.ml" 127 4475 4479 "Moogle\\moogle.ml" 127 4475 4494
+)
+"Moogle\\moogle.ml" 155 5670 5698 "Moogle\\moogle.ml" 155 5670 5707
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref client_fd "Moogle\\moogle.ml" 151 5472 5481 "Moogle\\moogle.ml" 151 5472 5490
+)
+"Moogle\\moogle.ml" 155 5670 5708 "Moogle\\moogle.ml" 155 5670 5715
+type(
+  string
+)
+ident(
+  int_ref request "Moogle\\moogle.ml" 154 5628 5636 "Moogle\\moogle.ml" 154 5628 5643
+)
+"Moogle\\moogle.ml" 155 5670 5716 "Moogle\\moogle.ml" 155 5670 5721
+type(
+  WordDict.dict
+)
+ident(
+  int_ref index "Moogle\\moogle.ml" 144 5143 5155 "Moogle\\moogle.ml" 144 5143 5160
+)
+"Moogle\\moogle.ml" 155 5670 5682 "Moogle\\moogle.ml" 155 5670 5721
+call(
+  stack
+)
+type(
+  int
+)
+"Moogle\\moogle.ml" 156 5725 5731 "Moogle\\moogle.ml" 156 5725 5741
+type(
+  Unix.file_descr -> unit
+)
+ident(
+  ext_ref Unix.close
+)
+"Moogle\\moogle.ml" 156 5725 5742 "Moogle\\moogle.ml" 156 5725 5751
+type(
+  Unix.file_descr
+)
+ident(
+  int_ref client_fd "Moogle\\moogle.ml" 151 5472 5481 "Moogle\\moogle.ml" 151 5472 5490
+)
+"Moogle\\moogle.ml" 156 5725 5731 "Moogle\\moogle.ml" 156 5725 5751
+call(
+  stack
+)
+type(
+  unit
+)
+"Moogle\\moogle.ml" 157 5755 5761 "Moogle\\moogle.ml" 157 5755 5772
+type(
+  unit -> 'b
+)
+ident(
+  int_ref server_loop "Moogle\\moogle.ml" 149 5408 5418 "Moogle\\moogle.ml" 149 5408 5429
+)
+"Moogle\\moogle.ml" 157 5755 5772 "Moogle\\moogle.ml" 157 5755 5774
+type(
+  unit
+)
+"Moogle\\moogle.ml" 157 5755 5761 "Moogle\\moogle.ml" 157 5755 5774
+call(
+  tail
+)
+type(
+  'b
+)
+"Moogle\\moogle.ml" 156 5725 5731 "Moogle\\moogle.ml" 157 5755 5774
+type(
+  'b
+)
+"Moogle\\moogle.ml" 155 5670 5674 "Moogle\\moogle.ml" 157 5755 5774
+type(
+  'b
+)
+"Moogle\\moogle.ml" 154 5628 5632 "Moogle\\moogle.ml" 157 5755 5774
+type(
+  'b
+)
+"Moogle\\moogle.ml" 153 5562 5566 "Moogle\\moogle.ml" 157 5755 5774
+type(
+  'b
+)
+"Moogle\\moogle.ml" 152 5526 5530 "Moogle\\moogle.ml" 157 5755 5774
+type(
+  'b
+)
+"Moogle\\moogle.ml" 151 5472 5476 "Moogle\\moogle.ml" 157 5755 5774
+type(
+  'b
+)
+"Moogle\\moogle.ml" 158 5779 5783 "Moogle\\moogle.ml" 158 5779 5794
+type(
+  unit -> 'a
+)
+ident(
+  int_ref server_loop "Moogle\\moogle.ml" 149 5408 5418 "Moogle\\moogle.ml" 149 5408 5429
+)
+"Moogle\\moogle.ml" 158 5779 5794 "Moogle\\moogle.ml" 158 5779 5796
+type(
+  unit
+)
+"Moogle\\moogle.ml" 158 5779 5783 "Moogle\\moogle.ml" 158 5779 5796
+call(
+  tail
+)
+type(
+  'a
+)
+"Moogle\\moogle.ml" 149 5408 5410 "Moogle\\moogle.ml" 158 5779 5796
+type(
+  'a
+)
+"Moogle\\moogle.ml" 148 5345 5347 "Moogle\\moogle.ml" 158 5779 5796
+type(
+  'a
+)
+"Moogle\\moogle.ml" 147 5309 5311 "Moogle\\moogle.ml" 158 5779 5796
+type(
+  'a
+)
+"Moogle\\moogle.ml" 146 5238 5240 "Moogle\\moogle.ml" 158 5779 5796
+type(
+  'a
+)
+"Moogle\\moogle.ml" 145 5179 5181 "Moogle\\moogle.ml" 158 5779 5796
+type(
+  'a
+)
+"Moogle\\moogle.ml" 162 5871 5875 "Moogle\\moogle.ml" 162 5871 5879
+type(
+  unit -> 'a
+)
+ident(
+  def main "Moogle\\moogle.ml" 173 6247 6247 --
+)
+"Moogle\\moogle.ml" 162 5871 5880 "Moogle\\moogle.ml" 162 5871 5882
+type(
+  unit
+)
+"Moogle\\moogle.ml" 163 5886 5892 "Moogle\\moogle.ml" 163 5886 5893
+type(
+  unit
+)
+"Moogle\\moogle.ml" 163 5886 5896 "Moogle\\moogle.ml" 163 5886 5909
+type(
+  (int -> int -> unit, out_channel, unit) format -> int -> int -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"Moogle\\moogle.ml" 163 5886 5910 "Moogle\\moogle.ml" 163 5886 5960
+type(
+  (int -> int -> unit, out_channel, unit) format
+)
+"Moogle\\moogle.ml" 164 5962 5966 "Moogle\\moogle.ml" 164 5962 5977
+type(
+  int
+)
+ident(
+  ext_ref Util.CrawlerServices.server_port
+)
+"Moogle\\moogle.ml" 164 5962 5978 "Moogle\\moogle.ml" 164 5962 5997
+type(
+  int
+)
+ident(
+  ext_ref Util.CrawlerServices.num_pages_to_search
+)
+"Moogle\\moogle.ml" 163 5886 5896 "Moogle\\moogle.ml" 164 5962 5997
+call(
+  stack
+)
+type(
+  unit
+)
+"Moogle\\moogle.ml" 165 6001 6007 "Moogle\\moogle.ml" 165 6001 6008
+type(
+  unit
+)
+"Moogle\\moogle.ml" 165 6001 6011 "Moogle\\moogle.ml" 165 6001 6020
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.flush_all
+)
+"Moogle\\moogle.ml" 165 6001 6021 "Moogle\\moogle.ml" 165 6001 6023
+type(
+  unit
+)
+"Moogle\\moogle.ml" 165 6001 6011 "Moogle\\moogle.ml" 165 6001 6023
+call(
+  stack
+)
+type(
+  unit
+)
+"Moogle\\moogle.ml" 166 6027 6033 "Moogle\\moogle.ml" 166 6027 6038
+type(
+  WordDict.dict
+)
+"Moogle\\moogle.ml" 166 6027 6041 "Moogle\\moogle.ml" 166 6027 6048
+type(
+  unit -> WordDict.dict
+)
+ident(
+  int_ref crawler "Moogle\\moogle.ml" 57 2024 2028 "Moogle\\moogle.ml" 57 2024 2035
+)
+"Moogle\\moogle.ml" 166 6027 6049 "Moogle\\moogle.ml" 166 6027 6051
+type(
+  unit
+)
+"Moogle\\moogle.ml" 166 6027 6041 "Moogle\\moogle.ml" 166 6027 6051
+call(
+  stack
+)
+type(
+  WordDict.dict
+)
+"Moogle\\moogle.ml" 167 6056 6062 "Moogle\\moogle.ml" 167 6056 6063
+type(
+  unit
+)
+"Moogle\\moogle.ml" 167 6056 6066 "Moogle\\moogle.ml" 167 6056 6079
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"Moogle\\moogle.ml" 167 6056 6080 "Moogle\\moogle.ml" 167 6056 6133
+type(
+  (unit, out_channel, unit) format
+)
+"Moogle\\moogle.ml" 167 6056 6066 "Moogle\\moogle.ml" 167 6056 6133
+call(
+  stack
+)
+type(
+  unit
+)
+"Moogle\\moogle.ml" 168 6137 6143 "Moogle\\moogle.ml" 168 6137 6144
+type(
+  unit
+)
+"Moogle\\moogle.ml" 168 6137 6147 "Moogle\\moogle.ml" 168 6137 6160
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"Moogle\\moogle.ml" 168 6137 6161 "Moogle\\moogle.ml" 168 6137 6196
+type(
+  (unit, out_channel, unit) format
+)
+"Moogle\\moogle.ml" 168 6137 6147 "Moogle\\moogle.ml" 168 6137 6196
+call(
+  stack
+)
+type(
+  unit
+)
+"Moogle\\moogle.ml" 169 6200 6206 "Moogle\\moogle.ml" 169 6200 6207
+type(
+  unit
+)
+"Moogle\\moogle.ml" 169 6200 6210 "Moogle\\moogle.ml" 169 6200 6219
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.flush_all
+)
+"Moogle\\moogle.ml" 169 6200 6220 "Moogle\\moogle.ml" 169 6200 6222
+type(
+  unit
+)
+"Moogle\\moogle.ml" 169 6200 6210 "Moogle\\moogle.ml" 169 6200 6222
+call(
+  stack
+)
+type(
+  unit
+)
+"Moogle\\moogle.ml" 170 6226 6230 "Moogle\\moogle.ml" 170 6226 6236
+type(
+  WordDict.dict -> 'a
+)
+ident(
+  int_ref server "Moogle\\moogle.ml" 144 5143 5147 "Moogle\\moogle.ml" 144 5143 5153
+)
+"Moogle\\moogle.ml" 170 6226 6237 "Moogle\\moogle.ml" 170 6226 6242
+type(
+  WordDict.dict
+)
+ident(
+  int_ref index "Moogle\\moogle.ml" 166 6027 6033 "Moogle\\moogle.ml" 166 6027 6038
+)
+"Moogle\\moogle.ml" 170 6226 6230 "Moogle\\moogle.ml" 170 6226 6242
+call(
+  tail
+)
+type(
+  'a
+)
+"Moogle\\moogle.ml" 169 6200 6202 "Moogle\\moogle.ml" 170 6226 6242
+type(
+  'a
+)
+"Moogle\\moogle.ml" 168 6137 6139 "Moogle\\moogle.ml" 170 6226 6242
+type(
+  'a
+)
+"Moogle\\moogle.ml" 167 6056 6058 "Moogle\\moogle.ml" 170 6226 6242
+type(
+  'a
+)
+"Moogle\\moogle.ml" 166 6027 6029 "Moogle\\moogle.ml" 170 6226 6242
+type(
+  'a
+)
+"Moogle\\moogle.ml" 165 6001 6003 "Moogle\\moogle.ml" 170 6226 6242
+type(
+  'a
+)
+"Moogle\\moogle.ml" 163 5886 5888 "Moogle\\moogle.ml" 170 6226 6242
+type(
+  'a
+)
+"Moogle\\moogle.ml" 173 6247 6247 "Moogle\\moogle.ml" 173 6247 6251
+type(
+  unit -> 'a
+)
+ident(
+  int_ref main "Moogle\\moogle.ml" 162 5871 5875 "Moogle\\moogle.ml" 162 5871 5879
+)
+"Moogle\\moogle.ml" 173 6247 6251 "Moogle\\moogle.ml" 173 6247 6253
+type(
+  unit
+)
+"Moogle\\moogle.ml" 173 6247 6247 "Moogle\\moogle.ml" 173 6247 6253
+call(
+  stack
+)
+type(
+  'a
+)

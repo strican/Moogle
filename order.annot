@@ -1,0 +1,239 @@
+"Moogle\\order.ml" 4 92 96 "Moogle\\order.ml" 4 92 110
+type(
+  String.t -> String.t -> order
+)
+ident(
+  def string_compare "Moogle\\order.ml" 8 212 212 --
+)
+"Moogle\\order.ml" 4 92 111 "Moogle\\order.ml" 4 92 112
+type(
+  String.t
+)
+ident(
+  def x "Moogle\\order.ml" 4 92 113 "Moogle\\order.ml" 6 150 207
+)
+"Moogle\\order.ml" 4 92 113 "Moogle\\order.ml" 4 92 114
+type(
+  String.t
+)
+ident(
+  def y "Moogle\\order.ml" 5 118 120 "Moogle\\order.ml" 6 150 207
+)
+"Moogle\\order.ml" 5 118 124 "Moogle\\order.ml" 5 118 125
+type(
+  int
+)
+"Moogle\\order.ml" 5 118 128 "Moogle\\order.ml" 5 118 142
+type(
+  String.t -> String.t -> int
+)
+ident(
+  ext_ref String.compare
+)
+"Moogle\\order.ml" 5 118 143 "Moogle\\order.ml" 5 118 144
+type(
+  String.t
+)
+ident(
+  int_ref x "Moogle\\order.ml" 4 92 111 "Moogle\\order.ml" 4 92 112
+)
+"Moogle\\order.ml" 5 118 145 "Moogle\\order.ml" 5 118 146
+type(
+  String.t
+)
+ident(
+  int_ref y "Moogle\\order.ml" 4 92 113 "Moogle\\order.ml" 4 92 114
+)
+"Moogle\\order.ml" 5 118 128 "Moogle\\order.ml" 5 118 146
+call(
+  stack
+)
+type(
+  int
+)
+"Moogle\\order.ml" 6 150 157 "Moogle\\order.ml" 6 150 158
+type(
+  int
+)
+ident(
+  int_ref i "Moogle\\order.ml" 5 118 124 "Moogle\\order.ml" 5 118 125
+)
+"Moogle\\order.ml" 6 150 159 "Moogle\\order.ml" 6 150 160
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.=
+)
+"Moogle\\order.ml" 6 150 161 "Moogle\\order.ml" 6 150 162
+type(
+  int
+)
+"Moogle\\order.ml" 6 150 157 "Moogle\\order.ml" 6 150 162
+type(
+  bool
+)
+"Moogle\\order.ml" 6 150 168 "Moogle\\order.ml" 6 150 170
+type(
+  order
+)
+"Moogle\\order.ml" 6 150 179 "Moogle\\order.ml" 6 150 180
+type(
+  int
+)
+ident(
+  int_ref i "Moogle\\order.ml" 5 118 124 "Moogle\\order.ml" 5 118 125
+)
+"Moogle\\order.ml" 6 150 181 "Moogle\\order.ml" 6 150 182
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.<
+)
+"Moogle\\order.ml" 6 150 183 "Moogle\\order.ml" 6 150 184
+type(
+  int
+)
+"Moogle\\order.ml" 6 150 179 "Moogle\\order.ml" 6 150 184
+type(
+  bool
+)
+"Moogle\\order.ml" 6 150 190 "Moogle\\order.ml" 6 150 194
+type(
+  order
+)
+"Moogle\\order.ml" 6 150 200 "Moogle\\order.ml" 6 150 207
+type(
+  order
+)
+"Moogle\\order.ml" 6 150 176 "Moogle\\order.ml" 6 150 207
+type(
+  order
+)
+"Moogle\\order.ml" 6 150 154 "Moogle\\order.ml" 6 150 207
+type(
+  order
+)
+"Moogle\\order.ml" 5 118 120 "Moogle\\order.ml" 6 150 207
+type(
+  order
+)
+"Moogle\\order.ml" 8 212 216 "Moogle\\order.ml" 8 212 227
+type(
+  int -> int -> order
+)
+ident(
+  def int_compare "Moogle\\order.ml" 10 255 312 --
+)
+"Moogle\\order.ml" 8 212 228 "Moogle\\order.ml" 8 212 229
+type(
+  int
+)
+ident(
+  def x "Moogle\\order.ml" 8 212 230 "Moogle\\order.ml" 10 255 312
+)
+"Moogle\\order.ml" 8 212 230 "Moogle\\order.ml" 8 212 231
+type(
+  int
+)
+ident(
+  def y "Moogle\\order.ml" 9 235 237 "Moogle\\order.ml" 10 255 312
+)
+"Moogle\\order.ml" 9 235 241 "Moogle\\order.ml" 9 235 242
+type(
+  int
+)
+"Moogle\\order.ml" 9 235 245 "Moogle\\order.ml" 9 235 246
+type(
+  int
+)
+ident(
+  int_ref x "Moogle\\order.ml" 8 212 228 "Moogle\\order.ml" 8 212 229
+)
+"Moogle\\order.ml" 9 235 247 "Moogle\\order.ml" 9 235 248
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.-
+)
+"Moogle\\order.ml" 9 235 249 "Moogle\\order.ml" 9 235 250
+type(
+  int
+)
+ident(
+  int_ref y "Moogle\\order.ml" 8 212 230 "Moogle\\order.ml" 8 212 231
+)
+"Moogle\\order.ml" 9 235 245 "Moogle\\order.ml" 9 235 250
+type(
+  int
+)
+"Moogle\\order.ml" 10 255 262 "Moogle\\order.ml" 10 255 263
+type(
+  int
+)
+ident(
+  int_ref i "Moogle\\order.ml" 9 235 241 "Moogle\\order.ml" 9 235 242
+)
+"Moogle\\order.ml" 10 255 264 "Moogle\\order.ml" 10 255 265
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.=
+)
+"Moogle\\order.ml" 10 255 266 "Moogle\\order.ml" 10 255 267
+type(
+  int
+)
+"Moogle\\order.ml" 10 255 262 "Moogle\\order.ml" 10 255 267
+type(
+  bool
+)
+"Moogle\\order.ml" 10 255 273 "Moogle\\order.ml" 10 255 275
+type(
+  order
+)
+"Moogle\\order.ml" 10 255 284 "Moogle\\order.ml" 10 255 285
+type(
+  int
+)
+ident(
+  int_ref i "Moogle\\order.ml" 9 235 241 "Moogle\\order.ml" 9 235 242
+)
+"Moogle\\order.ml" 10 255 286 "Moogle\\order.ml" 10 255 287
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.<
+)
+"Moogle\\order.ml" 10 255 288 "Moogle\\order.ml" 10 255 289
+type(
+  int
+)
+"Moogle\\order.ml" 10 255 284 "Moogle\\order.ml" 10 255 289
+type(
+  bool
+)
+"Moogle\\order.ml" 10 255 295 "Moogle\\order.ml" 10 255 299
+type(
+  order
+)
+"Moogle\\order.ml" 10 255 305 "Moogle\\order.ml" 10 255 312
+type(
+  order
+)
+"Moogle\\order.ml" 10 255 281 "Moogle\\order.ml" 10 255 312
+type(
+  order
+)
+"Moogle\\order.ml" 10 255 259 "Moogle\\order.ml" 10 255 312
+type(
+  order
+)
+"Moogle\\order.ml" 9 235 237 "Moogle\\order.ml" 10 255 312
+type(
+  order
+)

@@ -88,14 +88,40 @@ module RBTreeDict(D:DICT_ARG) : (DICT with type key = D.key
     exception ImplementMe ;;
 		exception ArgumentError of string ;;
 
-		let rotate_left (d:dict) : dict =
+		let change_color (c : color) : color =
+			match c with
+				| Black -> Red
+				| Red -> Black
+		;;
+
+		let change_node_color (n : dict) : dict = 
+			match n with
+				| Leaf -> raise(ArgumentError "Cannot color-flip a leaf.")
+				| Node(l, (k, v, c), r) -> Node(l, (k, v, change_color c), r)
+		;;
+
+		let rotate_left (d:dict) : dict  =
 			match d with
-				| Leaf -> Leaf
+				| Leaf -> raise(ArgumentError "Cannot right-rotate a leaf.")
 				| Node(l, (k1, v1, c1), r) -> 
 					match r with
-						| Leaf -> raise(ArgumentError "Cannot left-rotate
-                             a node with nil as its right child.")
-						| Node(rl, (k2, v2, c2), rr) -> ((l, (k1, v1, Red), rl), (k2, v2, c1), rr)
+						| Leaf -> raise(ArgumentError "Cannot left-rotate a node with a leaf as its right child.")
+						| Node(rl, (k2, v2, c2), rr) -> Node(Node(l, (k1, v1, Red), rl), (k2, v2, c1), rr)
+		;;
+
+		let rotate_right (d:dict) : dict  =
+			match d with
+				| Leaf -> raise(ArgumentError "Cannot right-rotate a leaf.")
+				| Node(l, (k1, v1, c1), r) -> 
+					match l with
+						| Leaf -> raise(ArgumentError "Cannot right-rotate a node with a leaf as its left child.")
+						| Node(ll, (k2, v2, c2), lr) -> Node(ll, (k2, v2, c1), Node(lr, (k1, v1, Red), r))
+		;;
+		
+		let color_flip (d : dict) : dict =
+			match d with
+				| Leaf -> raise(ArgumentError "Cannot color-flip a leaf.")
+				| Node(l, (k, v, c), r) -> Node(change_node_color l, (k, v, change_color c), change_node_color r)
 		;;
 		
     let empty : dict =

@@ -187,8 +187,99 @@ module RBTreeDict(D:DICT_ARG) : (DICT with type key = D.key
 						| Greater -> member r k
     ;;
 
-    let remove (d:dict) (k:key) : dict = 
-      raise ImplementMe
+    let get_color (d:dict) : color option =
+      match d with
+        | Leaf -> None
+        | Node (l, (k, v, c), r) -> Some c
+      ;;
+      
+    let fix_up (d:dict) : dict =
+      match d with
+        | Node((ll, (kl, vl, cl), rl),a,r) ->
+          let d = (if(get_color r = Some Red) then rotate_left d else d) in
+          (match d with
+            | Node((ll, (kl, vl, cl), rl),a,r) ->
+              let d = (if(cl = Red && get_color ll = Some Red) then rotate_right d else d) in
+              (match d with
+                | Node((ll, (kl, vl, cl), rl),a,r) ->
+                  if (cl = Red && get_color r = Some Red) then color_flip d else d  
+                | _ -> d)
+            | _ -> d)
+        | _ -> d
+		;;
+
+    let move_red_right (d:dict) : dict =
+      d = color_flip d in 
+      match d with
+        | Node((ll, (kl, vl, cl), rl),a,r) -> let d = (if get_color ll = Some Red then 
+          rotate_right d else d) in
+          let d = color_flip d in
+          d
+        | _  -> d
+     ;;
+
+    let move_red_left (d:dict) : dict =
+      d = color_flip d in 
+      match d with
+        | Node(l,a,r) -> let (ll, (kl, vl, cl), rl) = r in
+        if get_color rl = Some Red then 
+          let r = rotate_right r in
+          let d = Node(l,a,r) (* Do I need this? *) in
+          let d = rotate_left d in
+          let d = color_flip d in
+          d
+        | _  -> d
+     ;;
+
+    let rec delete_min (d:dict) : dict =
+      match d with
+        | Node(Leaf,a,r) -> Leaf
+        | Node((ll, (kl, vl, cl), rl),a,r) -> let d = (if cl != Red && 
+           get_color ll != Some Red then move_red_left d else d) in
+          (match d with
+            | Node (l,a,r) -> l = delete_min l
+            | _ -> fix_up d  ) in
+           let d = Node(l,a,r) in fix_up d
+         | _  -> fix_up d
+    ;;
+
+    let rec delete_max (d:dict) : dict =
+      match d with
+        | Node((ll, (kl, vl, cl), rl),a,r) -> let d = (if cl = Red 
+          then rotate_right d else d) in
+          (match d with
+            | Node (l,a,Leaf) -> Leaf
+            | Node(l,a,(rl, (kr, vr, cr), rr)) -> let d = (if cr != Red && 
+                  get_color rr != Some Red then move_red_right d else d) in
+                  (match d with
+                    | Node (l,a,r) -> let r = deleteMax r in fix_up Node (l,a,r) 
+                    | _ -> fix_up d
+                    ) 
+            | _ -> fix_up d  )
+         | _  -> fix_up d
+    ;;
+
+    let remove (d:dict) (ke:key) : dict = 
+      match d with
+        | Node ((ll,(kl,vl,cl),rl), (k,v,c), r) -> 
+        (match D.compare ke k  with
+							| Less -> let d = (if cl != Red && get_color ll != Some Red 
+                then move_red_left d else d )in
+                (match d with 
+                  | Node (l,a,r) -> let l = delete(l,ke) in fix_up Node (l,a,r)
+                  | _ -> fix_up d)
+              | _ -> (match d with
+                | Node (l,a,r) -> let d = (if get_color l = Some Red then 
+                rotate_right d else d) in
+                (match d with 
+                  | Node (l,(k,v,c),r) -> if D.compare k ke = Eq && r = Leaf then 
+                     Leaf
+                    (*else if get_color r != Some Red && let r = (rl,(kr,vr,cr), rr) in get_color rl != Some Red
+                    then d = move_red_right d in
+                    (match d with 
+                      | Node (l,(k,v,c),r) -> if D.compare k ke = Eq then 
+							
+         | _ -> fix_up d*))))
     ;;
 
     let rec choose (d:dict) : (key*value*dict) option = 

@@ -187,11 +187,15 @@ module RBTreeDict(D:DICT_ARG) : (DICT with type key = D.key
 						| Greater -> member r k
     ;;
 
+(*  @ Gabrielle: I used check_root_color, which doesn't return an option, *)
+(*               so i think it might be better. Also, leaves are always *)
+(*               supposed to be black. I think CLRS said that
     let get_color (d:dict) : color option =
       match d with
         | Leaf -> None
         | Node (l, (k, v, c), r) -> Some c
       ;;
+*)
       
     let fix_up (d:dict) : dict =
       match d with
@@ -234,15 +238,13 @@ module RBTreeDict(D:DICT_ARG) : (DICT with type key = D.key
     let rec delete_min (d:dict) : dict =
       match d with
         | Node(Leaf,a,r) -> Leaf
-        | Node((ll, (kl, vl, cl), rl),a,r) -> let d = (if cl != Red && 
-           get_color ll != Some Red then move_red_left d else d) in
+        | Node((ll, (kl, vl, cl), rl),a,r) -> 
+					let d = (if (cl = Black && check_root_color ll = Black) then move_red_left d else d) in
           (match d with
-            | Node (l,a,r) -> l = delete_min l
-            | _ -> fix_up d  ) in
-           let d = Node(l,a,r) in fix_up d
-         | _  -> fix_up d
+            | Node (l,a,r) -> let d = Node(delete_min l, a, r) in fix_up d
+            | _ -> fix_up d)
     ;;
-
+(*
     let rec delete_max (d:dict) : dict =
       match d with
         | Node((ll, (kl, vl, cl), rl),a,r) -> let d = (if cl = Red 
@@ -258,9 +260,70 @@ module RBTreeDict(D:DICT_ARG) : (DICT with type key = D.key
             | _ -> fix_up d  )
          | _  -> fix_up d
     ;;
+	*)	
+		let get_node (d : dict) (s : string) : dict =
+      if (s = "") then d else
+			match d with
+				| Node(l, _, r) -> 
+					match (String.sub s 0 1) with
+						| "l" -> get_node l (String.sub s 1 (String.length s - 1))
+						| "r" -> get_node r (String.sub s 1 (String.length s - 1))
+						| _ -> raise (ArgumentError "Node doesn't exist")
+        | Leaf -> raise (ArgumentError "Node doesn't exist")
+		;;
 
-    let remove (d:dict) (ke:key) : dict = 
+		let get_key (d:dict) : key =
       match d with
+        | Leaf -> raise (ArgumentError "Key DNE")
+        | Node(_,(k,_,_),_) -> k
+    ;;
+
+    let rec min (d:dict) : key =
+      let l = get_node d "l" in
+      if (l = Leaf) then get_key d
+      else min (l)
+    ;;
+    
+    let extract (a : 'a option) : 'a =
+      match a with
+        | None -> raise (ArgumentError "Value doesn't exist.")
+        | Some b -> b
+    ;;
+    
+    
+    let rec remove (d:dict) (k:key) : dict = 
+      match d with
+				| Leaf -> Leaf
+				| Node(l, (k1, v1, c1), r) -> 
+						match D.compare k k1 with									
+								| Less -> 
+										let d = (if (check_root_color l = Black && check_root_color (get_node d "ll") = Black) then move_red_left d else d) in fix_up Node(remove (get_node d "l") k, (k1, v1, c1), get_node d "r")
+								| Greater | Eq -> let d = (if check_root_color l = Red then rotate_right d else d) in
+																	let d = (if D.compare k (get_key d)  = Eq && get_node d "r" = Leaf then Leaf 
+                                  
+                                  else(
+																	  let d = (if (check_root_color (get_node d "r") = Black && check_root_color (get_node d "rl") = Black) then move_red_right d else d) in
+																	  
+                                    let d = (if D.compare k (get_key d) = Eq then 
+                                      (let r = get_node d "r" in 
+                                       let v = lookup r (min r)  in
+                                       let k2 = (min r) in 
+                                       let r = delete_min r in 
+                                       fix_up Node(l, (k2, extract v, c1), r))
+                                      
+                                      
+                                      (*(match v with
+                                         | None -> raise (ArgurmentError "Right DNE")
+                                         | Some w -> let k2 = min r in let r = delete_min r) in fix_up Node (l,(k2,w,c1), r))*)
+                                    else (remove (get_node d "r") k)) in fix_up d))
+    ;;
+                                  
+
+
+
+(*
+
+
         | Node ((ll,(kl,vl,cl),rl), (k,v,c), r) -> 
         (match D.compare ke k  with
 							| Less -> let d = (if cl != Red && get_color ll != Some Red 
@@ -280,7 +343,7 @@ module RBTreeDict(D:DICT_ARG) : (DICT with type key = D.key
                       | Node (l,(k,v,c),r) -> if D.compare k ke = Eq then 
 							
          | _ -> fix_up d*))))
-    ;;
+    ;;*)
 
     let rec choose (d:dict) : (key*value*dict) option = 
 			match d with
@@ -289,6 +352,8 @@ module RBTreeDict(D:DICT_ARG) : (DICT with type key = D.key
     ;;
 
     let fold (f:key -> value -> 'a -> 'a) (u:'a) (d:dict) : 'a = 
-      raise ImplementMe
+        match t with 
+			    | Leaf -> u
+			    | Node(l, (k, v, _), r) ->  f k v (fold f u l) (fold f u r)
     ;;
   end

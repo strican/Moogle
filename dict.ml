@@ -87,6 +87,13 @@ module RBTreeDict(D:DICT_ARG) : (DICT with type key = D.key
 
     exception ImplementMe ;;
 		exception ArgumentError of string ;;
+		exception Impossible ;;
+
+		let check_root_color (n : dict) : color = 
+			match n with
+				| Leaf -> Black
+				| Node(_, (_, _, c), _) -> c 
+		;;
 
 		let change_color (c : color) : color =
 			match c with
@@ -96,8 +103,9 @@ module RBTreeDict(D:DICT_ARG) : (DICT with type key = D.key
 
 		let change_node_color (n : dict) : dict = 
 			match n with
-				| Leaf -> raise(ArgumentError "Cannot color-flip a leaf.")
-				| Node(l, (k, v, c), r) -> Node(l, (k, v, change_color c), r)
+				(* Ensures leaves stay black *)
+				| Leaf -> Leaf
+				| Node(l, (k, v, c), r) -> Node(l, (k, v, change_color c), r) (* @Gabrielle: do we want to write this in terms of check_root_color? *)
 		;;
 
 		let rotate_left (d:dict) : dict  =
@@ -126,24 +134,57 @@ module RBTreeDict(D:DICT_ARG) : (DICT with type key = D.key
 		
     let empty : dict =
 			Leaf
-    ;;
+    ;;			
+		
+		let insert_fix (d : dict) : dict =
+			match d with
+				| Leaf -> raise Impossible
+				| Node (l, _, r) -> 
+						match (check_root_color l, check_root_color r) with
+							| (Black, Red) -> let d = rotate_left d in
+									(match d with
+										| Leaf -> raise Impossible
+										| Node (l, _, r) -> 
+												(match (check_root_color l, check_root_color r) with
+													| (Red, Red) -> rotate_right d
+													| _ -> d))
+							| (Red, Red) -> rotate_right d
+							| _ -> d		
+
 
     let rec insert (d:dict) (k:key) (v:value) : dict = 
       match d with
 				| Leaf -> Node(Leaf, (k, v, Red), Leaf)
-				| Node (l, (k2, v2, c), r) -> 
-						match D.compare k k2 with
-							| Eq -> d
-							| Less -> Node(insert l k v, (k2, v2, c), r)
-							| Greater -> Node(l, (k2, v2, c), insert r k v)
+				| Node (l, _, r) ->
+					match (check_root_color l, check_root_color r) with
+						| (a, b) -> let d = (if (a = Red && b = Red) then color_flip d else d) in
+								(match d with
+									| Leaf -> raise Impossible
+									| Node(l, (k2, v2, c), r) -> 
+											(match D.compare k k2 with
+												| Eq -> insert_fix d										
+												| Less -> let d = Node(insert l k v, (k2, v2, c), r) in insert_fix d
+												| Greater -> let d = Node(l, (k2, v2, c), insert r k v) in insert_fix d))
     ;;
 
-    let lookup (d:dict) (k:key) : value option = 
-      raise ImplementMe
+    let rec lookup (d:dict) (k:key) : value option =
+			match d with 
+				| Leaf -> None
+				| Node(l, (k2, v, _), r) -> 
+					match D.compare k k2 with
+						| Eq -> Some v
+						| Less -> lookup l k
+						| Greater -> lookup r k
     ;;
-
-    let member (d:dict) (k:key) : bool = 
-      raise ImplementMe
+    
+		let rec member (d:dict) (k:key) : bool = 
+      match d with
+				| Leaf -> false
+				| Node(l, (k2, _, _), r) -> 
+					match D.compare k k2 with
+						| Eq -> true
+						| Less -> member l k
+						| Greater -> member r k
     ;;
 
     let get_color (d:dict) : color option =
@@ -241,8 +282,10 @@ module RBTreeDict(D:DICT_ARG) : (DICT with type key = D.key
          | _ -> fix_up d*))))
     ;;
 
-    let choose (d:dict) : (key*value*dict) option = 
-      raise ImplementMe
+    let rec choose (d:dict) : (key*value*dict) option = 
+			match d with
+				| Leaf -> None
+				| Node(_, (k, v, _), _) -> Some (k, v, remove d k)
     ;;
 
     let fold (f:key -> value -> 'a -> 'a) (u:'a) (d:dict) : 'a = 

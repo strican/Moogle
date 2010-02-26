@@ -98,33 +98,32 @@ module ListSet(C: COMPARABLE) : (SET with type elt = C.t) =
 (* moogle.ml with your RBTreeSet.  Hint:  you can implement Sets *)
 (* in terms of Dicts and save a lot of work...                   *)
 (*****************************************************************)
-(*
+
 module DictSet(D : Dict.DICT with type value = unit) 
   : (SET with type elt = D.key) = 
 struct
 
-    type elt = key
-    type set = dict
+    type elt = D.key
+    type set = D.dict
 
-    let empty () : set = D.empty
-    let is_empty (s:set) : bool = (D.choose s = None)
-    let insert (e:elt) (s:set) : set = D.insert s e ()
-    let singleton (e:elt) : set = Let s = empty in insert s e
+    let empty () : set = D.empty;;
+    let is_empty (s:set) : bool = (D.choose s = None);;
+    let insert (e:elt) (s:set) : set = D.insert s e ();;
+    let singleton (e:elt) : set = insert e (empty ());;
  
 
-    let remove (s:set) (e:elt) : set = D.remove s e
-    let member (s:set) (e:elt) : bool = D.member s e
-    let choose (s:set) : elt = match D.choose with
+    let remove (e : elt) (s:set) : set = D.remove s e;;
+    let member (s:set) (e:elt) : bool = D.member s e;;
+    let choose (s:set) : (elt * set) option = match D.choose s with
       | None -> None
-      | Some (k,v,d) -> Some (k,d)  
+      | Some (k,v,d) -> Some (k,d)  ;;
 
-    let fold (f:elt -> 'a -> 'a) (u:'a) (s:set) : 'a = D.fold (fun k _ d -> f k d) u s
+    let fold (f:elt -> 'a -> 'a) (u:'a) (s:set) : 'a = D.fold (fun k _ d -> f k d) u s;;
 
-    let union (s1:set) (s2:set) : set= fold insert s1 s2 
+    let union (s1:set) (s2:set) : set= fold insert s1 s2 ;;
     let intersect (s1:set) (s2:set) : set = 
-      fold (fun k s -> if (member s2 k) then insert k s else s) empty s1
+      fold (fun k s -> if (member s2 k) then insert k s else s) (empty ()) s1;;
 
 
 
 end
-*)

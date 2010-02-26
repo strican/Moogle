@@ -1,1014 +1,1641 @@
-"Moogle\\set.ml" 52 1550 1558 "Moogle\\set.ml" 52 1550 1563
+"Moogle\\set.ml" 52 1602 1610 "Moogle\\set.ml" 52 1602 1615
 type(
   'a list
 )
 ident(
-  def empty "Moogle\\set.ml" 53 1569 1573 "Moogle\\set.ml" 93 2933 2938
+  def empty "Moogle\\set.ml" 53 1622 1626 "Moogle\\set.ml" 93 3026 3031
 )
-"Moogle\\set.ml" 52 1550 1566 "Moogle\\set.ml" 52 1550 1568
+"Moogle\\set.ml" 52 1602 1618 "Moogle\\set.ml" 52 1602 1620
 type(
   'a list
 )
-"Moogle\\set.ml" 53 1569 1577 "Moogle\\set.ml" 53 1569 1585
+"Moogle\\set.ml" 53 1622 1630 "Moogle\\set.ml" 53 1622 1638
 type(
   'b list -> bool
 )
 ident(
-  def is_empty "Moogle\\set.ml" 57 1655 1659 "Moogle\\set.ml" 93 2933 2938
+  def is_empty "Moogle\\set.ml" 57 1712 1716 "Moogle\\set.ml" 93 3026 3031
 )
-"Moogle\\set.ml" 53 1569 1586 "Moogle\\set.ml" 53 1569 1588
+"Moogle\\set.ml" 53 1622 1639 "Moogle\\set.ml" 53 1622 1641
 type(
   'b list
 )
 ident(
-  def xs "Moogle\\set.ml" 54 1592 1598 "Moogle\\set.ml" 56 1634 1654
+  def xs "Moogle\\set.ml" 54 1646 1652 "Moogle\\set.ml" 56 1690 1710
 )
-"Moogle\\set.ml" 54 1592 1604 "Moogle\\set.ml" 54 1592 1606
+"Moogle\\set.ml" 54 1646 1658 "Moogle\\set.ml" 54 1646 1660
 type(
   'b list
 )
 ident(
-  int_ref xs "Moogle\\set.ml" 53 1569 1586 "Moogle\\set.ml" 53 1569 1588
+  int_ref xs "Moogle\\set.ml" 53 1622 1639 "Moogle\\set.ml" 53 1622 1641
 )
-"Moogle\\set.ml" 55 1613 1623 "Moogle\\set.ml" 55 1613 1625
+"Moogle\\set.ml" 55 1668 1678 "Moogle\\set.ml" 55 1668 1680
 type(
   'b list
 )
-"Moogle\\set.ml" 55 1613 1629 "Moogle\\set.ml" 55 1613 1633
+"Moogle\\set.ml" 55 1668 1684 "Moogle\\set.ml" 55 1668 1688
 type(
   bool
 )
-"Moogle\\set.ml" 56 1634 1644 "Moogle\\set.ml" 56 1634 1645
+"Moogle\\set.ml" 56 1690 1700 "Moogle\\set.ml" 56 1690 1701
 type(
   'b list
 )
-"Moogle\\set.ml" 56 1634 1649 "Moogle\\set.ml" 56 1634 1654
+"Moogle\\set.ml" 56 1690 1705 "Moogle\\set.ml" 56 1690 1710
 type(
   bool
 )
-"Moogle\\set.ml" 54 1592 1598 "Moogle\\set.ml" 56 1634 1654
+"Moogle\\set.ml" 54 1646 1652 "Moogle\\set.ml" 56 1690 1710
 type(
   bool
 )
-"Moogle\\set.ml" 57 1655 1663 "Moogle\\set.ml" 57 1655 1672
+"Moogle\\set.ml" 57 1712 1720 "Moogle\\set.ml" 57 1712 1729
 type(
   'c -> 'c list
 )
 ident(
-  def singleton "Moogle\\set.ml" 58 1681 1685 "Moogle\\set.ml" 93 2933 2938
+  def singleton "Moogle\\set.ml" 58 1739 1743 "Moogle\\set.ml" 93 3026 3031
 )
-"Moogle\\set.ml" 57 1655 1673 "Moogle\\set.ml" 57 1655 1674
+"Moogle\\set.ml" 57 1712 1730 "Moogle\\set.ml" 57 1712 1731
 type(
   'c
 )
 ident(
-  def x "Moogle\\set.ml" 57 1655 1677 "Moogle\\set.ml" 57 1655 1680
+  def x "Moogle\\set.ml" 57 1712 1734 "Moogle\\set.ml" 57 1712 1737
 )
-"Moogle\\set.ml" 57 1655 1678 "Moogle\\set.ml" 57 1655 1679
+"Moogle\\set.ml" 57 1712 1735 "Moogle\\set.ml" 57 1712 1736
 type(
   'c
 )
 ident(
-  int_ref x "Moogle\\set.ml" 57 1655 1673 "Moogle\\set.ml" 57 1655 1674
+  int_ref x "Moogle\\set.ml" 57 1712 1730 "Moogle\\set.ml" 57 1712 1731
 )
-"Moogle\\set.ml" 57 1655 1677 "Moogle\\set.ml" 57 1655 1680
+"Moogle\\set.ml" 57 1712 1734 "Moogle\\set.ml" 57 1712 1737
 type(
   'c list
 )
-"Moogle\\set.ml" 58 1681 1693 "Moogle\\set.ml" 58 1681 1699
+"Moogle\\set.ml" 58 1739 1751 "Moogle\\set.ml" 58 1739 1757
 type(
   C.t -> C.t list -> C.t list
 )
 ident(
-  def insert "Moogle\\set.ml" 58 1681 1685 "Moogle\\set.ml" 93 2933 2938
+  def insert "Moogle\\set.ml" 58 1739 1743 "Moogle\\set.ml" 93 3026 3031
 )
-"Moogle\\set.ml" 58 1681 1700 "Moogle\\set.ml" 58 1681 1701
+"Moogle\\set.ml" 58 1739 1758 "Moogle\\set.ml" 58 1739 1759
 type(
   C.t
 )
 ident(
-  def x "Moogle\\set.ml" 58 1681 1702 "Moogle\\set.ml" 64 1880 1918
+  def x "Moogle\\set.ml" 58 1739 1760 "Moogle\\set.ml" 64 1944 1982
 )
-"Moogle\\set.ml" 58 1681 1702 "Moogle\\set.ml" 58 1681 1704
+"Moogle\\set.ml" 58 1739 1760 "Moogle\\set.ml" 58 1739 1762
 type(
   C.t list
 )
 ident(
-  def xs "Moogle\\set.ml" 59 1708 1714 "Moogle\\set.ml" 64 1880 1918
+  def xs "Moogle\\set.ml" 59 1767 1773 "Moogle\\set.ml" 64 1944 1982
 )
-"Moogle\\set.ml" 59 1708 1720 "Moogle\\set.ml" 59 1708 1722
+"Moogle\\set.ml" 59 1767 1779 "Moogle\\set.ml" 59 1767 1781
 type(
   C.t list
 )
 ident(
-  int_ref xs "Moogle\\set.ml" 58 1681 1702 "Moogle\\set.ml" 58 1681 1704
+  int_ref xs "Moogle\\set.ml" 58 1739 1760 "Moogle\\set.ml" 58 1739 1762
 )
-"Moogle\\set.ml" 60 1729 1739 "Moogle\\set.ml" 60 1729 1741
+"Moogle\\set.ml" 60 1789 1799 "Moogle\\set.ml" 60 1789 1801
 type(
   C.t list
 )
-"Moogle\\set.ml" 60 1729 1746 "Moogle\\set.ml" 60 1729 1747
+"Moogle\\set.ml" 60 1789 1806 "Moogle\\set.ml" 60 1789 1807
 type(
   C.t
 )
 ident(
-  int_ref x "Moogle\\set.ml" 58 1681 1700 "Moogle\\set.ml" 58 1681 1701
+  int_ref x "Moogle\\set.ml" 58 1739 1758 "Moogle\\set.ml" 58 1739 1759
 )
-"Moogle\\set.ml" 60 1729 1745 "Moogle\\set.ml" 60 1729 1748
+"Moogle\\set.ml" 60 1789 1805 "Moogle\\set.ml" 60 1789 1808
 type(
   C.t list
 )
-"Moogle\\set.ml" 61 1749 1759 "Moogle\\set.ml" 61 1749 1760
+"Moogle\\set.ml" 61 1810 1820 "Moogle\\set.ml" 61 1810 1821
 type(
   C.t
 )
 ident(
-  def y "Moogle\\set.ml" 61 1749 1768 "Moogle\\set.ml" 64 1880 1918
+  def y "Moogle\\set.ml" 61 1810 1829 "Moogle\\set.ml" 64 1944 1982
 )
-"Moogle\\set.ml" 61 1749 1762 "Moogle\\set.ml" 61 1749 1764
+"Moogle\\set.ml" 61 1810 1823 "Moogle\\set.ml" 61 1810 1825
 type(
   C.t list
 )
 ident(
-  def ys "Moogle\\set.ml" 61 1749 1768 "Moogle\\set.ml" 64 1880 1918
+  def ys "Moogle\\set.ml" 61 1810 1829 "Moogle\\set.ml" 64 1944 1982
 )
-"Moogle\\set.ml" 61 1749 1759 "Moogle\\set.ml" 61 1749 1764
+"Moogle\\set.ml" 61 1810 1820 "Moogle\\set.ml" 61 1810 1825
 type(
   C.t list
 )
-"Moogle\\set.ml" 61 1749 1775 "Moogle\\set.ml" 61 1749 1784
+"Moogle\\set.ml" 61 1810 1836 "Moogle\\set.ml" 61 1810 1845
 type(
   C.t -> C.t -> Order.order
 )
 ident(
   ext_ref C.compare
 )
-"Moogle\\set.ml" 61 1749 1785 "Moogle\\set.ml" 61 1749 1786
+"Moogle\\set.ml" 61 1810 1846 "Moogle\\set.ml" 61 1810 1847
 type(
   C.t
 )
 ident(
-  int_ref x "Moogle\\set.ml" 58 1681 1700 "Moogle\\set.ml" 58 1681 1701
+  int_ref x "Moogle\\set.ml" 58 1739 1758 "Moogle\\set.ml" 58 1739 1759
 )
-"Moogle\\set.ml" 61 1749 1787 "Moogle\\set.ml" 61 1749 1788
+"Moogle\\set.ml" 61 1810 1848 "Moogle\\set.ml" 61 1810 1849
 type(
   C.t
 )
 ident(
-  int_ref y "Moogle\\set.ml" 61 1749 1759 "Moogle\\set.ml" 61 1749 1760
+  int_ref y "Moogle\\set.ml" 61 1810 1820 "Moogle\\set.ml" 61 1810 1821
 )
-"Moogle\\set.ml" 61 1749 1775 "Moogle\\set.ml" 61 1749 1788
-call(
-  stack
-)
+"Moogle\\set.ml" 61 1810 1836 "Moogle\\set.ml" 61 1810 1849
 type(
   Order.order
 )
-"Moogle\\set.ml" 62 1795 1819 "Moogle\\set.ml" 62 1795 1826
+"Moogle\\set.ml" 62 1857 1881 "Moogle\\set.ml" 62 1857 1888
 type(
   Order.order
 )
-"Moogle\\set.ml" 62 1795 1830 "Moogle\\set.ml" 62 1795 1831
+"Moogle\\set.ml" 62 1857 1892 "Moogle\\set.ml" 62 1857 1893
 type(
   C.t
 )
 ident(
-  int_ref y "Moogle\\set.ml" 61 1749 1759 "Moogle\\set.ml" 61 1749 1760
+  int_ref y "Moogle\\set.ml" 61 1810 1820 "Moogle\\set.ml" 61 1810 1821
 )
-"Moogle\\set.ml" 62 1795 1834 "Moogle\\set.ml" 62 1795 1840
+"Moogle\\set.ml" 62 1857 1896 "Moogle\\set.ml" 62 1857 1902
 type(
   C.t -> C.t list -> C.t list
 )
 ident(
-  int_ref insert "Moogle\\set.ml" 58 1681 1693 "Moogle\\set.ml" 58 1681 1699
+  int_ref insert "Moogle\\set.ml" 58 1739 1751 "Moogle\\set.ml" 58 1739 1757
 )
-"Moogle\\set.ml" 62 1795 1841 "Moogle\\set.ml" 62 1795 1842
+"Moogle\\set.ml" 62 1857 1903 "Moogle\\set.ml" 62 1857 1904
 type(
   C.t
 )
 ident(
-  int_ref x "Moogle\\set.ml" 58 1681 1700 "Moogle\\set.ml" 58 1681 1701
+  int_ref x "Moogle\\set.ml" 58 1739 1758 "Moogle\\set.ml" 58 1739 1759
 )
-"Moogle\\set.ml" 62 1795 1843 "Moogle\\set.ml" 62 1795 1845
+"Moogle\\set.ml" 62 1857 1905 "Moogle\\set.ml" 62 1857 1907
 type(
   C.t list
 )
 ident(
-  int_ref ys "Moogle\\set.ml" 61 1749 1762 "Moogle\\set.ml" 61 1749 1764
+  int_ref ys "Moogle\\set.ml" 61 1810 1823 "Moogle\\set.ml" 61 1810 1825
 )
-"Moogle\\set.ml" 62 1795 1833 "Moogle\\set.ml" 62 1795 1846
-call(
-  stack
-)
+"Moogle\\set.ml" 62 1857 1895 "Moogle\\set.ml" 62 1857 1908
 type(
   C.t list
 )
-"Moogle\\set.ml" 62 1795 1830 "Moogle\\set.ml" 62 1795 1846
+"Moogle\\set.ml" 62 1857 1892 "Moogle\\set.ml" 62 1857 1908
 type(
   C.t list
 )
-"Moogle\\set.ml" 63 1847 1871 "Moogle\\set.ml" 63 1847 1873
+"Moogle\\set.ml" 63 1910 1934 "Moogle\\set.ml" 63 1910 1936
 type(
   Order.order
 )
-"Moogle\\set.ml" 63 1847 1877 "Moogle\\set.ml" 63 1847 1879
+"Moogle\\set.ml" 63 1910 1940 "Moogle\\set.ml" 63 1910 1942
 type(
   C.t list
 )
 ident(
-  int_ref xs "Moogle\\set.ml" 58 1681 1702 "Moogle\\set.ml" 58 1681 1704
+  int_ref xs "Moogle\\set.ml" 58 1739 1760 "Moogle\\set.ml" 58 1739 1762
 )
-"Moogle\\set.ml" 64 1880 1904 "Moogle\\set.ml" 64 1880 1908
+"Moogle\\set.ml" 64 1944 1968 "Moogle\\set.ml" 64 1944 1972
 type(
   Order.order
 )
-"Moogle\\set.ml" 64 1880 1912 "Moogle\\set.ml" 64 1880 1913
+"Moogle\\set.ml" 64 1944 1976 "Moogle\\set.ml" 64 1944 1977
 type(
   C.t
 )
 ident(
-  int_ref x "Moogle\\set.ml" 58 1681 1700 "Moogle\\set.ml" 58 1681 1701
+  int_ref x "Moogle\\set.ml" 58 1739 1758 "Moogle\\set.ml" 58 1739 1759
 )
-"Moogle\\set.ml" 64 1880 1915 "Moogle\\set.ml" 64 1880 1917
+"Moogle\\set.ml" 64 1944 1979 "Moogle\\set.ml" 64 1944 1981
 type(
   C.t list
 )
 ident(
-  int_ref xs "Moogle\\set.ml" 58 1681 1702 "Moogle\\set.ml" 58 1681 1704
+  int_ref xs "Moogle\\set.ml" 58 1739 1760 "Moogle\\set.ml" 58 1739 1762
 )
-"Moogle\\set.ml" 64 1880 1912 "Moogle\\set.ml" 64 1880 1917
+"Moogle\\set.ml" 64 1944 1976 "Moogle\\set.ml" 64 1944 1981
 type(
   C.t list
 )
-"Moogle\\set.ml" 61 1749 1768 "Moogle\\set.ml" 64 1880 1918
+"Moogle\\set.ml" 61 1810 1829 "Moogle\\set.ml" 64 1944 1982
 type(
   C.t list
 )
-"Moogle\\set.ml" 59 1708 1714 "Moogle\\set.ml" 64 1880 1918
+"Moogle\\set.ml" 59 1767 1773 "Moogle\\set.ml" 64 1944 1982
 type(
   C.t list
 )
-"Moogle\\set.ml" 65 1919 1927 "Moogle\\set.ml" 65 1919 1932
+"Moogle\\set.ml" 65 1984 1992 "Moogle\\set.ml" 65 1984 1997
 type(
   C.t list -> C.t list -> C.t list
 )
 ident(
-  def union "Moogle\\set.ml" 66 1970 1974 "Moogle\\set.ml" 93 2933 2938
+  def union "Moogle\\set.ml" 66 2036 2040 "Moogle\\set.ml" 93 3026 3031
 )
-"Moogle\\set.ml" 65 1919 1933 "Moogle\\set.ml" 65 1919 1935
+"Moogle\\set.ml" 65 1984 1998 "Moogle\\set.ml" 65 1984 2000
 type(
   C.t list
 )
 ident(
-  def xs "Moogle\\set.ml" 65 1919 1936 "Moogle\\set.ml" 65 1919 1969
+  def xs "Moogle\\set.ml" 65 1984 2001 "Moogle\\set.ml" 65 1984 2034
 )
-"Moogle\\set.ml" 65 1919 1936 "Moogle\\set.ml" 65 1919 1938
+"Moogle\\set.ml" 65 1984 2001 "Moogle\\set.ml" 65 1984 2003
 type(
   C.t list
 )
 ident(
-  def ys "Moogle\\set.ml" 65 1919 1941 "Moogle\\set.ml" 65 1919 1969
+  def ys "Moogle\\set.ml" 65 1984 2006 "Moogle\\set.ml" 65 1984 2034
 )
-"Moogle\\set.ml" 65 1919 1941 "Moogle\\set.ml" 65 1919 1956
+"Moogle\\set.ml" 65 1984 2006 "Moogle\\set.ml" 65 1984 2021
 type(
   (C.t -> C.t list -> C.t list) -> C.t list -> C.t list -> C.t list
 )
 ident(
   ext_ref List.fold_right
 )
-"Moogle\\set.ml" 65 1919 1957 "Moogle\\set.ml" 65 1919 1963
+"Moogle\\set.ml" 65 1984 2022 "Moogle\\set.ml" 65 1984 2028
 type(
   C.t -> C.t list -> C.t list
 )
 ident(
-  int_ref insert "Moogle\\set.ml" 58 1681 1693 "Moogle\\set.ml" 58 1681 1699
+  int_ref insert "Moogle\\set.ml" 58 1739 1751 "Moogle\\set.ml" 58 1739 1757
 )
-"Moogle\\set.ml" 65 1919 1964 "Moogle\\set.ml" 65 1919 1966
+"Moogle\\set.ml" 65 1984 2029 "Moogle\\set.ml" 65 1984 2031
 type(
   C.t list
 )
 ident(
-  int_ref xs "Moogle\\set.ml" 65 1919 1933 "Moogle\\set.ml" 65 1919 1935
+  int_ref xs "Moogle\\set.ml" 65 1984 1998 "Moogle\\set.ml" 65 1984 2000
 )
-"Moogle\\set.ml" 65 1919 1967 "Moogle\\set.ml" 65 1919 1969
+"Moogle\\set.ml" 65 1984 2032 "Moogle\\set.ml" 65 1984 2034
 type(
   C.t list
 )
 ident(
-  int_ref ys "Moogle\\set.ml" 65 1919 1936 "Moogle\\set.ml" 65 1919 1938
+  int_ref ys "Moogle\\set.ml" 65 1984 2001 "Moogle\\set.ml" 65 1984 2003
 )
-"Moogle\\set.ml" 65 1919 1941 "Moogle\\set.ml" 65 1919 1969
-call(
-  tail
-)
+"Moogle\\set.ml" 65 1984 2006 "Moogle\\set.ml" 65 1984 2034
 type(
   C.t list
 )
-"Moogle\\set.ml" 66 1970 1982 "Moogle\\set.ml" 66 1970 1988
+"Moogle\\set.ml" 66 2036 2048 "Moogle\\set.ml" 66 2036 2054
 type(
   C.t -> C.t list -> C.t list
 )
 ident(
-  def remove "Moogle\\set.ml" 66 1970 1974 "Moogle\\set.ml" 93 2933 2938
+  def remove "Moogle\\set.ml" 66 2036 2040 "Moogle\\set.ml" 93 3026 3031
 )
-"Moogle\\set.ml" 66 1970 1989 "Moogle\\set.ml" 66 1970 1990
+"Moogle\\set.ml" 66 2036 2055 "Moogle\\set.ml" 66 2036 2056
 type(
   C.t
 )
 ident(
-  def y "Moogle\\set.ml" 66 1970 1991 "Moogle\\set.ml" 72 2153 2206
+  def y "Moogle\\set.ml" 66 2036 2057 "Moogle\\set.ml" 72 2225 2278
 )
-"Moogle\\set.ml" 66 1970 1991 "Moogle\\set.ml" 66 1970 1993
+"Moogle\\set.ml" 66 2036 2057 "Moogle\\set.ml" 66 2036 2059
 type(
   C.t list
 )
 ident(
-  def xs "Moogle\\set.ml" 67 1997 2003 "Moogle\\set.ml" 72 2153 2206
+  def xs "Moogle\\set.ml" 67 2064 2070 "Moogle\\set.ml" 72 2225 2278
 )
-"Moogle\\set.ml" 67 1997 2009 "Moogle\\set.ml" 67 1997 2011
+"Moogle\\set.ml" 67 2064 2076 "Moogle\\set.ml" 67 2064 2078
 type(
   C.t list
 )
 ident(
-  int_ref xs "Moogle\\set.ml" 66 1970 1991 "Moogle\\set.ml" 66 1970 1993
+  int_ref xs "Moogle\\set.ml" 66 2036 2057 "Moogle\\set.ml" 66 2036 2059
 )
-"Moogle\\set.ml" 68 2018 2028 "Moogle\\set.ml" 68 2018 2030
+"Moogle\\set.ml" 68 2086 2096 "Moogle\\set.ml" 68 2086 2098
 type(
   C.t list
 )
-"Moogle\\set.ml" 68 2018 2034 "Moogle\\set.ml" 68 2018 2036
+"Moogle\\set.ml" 68 2086 2102 "Moogle\\set.ml" 68 2086 2104
 type(
   C.t list
 )
-"Moogle\\set.ml" 69 2037 2047 "Moogle\\set.ml" 69 2037 2048
+"Moogle\\set.ml" 69 2106 2116 "Moogle\\set.ml" 69 2106 2117
 type(
   C.t
 )
 ident(
-  def x "Moogle\\set.ml" 69 2037 2057 "Moogle\\set.ml" 72 2153 2206
+  def x "Moogle\\set.ml" 69 2106 2126 "Moogle\\set.ml" 72 2225 2278
 )
-"Moogle\\set.ml" 69 2037 2050 "Moogle\\set.ml" 69 2037 2053
+"Moogle\\set.ml" 69 2106 2119 "Moogle\\set.ml" 69 2106 2122
 type(
   C.t list
 )
 ident(
-  def xs1 "Moogle\\set.ml" 69 2037 2057 "Moogle\\set.ml" 72 2153 2206
+  def xs1 "Moogle\\set.ml" 69 2106 2126 "Moogle\\set.ml" 72 2225 2278
 )
-"Moogle\\set.ml" 69 2037 2047 "Moogle\\set.ml" 69 2037 2053
+"Moogle\\set.ml" 69 2106 2116 "Moogle\\set.ml" 69 2106 2122
 type(
   C.t list
 )
-"Moogle\\set.ml" 69 2037 2064 "Moogle\\set.ml" 69 2037 2073
+"Moogle\\set.ml" 69 2106 2133 "Moogle\\set.ml" 69 2106 2142
 type(
   C.t -> C.t -> Order.order
 )
 ident(
   ext_ref C.compare
 )
-"Moogle\\set.ml" 69 2037 2074 "Moogle\\set.ml" 69 2037 2075
+"Moogle\\set.ml" 69 2106 2143 "Moogle\\set.ml" 69 2106 2144
 type(
   C.t
 )
 ident(
-  int_ref y "Moogle\\set.ml" 66 1970 1989 "Moogle\\set.ml" 66 1970 1990
+  int_ref y "Moogle\\set.ml" 66 2036 2055 "Moogle\\set.ml" 66 2036 2056
 )
-"Moogle\\set.ml" 69 2037 2076 "Moogle\\set.ml" 69 2037 2077
+"Moogle\\set.ml" 69 2106 2145 "Moogle\\set.ml" 69 2106 2146
 type(
   C.t
 )
 ident(
-  int_ref x "Moogle\\set.ml" 69 2037 2047 "Moogle\\set.ml" 69 2037 2048
+  int_ref x "Moogle\\set.ml" 69 2106 2116 "Moogle\\set.ml" 69 2106 2117
 )
-"Moogle\\set.ml" 69 2037 2064 "Moogle\\set.ml" 69 2037 2077
-call(
-  stack
-)
+"Moogle\\set.ml" 69 2106 2133 "Moogle\\set.ml" 69 2106 2146
 type(
   Order.order
 )
-"Moogle\\set.ml" 70 2084 2108 "Moogle\\set.ml" 70 2084 2110
+"Moogle\\set.ml" 70 2154 2178 "Moogle\\set.ml" 70 2154 2180
 type(
   Order.order
 )
-"Moogle\\set.ml" 70 2084 2114 "Moogle\\set.ml" 70 2084 2117
+"Moogle\\set.ml" 70 2154 2184 "Moogle\\set.ml" 70 2154 2187
 type(
   C.t list
 )
 ident(
-  int_ref xs1 "Moogle\\set.ml" 69 2037 2050 "Moogle\\set.ml" 69 2037 2053
+  int_ref xs1 "Moogle\\set.ml" 69 2106 2119 "Moogle\\set.ml" 69 2106 2122
 )
-"Moogle\\set.ml" 71 2118 2142 "Moogle\\set.ml" 71 2118 2146
+"Moogle\\set.ml" 71 2189 2213 "Moogle\\set.ml" 71 2189 2217
 type(
   Order.order
 )
-"Moogle\\set.ml" 71 2118 2150 "Moogle\\set.ml" 71 2118 2152
+"Moogle\\set.ml" 71 2189 2221 "Moogle\\set.ml" 71 2189 2223
 type(
   C.t list
 )
 ident(
-  int_ref xs "Moogle\\set.ml" 66 1970 1991 "Moogle\\set.ml" 66 1970 1993
+  int_ref xs "Moogle\\set.ml" 66 2036 2057 "Moogle\\set.ml" 66 2036 2059
 )
-"Moogle\\set.ml" 72 2153 2177 "Moogle\\set.ml" 72 2153 2184
+"Moogle\\set.ml" 72 2225 2249 "Moogle\\set.ml" 72 2225 2256
 type(
   Order.order
 )
-"Moogle\\set.ml" 72 2153 2188 "Moogle\\set.ml" 72 2153 2189
+"Moogle\\set.ml" 72 2225 2260 "Moogle\\set.ml" 72 2225 2261
 type(
   C.t
 )
 ident(
-  int_ref x "Moogle\\set.ml" 69 2037 2047 "Moogle\\set.ml" 69 2037 2048
+  int_ref x "Moogle\\set.ml" 69 2106 2116 "Moogle\\set.ml" 69 2106 2117
 )
-"Moogle\\set.ml" 72 2153 2192 "Moogle\\set.ml" 72 2153 2198
+"Moogle\\set.ml" 72 2225 2264 "Moogle\\set.ml" 72 2225 2270
 type(
   C.t -> C.t list -> C.t list
 )
 ident(
-  int_ref remove "Moogle\\set.ml" 66 1970 1982 "Moogle\\set.ml" 66 1970 1988
+  int_ref remove "Moogle\\set.ml" 66 2036 2048 "Moogle\\set.ml" 66 2036 2054
 )
-"Moogle\\set.ml" 72 2153 2199 "Moogle\\set.ml" 72 2153 2200
+"Moogle\\set.ml" 72 2225 2271 "Moogle\\set.ml" 72 2225 2272
 type(
   C.t
 )
 ident(
-  int_ref y "Moogle\\set.ml" 66 1970 1989 "Moogle\\set.ml" 66 1970 1990
+  int_ref y "Moogle\\set.ml" 66 2036 2055 "Moogle\\set.ml" 66 2036 2056
 )
-"Moogle\\set.ml" 72 2153 2201 "Moogle\\set.ml" 72 2153 2204
+"Moogle\\set.ml" 72 2225 2273 "Moogle\\set.ml" 72 2225 2276
 type(
   C.t list
 )
 ident(
-  int_ref xs1 "Moogle\\set.ml" 69 2037 2050 "Moogle\\set.ml" 69 2037 2053
+  int_ref xs1 "Moogle\\set.ml" 69 2106 2119 "Moogle\\set.ml" 69 2106 2122
 )
-"Moogle\\set.ml" 72 2153 2191 "Moogle\\set.ml" 72 2153 2205
-call(
-  stack
-)
+"Moogle\\set.ml" 72 2225 2263 "Moogle\\set.ml" 72 2225 2277
 type(
   C.t list
 )
-"Moogle\\set.ml" 72 2153 2188 "Moogle\\set.ml" 72 2153 2205
+"Moogle\\set.ml" 72 2225 2260 "Moogle\\set.ml" 72 2225 2277
 type(
   C.t list
 )
-"Moogle\\set.ml" 69 2037 2057 "Moogle\\set.ml" 72 2153 2206
+"Moogle\\set.ml" 69 2106 2126 "Moogle\\set.ml" 72 2225 2278
 type(
   C.t list
 )
-"Moogle\\set.ml" 67 1997 2003 "Moogle\\set.ml" 72 2153 2206
+"Moogle\\set.ml" 67 2064 2070 "Moogle\\set.ml" 72 2225 2278
 type(
   C.t list
 )
-"Moogle\\set.ml" 73 2207 2219 "Moogle\\set.ml" 73 2207 2228
+"Moogle\\set.ml" 73 2280 2292 "Moogle\\set.ml" 73 2280 2301
 type(
   C.t list -> C.t list -> C.t list
 )
 ident(
-  def intersect "Moogle\\set.ml" 73 2207 2211 "Moogle\\set.ml" 93 2933 2938
+  def intersect "Moogle\\set.ml" 73 2280 2284 "Moogle\\set.ml" 93 3026 3031
 )
-"Moogle\\set.ml" 73 2207 2229 "Moogle\\set.ml" 73 2207 2231
+"Moogle\\set.ml" 73 2280 2302 "Moogle\\set.ml" 73 2280 2304
 type(
   C.t list
 )
 ident(
-  def xs "Moogle\\set.ml" 73 2207 2232 "Moogle\\set.ml" 80 2482 2542
+  def xs "Moogle\\set.ml" 73 2280 2305 "Moogle\\set.ml" 80 2562 2622
 )
-"Moogle\\set.ml" 73 2207 2232 "Moogle\\set.ml" 73 2207 2234
+"Moogle\\set.ml" 73 2280 2305 "Moogle\\set.ml" 73 2280 2307
 type(
   C.t list
 )
 ident(
-  def ys "Moogle\\set.ml" 74 2238 2244 "Moogle\\set.ml" 80 2482 2542
+  def ys "Moogle\\set.ml" 74 2312 2318 "Moogle\\set.ml" 80 2562 2622
 )
-"Moogle\\set.ml" 74 2238 2250 "Moogle\\set.ml" 74 2238 2252
+"Moogle\\set.ml" 74 2312 2324 "Moogle\\set.ml" 74 2312 2326
 type(
   C.t list
 )
 ident(
-  int_ref xs "Moogle\\set.ml" 73 2207 2229 "Moogle\\set.ml" 73 2207 2231
+  int_ref xs "Moogle\\set.ml" 73 2280 2302 "Moogle\\set.ml" 73 2280 2304
 )
-"Moogle\\set.ml" 74 2238 2254 "Moogle\\set.ml" 74 2238 2256
+"Moogle\\set.ml" 74 2312 2328 "Moogle\\set.ml" 74 2312 2330
 type(
   C.t list
 )
 ident(
-  int_ref ys "Moogle\\set.ml" 73 2207 2232 "Moogle\\set.ml" 73 2207 2234
+  int_ref ys "Moogle\\set.ml" 73 2280 2305 "Moogle\\set.ml" 73 2280 2307
 )
-"Moogle\\set.ml" 74 2238 2250 "Moogle\\set.ml" 74 2238 2256
+"Moogle\\set.ml" 74 2312 2324 "Moogle\\set.ml" 74 2312 2330
 type(
   C.t list * C.t list
 )
-"Moogle\\set.ml" 75 2263 2273 "Moogle\\set.ml" 75 2263 2275
+"Moogle\\set.ml" 75 2338 2348 "Moogle\\set.ml" 75 2338 2350
 type(
   C.t list
 )
-"Moogle\\set.ml" 75 2263 2277 "Moogle\\set.ml" 75 2263 2278
+"Moogle\\set.ml" 75 2338 2352 "Moogle\\set.ml" 75 2338 2353
 type(
   C.t list
 )
-"Moogle\\set.ml" 75 2263 2273 "Moogle\\set.ml" 75 2263 2278
+"Moogle\\set.ml" 75 2338 2348 "Moogle\\set.ml" 75 2338 2353
 type(
   C.t list * C.t list
 )
-"Moogle\\set.ml" 75 2263 2282 "Moogle\\set.ml" 75 2263 2284
+"Moogle\\set.ml" 75 2338 2357 "Moogle\\set.ml" 75 2338 2359
 type(
   C.t list
 )
-"Moogle\\set.ml" 76 2285 2295 "Moogle\\set.ml" 76 2285 2296
+"Moogle\\set.ml" 76 2361 2371 "Moogle\\set.ml" 76 2361 2372
 type(
   C.t list
 )
-"Moogle\\set.ml" 76 2285 2298 "Moogle\\set.ml" 76 2285 2300
+"Moogle\\set.ml" 76 2361 2374 "Moogle\\set.ml" 76 2361 2376
 type(
   C.t list
 )
-"Moogle\\set.ml" 76 2285 2295 "Moogle\\set.ml" 76 2285 2300
+"Moogle\\set.ml" 76 2361 2371 "Moogle\\set.ml" 76 2361 2376
 type(
   C.t list * C.t list
 )
-"Moogle\\set.ml" 76 2285 2304 "Moogle\\set.ml" 76 2285 2306
+"Moogle\\set.ml" 76 2361 2380 "Moogle\\set.ml" 76 2361 2382
 type(
   C.t list
 )
-"Moogle\\set.ml" 77 2307 2317 "Moogle\\set.ml" 77 2307 2319
+"Moogle\\set.ml" 77 2384 2394 "Moogle\\set.ml" 77 2384 2396
 type(
   C.t
 )
 ident(
-  def xh "Moogle\\set.ml" 77 2307 2335 "Moogle\\set.ml" 80 2482 2542
+  def xh "Moogle\\set.ml" 77 2384 2412 "Moogle\\set.ml" 80 2562 2622
 )
-"Moogle\\set.ml" 77 2307 2321 "Moogle\\set.ml" 77 2307 2323
+"Moogle\\set.ml" 77 2384 2398 "Moogle\\set.ml" 77 2384 2400
 type(
   C.t list
 )
 ident(
-  def xt "Moogle\\set.ml" 77 2307 2335 "Moogle\\set.ml" 80 2482 2542
+  def xt "Moogle\\set.ml" 77 2384 2412 "Moogle\\set.ml" 80 2562 2622
 )
-"Moogle\\set.ml" 77 2307 2317 "Moogle\\set.ml" 77 2307 2323
+"Moogle\\set.ml" 77 2384 2394 "Moogle\\set.ml" 77 2384 2400
 type(
   C.t list
 )
-"Moogle\\set.ml" 77 2307 2325 "Moogle\\set.ml" 77 2307 2327
+"Moogle\\set.ml" 77 2384 2402 "Moogle\\set.ml" 77 2384 2404
 type(
   C.t
 )
 ident(
-  def yh "Moogle\\set.ml" 77 2307 2335 "Moogle\\set.ml" 80 2482 2542
+  def yh "Moogle\\set.ml" 77 2384 2412 "Moogle\\set.ml" 80 2562 2622
 )
-"Moogle\\set.ml" 77 2307 2329 "Moogle\\set.ml" 77 2307 2331
+"Moogle\\set.ml" 77 2384 2406 "Moogle\\set.ml" 77 2384 2408
 type(
   C.t list
 )
 ident(
-  def yt "Moogle\\set.ml" 77 2307 2335 "Moogle\\set.ml" 80 2482 2542
+  def yt "Moogle\\set.ml" 77 2384 2412 "Moogle\\set.ml" 80 2562 2622
 )
-"Moogle\\set.ml" 77 2307 2325 "Moogle\\set.ml" 77 2307 2331
+"Moogle\\set.ml" 77 2384 2402 "Moogle\\set.ml" 77 2384 2408
 type(
   C.t list
 )
-"Moogle\\set.ml" 77 2307 2317 "Moogle\\set.ml" 77 2307 2331
+"Moogle\\set.ml" 77 2384 2394 "Moogle\\set.ml" 77 2384 2408
 type(
   C.t list * C.t list
 )
-"Moogle\\set.ml" 77 2307 2342 "Moogle\\set.ml" 77 2307 2351
+"Moogle\\set.ml" 77 2384 2419 "Moogle\\set.ml" 77 2384 2428
 type(
   C.t -> C.t -> Order.order
 )
 ident(
   ext_ref C.compare
 )
-"Moogle\\set.ml" 77 2307 2352 "Moogle\\set.ml" 77 2307 2354
+"Moogle\\set.ml" 77 2384 2429 "Moogle\\set.ml" 77 2384 2431
 type(
   C.t
 )
 ident(
-  int_ref xh "Moogle\\set.ml" 77 2307 2317 "Moogle\\set.ml" 77 2307 2319
+  int_ref xh "Moogle\\set.ml" 77 2384 2394 "Moogle\\set.ml" 77 2384 2396
 )
-"Moogle\\set.ml" 77 2307 2355 "Moogle\\set.ml" 77 2307 2357
+"Moogle\\set.ml" 77 2384 2432 "Moogle\\set.ml" 77 2384 2434
 type(
   C.t
 )
 ident(
-  int_ref yh "Moogle\\set.ml" 77 2307 2325 "Moogle\\set.ml" 77 2307 2327
+  int_ref yh "Moogle\\set.ml" 77 2384 2402 "Moogle\\set.ml" 77 2384 2404
 )
-"Moogle\\set.ml" 77 2307 2342 "Moogle\\set.ml" 77 2307 2357
-call(
-  stack
-)
+"Moogle\\set.ml" 77 2384 2419 "Moogle\\set.ml" 77 2384 2434
 type(
   Order.order
 )
-"Moogle\\set.ml" 78 2364 2397 "Moogle\\set.ml" 78 2364 2399
+"Moogle\\set.ml" 78 2442 2475 "Moogle\\set.ml" 78 2442 2477
 type(
   Order.order
 )
-"Moogle\\set.ml" 78 2364 2403 "Moogle\\set.ml" 78 2364 2405
+"Moogle\\set.ml" 78 2442 2481 "Moogle\\set.ml" 78 2442 2483
 type(
   C.t
 )
 ident(
-  int_ref xh "Moogle\\set.ml" 77 2307 2317 "Moogle\\set.ml" 77 2307 2319
+  int_ref xh "Moogle\\set.ml" 77 2384 2394 "Moogle\\set.ml" 77 2384 2396
 )
-"Moogle\\set.ml" 78 2364 2408 "Moogle\\set.ml" 78 2364 2417
+"Moogle\\set.ml" 78 2442 2486 "Moogle\\set.ml" 78 2442 2495
 type(
   C.t list -> C.t list -> C.t list
 )
 ident(
-  int_ref intersect "Moogle\\set.ml" 73 2207 2219 "Moogle\\set.ml" 73 2207 2228
+  int_ref intersect "Moogle\\set.ml" 73 2280 2292 "Moogle\\set.ml" 73 2280 2301
 )
-"Moogle\\set.ml" 78 2364 2418 "Moogle\\set.ml" 78 2364 2420
+"Moogle\\set.ml" 78 2442 2496 "Moogle\\set.ml" 78 2442 2498
 type(
   C.t list
 )
 ident(
-  int_ref xt "Moogle\\set.ml" 77 2307 2321 "Moogle\\set.ml" 77 2307 2323
+  int_ref xt "Moogle\\set.ml" 77 2384 2398 "Moogle\\set.ml" 77 2384 2400
 )
-"Moogle\\set.ml" 78 2364 2421 "Moogle\\set.ml" 78 2364 2423
+"Moogle\\set.ml" 78 2442 2499 "Moogle\\set.ml" 78 2442 2501
 type(
   C.t list
 )
 ident(
-  int_ref yt "Moogle\\set.ml" 77 2307 2329 "Moogle\\set.ml" 77 2307 2331
+  int_ref yt "Moogle\\set.ml" 77 2384 2406 "Moogle\\set.ml" 77 2384 2408
 )
-"Moogle\\set.ml" 78 2364 2407 "Moogle\\set.ml" 78 2364 2424
-call(
-  stack
-)
+"Moogle\\set.ml" 78 2442 2485 "Moogle\\set.ml" 78 2442 2502
 type(
   C.t list
 )
-"Moogle\\set.ml" 78 2364 2403 "Moogle\\set.ml" 78 2364 2424
+"Moogle\\set.ml" 78 2442 2481 "Moogle\\set.ml" 78 2442 2502
 type(
   C.t list
 )
-"Moogle\\set.ml" 79 2425 2458 "Moogle\\set.ml" 79 2425 2462
+"Moogle\\set.ml" 79 2504 2537 "Moogle\\set.ml" 79 2504 2541
 type(
   Order.order
 )
-"Moogle\\set.ml" 79 2425 2466 "Moogle\\set.ml" 79 2425 2475
+"Moogle\\set.ml" 79 2504 2545 "Moogle\\set.ml" 79 2504 2554
 type(
   C.t list -> C.t list -> C.t list
 )
 ident(
-  int_ref intersect "Moogle\\set.ml" 73 2207 2219 "Moogle\\set.ml" 73 2207 2228
+  int_ref intersect "Moogle\\set.ml" 73 2280 2292 "Moogle\\set.ml" 73 2280 2301
 )
-"Moogle\\set.ml" 79 2425 2476 "Moogle\\set.ml" 79 2425 2478
+"Moogle\\set.ml" 79 2504 2555 "Moogle\\set.ml" 79 2504 2557
 type(
   C.t list
 )
 ident(
-  int_ref xt "Moogle\\set.ml" 77 2307 2321 "Moogle\\set.ml" 77 2307 2323
+  int_ref xt "Moogle\\set.ml" 77 2384 2398 "Moogle\\set.ml" 77 2384 2400
 )
-"Moogle\\set.ml" 79 2425 2479 "Moogle\\set.ml" 79 2425 2481
+"Moogle\\set.ml" 79 2504 2558 "Moogle\\set.ml" 79 2504 2560
 type(
   C.t list
 )
 ident(
-  int_ref ys "Moogle\\set.ml" 73 2207 2232 "Moogle\\set.ml" 73 2207 2234
+  int_ref ys "Moogle\\set.ml" 73 2280 2305 "Moogle\\set.ml" 73 2280 2307
 )
-"Moogle\\set.ml" 79 2425 2466 "Moogle\\set.ml" 79 2425 2481
-call(
-  tail
-)
+"Moogle\\set.ml" 79 2504 2545 "Moogle\\set.ml" 79 2504 2560
 type(
   C.t list
 )
-"Moogle\\set.ml" 80 2482 2515 "Moogle\\set.ml" 80 2482 2522
+"Moogle\\set.ml" 80 2562 2595 "Moogle\\set.ml" 80 2562 2602
 type(
   Order.order
 )
-"Moogle\\set.ml" 80 2482 2526 "Moogle\\set.ml" 80 2482 2535
+"Moogle\\set.ml" 80 2562 2606 "Moogle\\set.ml" 80 2562 2615
 type(
   C.t list -> C.t list -> C.t list
 )
 ident(
-  int_ref intersect "Moogle\\set.ml" 73 2207 2219 "Moogle\\set.ml" 73 2207 2228
+  int_ref intersect "Moogle\\set.ml" 73 2280 2292 "Moogle\\set.ml" 73 2280 2301
 )
-"Moogle\\set.ml" 80 2482 2536 "Moogle\\set.ml" 80 2482 2538
+"Moogle\\set.ml" 80 2562 2616 "Moogle\\set.ml" 80 2562 2618
 type(
   C.t list
 )
 ident(
-  int_ref xs "Moogle\\set.ml" 73 2207 2229 "Moogle\\set.ml" 73 2207 2231
+  int_ref xs "Moogle\\set.ml" 73 2280 2302 "Moogle\\set.ml" 73 2280 2304
 )
-"Moogle\\set.ml" 80 2482 2539 "Moogle\\set.ml" 80 2482 2541
+"Moogle\\set.ml" 80 2562 2619 "Moogle\\set.ml" 80 2562 2621
 type(
   C.t list
 )
 ident(
-  int_ref yt "Moogle\\set.ml" 77 2307 2329 "Moogle\\set.ml" 77 2307 2331
+  int_ref yt "Moogle\\set.ml" 77 2384 2406 "Moogle\\set.ml" 77 2384 2408
 )
-"Moogle\\set.ml" 80 2482 2526 "Moogle\\set.ml" 80 2482 2541
-call(
-  tail
-)
+"Moogle\\set.ml" 80 2562 2606 "Moogle\\set.ml" 80 2562 2621
 type(
   C.t list
 )
-"Moogle\\set.ml" 77 2307 2335 "Moogle\\set.ml" 80 2482 2542
+"Moogle\\set.ml" 77 2384 2412 "Moogle\\set.ml" 80 2562 2622
 type(
   C.t list
 )
-"Moogle\\set.ml" 74 2238 2244 "Moogle\\set.ml" 80 2482 2542
+"Moogle\\set.ml" 74 2312 2318 "Moogle\\set.ml" 80 2562 2622
 type(
   C.t list
 )
-"Moogle\\set.ml" 81 2543 2555 "Moogle\\set.ml" 81 2543 2561
+"Moogle\\set.ml" 81 2624 2636 "Moogle\\set.ml" 81 2624 2642
 type(
   C.t list -> C.t -> bool
 )
 ident(
-  def member "Moogle\\set.ml" 81 2543 2547 "Moogle\\set.ml" 93 2933 2938
+  def member "Moogle\\set.ml" 81 2624 2628 "Moogle\\set.ml" 93 3026 3031
 )
-"Moogle\\set.ml" 81 2543 2562 "Moogle\\set.ml" 81 2543 2564
+"Moogle\\set.ml" 81 2624 2643 "Moogle\\set.ml" 81 2624 2645
 type(
   C.t list
 )
 ident(
-  def xs "Moogle\\set.ml" 81 2543 2565 "Moogle\\set.ml" 87 2740 2778
+  def xs "Moogle\\set.ml" 81 2624 2646 "Moogle\\set.ml" 87 2827 2865
 )
-"Moogle\\set.ml" 81 2543 2565 "Moogle\\set.ml" 81 2543 2566
+"Moogle\\set.ml" 81 2624 2646 "Moogle\\set.ml" 81 2624 2647
 type(
   C.t
 )
 ident(
-  def x "Moogle\\set.ml" 82 2570 2576 "Moogle\\set.ml" 87 2740 2778
+  def x "Moogle\\set.ml" 82 2652 2658 "Moogle\\set.ml" 87 2827 2865
 )
-"Moogle\\set.ml" 82 2570 2582 "Moogle\\set.ml" 82 2570 2584
+"Moogle\\set.ml" 82 2652 2664 "Moogle\\set.ml" 82 2652 2666
 type(
   C.t list
 )
 ident(
-  int_ref xs "Moogle\\set.ml" 81 2543 2562 "Moogle\\set.ml" 81 2543 2564
+  int_ref xs "Moogle\\set.ml" 81 2624 2643 "Moogle\\set.ml" 81 2624 2645
 )
-"Moogle\\set.ml" 83 2591 2601 "Moogle\\set.ml" 83 2591 2603
+"Moogle\\set.ml" 83 2674 2684 "Moogle\\set.ml" 83 2674 2686
 type(
   C.t list
 )
-"Moogle\\set.ml" 83 2591 2607 "Moogle\\set.ml" 83 2591 2612
+"Moogle\\set.ml" 83 2674 2690 "Moogle\\set.ml" 83 2674 2695
 type(
   bool
 )
-"Moogle\\set.ml" 84 2613 2623 "Moogle\\set.ml" 84 2613 2624
+"Moogle\\set.ml" 84 2697 2707 "Moogle\\set.ml" 84 2697 2708
 type(
   C.t
 )
 ident(
-  def y "Moogle\\set.ml" 84 2613 2632 "Moogle\\set.ml" 87 2740 2778
+  def y "Moogle\\set.ml" 84 2697 2716 "Moogle\\set.ml" 87 2827 2865
 )
-"Moogle\\set.ml" 84 2613 2626 "Moogle\\set.ml" 84 2613 2628
+"Moogle\\set.ml" 84 2697 2710 "Moogle\\set.ml" 84 2697 2712
 type(
   C.t list
 )
 ident(
-  def ys "Moogle\\set.ml" 84 2613 2632 "Moogle\\set.ml" 87 2740 2778
+  def ys "Moogle\\set.ml" 84 2697 2716 "Moogle\\set.ml" 87 2827 2865
 )
-"Moogle\\set.ml" 84 2613 2623 "Moogle\\set.ml" 84 2613 2628
+"Moogle\\set.ml" 84 2697 2707 "Moogle\\set.ml" 84 2697 2712
 type(
   C.t list
 )
-"Moogle\\set.ml" 84 2613 2639 "Moogle\\set.ml" 84 2613 2648
+"Moogle\\set.ml" 84 2697 2723 "Moogle\\set.ml" 84 2697 2732
 type(
   C.t -> C.t -> Order.order
 )
 ident(
   ext_ref C.compare
 )
-"Moogle\\set.ml" 84 2613 2649 "Moogle\\set.ml" 84 2613 2650
+"Moogle\\set.ml" 84 2697 2733 "Moogle\\set.ml" 84 2697 2734
 type(
   C.t
 )
 ident(
-  int_ref x "Moogle\\set.ml" 81 2543 2565 "Moogle\\set.ml" 81 2543 2566
+  int_ref x "Moogle\\set.ml" 81 2624 2646 "Moogle\\set.ml" 81 2624 2647
 )
-"Moogle\\set.ml" 84 2613 2651 "Moogle\\set.ml" 84 2613 2652
+"Moogle\\set.ml" 84 2697 2735 "Moogle\\set.ml" 84 2697 2736
 type(
   C.t
 )
 ident(
-  int_ref y "Moogle\\set.ml" 84 2613 2623 "Moogle\\set.ml" 84 2613 2624
+  int_ref y "Moogle\\set.ml" 84 2697 2707 "Moogle\\set.ml" 84 2697 2708
 )
-"Moogle\\set.ml" 84 2613 2639 "Moogle\\set.ml" 84 2613 2652
-call(
-  stack
-)
+"Moogle\\set.ml" 84 2697 2723 "Moogle\\set.ml" 84 2697 2736
 type(
   Order.order
 )
-"Moogle\\set.ml" 85 2658 2682 "Moogle\\set.ml" 85 2658 2684
+"Moogle\\set.ml" 85 2743 2767 "Moogle\\set.ml" 85 2743 2769
 type(
   Order.order
 )
-"Moogle\\set.ml" 85 2658 2688 "Moogle\\set.ml" 85 2658 2692
+"Moogle\\set.ml" 85 2743 2773 "Moogle\\set.ml" 85 2743 2777
 type(
   bool
 )
-"Moogle\\set.ml" 86 2693 2717 "Moogle\\set.ml" 86 2693 2724
+"Moogle\\set.ml" 86 2779 2803 "Moogle\\set.ml" 86 2779 2810
 type(
   Order.order
 )
-"Moogle\\set.ml" 86 2693 2728 "Moogle\\set.ml" 86 2693 2734
+"Moogle\\set.ml" 86 2779 2814 "Moogle\\set.ml" 86 2779 2820
 type(
   C.t list -> C.t -> bool
 )
 ident(
-  int_ref member "Moogle\\set.ml" 81 2543 2555 "Moogle\\set.ml" 81 2543 2561
+  int_ref member "Moogle\\set.ml" 81 2624 2636 "Moogle\\set.ml" 81 2624 2642
 )
-"Moogle\\set.ml" 86 2693 2735 "Moogle\\set.ml" 86 2693 2737
+"Moogle\\set.ml" 86 2779 2821 "Moogle\\set.ml" 86 2779 2823
 type(
   C.t list
 )
 ident(
-  int_ref ys "Moogle\\set.ml" 84 2613 2626 "Moogle\\set.ml" 84 2613 2628
+  int_ref ys "Moogle\\set.ml" 84 2697 2710 "Moogle\\set.ml" 84 2697 2712
 )
-"Moogle\\set.ml" 86 2693 2738 "Moogle\\set.ml" 86 2693 2739
+"Moogle\\set.ml" 86 2779 2824 "Moogle\\set.ml" 86 2779 2825
 type(
   C.t
 )
 ident(
-  int_ref x "Moogle\\set.ml" 81 2543 2565 "Moogle\\set.ml" 81 2543 2566
+  int_ref x "Moogle\\set.ml" 81 2624 2646 "Moogle\\set.ml" 81 2624 2647
 )
-"Moogle\\set.ml" 86 2693 2728 "Moogle\\set.ml" 86 2693 2739
-call(
-  tail
-)
+"Moogle\\set.ml" 86 2779 2814 "Moogle\\set.ml" 86 2779 2825
 type(
   bool
 )
-"Moogle\\set.ml" 87 2740 2764 "Moogle\\set.ml" 87 2740 2768
+"Moogle\\set.ml" 87 2827 2851 "Moogle\\set.ml" 87 2827 2855
 type(
   Order.order
 )
-"Moogle\\set.ml" 87 2740 2772 "Moogle\\set.ml" 87 2740 2777
+"Moogle\\set.ml" 87 2827 2859 "Moogle\\set.ml" 87 2827 2864
 type(
   bool
 )
-"Moogle\\set.ml" 84 2613 2632 "Moogle\\set.ml" 87 2740 2778
+"Moogle\\set.ml" 84 2697 2716 "Moogle\\set.ml" 87 2827 2865
 type(
   bool
 )
-"Moogle\\set.ml" 82 2570 2576 "Moogle\\set.ml" 87 2740 2778
+"Moogle\\set.ml" 82 2652 2658 "Moogle\\set.ml" 87 2827 2865
 type(
   bool
 )
-"Moogle\\set.ml" 88 2779 2787 "Moogle\\set.ml" 88 2779 2793
+"Moogle\\set.ml" 88 2867 2875 "Moogle\\set.ml" 88 2867 2881
 type(
   'd list -> ('d * 'd list) option
 )
 ident(
-  def choose "Moogle\\set.ml" 92 2877 2881 "Moogle\\set.ml" 93 2933 2938
+  def choose "Moogle\\set.ml" 92 2969 2973 "Moogle\\set.ml" 93 3026 3031
 )
-"Moogle\\set.ml" 88 2779 2794 "Moogle\\set.ml" 88 2779 2796
+"Moogle\\set.ml" 88 2867 2882 "Moogle\\set.ml" 88 2867 2884
 type(
   'd list
 )
 ident(
-  def xs "Moogle\\set.ml" 89 2800 2806 "Moogle\\set.ml" 91 2842 2876
+  def xs "Moogle\\set.ml" 89 2889 2895 "Moogle\\set.ml" 91 2933 2967
 )
-"Moogle\\set.ml" 89 2800 2812 "Moogle\\set.ml" 89 2800 2814
+"Moogle\\set.ml" 89 2889 2901 "Moogle\\set.ml" 89 2889 2903
 type(
   'd list
 )
 ident(
-  int_ref xs "Moogle\\set.ml" 88 2779 2794 "Moogle\\set.ml" 88 2779 2796
+  int_ref xs "Moogle\\set.ml" 88 2867 2882 "Moogle\\set.ml" 88 2867 2884
 )
-"Moogle\\set.ml" 90 2821 2831 "Moogle\\set.ml" 90 2821 2833
+"Moogle\\set.ml" 90 2911 2921 "Moogle\\set.ml" 90 2911 2923
 type(
   'd list
 )
-"Moogle\\set.ml" 90 2821 2837 "Moogle\\set.ml" 90 2821 2841
+"Moogle\\set.ml" 90 2911 2927 "Moogle\\set.ml" 90 2911 2931
 type(
   ('d * 'd list) option
 )
-"Moogle\\set.ml" 91 2842 2852 "Moogle\\set.ml" 91 2842 2853
+"Moogle\\set.ml" 91 2933 2943 "Moogle\\set.ml" 91 2933 2944
 type(
   'd
 )
 ident(
-  def x "Moogle\\set.ml" 91 2842 2863 "Moogle\\set.ml" 91 2842 2876
+  def x "Moogle\\set.ml" 91 2933 2954 "Moogle\\set.ml" 91 2933 2967
 )
-"Moogle\\set.ml" 91 2842 2855 "Moogle\\set.ml" 91 2842 2859
+"Moogle\\set.ml" 91 2933 2946 "Moogle\\set.ml" 91 2933 2950
 type(
   'd list
 )
 ident(
-  def rest "Moogle\\set.ml" 91 2842 2863 "Moogle\\set.ml" 91 2842 2876
+  def rest "Moogle\\set.ml" 91 2933 2954 "Moogle\\set.ml" 91 2933 2967
 )
-"Moogle\\set.ml" 91 2842 2852 "Moogle\\set.ml" 91 2842 2859
+"Moogle\\set.ml" 91 2933 2943 "Moogle\\set.ml" 91 2933 2950
 type(
   'd list
 )
-"Moogle\\set.ml" 91 2842 2869 "Moogle\\set.ml" 91 2842 2870
+"Moogle\\set.ml" 91 2933 2960 "Moogle\\set.ml" 91 2933 2961
 type(
   'd
 )
 ident(
-  int_ref x "Moogle\\set.ml" 91 2842 2852 "Moogle\\set.ml" 91 2842 2853
+  int_ref x "Moogle\\set.ml" 91 2933 2943 "Moogle\\set.ml" 91 2933 2944
 )
-"Moogle\\set.ml" 91 2842 2871 "Moogle\\set.ml" 91 2842 2875
+"Moogle\\set.ml" 91 2933 2962 "Moogle\\set.ml" 91 2933 2966
 type(
   'd list
 )
 ident(
-  int_ref rest "Moogle\\set.ml" 91 2842 2855 "Moogle\\set.ml" 91 2842 2859
+  int_ref rest "Moogle\\set.ml" 91 2933 2946 "Moogle\\set.ml" 91 2933 2950
 )
-"Moogle\\set.ml" 91 2842 2868 "Moogle\\set.ml" 91 2842 2876
+"Moogle\\set.ml" 91 2933 2959 "Moogle\\set.ml" 91 2933 2967
 type(
   'd * 'd list
 )
-"Moogle\\set.ml" 91 2842 2863 "Moogle\\set.ml" 91 2842 2876
+"Moogle\\set.ml" 91 2933 2954 "Moogle\\set.ml" 91 2933 2967
 type(
   ('d * 'd list) option
 )
-"Moogle\\set.ml" 89 2800 2806 "Moogle\\set.ml" 91 2842 2876
+"Moogle\\set.ml" 89 2889 2895 "Moogle\\set.ml" 91 2933 2967
 type(
   ('d * 'd list) option
 )
-"Moogle\\set.ml" 92 2877 2885 "Moogle\\set.ml" 92 2877 2889
+"Moogle\\set.ml" 92 2969 2977 "Moogle\\set.ml" 92 2969 2981
 type(
   ('e -> 'f -> 'f) -> 'f -> 'e list -> 'f
 )
 ident(
-  def fold "Moogle\\set.ml" 92 2877 2931 "Moogle\\set.ml" 93 2933 2938
+  def fold "Moogle\\set.ml" 92 2969 3023 "Moogle\\set.ml" 93 3026 3031
 )
-"Moogle\\set.ml" 92 2877 2890 "Moogle\\set.ml" 92 2877 2891
+"Moogle\\set.ml" 92 2969 2982 "Moogle\\set.ml" 92 2969 2983
 type(
   'e -> 'f -> 'f
 )
 ident(
-  def f "Moogle\\set.ml" 92 2877 2892 "Moogle\\set.ml" 92 2877 2931
+  def f "Moogle\\set.ml" 92 2969 2984 "Moogle\\set.ml" 92 2969 3023
 )
-"Moogle\\set.ml" 92 2877 2892 "Moogle\\set.ml" 92 2877 2893
+"Moogle\\set.ml" 92 2969 2984 "Moogle\\set.ml" 92 2969 2985
 type(
   'f
 )
 ident(
-  def e "Moogle\\set.ml" 92 2877 2896 "Moogle\\set.ml" 92 2877 2931
+  def e "Moogle\\set.ml" 92 2969 2988 "Moogle\\set.ml" 92 2969 3023
 )
-"Moogle\\set.ml" 92 2877 2896 "Moogle\\set.ml" 92 2877 2910
+"Moogle\\set.ml" 92 2969 2988 "Moogle\\set.ml" 92 2969 3002
 type(
   ('f -> 'e -> 'f) -> 'f -> 'e list -> 'f
 )
 ident(
   ext_ref List.fold_left
 )
-"Moogle\\set.ml" 92 2877 2916 "Moogle\\set.ml" 92 2877 2917
+"Moogle\\set.ml" 92 2969 3008 "Moogle\\set.ml" 92 2969 3009
 type(
   'f
 )
 ident(
-  def a "Moogle\\set.ml" 92 2877 2918 "Moogle\\set.ml" 92 2877 2928
+  def a "Moogle\\set.ml" 92 2969 3010 "Moogle\\set.ml" 92 2969 3020
 )
-"Moogle\\set.ml" 92 2877 2918 "Moogle\\set.ml" 92 2877 2919
+"Moogle\\set.ml" 92 2969 3010 "Moogle\\set.ml" 92 2969 3011
 type(
   'e
 )
 ident(
-  def x "Moogle\\set.ml" 92 2877 2923 "Moogle\\set.ml" 92 2877 2928
+  def x "Moogle\\set.ml" 92 2969 3015 "Moogle\\set.ml" 92 2969 3020
 )
-"Moogle\\set.ml" 92 2877 2923 "Moogle\\set.ml" 92 2877 2924
+"Moogle\\set.ml" 92 2969 3015 "Moogle\\set.ml" 92 2969 3016
 type(
   'e -> 'f -> 'f
 )
 ident(
-  int_ref f "Moogle\\set.ml" 92 2877 2890 "Moogle\\set.ml" 92 2877 2891
+  int_ref f "Moogle\\set.ml" 92 2969 2982 "Moogle\\set.ml" 92 2969 2983
 )
-"Moogle\\set.ml" 92 2877 2925 "Moogle\\set.ml" 92 2877 2926
+"Moogle\\set.ml" 92 2969 3017 "Moogle\\set.ml" 92 2969 3018
 type(
   'e
 )
 ident(
-  int_ref x "Moogle\\set.ml" 92 2877 2918 "Moogle\\set.ml" 92 2877 2919
+  int_ref x "Moogle\\set.ml" 92 2969 3010 "Moogle\\set.ml" 92 2969 3011
 )
-"Moogle\\set.ml" 92 2877 2927 "Moogle\\set.ml" 92 2877 2928
+"Moogle\\set.ml" 92 2969 3019 "Moogle\\set.ml" 92 2969 3020
 type(
   'f
 )
 ident(
-  int_ref a "Moogle\\set.ml" 92 2877 2916 "Moogle\\set.ml" 92 2877 2917
+  int_ref a "Moogle\\set.ml" 92 2969 3008 "Moogle\\set.ml" 92 2969 3009
 )
-"Moogle\\set.ml" 92 2877 2923 "Moogle\\set.ml" 92 2877 2928
-call(
-  tail
-)
+"Moogle\\set.ml" 92 2969 3015 "Moogle\\set.ml" 92 2969 3020
 type(
   'f
 )
-"Moogle\\set.ml" 92 2877 2911 "Moogle\\set.ml" 92 2877 2929
+"Moogle\\set.ml" 92 2969 3003 "Moogle\\set.ml" 92 2969 3021
 type(
   'f -> 'e -> 'f
 )
-"Moogle\\set.ml" 92 2877 2930 "Moogle\\set.ml" 92 2877 2931
+"Moogle\\set.ml" 92 2969 3022 "Moogle\\set.ml" 92 2969 3023
 type(
   'f
 )
 ident(
-  int_ref e "Moogle\\set.ml" 92 2877 2892 "Moogle\\set.ml" 92 2877 2893
+  int_ref e "Moogle\\set.ml" 92 2969 2984 "Moogle\\set.ml" 92 2969 2985
 )
-"Moogle\\set.ml" 92 2877 2896 "Moogle\\set.ml" 92 2877 2931
-call(
-  tail
-)
+"Moogle\\set.ml" 92 2969 2988 "Moogle\\set.ml" 92 2969 3023
 type(
   'e list -> 'f
+)
+"Moogle\\set.ml" 109 3599 3607 "Moogle\\set.ml" 109 3599 3612
+type(
+  unit -> set
+)
+ident(
+  def empty "Moogle\\set.ml" 110 3635 3639 "Moogle\\set.ml" 129 4344 4347
+)
+"Moogle\\set.ml" 109 3599 3613 "Moogle\\set.ml" 109 3599 3615
+type(
+  unit
+)
+"Moogle\\set.ml" 109 3599 3624 "Moogle\\set.ml" 109 3599 3631
+type(
+  set
+)
+type(
+  set
+)
+ident(
+  ext_ref D.empty
+)
+"Moogle\\set.ml" 110 3635 3643 "Moogle\\set.ml" 110 3635 3651
+type(
+  set -> bool
+)
+ident(
+  def is_empty "Moogle\\set.ml" 111 3692 3696 "Moogle\\set.ml" 129 4344 4347
+)
+"Moogle\\set.ml" 110 3635 3653 "Moogle\\set.ml" 110 3635 3654
+type(
+  set
+)
+ident(
+  def s "Moogle\\set.ml" 110 3635 3660 "Moogle\\set.ml" 110 3635 3688
+)
+"Moogle\\set.ml" 110 3635 3670 "Moogle\\set.ml" 110 3635 3678
+type(
+  set -> (D.key * D.value * D.dict) option
+)
+ident(
+  ext_ref D.choose
+)
+"Moogle\\set.ml" 110 3635 3679 "Moogle\\set.ml" 110 3635 3680
+type(
+  set
+)
+ident(
+  int_ref s "Moogle\\set.ml" 110 3635 3653 "Moogle\\set.ml" 110 3635 3654
+)
+"Moogle\\set.ml" 110 3635 3670 "Moogle\\set.ml" 110 3635 3680
+type(
+  (D.key * D.value * D.dict) option
+)
+"Moogle\\set.ml" 110 3635 3681 "Moogle\\set.ml" 110 3635 3682
+type(
+  (D.key * D.value * D.dict) option ->
+  (D.key * D.value * D.dict) option -> bool
+)
+ident(
+  ext_ref Pervasives.=
+)
+"Moogle\\set.ml" 110 3635 3683 "Moogle\\set.ml" 110 3635 3687
+type(
+  (D.key * D.value * D.dict) option
+)
+"Moogle\\set.ml" 110 3635 3669 "Moogle\\set.ml" 110 3635 3688
+type(
+  bool
+)
+type(
+  bool
+)
+"Moogle\\set.ml" 111 3692 3700 "Moogle\\set.ml" 111 3692 3706
+type(
+  elt -> set -> set
+)
+ident(
+  def insert "Moogle\\set.ml" 112 3750 3754 "Moogle\\set.ml" 129 4344 4347
+)
+"Moogle\\set.ml" 111 3692 3708 "Moogle\\set.ml" 111 3692 3709
+type(
+  elt
+)
+ident(
+  def e "Moogle\\set.ml" 111 3692 3715 "Moogle\\set.ml" 111 3692 3746
+)
+"Moogle\\set.ml" 111 3692 3716 "Moogle\\set.ml" 111 3692 3717
+type(
+  set
+)
+ident(
+  def s "Moogle\\set.ml" 111 3692 3723 "Moogle\\set.ml" 111 3692 3746
+)
+"Moogle\\set.ml" 111 3692 3731 "Moogle\\set.ml" 111 3692 3739
+type(
+  set -> elt -> D.value -> set
+)
+ident(
+  ext_ref D.insert
+)
+"Moogle\\set.ml" 111 3692 3740 "Moogle\\set.ml" 111 3692 3741
+type(
+  set
+)
+ident(
+  int_ref s "Moogle\\set.ml" 111 3692 3716 "Moogle\\set.ml" 111 3692 3717
+)
+"Moogle\\set.ml" 111 3692 3742 "Moogle\\set.ml" 111 3692 3743
+type(
+  elt
+)
+ident(
+  int_ref e "Moogle\\set.ml" 111 3692 3708 "Moogle\\set.ml" 111 3692 3709
+)
+"Moogle\\set.ml" 111 3692 3744 "Moogle\\set.ml" 111 3692 3746
+type(
+  D.value
+)
+"Moogle\\set.ml" 111 3692 3731 "Moogle\\set.ml" 111 3692 3746
+type(
+  set
+)
+type(
+  set
+)
+"Moogle\\set.ml" 112 3750 3758 "Moogle\\set.ml" 112 3750 3767
+type(
+  elt -> set
+)
+ident(
+  def singleton "Moogle\\set.ml" 115 3812 3816 "Moogle\\set.ml" 129 4344 4347
+)
+"Moogle\\set.ml" 112 3750 3769 "Moogle\\set.ml" 112 3750 3770
+type(
+  elt
+)
+ident(
+  def e "Moogle\\set.ml" 112 3750 3776 "Moogle\\set.ml" 112 3750 3803
+)
+"Moogle\\set.ml" 112 3750 3784 "Moogle\\set.ml" 112 3750 3790
+type(
+  elt -> set -> set
+)
+ident(
+  int_ref insert "Moogle\\set.ml" 111 3692 3700 "Moogle\\set.ml" 111 3692 3706
+)
+"Moogle\\set.ml" 112 3750 3791 "Moogle\\set.ml" 112 3750 3792
+type(
+  elt
+)
+ident(
+  int_ref e "Moogle\\set.ml" 112 3750 3769 "Moogle\\set.ml" 112 3750 3770
+)
+"Moogle\\set.ml" 112 3750 3794 "Moogle\\set.ml" 112 3750 3799
+type(
+  unit -> set
+)
+ident(
+  int_ref empty "Moogle\\set.ml" 109 3599 3607 "Moogle\\set.ml" 109 3599 3612
+)
+"Moogle\\set.ml" 112 3750 3800 "Moogle\\set.ml" 112 3750 3802
+type(
+  unit
+)
+"Moogle\\set.ml" 112 3750 3793 "Moogle\\set.ml" 112 3750 3803
+type(
+  set
+)
+"Moogle\\set.ml" 112 3750 3784 "Moogle\\set.ml" 112 3750 3803
+type(
+  set
+)
+type(
+  set
+)
+"Moogle\\set.ml" 115 3812 3820 "Moogle\\set.ml" 115 3812 3826
+type(
+  elt -> set -> set
+)
+ident(
+  def remove "Moogle\\set.ml" 116 3869 3873 "Moogle\\set.ml" 129 4344 4347
+)
+"Moogle\\set.ml" 115 3812 3828 "Moogle\\set.ml" 115 3812 3829
+type(
+  elt
+)
+ident(
+  def e "Moogle\\set.ml" 115 3812 3837 "Moogle\\set.ml" 115 3812 3865
+)
+"Moogle\\set.ml" 115 3812 3838 "Moogle\\set.ml" 115 3812 3839
+type(
+  set
+)
+ident(
+  def s "Moogle\\set.ml" 115 3812 3845 "Moogle\\set.ml" 115 3812 3865
+)
+"Moogle\\set.ml" 115 3812 3853 "Moogle\\set.ml" 115 3812 3861
+type(
+  set -> elt -> set
+)
+ident(
+  ext_ref D.remove
+)
+"Moogle\\set.ml" 115 3812 3862 "Moogle\\set.ml" 115 3812 3863
+type(
+  set
+)
+ident(
+  int_ref s "Moogle\\set.ml" 115 3812 3838 "Moogle\\set.ml" 115 3812 3839
+)
+"Moogle\\set.ml" 115 3812 3864 "Moogle\\set.ml" 115 3812 3865
+type(
+  elt
+)
+ident(
+  int_ref e "Moogle\\set.ml" 115 3812 3828 "Moogle\\set.ml" 115 3812 3829
+)
+"Moogle\\set.ml" 115 3812 3853 "Moogle\\set.ml" 115 3812 3865
+type(
+  set
+)
+type(
+  set
+)
+"Moogle\\set.ml" 116 3869 3877 "Moogle\\set.ml" 116 3869 3883
+type(
+  set -> elt -> bool
+)
+ident(
+  def member "Moogle\\set.ml" 117 3925 3929 "Moogle\\set.ml" 129 4344 4347
+)
+"Moogle\\set.ml" 116 3869 3885 "Moogle\\set.ml" 116 3869 3886
+type(
+  set
+)
+ident(
+  def s "Moogle\\set.ml" 116 3869 3892 "Moogle\\set.ml" 116 3869 3921
+)
+"Moogle\\set.ml" 116 3869 3893 "Moogle\\set.ml" 116 3869 3894
+type(
+  elt
+)
+ident(
+  def e "Moogle\\set.ml" 116 3869 3900 "Moogle\\set.ml" 116 3869 3921
+)
+"Moogle\\set.ml" 116 3869 3909 "Moogle\\set.ml" 116 3869 3917
+type(
+  set -> elt -> bool
+)
+ident(
+  ext_ref D.member
+)
+"Moogle\\set.ml" 116 3869 3918 "Moogle\\set.ml" 116 3869 3919
+type(
+  set
+)
+ident(
+  int_ref s "Moogle\\set.ml" 116 3869 3885 "Moogle\\set.ml" 116 3869 3886
+)
+"Moogle\\set.ml" 116 3869 3920 "Moogle\\set.ml" 116 3869 3921
+type(
+  elt
+)
+ident(
+  int_ref e "Moogle\\set.ml" 116 3869 3893 "Moogle\\set.ml" 116 3869 3894
+)
+"Moogle\\set.ml" 116 3869 3909 "Moogle\\set.ml" 116 3869 3921
+type(
+  bool
+)
+type(
+  bool
+)
+"Moogle\\set.ml" 117 3925 3933 "Moogle\\set.ml" 117 3925 3939
+type(
+  set -> (elt * set) option
+)
+ident(
+  def choose "Moogle\\set.ml" 121 4058 4062 "Moogle\\set.ml" 129 4344 4347
+)
+"Moogle\\set.ml" 117 3925 3941 "Moogle\\set.ml" 117 3925 3942
+type(
+  set
+)
+ident(
+  def s "Moogle\\set.ml" 117 3925 3948 "Moogle\\set.ml" 119 4016 4050
+)
+"Moogle\\set.ml" 117 3925 3977 "Moogle\\set.ml" 117 3925 3985
+type(
+  set -> (elt * D.value * set) option
+)
+ident(
+  ext_ref D.choose
+)
+"Moogle\\set.ml" 117 3925 3986 "Moogle\\set.ml" 117 3925 3987
+type(
+  set
+)
+ident(
+  int_ref s "Moogle\\set.ml" 117 3925 3941 "Moogle\\set.ml" 117 3925 3942
+)
+"Moogle\\set.ml" 117 3925 3977 "Moogle\\set.ml" 117 3925 3987
+type(
+  (elt * D.value * set) option
+)
+"Moogle\\set.ml" 118 3994 4002 "Moogle\\set.ml" 118 3994 4006
+type(
+  (elt * D.value * set) option
+)
+"Moogle\\set.ml" 118 3994 4010 "Moogle\\set.ml" 118 3994 4014
+type(
+  (elt * set) option
+)
+"Moogle\\set.ml" 119 4016 4030 "Moogle\\set.ml" 119 4016 4031
+type(
+  elt
+)
+ident(
+  def k "Moogle\\set.ml" 119 4016 4040 "Moogle\\set.ml" 119 4016 4050
+)
+"Moogle\\set.ml" 119 4016 4032 "Moogle\\set.ml" 119 4016 4033
+type(
+  D.value
+)
+ident(
+  def v "Moogle\\set.ml" 119 4016 4040 "Moogle\\set.ml" 119 4016 4050
+)
+"Moogle\\set.ml" 119 4016 4034 "Moogle\\set.ml" 119 4016 4035
+type(
+  set
+)
+ident(
+  def d "Moogle\\set.ml" 119 4016 4040 "Moogle\\set.ml" 119 4016 4050
+)
+"Moogle\\set.ml" 119 4016 4029 "Moogle\\set.ml" 119 4016 4036
+type(
+  elt * D.value * set
+)
+"Moogle\\set.ml" 119 4016 4024 "Moogle\\set.ml" 119 4016 4036
+type(
+  (elt * D.value * set) option
+)
+"Moogle\\set.ml" 119 4016 4046 "Moogle\\set.ml" 119 4016 4047
+type(
+  elt
+)
+ident(
+  int_ref k "Moogle\\set.ml" 119 4016 4030 "Moogle\\set.ml" 119 4016 4031
+)
+"Moogle\\set.ml" 119 4016 4048 "Moogle\\set.ml" 119 4016 4049
+type(
+  set
+)
+ident(
+  int_ref d "Moogle\\set.ml" 119 4016 4034 "Moogle\\set.ml" 119 4016 4035
+)
+"Moogle\\set.ml" 119 4016 4045 "Moogle\\set.ml" 119 4016 4050
+type(
+  elt * set
+)
+"Moogle\\set.ml" 119 4016 4040 "Moogle\\set.ml" 119 4016 4050
+type(
+  (elt * set) option
+)
+"Moogle\\set.ml" 117 3925 3971 "Moogle\\set.ml" 119 4016 4050
+type(
+  (elt * set) option
+)
+type(
+  (elt * set) option
+)
+"Moogle\\set.ml" 121 4058 4066 "Moogle\\set.ml" 121 4058 4070
+type(
+  (elt -> 'a -> 'a) -> 'a -> set -> 'a
+)
+ident(
+  def fold "Moogle\\set.ml" 123 4150 4154 "Moogle\\set.ml" 129 4344 4347
+)
+"Moogle\\set.ml" 121 4058 4072 "Moogle\\set.ml" 121 4058 4073
+type(
+  elt -> 'a -> 'a
+)
+ident(
+  def f "Moogle\\set.ml" 121 4058 4091 "Moogle\\set.ml" 121 4058 4144
+)
+"Moogle\\set.ml" 121 4058 4092 "Moogle\\set.ml" 121 4058 4093
+type(
+  'a
+)
+ident(
+  def u "Moogle\\set.ml" 121 4058 4098 "Moogle\\set.ml" 121 4058 4144
+)
+"Moogle\\set.ml" 121 4058 4099 "Moogle\\set.ml" 121 4058 4100
+type(
+  set
+)
+ident(
+  def s "Moogle\\set.ml" 121 4058 4106 "Moogle\\set.ml" 121 4058 4144
+)
+"Moogle\\set.ml" 121 4058 4113 "Moogle\\set.ml" 121 4058 4119
+type(
+  (elt -> D.value -> 'a -> 'a) -> 'a -> set -> 'a
+)
+ident(
+  ext_ref D.fold
+)
+"Moogle\\set.ml" 121 4058 4125 "Moogle\\set.ml" 121 4058 4126
+type(
+  elt
+)
+ident(
+  def k "Moogle\\set.ml" 121 4058 4127 "Moogle\\set.ml" 121 4058 4139
+)
+"Moogle\\set.ml" 121 4058 4127 "Moogle\\set.ml" 121 4058 4128
+type(
+  D.value
+)
+"Moogle\\set.ml" 121 4058 4129 "Moogle\\set.ml" 121 4058 4130
+type(
+  'a
+)
+ident(
+  def d "Moogle\\set.ml" 121 4058 4134 "Moogle\\set.ml" 121 4058 4139
+)
+"Moogle\\set.ml" 121 4058 4134 "Moogle\\set.ml" 121 4058 4135
+type(
+  elt -> 'a -> 'a
+)
+ident(
+  int_ref f "Moogle\\set.ml" 121 4058 4072 "Moogle\\set.ml" 121 4058 4073
+)
+"Moogle\\set.ml" 121 4058 4136 "Moogle\\set.ml" 121 4058 4137
+type(
+  elt
+)
+ident(
+  int_ref k "Moogle\\set.ml" 121 4058 4125 "Moogle\\set.ml" 121 4058 4126
+)
+"Moogle\\set.ml" 121 4058 4138 "Moogle\\set.ml" 121 4058 4139
+type(
+  'a
+)
+ident(
+  int_ref d "Moogle\\set.ml" 121 4058 4129 "Moogle\\set.ml" 121 4058 4130
+)
+"Moogle\\set.ml" 121 4058 4134 "Moogle\\set.ml" 121 4058 4139
+type(
+  'a
+)
+"Moogle\\set.ml" 121 4058 4120 "Moogle\\set.ml" 121 4058 4140
+type(
+  elt -> D.value -> 'a -> 'a
+)
+"Moogle\\set.ml" 121 4058 4141 "Moogle\\set.ml" 121 4058 4142
+type(
+  'a
+)
+ident(
+  int_ref u "Moogle\\set.ml" 121 4058 4092 "Moogle\\set.ml" 121 4058 4093
+)
+"Moogle\\set.ml" 121 4058 4143 "Moogle\\set.ml" 121 4058 4144
+type(
+  set
+)
+ident(
+  int_ref s "Moogle\\set.ml" 121 4058 4099 "Moogle\\set.ml" 121 4058 4100
+)
+"Moogle\\set.ml" 121 4058 4113 "Moogle\\set.ml" 121 4058 4144
+type(
+  'a
+)
+type(
+  'a
+)
+"Moogle\\set.ml" 123 4150 4158 "Moogle\\set.ml" 123 4150 4163
+type(
+  set -> set -> set
+)
+ident(
+  def union "Moogle\\set.ml" 124 4211 4215 "Moogle\\set.ml" 129 4344 4347
+)
+"Moogle\\set.ml" 123 4150 4165 "Moogle\\set.ml" 123 4150 4167
+type(
+  set
+)
+ident(
+  def s1 "Moogle\\set.ml" 123 4150 4173 "Moogle\\set.ml" 123 4150 4206
+)
+"Moogle\\set.ml" 123 4150 4174 "Moogle\\set.ml" 123 4150 4176
+type(
+  set
+)
+ident(
+  def s2 "Moogle\\set.ml" 123 4150 4182 "Moogle\\set.ml" 123 4150 4206
+)
+"Moogle\\set.ml" 123 4150 4189 "Moogle\\set.ml" 123 4150 4193
+type(
+  (elt -> set -> set) -> set -> set -> set
+)
+ident(
+  int_ref fold "Moogle\\set.ml" 121 4058 4066 "Moogle\\set.ml" 121 4058 4070
+)
+"Moogle\\set.ml" 123 4150 4194 "Moogle\\set.ml" 123 4150 4200
+type(
+  elt -> set -> set
+)
+ident(
+  int_ref insert "Moogle\\set.ml" 111 3692 3700 "Moogle\\set.ml" 111 3692 3706
+)
+"Moogle\\set.ml" 123 4150 4201 "Moogle\\set.ml" 123 4150 4203
+type(
+  set
+)
+ident(
+  int_ref s1 "Moogle\\set.ml" 123 4150 4165 "Moogle\\set.ml" 123 4150 4167
+)
+"Moogle\\set.ml" 123 4150 4204 "Moogle\\set.ml" 123 4150 4206
+type(
+  set
+)
+ident(
+  int_ref s2 "Moogle\\set.ml" 123 4150 4174 "Moogle\\set.ml" 123 4150 4176
+)
+"Moogle\\set.ml" 123 4150 4189 "Moogle\\set.ml" 123 4150 4206
+type(
+  set
+)
+type(
+  set
+)
+"Moogle\\set.ml" 124 4211 4219 "Moogle\\set.ml" 124 4211 4228
+type(
+  set -> set -> set
+)
+ident(
+  def intersect "Moogle\\set.ml" 125 4257 4334 "Moogle\\set.ml" 129 4344 4347
+)
+"Moogle\\set.ml" 124 4211 4230 "Moogle\\set.ml" 124 4211 4232
+type(
+  set
+)
+ident(
+  def s1 "Moogle\\set.ml" 124 4211 4238 "Moogle\\set.ml" 125 4257 4334
+)
+"Moogle\\set.ml" 124 4211 4239 "Moogle\\set.ml" 124 4211 4241
+type(
+  set
+)
+ident(
+  def s2 "Moogle\\set.ml" 124 4211 4247 "Moogle\\set.ml" 125 4257 4334
+)
+"Moogle\\set.ml" 125 4257 4263 "Moogle\\set.ml" 125 4257 4267
+type(
+  (elt -> set -> set) -> set -> set -> set
+)
+ident(
+  int_ref fold "Moogle\\set.ml" 121 4058 4066 "Moogle\\set.ml" 121 4058 4070
+)
+"Moogle\\set.ml" 125 4257 4273 "Moogle\\set.ml" 125 4257 4274
+type(
+  elt
+)
+ident(
+  def k "Moogle\\set.ml" 125 4257 4275 "Moogle\\set.ml" 125 4257 4319
+)
+"Moogle\\set.ml" 125 4257 4275 "Moogle\\set.ml" 125 4257 4276
+type(
+  set
+)
+ident(
+  def s "Moogle\\set.ml" 125 4257 4280 "Moogle\\set.ml" 125 4257 4319
+)
+"Moogle\\set.ml" 125 4257 4284 "Moogle\\set.ml" 125 4257 4290
+type(
+  set -> elt -> bool
+)
+ident(
+  int_ref member "Moogle\\set.ml" 116 3869 3877 "Moogle\\set.ml" 116 3869 3883
+)
+"Moogle\\set.ml" 125 4257 4291 "Moogle\\set.ml" 125 4257 4293
+type(
+  set
+)
+ident(
+  int_ref s2 "Moogle\\set.ml" 124 4211 4239 "Moogle\\set.ml" 124 4211 4241
+)
+"Moogle\\set.ml" 125 4257 4294 "Moogle\\set.ml" 125 4257 4295
+type(
+  elt
+)
+ident(
+  int_ref k "Moogle\\set.ml" 125 4257 4273 "Moogle\\set.ml" 125 4257 4274
+)
+"Moogle\\set.ml" 125 4257 4283 "Moogle\\set.ml" 125 4257 4296
+type(
+  bool
+)
+"Moogle\\set.ml" 125 4257 4302 "Moogle\\set.ml" 125 4257 4308
+type(
+  elt -> set -> set
+)
+ident(
+  int_ref insert "Moogle\\set.ml" 111 3692 3700 "Moogle\\set.ml" 111 3692 3706
+)
+"Moogle\\set.ml" 125 4257 4309 "Moogle\\set.ml" 125 4257 4310
+type(
+  elt
+)
+ident(
+  int_ref k "Moogle\\set.ml" 125 4257 4273 "Moogle\\set.ml" 125 4257 4274
+)
+"Moogle\\set.ml" 125 4257 4311 "Moogle\\set.ml" 125 4257 4312
+type(
+  set
+)
+ident(
+  int_ref s "Moogle\\set.ml" 125 4257 4275 "Moogle\\set.ml" 125 4257 4276
+)
+"Moogle\\set.ml" 125 4257 4302 "Moogle\\set.ml" 125 4257 4312
+type(
+  set
+)
+"Moogle\\set.ml" 125 4257 4318 "Moogle\\set.ml" 125 4257 4319
+type(
+  set
+)
+ident(
+  int_ref s "Moogle\\set.ml" 125 4257 4275 "Moogle\\set.ml" 125 4257 4276
+)
+"Moogle\\set.ml" 125 4257 4280 "Moogle\\set.ml" 125 4257 4319
+type(
+  set
+)
+"Moogle\\set.ml" 125 4257 4268 "Moogle\\set.ml" 125 4257 4320
+type(
+  elt -> set -> set
+)
+"Moogle\\set.ml" 125 4257 4322 "Moogle\\set.ml" 125 4257 4327
+type(
+  unit -> set
+)
+ident(
+  int_ref empty "Moogle\\set.ml" 109 3599 3607 "Moogle\\set.ml" 109 3599 3612
+)
+"Moogle\\set.ml" 125 4257 4328 "Moogle\\set.ml" 125 4257 4330
+type(
+  unit
+)
+"Moogle\\set.ml" 125 4257 4321 "Moogle\\set.ml" 125 4257 4331
+type(
+  set
+)
+"Moogle\\set.ml" 125 4257 4332 "Moogle\\set.ml" 125 4257 4334
+type(
+  set
+)
+ident(
+  int_ref s1 "Moogle\\set.ml" 124 4211 4230 "Moogle\\set.ml" 124 4211 4232
+)
+"Moogle\\set.ml" 125 4257 4263 "Moogle\\set.ml" 125 4257 4334
+type(
+  set
+)
+type(
+  set
 )

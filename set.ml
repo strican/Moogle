@@ -4,7 +4,7 @@
 module type SET = 
 sig
   type elt  (* type of elements in the set *)
-  type set  (* abstract type for the set *)
+  type set  (* abstract type for the set  *)
 
   (* the empty set *)
   val empty : set

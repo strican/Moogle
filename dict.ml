@@ -106,12 +106,14 @@ module RBTreeDict(D:DICT_ARG) : (DICT with type key = D.key
 						| _ -> raise (ArgumentError "Node doesn't exist"))
         | Leaf -> raise (ArgumentError "Node doesn't exist")
 		;;
+
 (*
     assert ((get_node a "") = Leaf);;
     assert ((get_node b "") = b);;
     assert ((get_node b "l") = Leaf);;
     assert ((get_node c "l") = Node(Leaf, (2, 3, Red), Leaf));;
 *)
+		
 		let check_root_color (n : dict) : color = 
 			match n with
 				| Leaf -> Black
@@ -122,7 +124,11 @@ module RBTreeDict(D:DICT_ARG) : (DICT with type key = D.key
     assert ((check_root_color b) = Black);;
     assert ((check_root_color (get_node c "l")) = Red);;
 *)
-		let change_color (c : color) : color =
+	let is_root_black (d:dict) : dict = 
+		if (check_root_color d = Red) then raise (ArgumentError "Red Root") else d
+	;;
+			
+  let change_color (c : color) : color =
 			match c with
 				| Black -> Red
 				| Red -> Black
@@ -202,35 +208,58 @@ module RBTreeDict(D:DICT_ARG) : (DICT with type key = D.key
 							| (Red, Red) -> rotate_right d
 							| _ -> d		
     ;;*)
+		 
+    let rec max_count (d:dict) : int =
+			match d with
+				| Leaf -> 0
+				| Node(l, _, r) -> 
+			    let a = max_count l in 
+				  let b = max_count r in 
+				  (if (a>b) then a else b) + 1
+				;;
+
+ 		let rec min_count (d:dict) : int =
+			match d with
+				| Leaf -> 0
+				| Node(l, _, r) -> 
+					let a = min_count l in 
+				let b = min_count r in 
+				(if (a>b) then b else a) + 1
+		;;
+
+
+		let bushy (d:dict) : dict =
+		  let a = max_count d in
+			let b = min_count d in 
+			 if(a < 2*b + 1) then d
+			 else raise (ArgumentError "Not Bushy.")
+	  ;;
+
+    let fix_up (d:dict) : dict =
+      match d with
+        | Leaf -> Leaf
+        | Node(l, _, r) -> 
+          let d = (if (check_root_color r = Red) then rotate_left d else d) in
+          let d = (if (check_root_color (get_node d "l") = Red && check_root_color (get_node d "ll") = Red) then rotate_right d else d) in
+          let d = (if (check_root_color (get_node d "l") = Red && check_root_color (get_node d "r") = Red) then color_flip d else d) in
+          d
+    ;;
 
     let rec insert (d:dict) (k:key) (v:value) : dict = 
       match d with
 				| Leaf -> Node(Leaf, (k, v, Red), Leaf)
-				| Node (l, (k2, _, c2), r) ->
+				| Node (l, (k2, v2, c2), r) ->
           let d = 
           (match D.compare k k2 with
             | Eq -> Node(l, (k, v, c2), r)
-            | Less -> insert l k v
-            | Greater -> insert r k v) in
-          let d = (if check_root_color (get_node d "r") = Red then rotate_left d else d) in
-          let d = (if (check_root_color (get_node d "l") = Red && check_root_color (get_node d "ll") = Red) then rotate_right d else d) in
-          d
+            | Less -> Node(insert l k v,(k2,v2,c2),r)
+            | Greater -> Node(l,(k2,v2,c2),insert r k v)) in
+          bushy (fix_up d)
         
     ;;
           
           
-(*          
-					match (check_root_color l, check_root_color r) with
-						| (a, b) -> let d = (if (a = Red && b = Red) then color_flip d else d) in
-								(match d with
-									| Leaf -> raise Impossible
-									| Node(l, (k2, v2, c), r) -> 
-											(match D.compare k k2 with
-												| Eq -> insert_fix d										
-												| Less -> let d = Node(insert l k v, (k2, v2, c), r) in insert_fix d
-												| Greater -> let d = Node(l, (k2, v2, c), insert r k v) in insert_fix d))
-    ;;
-*)
+
     let rec lookup (d:dict) (k:key) : value option =
 			match d with 
 				| Leaf -> None
@@ -250,26 +279,7 @@ module RBTreeDict(D:DICT_ARG) : (DICT with type key = D.key
 						| Less -> member l k
 						| Greater -> member r k
     ;;
-
-(*  @ Gabrielle: I used check_root_color, which doesn't return an option, *)
-(*               so i think it might be better. Also, leaves are always *)
-(*               supposed to be black. I think CLRS said that
-    let get_color (d:dict) : color option =
-      match d with
-        | Leaf -> None
-        | Node (l, (k, v, c), r) -> Some c
-      ;;
-*)
-      
-    let fix_up (d:dict) : dict =
-      match d with
-        | Leaf -> Leaf
-        | Node(l, _, r) -> 
-          let d = (if (check_root_color r = Red) then rotate_left d else d) in
-          let d = (if (check_root_color (get_node d "l") = Red && check_root_color (get_node d "ll") = Red) then rotate_right d else d) in
-          let d = (if (check_root_color (get_node d "l") = Red && check_root_color (get_node d "r") = Red) then color_flip d else d) in
-          d
-    ;;
+     
           
     let move_red_right (d:dict) : dict =
       let d = color_flip d in
@@ -292,25 +302,6 @@ module RBTreeDict(D:DICT_ARG) : (DICT with type key = D.key
           let d = (if (check_root_color l = Black && check_root_color (get_node l "l") = Black) then move_red_left d else d) in
           fix_up (Node(delete_min (get_node d "l"), a, r))
     ;;
-
-(*
-    let rec delete_max (d:dict) : dict =
-      match d with
-        | Node((ll, (kl, vl, cl), rl),a,r) -> let d = (if cl = Red 
-          then rotate_right d else d) in
-          (match d with
-            | Node (l,a,Leaf) -> Leaf
-            | Node(l,a,(rl, (kr, vr, cr), rr)) -> let d = (if cr != Red && 
-                  get_color rr != Some Red then move_red_right d else d) in
-                  (match d with
-                    | Node (l,a,r) -> let r = deleteMax r in fix_up Node (l,a,r) 
-                    | _ -> fix_up d
-                    ) 
-            | _ -> fix_up d  )
-         | _  -> fix_up d
-    ;;
-	*)	
-
 
 		let get_key (d:dict) : key =
       match d with
@@ -396,9 +387,5 @@ module RBTreeDict(D:DICT_ARG) : (DICT with type key = D.key
 			    | Leaf -> u
 			    | Node(l, (k, v, _), r) ->  f k v (fold f (fold f u r) l) 
     ;;
- 
-(*
-    let print_tree (d : dict) : () = 
-      fold (fun k v a -> print ()*)
 
   end

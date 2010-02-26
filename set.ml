@@ -106,10 +106,10 @@ struct
     type elt = D.key
     type set = D.dict
 
-    let empty () : set = D.empty;;
+    let empty : set = D.empty;;
     let is_empty (s:set) : bool = (D.choose s = None);;
     let insert (e:elt) (s:set) : set = D.insert s e ();;
-    let singleton (e:elt) : set = insert e (empty ());;
+    let singleton (e:elt) : set = insert e (empty);;
  
 
     let remove (e : elt) (s:set) : set = D.remove s e;;
@@ -118,11 +118,12 @@ struct
       | None -> None
       | Some (k,v,d) -> Some (k,d)  ;;
 
-    let fold (f:elt -> 'a -> 'a) (u:'a) (s:set) : 'a = D.fold (fun k _ d -> f k d) u s;;
+    let fold (f:elt -> 'a -> 'a) (u:'a) (s:set) : 'a = 
+			D.fold (fun k _ d -> f k d) u s;;
 
     let union (s1:set) (s2:set) : set= fold insert s1 s2 ;;
     let intersect (s1:set) (s2:set) : set = 
-      fold (fun k s -> if (member s2 k) then insert k s else s) (empty ()) s1;;
+      fold (fun k s -> if (member s2 k) then insert k s else s) (empty) s1;;
 
 
 

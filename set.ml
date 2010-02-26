@@ -4,7 +4,7 @@
 module type SET = 
 sig
   type elt  (* type of elements in the set *)
-  type set  (* abstract type for the set *)
+  type set  (* abstract type for the set  *)
 
   (* the empty set *)
   val empty : set
@@ -103,7 +103,28 @@ module DictSet(D : Dict.DICT with type value = unit)
   : (SET with type elt = D.key) = 
 struct
 
-   uncomment this module and insert appropriate
-   definitions.
+    type elt = key
+    type set = dict
+
+    let empty () : set = D.empty
+    let is_empty (s:set) : bool = (D.choose s = None)
+    let insert (e:elt) (s:set) : set = D.insert s e ()
+    let singleton (e:elt) : set = Let s = empty in insert s e
+ 
+
+    let remove (s:set) (e:elt) : set = D.remove s e
+    let member (s:set) (e:elt) : bool = D.member s e
+    let choose (s:set) : elt = match D.choose with
+      | None -> None
+      | Some (k,v,d) -> Some (k,d)  
+
+    let fold (f:elt -> 'a -> 'a) (u:'a) (s:set) : 'a = D.fold (fun k _ d -> f k d) u s
+
+    let union (s1:set) (s2:set) : set= fold insert s1 s2 
+    let intersect (s1:set) (s2:set) : set = 
+      fold (fun k s -> if (member s2 k) then insert k s else s) empty s1
+
+
+
 end
 *)

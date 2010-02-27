@@ -125,6 +125,4 @@ struct
     let intersect (s1:set) (s2:set) : set = 
       fold (fun k s -> if (member s2 k) then insert k s else s) (empty) s1;;
 
-
-
 end

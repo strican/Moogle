@@ -121,7 +121,7 @@ struct
     let fold (f:elt -> 'a -> 'a) (u:'a) (s:set) : 'a = 
 			D.fold (fun k _ d -> f k d) u s;;
 
-    let union (s1:set) (s2:set) : set= fold insert s1 s2 ;;
+    let union (s1:set) (s2:set) : set = fold insert s1 s2 ;;
     let intersect (s1:set) (s2:set) : set = 
       fold (fun k s -> if (member s2 k) then insert k s else s) (empty) s1;;
 

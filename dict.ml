@@ -269,15 +269,13 @@ module RBTreeDict(D:DICT_ARG) : (DICT with type key = D.key
     let rec delete_min (d:dict) : dict =  
       match d with
         | Leaf -> Leaf
-        | Node(Leaf, _, _) -> Leaf
+        | Node(Leaf, _, r) -> r
         | Node(l, a, r) -> 
           let d = (if (check_root_color l = Black && 
                        check_root_color (get_node l "l") = Black) 
                       then move_red_left d
                    else d) in
-      (*    match (Node(delete_min (get_node d "l") with
-            | Leaf -> *)
-          fix_up (Node(delete_min (get_node d "l"), a, r))
+          fix_up (Node(delete_min (get_node d "l"), a, get_node d "r"))
     ;;
 
 		let get_key (d:dict) : key =

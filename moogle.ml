@@ -131,6 +131,11 @@ let std_response_header =
 ;;
 
 let moogle_home_page = "./moogle.html" ;; 
+let moogle_search_bar = "<p>
+<form>Search: <input type=\"text\" name=\"q\" />
+	Case Sensitive: <input type=\"checkbox\" name=\"case\" value=\"sensitive\" />
+</form>
+</br>"
 
 (* read in all the lines from a file and concatenate them into
  * a big string. *)
@@ -210,7 +215,7 @@ let spell_suggest (index : WordDict.dict) (words : string list) : string list =
 ;;  
 
 let suggest_body (wds : string list) : string = 
-  List.fold_left (fun s wd -> "<h4>Did you mean...<h4><li>" ^ wd ^ "</li>" ^ s) "" wds
+  moogle_search_bar ^ "<h4>Did you mean...</h4>" ^ (List.fold_left (fun s wd -> "<li>" ^ wd ^ "</li>" ^ s) "" wds)
 ;;
 
 let process_request client_fd request index = 

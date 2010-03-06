@@ -81,6 +81,7 @@ val bfs_loop :
 val crawler : bool -> WordDict.dict
 val std_response_header : string
 val moogle_home_page : string
+val moogle_search_bar : string
 val input_lines : in_channel -> string list -> string list
 val std_response : string
 val query_response_header : string

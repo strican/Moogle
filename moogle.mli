@@ -50,8 +50,12 @@ module Q :
     type query = Word of string | And of query * query | Or of query * query
     val parse_words : string list -> query
     val query_re : Str.regexp
+    val case_re : Str.regexp
     val term_sep_re : Str.regexp
-    val parse_query : string -> query
+    val remove_case_type : string list -> string list
+    val print_list : string list -> unit
+    val query_to_string : string -> string list
+    val parse_query : string -> query * bool
     val eval_query : WordDict.dict -> query -> LinkSet.set
   end
 module LinkQ :
@@ -67,10 +71,14 @@ module LinkQ :
   end
 val modify_link_set :
   LinkSet.elt -> WordDict.dict -> WordDict.key -> WordDict.dict
+val visit :
+  VisitSet.elt ->
+  VisitSet.set * VisitSet.elt LinkQ.queue ->
+  VisitSet.set * VisitSet.elt LinkQ.queue
 val bfs_loop :
   VisitSet.elt LinkQ.queue ->
-  VisitSet.set -> WordDict.dict -> int -> WordDict.dict
-val crawler : unit -> WordDict.dict
+  VisitSet.set -> WordDict.dict -> int -> bool -> WordDict.dict
+val crawler : bool -> WordDict.dict
 val std_response_header : string
 val moogle_home_page : string
 val input_lines : in_channel -> string list -> string list
@@ -80,6 +88,12 @@ val html_of_urlset : LinkSet.set -> string
 val query_response_footer : string
 val send_std_response : Unix.file_descr -> int
 val http_get_re : Str.regexp
-val process_request : Unix.file_descr -> string -> WordDict.dict -> int
-val server : WordDict.dict -> 'a
+val hamming_loop : string -> string -> int -> int -> int
+val hamming_d : string -> string -> int
+val get_possible : WordDict.dict -> string -> WordDict.key list
+val spell_suggest : WordDict.dict -> WordDict.key list -> WordDict.key list
+val suggest_body : string list -> string
+val process_request :
+  Unix.file_descr -> string -> WordDict.dict * WordDict.dict -> int
+val server : WordDict.dict * WordDict.dict -> 'a
 val main : unit -> 'a

@@ -1,747 +1,1297 @@
-"Moogle\\query.ml" 19 449 459 "Moogle\\query.ml" 19 449 470
+"Moogle\\query.ml" 19 450 460 "Moogle\\query.ml" 19 450 471
 type(
   string list -> query
 )
 ident(
-  def parse_words "Moogle\\query.ml" 19 449 451 "Moogle\\query.ml" 48 1471 1474
+  def parse_words "Moogle\\query.ml" 19 450 452 "Moogle\\query.ml" 84 2832 2835
 )
-"Moogle\\query.ml" 19 449 471 "Moogle\\query.ml" 19 449 473
+"Moogle\\query.ml" 19 450 472 "Moogle\\query.ml" 19 450 474
 type(
   string list
 )
 ident(
-  def ws "Moogle\\query.ml" 20 477 481 "Moogle\\query.ml" 25 676 728
+  def ws "Moogle\\query.ml" 20 478 482 "Moogle\\query.ml" 25 677 729
 )
-"Moogle\\query.ml" 20 477 487 "Moogle\\query.ml" 20 477 489
+"Moogle\\query.ml" 20 478 488 "Moogle\\query.ml" 20 478 490
 type(
   string list
 )
 ident(
-  int_ref ws "Moogle\\query.ml" 19 449 471 "Moogle\\query.ml" 19 449 473
+  int_ref ws "Moogle\\query.ml" 19 450 472 "Moogle\\query.ml" 19 450 474
 )
-"Moogle\\query.ml" 21 496 504 "Moogle\\query.ml" 21 496 505
+"Moogle\\query.ml" 21 497 505 "Moogle\\query.ml" 21 497 506
 type(
   string
 )
 ident(
-  def w "Moogle\\query.ml" 21 496 522 "Moogle\\query.ml" 21 496 550
+  def w "Moogle\\query.ml" 21 497 523 "Moogle\\query.ml" 21 497 551
 )
-"Moogle\\query.ml" 21 496 507 "Moogle\\query.ml" 21 496 512
+"Moogle\\query.ml" 21 497 508 "Moogle\\query.ml" 21 497 513
 type(
   string
 )
-"Moogle\\query.ml" 21 496 514 "Moogle\\query.ml" 21 496 518
+"Moogle\\query.ml" 21 497 515 "Moogle\\query.ml" 21 497 519
 type(
   string list
 )
 ident(
-  def rest "Moogle\\query.ml" 21 496 522 "Moogle\\query.ml" 21 496 550
+  def rest "Moogle\\query.ml" 21 497 523 "Moogle\\query.ml" 21 497 551
 )
-"Moogle\\query.ml" 21 496 507 "Moogle\\query.ml" 21 496 518
+"Moogle\\query.ml" 21 497 508 "Moogle\\query.ml" 21 497 519
 type(
   string list
 )
-"Moogle\\query.ml" 21 496 504 "Moogle\\query.ml" 21 496 518
+"Moogle\\query.ml" 21 497 505 "Moogle\\query.ml" 21 497 519
 type(
   string list
 )
-"Moogle\\query.ml" 21 496 531 "Moogle\\query.ml" 21 496 532
+"Moogle\\query.ml" 21 497 532 "Moogle\\query.ml" 21 497 533
 type(
   string
 )
 ident(
-  int_ref w "Moogle\\query.ml" 21 496 504 "Moogle\\query.ml" 21 496 505
+  int_ref w "Moogle\\query.ml" 21 497 505 "Moogle\\query.ml" 21 497 506
 )
-"Moogle\\query.ml" 21 496 526 "Moogle\\query.ml" 21 496 532
+"Moogle\\query.ml" 21 497 527 "Moogle\\query.ml" 21 497 533
 type(
   query
 )
-"Moogle\\query.ml" 21 496 533 "Moogle\\query.ml" 21 496 544
+"Moogle\\query.ml" 21 497 534 "Moogle\\query.ml" 21 497 545
 type(
   string list -> query
 )
 ident(
-  int_ref parse_words "Moogle\\query.ml" 19 449 459 "Moogle\\query.ml" 19 449 470
+  int_ref parse_words "Moogle\\query.ml" 19 450 460 "Moogle\\query.ml" 19 450 471
 )
-"Moogle\\query.ml" 21 496 545 "Moogle\\query.ml" 21 496 549
+"Moogle\\query.ml" 21 497 546 "Moogle\\query.ml" 21 497 550
 type(
   string list
 )
 ident(
-  int_ref rest "Moogle\\query.ml" 21 496 514 "Moogle\\query.ml" 21 496 518
+  int_ref rest "Moogle\\query.ml" 21 497 515 "Moogle\\query.ml" 21 497 519
 )
-"Moogle\\query.ml" 21 496 533 "Moogle\\query.ml" 21 496 549
+"Moogle\\query.ml" 21 497 534 "Moogle\\query.ml" 21 497 550
 call(
   stack
 )
 type(
   query
 )
-"Moogle\\query.ml" 21 496 522 "Moogle\\query.ml" 21 496 550
+"Moogle\\query.ml" 21 497 523 "Moogle\\query.ml" 21 497 551
 type(
   query
 )
-"Moogle\\query.ml" 22 551 559 "Moogle\\query.ml" 22 551 560
+"Moogle\\query.ml" 22 552 560 "Moogle\\query.ml" 22 552 561
 type(
   string
 )
 ident(
-  def w "Moogle\\query.ml" 22 551 576 "Moogle\\query.ml" 22 551 603
+  def w "Moogle\\query.ml" 22 552 577 "Moogle\\query.ml" 22 552 604
 )
-"Moogle\\query.ml" 22 551 562 "Moogle\\query.ml" 22 551 566
+"Moogle\\query.ml" 22 552 563 "Moogle\\query.ml" 22 552 567
 type(
   string
 )
-"Moogle\\query.ml" 22 551 568 "Moogle\\query.ml" 22 551 572
+"Moogle\\query.ml" 22 552 569 "Moogle\\query.ml" 22 552 573
 type(
   string list
 )
 ident(
-  def rest "Moogle\\query.ml" 22 551 576 "Moogle\\query.ml" 22 551 603
+  def rest "Moogle\\query.ml" 22 552 577 "Moogle\\query.ml" 22 552 604
 )
-"Moogle\\query.ml" 22 551 562 "Moogle\\query.ml" 22 551 572
+"Moogle\\query.ml" 22 552 563 "Moogle\\query.ml" 22 552 573
 type(
   string list
 )
-"Moogle\\query.ml" 22 551 559 "Moogle\\query.ml" 22 551 572
+"Moogle\\query.ml" 22 552 560 "Moogle\\query.ml" 22 552 573
 type(
   string list
 )
-"Moogle\\query.ml" 22 551 584 "Moogle\\query.ml" 22 551 585
+"Moogle\\query.ml" 22 552 585 "Moogle\\query.ml" 22 552 586
 type(
   string
 )
 ident(
-  int_ref w "Moogle\\query.ml" 22 551 559 "Moogle\\query.ml" 22 551 560
+  int_ref w "Moogle\\query.ml" 22 552 560 "Moogle\\query.ml" 22 552 561
 )
-"Moogle\\query.ml" 22 551 579 "Moogle\\query.ml" 22 551 585
+"Moogle\\query.ml" 22 552 580 "Moogle\\query.ml" 22 552 586
 type(
   query
 )
-"Moogle\\query.ml" 22 551 586 "Moogle\\query.ml" 22 551 597
+"Moogle\\query.ml" 22 552 587 "Moogle\\query.ml" 22 552 598
 type(
   string list -> query
 )
 ident(
-  int_ref parse_words "Moogle\\query.ml" 19 449 459 "Moogle\\query.ml" 19 449 470
+  int_ref parse_words "Moogle\\query.ml" 19 450 460 "Moogle\\query.ml" 19 450 471
 )
-"Moogle\\query.ml" 22 551 598 "Moogle\\query.ml" 22 551 602
+"Moogle\\query.ml" 22 552 599 "Moogle\\query.ml" 22 552 603
 type(
   string list
 )
 ident(
-  int_ref rest "Moogle\\query.ml" 22 551 568 "Moogle\\query.ml" 22 551 572
+  int_ref rest "Moogle\\query.ml" 22 552 569 "Moogle\\query.ml" 22 552 573
 )
-"Moogle\\query.ml" 22 551 586 "Moogle\\query.ml" 22 551 602
+"Moogle\\query.ml" 22 552 587 "Moogle\\query.ml" 22 552 603
 call(
   stack
 )
 type(
   query
 )
-"Moogle\\query.ml" 22 551 576 "Moogle\\query.ml" 22 551 603
+"Moogle\\query.ml" 22 552 577 "Moogle\\query.ml" 22 552 604
 type(
   query
 )
-"Moogle\\query.ml" 23 604 612 "Moogle\\query.ml" 23 604 613
+"Moogle\\query.ml" 23 605 613 "Moogle\\query.ml" 23 605 614
 type(
   string
 )
 ident(
-  def w "Moogle\\query.ml" 23 604 621 "Moogle\\query.ml" 23 604 627
+  def w "Moogle\\query.ml" 23 605 622 "Moogle\\query.ml" 23 605 628
 )
-"Moogle\\query.ml" 23 604 615 "Moogle\\query.ml" 23 604 617
+"Moogle\\query.ml" 23 605 616 "Moogle\\query.ml" 23 605 618
 type(
   string list
 )
-"Moogle\\query.ml" 23 604 612 "Moogle\\query.ml" 23 604 617
+"Moogle\\query.ml" 23 605 613 "Moogle\\query.ml" 23 605 618
 type(
   string list
 )
-"Moogle\\query.ml" 23 604 626 "Moogle\\query.ml" 23 604 627
+"Moogle\\query.ml" 23 605 627 "Moogle\\query.ml" 23 605 628
 type(
   string
 )
 ident(
-  int_ref w "Moogle\\query.ml" 23 604 612 "Moogle\\query.ml" 23 604 613
+  int_ref w "Moogle\\query.ml" 23 605 613 "Moogle\\query.ml" 23 605 614
 )
-"Moogle\\query.ml" 23 604 621 "Moogle\\query.ml" 23 604 627
+"Moogle\\query.ml" 23 605 622 "Moogle\\query.ml" 23 605 628
 type(
   query
 )
-"Moogle\\query.ml" 24 628 636 "Moogle\\query.ml" 24 628 637
+"Moogle\\query.ml" 24 629 637 "Moogle\\query.ml" 24 629 638
 type(
   string
 )
 ident(
-  def w "Moogle\\query.ml" 24 628 647 "Moogle\\query.ml" 24 628 675
+  def w "Moogle\\query.ml" 24 629 648 "Moogle\\query.ml" 24 629 676
 )
-"Moogle\\query.ml" 24 628 639 "Moogle\\query.ml" 24 628 643
+"Moogle\\query.ml" 24 629 640 "Moogle\\query.ml" 24 629 644
 type(
   string list
 )
 ident(
-  def rest "Moogle\\query.ml" 24 628 647 "Moogle\\query.ml" 24 628 675
+  def rest "Moogle\\query.ml" 24 629 648 "Moogle\\query.ml" 24 629 676
 )
-"Moogle\\query.ml" 24 628 636 "Moogle\\query.ml" 24 628 643
+"Moogle\\query.ml" 24 629 637 "Moogle\\query.ml" 24 629 644
 type(
   string list
 )
-"Moogle\\query.ml" 24 628 656 "Moogle\\query.ml" 24 628 657
+"Moogle\\query.ml" 24 629 657 "Moogle\\query.ml" 24 629 658
 type(
   string
 )
 ident(
-  int_ref w "Moogle\\query.ml" 24 628 636 "Moogle\\query.ml" 24 628 637
+  int_ref w "Moogle\\query.ml" 24 629 637 "Moogle\\query.ml" 24 629 638
 )
-"Moogle\\query.ml" 24 628 651 "Moogle\\query.ml" 24 628 657
+"Moogle\\query.ml" 24 629 652 "Moogle\\query.ml" 24 629 658
 type(
   query
 )
-"Moogle\\query.ml" 24 628 658 "Moogle\\query.ml" 24 628 669
+"Moogle\\query.ml" 24 629 659 "Moogle\\query.ml" 24 629 670
 type(
   string list -> query
 )
 ident(
-  int_ref parse_words "Moogle\\query.ml" 19 449 459 "Moogle\\query.ml" 19 449 470
+  int_ref parse_words "Moogle\\query.ml" 19 450 460 "Moogle\\query.ml" 19 450 471
 )
-"Moogle\\query.ml" 24 628 670 "Moogle\\query.ml" 24 628 674
+"Moogle\\query.ml" 24 629 671 "Moogle\\query.ml" 24 629 675
 type(
   string list
 )
 ident(
-  int_ref rest "Moogle\\query.ml" 24 628 639 "Moogle\\query.ml" 24 628 643
+  int_ref rest "Moogle\\query.ml" 24 629 640 "Moogle\\query.ml" 24 629 644
 )
-"Moogle\\query.ml" 24 628 658 "Moogle\\query.ml" 24 628 674
+"Moogle\\query.ml" 24 629 659 "Moogle\\query.ml" 24 629 675
 call(
   stack
 )
 type(
   query
 )
-"Moogle\\query.ml" 24 628 647 "Moogle\\query.ml" 24 628 675
+"Moogle\\query.ml" 24 629 648 "Moogle\\query.ml" 24 629 676
 type(
   query
 )
-"Moogle\\query.ml" 25 676 684 "Moogle\\query.ml" 25 676 686
+"Moogle\\query.ml" 25 677 685 "Moogle\\query.ml" 25 677 687
 type(
   string list
 )
-"Moogle\\query.ml" 25 676 690 "Moogle\\query.ml" 25 676 695
+"Moogle\\query.ml" 25 677 691 "Moogle\\query.ml" 25 677 696
 type(
   exn -> query
 )
 ident(
   ext_ref Pervasives.raise
 )
-"Moogle\\query.ml" 25 676 705 "Moogle\\query.ml" 25 676 727
+"Moogle\\query.ml" 25 677 706 "Moogle\\query.ml" 25 677 728
 type(
   string
 )
-"Moogle\\query.ml" 25 676 696 "Moogle\\query.ml" 25 676 728
+"Moogle\\query.ml" 25 677 697 "Moogle\\query.ml" 25 677 729
 type(
   exn
 )
-"Moogle\\query.ml" 25 676 690 "Moogle\\query.ml" 25 676 728
+"Moogle\\query.ml" 25 677 691 "Moogle\\query.ml" 25 677 729
 type(
   query
 )
-"Moogle\\query.ml" 20 477 481 "Moogle\\query.ml" 25 676 728
+"Moogle\\query.ml" 20 478 482 "Moogle\\query.ml" 25 677 729
 type(
   query
 )
-"Moogle\\query.ml" 27 740 746 "Moogle\\query.ml" 27 740 754
+"Moogle\\query.ml" 27 741 747 "Moogle\\query.ml" 27 741 755
 type(
   Str.regexp
 )
 ident(
-  def query_re "Moogle\\query.ml" 28 784 786 "Moogle\\query.ml" 48 1471 1474
+  def query_re "Moogle\\query.ml" 28 785 787 "Moogle\\query.ml" 84 2832 2835
 )
-"Moogle\\query.ml" 27 740 757 "Moogle\\query.ml" 27 740 767
+"Moogle\\query.ml" 27 741 758 "Moogle\\query.ml" 27 741 768
 type(
   string -> Str.regexp
 )
 ident(
   ext_ref Str.regexp
 )
-"Moogle\\query.ml" 27 740 768 "Moogle\\query.ml" 27 740 783
+"Moogle\\query.ml" 27 741 769 "Moogle\\query.ml" 27 741 784
 type(
   string
 )
-"Moogle\\query.ml" 27 740 757 "Moogle\\query.ml" 27 740 783
+"Moogle\\query.ml" 27 741 758 "Moogle\\query.ml" 27 741 784
 call(
   stack
 )
 type(
   Str.regexp
 )
-"Moogle\\query.ml" 28 784 790 "Moogle\\query.ml" 28 784 801
+"Moogle\\query.ml" 28 785 791 "Moogle\\query.ml" 28 785 798
 type(
   Str.regexp
 )
 ident(
-  def term_sep_re "Moogle\\query.ml" 30 826 828 "Moogle\\query.ml" 48 1471 1474
+  def case_re "Moogle\\query.ml" 29 829 831 "Moogle\\query.ml" 84 2832 2835
 )
-"Moogle\\query.ml" 28 784 804 "Moogle\\query.ml" 28 784 814
+"Moogle\\query.ml" 28 785 801 "Moogle\\query.ml" 28 785 811
 type(
   string -> Str.regexp
 )
 ident(
   ext_ref Str.regexp
 )
-"Moogle\\query.ml" 28 784 815 "Moogle\\query.ml" 28 784 820
+"Moogle\\query.ml" 28 785 812 "Moogle\\query.ml" 28 785 828
 type(
   string
 )
-"Moogle\\query.ml" 28 784 804 "Moogle\\query.ml" 28 784 820
+"Moogle\\query.ml" 28 785 801 "Moogle\\query.ml" 28 785 828
 call(
   stack
 )
 type(
   Str.regexp
 )
-"Moogle\\query.ml" 30 826 832 "Moogle\\query.ml" 30 826 843
+"Moogle\\query.ml" 29 829 835 "Moogle\\query.ml" 29 829 846
 type(
-  string -> query
+  Str.regexp
 )
 ident(
-  def parse_query "Moogle\\query.ml" 39 1108 1110 "Moogle\\query.ml" 48 1471 1474
+  def term_sep_re "Moogle\\query.ml" 31 873 875 "Moogle\\query.ml" 84 2832 2835
 )
-"Moogle\\query.ml" 30 826 844 "Moogle\\query.ml" 30 826 845
+"Moogle\\query.ml" 29 829 849 "Moogle\\query.ml" 29 829 859
+type(
+  string -> Str.regexp
+)
+ident(
+  ext_ref Str.regexp
+)
+"Moogle\\query.ml" 29 829 860 "Moogle\\query.ml" 29 829 869
+type(
+  string
+)
+"Moogle\\query.ml" 29 829 849 "Moogle\\query.ml" 29 829 869
+call(
+  stack
+)
+type(
+  Str.regexp
+)
+"Moogle\\query.ml" 31 873 879 "Moogle\\query.ml" 31 873 895
+type(
+  string list -> string list
+)
+ident(
+  def remove_case_type "Moogle\\query.ml" 38 1041 1043 "Moogle\\query.ml" 84 2832 2835
+)
+"Moogle\\query.ml" 31 873 897 "Moogle\\query.ml" 31 873 902
+type(
+  string list
+)
+ident(
+  def words "Moogle\\query.ml" 31 873 918 "Moogle\\query.ml" 34 981 1007
+)
+"Moogle\\query.ml" 32 934 944 "Moogle\\query.ml" 32 934 952
+type(
+  string list -> string list
+)
+ident(
+  ext_ref List.rev
+)
+"Moogle\\query.ml" 32 934 953 "Moogle\\query.ml" 32 934 958
+type(
+  string list
+)
+ident(
+  int_ref words "Moogle\\query.ml" 31 873 897 "Moogle\\query.ml" 31 873 902
+)
+"Moogle\\query.ml" 32 934 944 "Moogle\\query.ml" 32 934 958
+call(
+  stack
+)
+type(
+  string list
+)
+"Moogle\\query.ml" 33 964 972 "Moogle\\query.ml" 33 964 974
+type(
+  string list
+)
+"Moogle\\query.ml" 33 964 978 "Moogle\\query.ml" 33 964 980
+type(
+  string list
+)
+"Moogle\\query.ml" 34 981 989 "Moogle\\query.ml" 34 981 990
 type(
   string
 )
 ident(
-  def s "Moogle\\query.ml" 31 849 853 "Moogle\\query.ml" 36 1013 1060
+  def h "Moogle\\query.ml" 34 981 997 "Moogle\\query.ml" 34 981 1007
 )
-"Moogle\\query.ml" 31 849 856 "Moogle\\query.ml" 31 849 872
+"Moogle\\query.ml" 34 981 992 "Moogle\\query.ml" 34 981 993
+type(
+  string list
+)
+ident(
+  def t "Moogle\\query.ml" 34 981 997 "Moogle\\query.ml" 34 981 1007
+)
+"Moogle\\query.ml" 34 981 989 "Moogle\\query.ml" 34 981 993
+type(
+  string list
+)
+"Moogle\\query.ml" 34 981 997 "Moogle\\query.ml" 34 981 1005
+type(
+  string list -> string list
+)
+ident(
+  ext_ref List.rev
+)
+"Moogle\\query.ml" 34 981 1006 "Moogle\\query.ml" 34 981 1007
+type(
+  string list
+)
+ident(
+  int_ref t "Moogle\\query.ml" 34 981 992 "Moogle\\query.ml" 34 981 993
+)
+"Moogle\\query.ml" 34 981 997 "Moogle\\query.ml" 34 981 1007
+call(
+  tail
+)
+type(
+  string list
+)
+"Moogle\\query.ml" 32 934 938 "Moogle\\query.ml" 34 981 1007
+type(
+  string list
+)
+type(
+  string list
+)
+"Moogle\\query.ml" 38 1041 1051 "Moogle\\query.ml" 38 1041 1061
+type(
+  string list -> unit
+)
+ident(
+  def print_list "Moogle\\query.ml" 38 1041 1043 "Moogle\\query.ml" 84 2832 2835
+)
+"Moogle\\query.ml" 38 1041 1063 "Moogle\\query.ml" 38 1041 1064
+type(
+  string list
+)
+ident(
+  def l "Moogle\\query.ml" 39 1082 1086 "Moogle\\query.ml" 41 1116 1183
+)
+"Moogle\\query.ml" 39 1082 1092 "Moogle\\query.ml" 39 1082 1093
+type(
+  string list
+)
+ident(
+  int_ref l "Moogle\\query.ml" 38 1041 1063 "Moogle\\query.ml" 38 1041 1064
+)
+"Moogle\\query.ml" 40 1099 1107 "Moogle\\query.ml" 40 1099 1109
+type(
+  string list
+)
+"Moogle\\query.ml" 40 1099 1113 "Moogle\\query.ml" 40 1099 1115
+type(
+  unit
+)
+"Moogle\\query.ml" 41 1116 1124 "Moogle\\query.ml" 41 1116 1125
+type(
+  string
+)
+ident(
+  def h "Moogle\\query.ml" 41 1116 1132 "Moogle\\query.ml" 41 1116 1183
+)
+"Moogle\\query.ml" 41 1116 1127 "Moogle\\query.ml" 41 1116 1128
+type(
+  string list
+)
+ident(
+  def t "Moogle\\query.ml" 41 1116 1132 "Moogle\\query.ml" 41 1116 1183
+)
+"Moogle\\query.ml" 41 1116 1124 "Moogle\\query.ml" 41 1116 1128
+type(
+  string list
+)
+"Moogle\\query.ml" 41 1116 1132 "Moogle\\query.ml" 41 1116 1145
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"Moogle\\query.ml" 41 1116 1146 "Moogle\\query.ml" 41 1116 1152
+type(
+  (string -> unit, out_channel, unit) format
+)
+"Moogle\\query.ml" 41 1116 1153 "Moogle\\query.ml" 41 1116 1154
+type(
+  string
+)
+ident(
+  int_ref h "Moogle\\query.ml" 41 1116 1124 "Moogle\\query.ml" 41 1116 1125
+)
+"Moogle\\query.ml" 41 1116 1132 "Moogle\\query.ml" 41 1116 1154
+call(
+  stack
+)
+type(
+  unit
+)
+"Moogle\\query.ml" 41 1116 1157 "Moogle\\query.ml" 41 1116 1166
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.flush_all
+)
+"Moogle\\query.ml" 41 1116 1167 "Moogle\\query.ml" 41 1116 1169
+type(
+  unit
+)
+"Moogle\\query.ml" 41 1116 1157 "Moogle\\query.ml" 41 1116 1169
+call(
+  stack
+)
+type(
+  unit
+)
+"Moogle\\query.ml" 41 1116 1171 "Moogle\\query.ml" 41 1116 1181
+type(
+  string list -> unit
+)
+ident(
+  int_ref print_list "Moogle\\query.ml" 38 1041 1051 "Moogle\\query.ml" 38 1041 1061
+)
+"Moogle\\query.ml" 41 1116 1182 "Moogle\\query.ml" 41 1116 1183
+type(
+  string list
+)
+ident(
+  int_ref t "Moogle\\query.ml" 41 1116 1127 "Moogle\\query.ml" 41 1116 1128
+)
+"Moogle\\query.ml" 41 1116 1171 "Moogle\\query.ml" 41 1116 1183
+call(
+  tail
+)
+type(
+  unit
+)
+"Moogle\\query.ml" 41 1116 1157 "Moogle\\query.ml" 41 1116 1183
+type(
+  unit
+)
+"Moogle\\query.ml" 41 1116 1132 "Moogle\\query.ml" 41 1116 1183
+type(
+  unit
+)
+"Moogle\\query.ml" 39 1082 1086 "Moogle\\query.ml" 41 1116 1183
+type(
+  unit
+)
+"Moogle\\query.ml" 44 1192 1198 "Moogle\\query.ml" 44 1192 1213
+type(
+  string -> string list
+)
+ident(
+  def query_to_string "Moogle\\query.ml" 54 1638 1640 "Moogle\\query.ml" 84 2832 2835
+)
+"Moogle\\query.ml" 44 1192 1215 "Moogle\\query.ml" 44 1192 1216
+type(
+  string
+)
+ident(
+  def s "Moogle\\query.ml" 44 1192 1227 "Moogle\\query.ml" 51 1584 1631
+)
+"Moogle\\query.ml" 45 1243 1250 "Moogle\\query.ml" 45 1243 1266
 type(
   Str.regexp -> string -> int -> bool
 )
 ident(
   ext_ref Str.string_match
 )
-"Moogle\\query.ml" 31 849 873 "Moogle\\query.ml" 31 849 881
+"Moogle\\query.ml" 45 1243 1267 "Moogle\\query.ml" 45 1243 1275
 type(
   Str.regexp
 )
 ident(
-  int_ref query_re "Moogle\\query.ml" 27 740 746 "Moogle\\query.ml" 27 740 754
+  int_ref query_re "Moogle\\query.ml" 27 741 747 "Moogle\\query.ml" 27 741 755
 )
-"Moogle\\query.ml" 31 849 882 "Moogle\\query.ml" 31 849 883
+"Moogle\\query.ml" 45 1243 1276 "Moogle\\query.ml" 45 1243 1277
 type(
   string
 )
 ident(
-  int_ref s "Moogle\\query.ml" 30 826 844 "Moogle\\query.ml" 30 826 845
+  int_ref s "Moogle\\query.ml" 44 1192 1215 "Moogle\\query.ml" 44 1192 1216
 )
-"Moogle\\query.ml" 31 849 884 "Moogle\\query.ml" 31 849 885
+"Moogle\\query.ml" 45 1243 1278 "Moogle\\query.ml" 45 1243 1279
 type(
   int
 )
-"Moogle\\query.ml" 31 849 856 "Moogle\\query.ml" 31 849 885
+"Moogle\\query.ml" 45 1243 1250 "Moogle\\query.ml" 45 1243 1279
 call(
   stack
 )
 type(
   bool
 )
-"Moogle\\query.ml" 32 892 902 "Moogle\\query.ml" 32 892 904
+"Moogle\\query.ml" 46 1285 1295 "Moogle\\query.ml" 46 1285 1297
 type(
   string
 )
 ident(
-  def qs "Moogle\\query.ml" 33 933 939 "Moogle\\query.ml" 35 987 1012
+  def qs "Moogle\\query.ml" 47 1326 1332 "Moogle\\query.ml" 50 1501 1583
 )
-"Moogle\\query.ml" 32 892 907 "Moogle\\query.ml" 32 892 924
+"Moogle\\query.ml" 46 1285 1300 "Moogle\\query.ml" 46 1285 1317
 type(
   int -> string -> string
 )
 ident(
   ext_ref Str.matched_group
 )
-"Moogle\\query.ml" 32 892 925 "Moogle\\query.ml" 32 892 926
+"Moogle\\query.ml" 46 1285 1318 "Moogle\\query.ml" 46 1285 1319
 type(
   int
 )
-"Moogle\\query.ml" 32 892 927 "Moogle\\query.ml" 32 892 928
+"Moogle\\query.ml" 46 1285 1320 "Moogle\\query.ml" 46 1285 1321
 type(
   string
 )
 ident(
-  int_ref s "Moogle\\query.ml" 30 826 844 "Moogle\\query.ml" 30 826 845
+  int_ref s "Moogle\\query.ml" 44 1192 1215 "Moogle\\query.ml" 44 1192 1216
 )
-"Moogle\\query.ml" 32 892 907 "Moogle\\query.ml" 32 892 928
+"Moogle\\query.ml" 46 1285 1300 "Moogle\\query.ml" 46 1285 1321
 call(
   stack
 )
 type(
   string
 )
-"Moogle\\query.ml" 33 933 943 "Moogle\\query.ml" 33 933 948
+"Moogle\\query.ml" 47 1326 1336 "Moogle\\query.ml" 47 1326 1341
 type(
   string list
 )
 ident(
-  def words "Moogle\\query.ml" 35 987 995 "Moogle\\query.ml" 35 987 1012
+  def words "Moogle\\query.ml" 48 1372 1378 "Moogle\\query.ml" 50 1501 1583
 )
-"Moogle\\query.ml" 33 933 951 "Moogle\\query.ml" 33 933 960
+"Moogle\\query.ml" 47 1326 1344 "Moogle\\query.ml" 47 1326 1353
 type(
   Str.regexp -> string -> string list
 )
 ident(
   ext_ref Str.split
 )
-"Moogle\\query.ml" 33 933 961 "Moogle\\query.ml" 33 933 972
+"Moogle\\query.ml" 47 1326 1354 "Moogle\\query.ml" 47 1326 1365
 type(
   Str.regexp
 )
 ident(
-  int_ref term_sep_re "Moogle\\query.ml" 28 784 790 "Moogle\\query.ml" 28 784 801
+  int_ref term_sep_re "Moogle\\query.ml" 29 829 835 "Moogle\\query.ml" 29 829 846
 )
-"Moogle\\query.ml" 33 933 973 "Moogle\\query.ml" 33 933 975
+"Moogle\\query.ml" 47 1326 1366 "Moogle\\query.ml" 47 1326 1368
 type(
   string
 )
 ident(
-  int_ref qs "Moogle\\query.ml" 32 892 902 "Moogle\\query.ml" 32 892 904
+  int_ref qs "Moogle\\query.ml" 46 1285 1295 "Moogle\\query.ml" 46 1285 1297
 )
-"Moogle\\query.ml" 33 933 951 "Moogle\\query.ml" 33 933 975
+"Moogle\\query.ml" 47 1326 1344 "Moogle\\query.ml" 47 1326 1368
 call(
   stack
 )
 type(
   string list
 )
-"Moogle\\query.ml" 35 987 995 "Moogle\\query.ml" 35 987 1006
+"Moogle\\query.ml" 48 1372 1382 "Moogle\\query.ml" 48 1372 1386
 type(
-  string list -> query
+  int
 )
 ident(
-  int_ref parse_words "Moogle\\query.ml" 19 449 459 "Moogle\\query.ml" 19 449 470
+  def sens "Moogle\\query.ml" 49 1449 1455 "Moogle\\query.ml" 50 1501 1583
 )
-"Moogle\\query.ml" 35 987 1007 "Moogle\\query.ml" 35 987 1012
+"Moogle\\query.ml" 48 1372 1394 "Moogle\\query.ml" 48 1372 1412
+type(
+  Str.regexp -> string -> int -> int
+)
+ident(
+  ext_ref Str.search_forward
+)
+"Moogle\\query.ml" 48 1372 1413 "Moogle\\query.ml" 48 1372 1420
+type(
+  Str.regexp
+)
+ident(
+  int_ref case_re "Moogle\\query.ml" 28 785 791 "Moogle\\query.ml" 28 785 798
+)
+"Moogle\\query.ml" 48 1372 1421 "Moogle\\query.ml" 48 1372 1422
+type(
+  string
+)
+ident(
+  int_ref s "Moogle\\query.ml" 44 1192 1215 "Moogle\\query.ml" 44 1192 1216
+)
+"Moogle\\query.ml" 48 1372 1423 "Moogle\\query.ml" 48 1372 1424
+type(
+  int
+)
+"Moogle\\query.ml" 48 1372 1394 "Moogle\\query.ml" 48 1372 1424
+call(
+  stack
+)
+type(
+  int
+)
+"Moogle\\query.ml" 48 1372 1430 "Moogle\\query.ml" 48 1372 1439
+type(
+  exn
+)
+"Moogle\\query.ml" 48 1372 1443 "Moogle\\query.ml" 48 1372 1444
+type(
+  int
+)
+"Moogle\\query.ml" 48 1372 1389 "Moogle\\query.ml" 48 1372 1445
+type(
+  int
+)
+"Moogle\\query.ml" 49 1449 1459 "Moogle\\query.ml" 49 1449 1463
+type(
+  bool
+)
+ident(
+  def case "Moogle\\query.ml" 50 1501 1509 "Moogle\\query.ml" 50 1501 1583
+)
+"Moogle\\query.ml" 49 1449 1466 "Moogle\\query.ml" 49 1449 1482
+type(
+  Str.regexp -> string -> int -> bool
+)
+ident(
+  ext_ref Str.string_match
+)
+"Moogle\\query.ml" 49 1449 1483 "Moogle\\query.ml" 49 1449 1490
+type(
+  Str.regexp
+)
+ident(
+  int_ref case_re "Moogle\\query.ml" 28 785 791 "Moogle\\query.ml" 28 785 798
+)
+"Moogle\\query.ml" 49 1449 1491 "Moogle\\query.ml" 49 1449 1492
+type(
+  string
+)
+ident(
+  int_ref s "Moogle\\query.ml" 44 1192 1215 "Moogle\\query.ml" 44 1192 1216
+)
+"Moogle\\query.ml" 49 1449 1493 "Moogle\\query.ml" 49 1449 1497
+type(
+  int
+)
+ident(
+  int_ref sens "Moogle\\query.ml" 48 1372 1382 "Moogle\\query.ml" 48 1372 1386
+)
+"Moogle\\query.ml" 49 1449 1466 "Moogle\\query.ml" 49 1449 1497
+call(
+  stack
+)
+type(
+  bool
+)
+"Moogle\\query.ml" 50 1501 1513 "Moogle\\query.ml" 50 1501 1517
+type(
+  bool
+)
+ident(
+  int_ref case "Moogle\\query.ml" 49 1449 1459 "Moogle\\query.ml" 49 1449 1463
+)
+"Moogle\\query.ml" 50 1501 1523 "Moogle\\query.ml" 50 1501 1539
+type(
+  string list -> string list
+)
+ident(
+  int_ref remove_case_type "Moogle\\query.ml" 31 873 879 "Moogle\\query.ml" 31 873 895
+)
+"Moogle\\query.ml" 50 1501 1540 "Moogle\\query.ml" 50 1501 1545
 type(
   string list
 )
 ident(
-  int_ref words "Moogle\\query.ml" 33 933 943 "Moogle\\query.ml" 33 933 948
+  int_ref words "Moogle\\query.ml" 47 1326 1336 "Moogle\\query.ml" 47 1326 1341
 )
-"Moogle\\query.ml" 35 987 995 "Moogle\\query.ml" 35 987 1012
+"Moogle\\query.ml" 50 1501 1523 "Moogle\\query.ml" 50 1501 1545
 call(
   tail
 )
 type(
-  query
+  string list
 )
-"Moogle\\query.ml" 33 933 939 "Moogle\\query.ml" 35 987 1012
+"Moogle\\query.ml" 50 1501 1551 "Moogle\\query.ml" 50 1501 1559
 type(
-  query
+  (string -> string) -> string list -> string list
 )
-"Moogle\\query.ml" 32 892 898 "Moogle\\query.ml" 35 987 1012
-type(
-  query
+ident(
+  ext_ref List.map
 )
-"Moogle\\query.ml" 36 1013 1022 "Moogle\\query.ml" 36 1013 1027
+"Moogle\\query.ml" 50 1501 1560 "Moogle\\query.ml" 50 1501 1576
 type(
-  exn -> query
+  string -> string
+)
+ident(
+  ext_ref String.lowercase
+)
+"Moogle\\query.ml" 50 1501 1577 "Moogle\\query.ml" 50 1501 1582
+type(
+  string list
+)
+ident(
+  int_ref words "Moogle\\query.ml" 47 1326 1336 "Moogle\\query.ml" 47 1326 1341
+)
+"Moogle\\query.ml" 50 1501 1551 "Moogle\\query.ml" 50 1501 1582
+call(
+  tail
+)
+type(
+  string list
+)
+"Moogle\\query.ml" 50 1501 1509 "Moogle\\query.ml" 50 1501 1583
+type(
+  string list
+)
+"Moogle\\query.ml" 49 1449 1455 "Moogle\\query.ml" 50 1501 1583
+type(
+  string list
+)
+"Moogle\\query.ml" 48 1372 1378 "Moogle\\query.ml" 50 1501 1583
+type(
+  string list
+)
+"Moogle\\query.ml" 47 1326 1332 "Moogle\\query.ml" 50 1501 1583
+type(
+  string list
+)
+"Moogle\\query.ml" 46 1285 1291 "Moogle\\query.ml" 50 1501 1583
+type(
+  string list
+)
+"Moogle\\query.ml" 51 1584 1593 "Moogle\\query.ml" 51 1584 1598
+type(
+  exn -> string list
 )
 ident(
   ext_ref Pervasives.raise
 )
-"Moogle\\query.ml" 36 1013 1037 "Moogle\\query.ml" 36 1013 1059
+"Moogle\\query.ml" 51 1584 1608 "Moogle\\query.ml" 51 1584 1630
 type(
   string
 )
-"Moogle\\query.ml" 36 1013 1028 "Moogle\\query.ml" 36 1013 1060
+"Moogle\\query.ml" 51 1584 1599 "Moogle\\query.ml" 51 1584 1631
 type(
   exn
 )
-"Moogle\\query.ml" 36 1013 1022 "Moogle\\query.ml" 36 1013 1060
+"Moogle\\query.ml" 51 1584 1593 "Moogle\\query.ml" 51 1584 1631
+type(
+  string list
+)
+"Moogle\\query.ml" 45 1243 1247 "Moogle\\query.ml" 51 1584 1631
+type(
+  string list
+)
+type(
+  string list
+)
+"Moogle\\query.ml" 54 1638 1644 "Moogle\\query.ml" 54 1638 1655
+type(
+  string -> query * bool
+)
+ident(
+  def parse_query "Moogle\\query.ml" 75 2469 2471 "Moogle\\query.ml" 84 2832 2835
+)
+"Moogle\\query.ml" 54 1638 1656 "Moogle\\query.ml" 54 1638 1657
+type(
+  string
+)
+ident(
+  def s "Moogle\\query.ml" 55 1661 1665 "Moogle\\query.ml" 58 1819 1844
+)
+"Moogle\\query.ml" 55 1661 1669 "Moogle\\query.ml" 55 1661 1670
+type(
+  string list
+)
+"Moogle\\query.ml" 55 1661 1673 "Moogle\\query.ml" 55 1661 1688
+type(
+  string -> string list
+)
+ident(
+  int_ref query_to_string "Moogle\\query.ml" 44 1192 1198 "Moogle\\query.ml" 44 1192 1213
+)
+"Moogle\\query.ml" 55 1661 1689 "Moogle\\query.ml" 55 1661 1690
+type(
+  string
+)
+ident(
+  int_ref s "Moogle\\query.ml" 54 1638 1656 "Moogle\\query.ml" 54 1638 1657
+)
+"Moogle\\query.ml" 55 1661 1673 "Moogle\\query.ml" 55 1661 1690
+call(
+  stack
+)
+type(
+  string list
+)
+"Moogle\\query.ml" 56 1694 1702 "Moogle\\query.ml" 56 1694 1706
+type(
+  int
+)
+"Moogle\\query.ml" 56 1694 1714 "Moogle\\query.ml" 56 1694 1732
+type(
+  Str.regexp -> string -> int -> int
+)
+ident(
+  ext_ref Str.search_forward
+)
+"Moogle\\query.ml" 56 1694 1733 "Moogle\\query.ml" 56 1694 1740
+type(
+  Str.regexp
+)
+ident(
+  int_ref case_re "Moogle\\query.ml" 28 785 791 "Moogle\\query.ml" 28 785 798
+)
+"Moogle\\query.ml" 56 1694 1741 "Moogle\\query.ml" 56 1694 1742
+type(
+  string
+)
+ident(
+  int_ref s "Moogle\\query.ml" 54 1638 1656 "Moogle\\query.ml" 54 1638 1657
+)
+"Moogle\\query.ml" 56 1694 1743 "Moogle\\query.ml" 56 1694 1744
+type(
+  int
+)
+"Moogle\\query.ml" 56 1694 1714 "Moogle\\query.ml" 56 1694 1744
+call(
+  stack
+)
+type(
+  int
+)
+"Moogle\\query.ml" 56 1694 1750 "Moogle\\query.ml" 56 1694 1759
+type(
+  exn
+)
+"Moogle\\query.ml" 56 1694 1763 "Moogle\\query.ml" 56 1694 1764
+type(
+  int
+)
+"Moogle\\query.ml" 56 1694 1709 "Moogle\\query.ml" 56 1694 1765
+type(
+  int
+)
+"Moogle\\query.ml" 57 1769 1777 "Moogle\\query.ml" 57 1769 1781
+type(
+  bool
+)
+"Moogle\\query.ml" 57 1769 1784 "Moogle\\query.ml" 57 1769 1800
+type(
+  Str.regexp -> string -> int -> bool
+)
+ident(
+  ext_ref Str.string_match
+)
+"Moogle\\query.ml" 57 1769 1801 "Moogle\\query.ml" 57 1769 1808
+type(
+  Str.regexp
+)
+ident(
+  int_ref case_re "Moogle\\query.ml" 28 785 791 "Moogle\\query.ml" 28 785 798
+)
+"Moogle\\query.ml" 57 1769 1809 "Moogle\\query.ml" 57 1769 1810
+type(
+  string
+)
+ident(
+  int_ref s "Moogle\\query.ml" 54 1638 1656 "Moogle\\query.ml" 54 1638 1657
+)
+"Moogle\\query.ml" 57 1769 1811 "Moogle\\query.ml" 57 1769 1815
+type(
+  int
+)
+ident(
+  int_ref sens "Moogle\\query.ml" 56 1694 1702 "Moogle\\query.ml" 56 1694 1706
+)
+"Moogle\\query.ml" 57 1769 1784 "Moogle\\query.ml" 57 1769 1815
+call(
+  stack
+)
+type(
+  bool
+)
+"Moogle\\query.ml" 58 1819 1824 "Moogle\\query.ml" 58 1819 1835
+type(
+  string list -> query
+)
+ident(
+  int_ref parse_words "Moogle\\query.ml" 19 450 460 "Moogle\\query.ml" 19 450 471
+)
+"Moogle\\query.ml" 58 1819 1836 "Moogle\\query.ml" 58 1819 1837
+type(
+  string list
+)
+ident(
+  int_ref q "Moogle\\query.ml" 55 1661 1669 "Moogle\\query.ml" 55 1661 1670
+)
+"Moogle\\query.ml" 58 1819 1824 "Moogle\\query.ml" 58 1819 1837
+call(
+  stack
+)
 type(
   query
 )
-"Moogle\\query.ml" 31 849 853 "Moogle\\query.ml" 36 1013 1060
+"Moogle\\query.ml" 58 1819 1839 "Moogle\\query.ml" 58 1819 1843
 type(
-  query
+  bool
 )
-"Moogle\\query.ml" 39 1108 1118 "Moogle\\query.ml" 39 1108 1128
+ident(
+  int_ref case "Moogle\\query.ml" 57 1769 1777 "Moogle\\query.ml" 57 1769 1781
+)
+"Moogle\\query.ml" 58 1819 1823 "Moogle\\query.ml" 58 1819 1844
+type(
+  query * bool
+)
+"Moogle\\query.ml" 57 1769 1773 "Moogle\\query.ml" 58 1819 1844
+type(
+  query * bool
+)
+"Moogle\\query.ml" 56 1694 1698 "Moogle\\query.ml" 58 1819 1844
+type(
+  query * bool
+)
+"Moogle\\query.ml" 55 1661 1665 "Moogle\\query.ml" 58 1819 1844
+type(
+  query * bool
+)
+"Moogle\\query.ml" 75 2469 2479 "Moogle\\query.ml" 75 2469 2489
 type(
   A.D.dict -> query -> A.D.value
 )
 ident(
-  def eval_query "Moogle\\query.ml" 39 1108 1110 "Moogle\\query.ml" 48 1471 1474
+  def eval_query "Moogle\\query.ml" 75 2469 2471 "Moogle\\query.ml" 84 2832 2835
 )
-"Moogle\\query.ml" 39 1108 1130 "Moogle\\query.ml" 39 1108 1133
+"Moogle\\query.ml" 75 2469 2491 "Moogle\\query.ml" 75 2469 2494
 type(
   A.D.dict
 )
 ident(
-  def idx "Moogle\\query.ml" 39 1108 1144 "Moogle\\query.ml" 47 1413 1470
+  def idx "Moogle\\query.ml" 75 2469 2505 "Moogle\\query.ml" 83 2774 2831
 )
-"Moogle\\query.ml" 39 1108 1145 "Moogle\\query.ml" 39 1108 1146
+"Moogle\\query.ml" 75 2469 2506 "Moogle\\query.ml" 75 2469 2507
 type(
   query
 )
 ident(
-  def q "Moogle\\query.ml" 39 1108 1154 "Moogle\\query.ml" 47 1413 1470
+  def q "Moogle\\query.ml" 75 2469 2515 "Moogle\\query.ml" 83 2774 2831
 )
-"Moogle\\query.ml" 40 1165 1175 "Moogle\\query.ml" 40 1165 1176
+"Moogle\\query.ml" 76 2526 2536 "Moogle\\query.ml" 76 2526 2537
 type(
   query
 )
 ident(
-  int_ref q "Moogle\\query.ml" 39 1108 1145 "Moogle\\query.ml" 39 1108 1146
+  int_ref q "Moogle\\query.ml" 75 2469 2506 "Moogle\\query.ml" 75 2469 2507
 )
-"Moogle\\query.ml" 41 1183 1196 "Moogle\\query.ml" 41 1183 1197
+"Moogle\\query.ml" 77 2544 2557 "Moogle\\query.ml" 77 2544 2558
 type(
   A.D.key
 )
 ident(
-  def x "Moogle\\query.ml" 41 1183 1201 "Moogle\\query.ml" 43 1268 1303
+  def x "Moogle\\query.ml" 77 2544 2562 "Moogle\\query.ml" 79 2629 2664
 )
-"Moogle\\query.ml" 41 1183 1191 "Moogle\\query.ml" 41 1183 1197
+"Moogle\\query.ml" 77 2544 2552 "Moogle\\query.ml" 77 2544 2558
 type(
   query
 )
-"Moogle\\query.ml" 41 1183 1208 "Moogle\\query.ml" 41 1183 1216
+"Moogle\\query.ml" 77 2544 2569 "Moogle\\query.ml" 77 2544 2577
 type(
   A.D.dict -> A.D.key -> A.D.value option
 )
 ident(
   ext_ref A.D.lookup
 )
-"Moogle\\query.ml" 41 1183 1217 "Moogle\\query.ml" 41 1183 1220
+"Moogle\\query.ml" 77 2544 2578 "Moogle\\query.ml" 77 2544 2581
 type(
   A.D.dict
 )
 ident(
-  int_ref idx "Moogle\\query.ml" 39 1108 1130 "Moogle\\query.ml" 39 1108 1133
+  int_ref idx "Moogle\\query.ml" 75 2469 2491 "Moogle\\query.ml" 75 2469 2494
 )
-"Moogle\\query.ml" 41 1183 1221 "Moogle\\query.ml" 41 1183 1222
+"Moogle\\query.ml" 77 2544 2582 "Moogle\\query.ml" 77 2544 2583
 type(
   A.D.key
 )
 ident(
-  int_ref x "Moogle\\query.ml" 41 1183 1196 "Moogle\\query.ml" 41 1183 1197
+  int_ref x "Moogle\\query.ml" 77 2544 2557 "Moogle\\query.ml" 77 2544 2558
 )
-"Moogle\\query.ml" 41 1183 1208 "Moogle\\query.ml" 41 1183 1222
+"Moogle\\query.ml" 77 2544 2569 "Moogle\\query.ml" 77 2544 2583
 call(
   stack
 )
 type(
   A.D.value option
 )
-"Moogle\\query.ml" 42 1229 1252 "Moogle\\query.ml" 42 1229 1256
+"Moogle\\query.ml" 78 2590 2613 "Moogle\\query.ml" 78 2590 2617
 type(
   A.D.value option
 )
-"Moogle\\query.ml" 42 1229 1260 "Moogle\\query.ml" 42 1229 1267
+"Moogle\\query.ml" 78 2590 2621 "Moogle\\query.ml" 78 2590 2628
 type(
   A.D.value
 )
 ident(
   ext_ref A.S.empty
 )
-"Moogle\\query.ml" 43 1268 1296 "Moogle\\query.ml" 43 1268 1297
+"Moogle\\query.ml" 79 2629 2657 "Moogle\\query.ml" 79 2629 2658
 type(
   A.D.value
 )
 ident(
-  def s "Moogle\\query.ml" 43 1268 1301 "Moogle\\query.ml" 43 1268 1302
+  def s "Moogle\\query.ml" 79 2629 2662 "Moogle\\query.ml" 79 2629 2663
 )
-"Moogle\\query.ml" 43 1268 1291 "Moogle\\query.ml" 43 1268 1297
+"Moogle\\query.ml" 79 2629 2652 "Moogle\\query.ml" 79 2629 2658
 type(
   A.D.value option
 )
-"Moogle\\query.ml" 43 1268 1301 "Moogle\\query.ml" 43 1268 1302
+"Moogle\\query.ml" 79 2629 2662 "Moogle\\query.ml" 79 2629 2663
 type(
   A.D.value
 )
 ident(
-  int_ref s "Moogle\\query.ml" 43 1268 1296 "Moogle\\query.ml" 43 1268 1297
+  int_ref s "Moogle\\query.ml" 79 2629 2657 "Moogle\\query.ml" 79 2629 2658
 )
-"Moogle\\query.ml" 41 1183 1201 "Moogle\\query.ml" 43 1268 1303
+"Moogle\\query.ml" 77 2544 2562 "Moogle\\query.ml" 79 2629 2664
 type(
   A.D.value
 )
-"Moogle\\query.ml" 44 1304 1317 "Moogle\\query.ml" 44 1304 1319
+"Moogle\\query.ml" 80 2665 2678 "Moogle\\query.ml" 80 2665 2680
 type(
   query
 )
 ident(
-  def q1 "Moogle\\query.ml" 45 1328 1338 "Moogle\\query.ml" 45 1328 1389
+  def q1 "Moogle\\query.ml" 81 2689 2699 "Moogle\\query.ml" 81 2689 2750
 )
-"Moogle\\query.ml" 44 1304 1320 "Moogle\\query.ml" 44 1304 1322
+"Moogle\\query.ml" 80 2665 2681 "Moogle\\query.ml" 80 2665 2683
 type(
   query
 )
 ident(
-  def q2 "Moogle\\query.ml" 45 1328 1338 "Moogle\\query.ml" 45 1328 1389
+  def q2 "Moogle\\query.ml" 81 2689 2699 "Moogle\\query.ml" 81 2689 2750
 )
-"Moogle\\query.ml" 44 1304 1312 "Moogle\\query.ml" 44 1304 1323
+"Moogle\\query.ml" 80 2665 2673 "Moogle\\query.ml" 80 2665 2684
 type(
   query
 )
-"Moogle\\query.ml" 45 1328 1338 "Moogle\\query.ml" 45 1328 1349
+"Moogle\\query.ml" 81 2689 2699 "Moogle\\query.ml" 81 2689 2710
 type(
   A.D.value -> A.D.value -> A.D.value
 )
 ident(
   ext_ref A.S.intersect
 )
-"Moogle\\query.ml" 45 1328 1351 "Moogle\\query.ml" 45 1328 1361
+"Moogle\\query.ml" 81 2689 2712 "Moogle\\query.ml" 81 2689 2722
 type(
   A.D.dict -> query -> A.D.value
 )
 ident(
-  int_ref eval_query "Moogle\\query.ml" 39 1108 1118 "Moogle\\query.ml" 39 1108 1128
+  int_ref eval_query "Moogle\\query.ml" 75 2469 2479 "Moogle\\query.ml" 75 2469 2489
 )
-"Moogle\\query.ml" 45 1328 1362 "Moogle\\query.ml" 45 1328 1365
+"Moogle\\query.ml" 81 2689 2723 "Moogle\\query.ml" 81 2689 2726
 type(
   A.D.dict
 )
 ident(
-  int_ref idx "Moogle\\query.ml" 39 1108 1130 "Moogle\\query.ml" 39 1108 1133
+  int_ref idx "Moogle\\query.ml" 75 2469 2491 "Moogle\\query.ml" 75 2469 2494
 )
-"Moogle\\query.ml" 45 1328 1366 "Moogle\\query.ml" 45 1328 1368
+"Moogle\\query.ml" 81 2689 2727 "Moogle\\query.ml" 81 2689 2729
 type(
   query
 )
 ident(
-  int_ref q1 "Moogle\\query.ml" 44 1304 1317 "Moogle\\query.ml" 44 1304 1319
+  int_ref q1 "Moogle\\query.ml" 80 2665 2678 "Moogle\\query.ml" 80 2665 2680
 )
-"Moogle\\query.ml" 45 1328 1350 "Moogle\\query.ml" 45 1328 1369
+"Moogle\\query.ml" 81 2689 2711 "Moogle\\query.ml" 81 2689 2730
 call(
   stack
 )
 type(
   A.D.value
 )
-"Moogle\\query.ml" 45 1328 1371 "Moogle\\query.ml" 45 1328 1381
+"Moogle\\query.ml" 81 2689 2732 "Moogle\\query.ml" 81 2689 2742
 type(
   A.D.dict -> query -> A.D.value
 )
 ident(
-  int_ref eval_query "Moogle\\query.ml" 39 1108 1118 "Moogle\\query.ml" 39 1108 1128
+  int_ref eval_query "Moogle\\query.ml" 75 2469 2479 "Moogle\\query.ml" 75 2469 2489
 )
-"Moogle\\query.ml" 45 1328 1382 "Moogle\\query.ml" 45 1328 1385
+"Moogle\\query.ml" 81 2689 2743 "Moogle\\query.ml" 81 2689 2746
 type(
   A.D.dict
 )
 ident(
-  int_ref idx "Moogle\\query.ml" 39 1108 1130 "Moogle\\query.ml" 39 1108 1133
+  int_ref idx "Moogle\\query.ml" 75 2469 2491 "Moogle\\query.ml" 75 2469 2494
 )
-"Moogle\\query.ml" 45 1328 1386 "Moogle\\query.ml" 45 1328 1388
+"Moogle\\query.ml" 81 2689 2747 "Moogle\\query.ml" 81 2689 2749
 type(
   query
 )
 ident(
-  int_ref q2 "Moogle\\query.ml" 44 1304 1320 "Moogle\\query.ml" 44 1304 1322
+  int_ref q2 "Moogle\\query.ml" 80 2665 2681 "Moogle\\query.ml" 80 2665 2683
 )
-"Moogle\\query.ml" 45 1328 1370 "Moogle\\query.ml" 45 1328 1389
+"Moogle\\query.ml" 81 2689 2731 "Moogle\\query.ml" 81 2689 2750
 call(
   stack
 )
 type(
   A.D.value
 )
-"Moogle\\query.ml" 45 1328 1338 "Moogle\\query.ml" 45 1328 1389
+"Moogle\\query.ml" 81 2689 2699 "Moogle\\query.ml" 81 2689 2750
 call(
   tail
 )
 type(
   A.D.value
 )
-"Moogle\\query.ml" 46 1390 1402 "Moogle\\query.ml" 46 1390 1404
+"Moogle\\query.ml" 82 2751 2763 "Moogle\\query.ml" 82 2751 2765
 type(
   query
 )
 ident(
-  def q1 "Moogle\\query.ml" 47 1413 1423 "Moogle\\query.ml" 47 1413 1470
+  def q1 "Moogle\\query.ml" 83 2774 2784 "Moogle\\query.ml" 83 2774 2831
 )
-"Moogle\\query.ml" 46 1390 1405 "Moogle\\query.ml" 46 1390 1407
+"Moogle\\query.ml" 82 2751 2766 "Moogle\\query.ml" 82 2751 2768
 type(
   query
 )
 ident(
-  def q2 "Moogle\\query.ml" 47 1413 1423 "Moogle\\query.ml" 47 1413 1470
+  def q2 "Moogle\\query.ml" 83 2774 2784 "Moogle\\query.ml" 83 2774 2831
 )
-"Moogle\\query.ml" 46 1390 1398 "Moogle\\query.ml" 46 1390 1408
+"Moogle\\query.ml" 82 2751 2759 "Moogle\\query.ml" 82 2751 2769
 type(
   query
 )
-"Moogle\\query.ml" 47 1413 1423 "Moogle\\query.ml" 47 1413 1430
+"Moogle\\query.ml" 83 2774 2784 "Moogle\\query.ml" 83 2774 2791
 type(
   A.D.value -> A.D.value -> A.D.value
 )
 ident(
   ext_ref A.S.union
 )
-"Moogle\\query.ml" 47 1413 1432 "Moogle\\query.ml" 47 1413 1442
+"Moogle\\query.ml" 83 2774 2793 "Moogle\\query.ml" 83 2774 2803
 type(
   A.D.dict -> query -> A.D.value
 )
 ident(
-  int_ref eval_query "Moogle\\query.ml" 39 1108 1118 "Moogle\\query.ml" 39 1108 1128
+  int_ref eval_query "Moogle\\query.ml" 75 2469 2479 "Moogle\\query.ml" 75 2469 2489
 )
-"Moogle\\query.ml" 47 1413 1443 "Moogle\\query.ml" 47 1413 1446
+"Moogle\\query.ml" 83 2774 2804 "Moogle\\query.ml" 83 2774 2807
 type(
   A.D.dict
 )
 ident(
-  int_ref idx "Moogle\\query.ml" 39 1108 1130 "Moogle\\query.ml" 39 1108 1133
+  int_ref idx "Moogle\\query.ml" 75 2469 2491 "Moogle\\query.ml" 75 2469 2494
 )
-"Moogle\\query.ml" 47 1413 1447 "Moogle\\query.ml" 47 1413 1449
+"Moogle\\query.ml" 83 2774 2808 "Moogle\\query.ml" 83 2774 2810
 type(
   query
 )
 ident(
-  int_ref q1 "Moogle\\query.ml" 46 1390 1402 "Moogle\\query.ml" 46 1390 1404
+  int_ref q1 "Moogle\\query.ml" 82 2751 2763 "Moogle\\query.ml" 82 2751 2765
 )
-"Moogle\\query.ml" 47 1413 1431 "Moogle\\query.ml" 47 1413 1450
+"Moogle\\query.ml" 83 2774 2792 "Moogle\\query.ml" 83 2774 2811
 call(
   stack
 )
 type(
   A.D.value
 )
-"Moogle\\query.ml" 47 1413 1452 "Moogle\\query.ml" 47 1413 1462
+"Moogle\\query.ml" 83 2774 2813 "Moogle\\query.ml" 83 2774 2823
 type(
   A.D.dict -> query -> A.D.value
 )
 ident(
-  int_ref eval_query "Moogle\\query.ml" 39 1108 1118 "Moogle\\query.ml" 39 1108 1128
+  int_ref eval_query "Moogle\\query.ml" 75 2469 2479 "Moogle\\query.ml" 75 2469 2489
 )
-"Moogle\\query.ml" 47 1413 1463 "Moogle\\query.ml" 47 1413 1466
+"Moogle\\query.ml" 83 2774 2824 "Moogle\\query.ml" 83 2774 2827
 type(
   A.D.dict
 )
 ident(
-  int_ref idx "Moogle\\query.ml" 39 1108 1130 "Moogle\\query.ml" 39 1108 1133
+  int_ref idx "Moogle\\query.ml" 75 2469 2491 "Moogle\\query.ml" 75 2469 2494
 )
-"Moogle\\query.ml" 47 1413 1467 "Moogle\\query.ml" 47 1413 1469
+"Moogle\\query.ml" 83 2774 2828 "Moogle\\query.ml" 83 2774 2830
 type(
   query
 )
 ident(
-  int_ref q2 "Moogle\\query.ml" 46 1390 1405 "Moogle\\query.ml" 46 1390 1407
+  int_ref q2 "Moogle\\query.ml" 82 2751 2766 "Moogle\\query.ml" 82 2751 2768
 )
-"Moogle\\query.ml" 47 1413 1451 "Moogle\\query.ml" 47 1413 1470
+"Moogle\\query.ml" 83 2774 2812 "Moogle\\query.ml" 83 2774 2831
 call(
   stack
 )
 type(
   A.D.value
 )
-"Moogle\\query.ml" 47 1413 1423 "Moogle\\query.ml" 47 1413 1470
+"Moogle\\query.ml" 83 2774 2784 "Moogle\\query.ml" 83 2774 2831
 call(
   tail
 )
 type(
   A.D.value
 )
-"Moogle\\query.ml" 40 1165 1169 "Moogle\\query.ml" 47 1413 1470
+"Moogle\\query.ml" 76 2526 2530 "Moogle\\query.ml" 83 2774 2831
 type(
   A.D.value
 )

@@ -90,8 +90,12 @@ let modify_link_set (l : link) (d : WordDict.dict) (a : string) : WordDict.dict 
     WordDict.insert d a new_set
 ;;
 
+let visit (l : link) ((v, q): VisitSet.set * link LinkQ.queue) : (VisitSet.set * link LinkQ.queue) =
+  if ((VisitSet.member v l) = true) then (v, q)
+  else (VisitSet.insert l v, LinkQ.enqueue l q)
+;;
 
-let rec bfs_loop (q : link LinkQ.queue) (v : VisitSet.set) (d : WordDict.dict) (ct : int) : WordDict.dict  =
+let rec bfs_loop (q : link LinkQ.queue) (v : VisitSet.set) (d : WordDict.dict) (ct : int) (case : bool) : WordDict.dict  =
   if ct >= CrawlerServices.num_pages_to_search then d
   else if LinkQ.is_empty q then d
 	else
@@ -99,18 +103,20 @@ let rec bfs_loop (q : link LinkQ.queue) (v : VisitSet.set) (d : WordDict.dict) (
       let _ = Printf.printf "%s\n" (CrawlerServices.string_of_link l) in
 			let q = LinkQ.dequeue q in
 			let p = CrawlerServices.get_page l in
-			let wds = p.words in
-      let ls = List.filter (fun lnk -> not (VisitSet.member v lnk)) p.links in
+			let wds = (if case then p.words else List.map String.lowercase p.words) in
+      let (v, q) = List.fold_right visit p.links (v, q) in
+   (*   let ls = List.filter (fun lnk -> not (VisitSet.member v lnk)) p.links in
       let q = LinkQ.insert_list ls q in 
-			let v = List.fold_right VisitSet.insert ls v in
-			bfs_loop q v (List.fold_left (modify_link_set l) d wds) (ct + 1)
+(*this is the problem nothing ever becomes visited*)
+			let v = List.fold_right VisitSet.insert ls v in*)
+			bfs_loop q v (List.fold_left (modify_link_set l) d wds) (ct + 1) case
 ;;
 
 
-let crawler () : WordDict.dict = 
+let crawler (case : bool) : WordDict.dict = 
   let q = LinkQ.empty() in
   let q = LinkQ.enqueue CrawlerServices.initial_link q in
-  bfs_loop q (VisitSet.singleton CrawlerServices.initial_link) WordDict.empty 0
+  bfs_loop q (VisitSet.singleton CrawlerServices.initial_link) WordDict.empty 0 case
 ;;
 
 
@@ -179,16 +185,45 @@ let http_get_re =
  * the result in an html document to send back to the client.  If we don't
  * understand the request, then we send the default page (which is just
  * moogle.html in this directory).  *)
+let rec hamming_loop (s1: string) (s2:string) (l : int) (i :int) : int =
+  let x = if i >= l then 0 
+  else (if (String.sub s1 i 1 = String.sub s2 i 1) then 0 else 1) + hamming_loop s1 s2 l (i+1) in
+  x
+  ;;
+
+
+let hamming_d (s1 : string) (s2 : string) : int =
+  try
+    let _ = assert (String.length s1 == String.length s2) in
+    hamming_loop s1 s2 (String.length s1) 0
+    
+  with _ -> 100
+;;
+
+let get_possible (ind : WordDict.dict) (a : string) : string list =
+  WordDict.fold (fun k v acc -> (if (hamming_d a k) <= 1 then k::acc else acc)) [] ind
+;;
+
+let spell_suggest (index : WordDict.dict) (words : string list) : string list =
+  let misspell = List.filter (fun a -> not (WordDict.member index a)) words in
+  List.fold_left (fun acc a -> (get_possible index a) @ acc) [] misspell
+;;  
+
+let suggest_body (wds : string list) : string = 
+  List.fold_left (fun s wd -> "<h4>Did you mean...<h4><li>" ^ wd ^ "</li>" ^ s) "" wds
+;;
+
 let process_request client_fd request index = 
   try 
     let _ = Str.search_forward http_get_re request 0 in
     let query_string = Str.matched_group 1 request in
-    let query = Q.parse_query query_string in
-    let links = Q.eval_query index query in
-    let response_body = html_of_urlset links in
+    let (query, case) = Q.parse_query query_string in
+    let ind = if case then fst index else snd index in
+    let links = Q.eval_query ind query in
+    let response_body = if (LinkSet.is_empty links) then suggest_body (spell_suggest ind (Q.query_to_string query_string)) else html_of_urlset links in
     let response = 
       query_response_header ^ response_body ^ query_response_footer in
-      Unix.send client_fd response 0 (String.length response) [] 
+      Unix.send client_fd response 0 (String.length response) []
   with _ -> send_std_response client_fd
 ;; 
 
@@ -196,7 +231,7 @@ let process_request client_fd request index =
  * prepare it for listening, and then loop, accepting requests and
  * sending responses. 
  *)
-let server (index:WordDict.dict) = 
+let server (index : (WordDict.dict * WordDict.dict)) = 
   let fd = Unix.socket Unix.PF_INET Unix.SOCK_STREAM 0 in 
   let sock_addr = Unix.ADDR_INET (Unix.inet_addr_any, server_port) in 
   let _ = Unix.bind fd sock_addr in
@@ -207,6 +242,8 @@ let server (index:WordDict.dict) =
     let buf = String.create 4096 in
     let len = Unix.recv client_fd buf 0 (String.length buf) [] in
     let request = String.sub buf 0 len in
+    (*let case = in*)
+    (*let request=(if (case) then String.lowercase request else request) in*)
     let _ = process_request client_fd request index in
       Unix.close client_fd ; 
       server_loop() in 
@@ -218,7 +255,7 @@ let main () =
   let _ = Printf.printf "Starting Moogle on port %d, indexing %d pages.\n" 
     server_port num_pages_to_search in
   let _ = flush_all () in
-  let index = crawler () in 
+  let index = (crawler true, crawler false) in 
   let _ = Printf.printf "Index has been constructed; entering server loop.\n" in
   let _ = Printf.printf "Press Ctrl-c to terminate Moogle." in
   let _ = flush_all () in

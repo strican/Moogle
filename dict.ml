@@ -348,7 +348,7 @@ module RBTreeDict(D:DICT_ARG) : (DICT with type key = D.key
     let rec fold (f:key -> value -> 'a -> 'a) (u:'a) (d:dict) : 'a = 
         match d with 
 			    | Leaf -> u
-			    | Node(l, (k, v, _), r) ->  f k v (fold f (fold f u r) l) 
+			    | Node(l, (k, v, _), r) ->  f k v (fold f (fold f u r) l)
     ;;
 
   end

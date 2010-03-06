@@ -38,7 +38,11 @@ module Query :
         | Or of query * query
       val parse_words : string list -> query
       val query_re : Str.regexp
+      val case_re : Str.regexp
       val term_sep_re : Str.regexp
-      val parse_query : string -> query
+      val remove_case_type : string list -> string list
+      val print_list : string list -> unit
+      val query_to_string : string -> string list
+      val parse_query : string -> query * bool
       val eval_query : A.D.dict -> query -> A.D.value
     end

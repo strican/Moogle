@@ -1,0 +1,81 @@
+/* header */
+
+.header {
+   color: #800000;
+   text-align: center;
+}
+
+.header h2,h3 {
+   margin-bottom:0.2em;
+   margin-top:0.2em;
+}
+
+.header h2 {
+   font-size: 24;
+}
+
+.header h3 {
+   font-size: 18;
+}
+
+/* Course info */
+
+.courseinfo {
+   margin-top: 2em;         
+   text-align: center;
+   font-size: 14pt;
+}
+
+.courseinfo p {
+   margin-bottom: 0em;
+   margin-top: 0em;
+}
+
+/* Links */ 
+
+.links {
+}
+
+.links ul {
+   list-style-type: none;
+}
+
+.links li {
+   margin-bottom:0.5em;
+   font-size: 14pt;
+}
+
+
+/* Assignments list and general tables */
+
+.assignments {
+   text-align: center;
+}
+
+table {
+   border-collapse:collapse;
+   margin: 10px;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: left;
+}
+
+table, td, th {
+   border: 1px solid black;
+}
+
+
+td, th {
+   padding:10px;
+}
+
+th {
+   color: #800000;
+}
+
+
+/* List of links */
+
+.linklist {
+   margin-bottom: 10px;
+}

@@ -1,0 +1,101 @@
+<html><head>
+
+<style type="text/css">
+
+</style>
+
+<title>Problem Set 3</title></head><body>
+<div class=column>
+
+<h1><span lang="en-us">Problem Set 3: Reasoning about programs; type
+    design; test cases.</span></h1>
+<h3 align="left">
+<span lang="en-us">Due Friday, February 19, 2010, 5:00 pm.</span></h3>
+<hr>
+
+<h3>Updates</h3>
+<p>None yet :)
+<!--
+<ul>
+  <li>
+</ul>
+-->
+
+<h3><span lang="en-us">Objectives</span></h3>
+<p class="MsoNormal"><span lang="en-us">In this assignment, you will get a chance to continue to solidify your understanding of Ocaml's type system and get more practice working out complex function definitions. You will also continue working with algebraic datatypes, as you will need to understand how to work with a programmer-defined binary_tree type and write several higher-order functions that operate on values of that type. You will then design your own type, an n-ary tree, as a follow-up to the binary tree question. Finally, you will once more need to figure out and rewrite bad code.
+</span></p>
+
+<p>To begin, download the <a href="ps3.tgz">assignment tarball</a>, and extract it.
+For this assignment, you will be working on three different files:
+<ul>
+<li><code>42.ml</code> contains code for each of the exercises that
+  you will do in Part 1.
+<li><code>trees.ml</code> contains declarations for the functions that
+  you will implement in Part 2.
+<li><code>style.ml</code> contains the code that you will be rewriting in part 3.
+</ul>
+
+<p class="MsoNormal"><span lang="en-us">As in the previous assignments, all of
+your programs must compile. <font color="#ff0000">Programs that do not compile will receive an automatic zero.</font>  Make sure that the functions you
+are asked to write have the correct names and the number and type of arguments
+specified in the assignment. Finally, please pay attention to style and
+follow the style guidelines posted on the course web site. Think carefully
+before writing the code, and try to come up with simple, elegant solutions.</span></p>
+
+<h3>Announcements</h3>
+<ul>
+<li> <strong> ** REQUIRED **: Testing.</strong> This week, we are only requiring that you write tests for <b>part 2</b>. For each of the tree functions that you write, you should, as with last week's problem set, include at least two tests. We encourage you to view this as a minimum; you should test your functions until you are sure that they work, which in many cases will require more than two simple tests.
+<li> <strong> Grading: </strong> Recall that your code is evaluated both for correctness and for appropriate style (see the style guide and grading standards, posted on the Assignments page).  A third component of evaluation, as mentioned above and as with last week's problem set, will be testing.
+  <li> <strong>Collaboration policy:</strong> We expect individual work
+  on this problem set. Next week, we will start the first project,
+  where you'll have a chance to work with a partner.  For more
+  information please see our course policies.
+  <li><strong>Time Spent:</strong> At the bottom of each file, you will notice an integer prompting you to enter the approximate number of minutes that you spent working on that file.  We are interested in your sincere answers, and this will help us tailor future problem sets.
+</ul>
+
+
+<h3>Part 1: Reasoning about Ocaml programs (42.ml)</h3>
+<p> In this part, you will need to fill in the <code>???</code>
+in each expression so that the entire expression evaluates to 42,
+or else replace the <code>???</code> with
+<code>(raise (Failure "Not possible"))</code>
+and explain in a comment why it's not possible.
+
+These functions are intended to help you learn how to reason about code. Think about the substitution model that Greg presented in lecture in attempting to decipher what the code we've given you is doing.  Think
+carefully about types.  Try to reason through these without using the
+compiler, and only use the compiler to test once you're pretty sure of your
+answer. We can tell you for sure right now that you'll be asked to do these on exams when you won't have a compiler handy, and practicing them on paper now is the best preparation you can give yourself.
+<br/><br/>
+
+<hr />
+
+<h3>Part 2: Datatypes and higher order functions (trees.ml)</h3>
+
+<p>The objective of this part is to learn how to think about programmer-designed datatypes. You will first build binary tree analogs to the fold and map functions we're already familiar with, and use them to implement a few handy functions that operate on binary trees. You will then design your own datatype to represent n-ary trees and implement a few higher-order functions over this new type.
+<hr>
+
+<h3>Part 3: Rewriting bad code (style.ml)</h3>
+
+<p>As you have been asked to do before, you will in this part need to take poorly written code, understand what it does, and rewrite it more cleanly. We strongly encourage you to take a global view of this task from the beginning! Don't start out by trying to make the code locally prettier; instead sit down and figure out what the code is doing at a high level before deciding to rewrite it. The style of your solution will count towards its correctness value, since this problem is all about style (the original code already works as intended).
+<hr>
+
+<h3>Submission:</h3>
+To submit, do the following:
+<ul>
+  <li>Copy your files to <code>nice.fas.harvard.edu</code>.  Make sure
+    you get all three of the <code>ml</code> files!
+  <li>Run <code>make</code>.  If it complains that your files don't
+  compile, fix them.
+  <li>Run <code>make check</code>.  If it complains about lines > 80
+  lines, fix them.
+  <li>Run <code>make submit</code>.  If it complains, post to the BB,
+  pasting in the output.
+  <li><b>If any of the above scripts fails to run, perhaps with
+      perplexing error messages such as "Permission deniedn" [sic],
+      try running <code>./fixwin</code> from the assignment directory
+      (you may need to <code>chmod u+x ./fixwin</code> first).
+      (These problems are likely caused by Windows/DOS
+      CR/LF line endings.)</b>
+
+</div>
+</body></html>

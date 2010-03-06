@@ -1,0 +1,162 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="refresh" content="1800">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>CSCI E-250 Problem Set 0: Getting started</title>
+<!-- <link rel="stylesheet" type="text/css"
+href="http://www.seas.harvard.edu/courses/cs51/pset-style.css" />
+<script
+src="http://www.seas.harvard.edu/courses/cs51/colorize.js"
+type="text/javascript"></script> -->
+</head>
+<body>
+<h1>CSCI E-250 Problem Set 0: Getting started</h1>
+<h3 align="left"> Due Sun, Jan 31, 2010, 11:59 pm.</h3>
+<a href="..">Back to CSCI E-250 Home</a>
+<hr>
+<h3>Instructions</h3> <p> The purpose of this assignment is to get you
+    set up for the real assignments to come.  You will set up an editing
+    environment for Ocaml, make sure you can compile and run some toy
+    programs, and figure out the assignment submission system.
+
+	<h3>Part 0: Signing up for a FAS account</h3>
+If you haven't already done so, activate your Harvard FAS Computer Account by following the instructions at <a href="https://www.fas.harvard.edu/fasit/utilities/activate-pin/">https://www.fas.harvard.edu/fasit/utilities/activate-pin/</a>.
+	
+<h3>Part 1: Signing up for a bulletin board account</h3>
+
+Go
+to <a href="http://forums.seas.harvard.edu/cs51">forums.seas.harvard.edu/cs51</a>,
+click Register (top left), and sign up for an account, using your FAS account name as your screenname.  If you have
+problems with any of the rest of this assignment (or any of the other
+assignments), post to this bulletin board, or e-mail the TF at <a href="mailto:brian_young@post.harvard.edu">brian_young@post.harvard.edu</a>.
+
+<h3>Part 2: Installing Ocaml</h3>
+
+<ul>
+<li>Ocaml is already installed on the FAS nice servers.  You can use
+  it there (run <code>ocaml</code>), but we'd recommend also
+  installing it on your own computer.  To do so, download the
+  appropriate package for your operating system from
+  the <a href="http://caml.inria.fr/download.en.html">Ocaml download
+  page</a> and then follow the directions.
+
+<li>
+  To test that you can get Ocaml working on the FAS machines, use SSH to
+  login to <code>nice.fas.harvard.edu</code>: 
+  <ul>
+    <li>From a terminal,
+      type <code>ssh userid@nice.fas.harvard.edu</code>, using the
+      correct <code>userid</code> of course.
+    <li>From a graphical ssh client, follow the directions :)
+  </ul>
+  Now run <code>ocaml</code>.
+<li>To test locally, just run <code>ocaml</code> from a terminal 
+("Command Prompt" in Windows).
+
+
+Whether you're running on the server or locally, you should now see
+  the Ocaml prompt:
+<pre>
+$ ocaml
+        Objective Caml version 3.11.1
+
+#
+</pre>
+  <p>If you type 
+
+<pre>
+"are we there yet?";;
+</pre>
+you should get the output:
+<pre>
+- : string = "are we there yet?"
+</pre>
+<p>Congratulations!  If you got this far, Ocaml works.  Type 
+<pre>
+#quit;;
+</pre>
+or Ctrl-D to exit Ocaml. Now you just have to learn how to write useful programs.
+</ul>
+
+There are also <a href="../../ocaml-install.html">instructions for getting
+  OCaml running in Eclipse</a>, 
+which is a free IDE that will also work for java.
+
+<h3>Part 3: Downloading the code and filling out the survey </h3>
+
+<p>
+<a href="ps0.ml">Click here</a> to
+download <code>ps0.ml</code>, and <a href="Makefile">click here</a> to
+download the <code>Makefile</code>.  As above, you can work on nice.fas or locally on your computer. Save both files where you intend to do your work. To upload your downloaded files to nice, you'll need an FTP client
+(see <a href="../../ocaml-install.html">instructions page</a>, under "Uploading your work to nice").
+
+<p>
+<b>Your job is to edit <code>ps0.ml</code></b>, setting all the
+variables to appropriate values.  
+
+<p>
+<i>If you are using Eclipse</i>, you will have to create a new Ocaml 
+Managed Project (see instructions above for using Eclipse) for PS0. Copy 
+both files into the folder Eclipse creates 
+for your new project. You can then edit <code>ps0.ml</code>.
+
+<p>
+Once you're done, make sure the file still compiles: if you're using
+Eclipse, use the instructions for that.  If you're using emacs, use
+the provided Makefile by typing <code>make</code> in
+the appropriate directory:
+
+<pre>
+$ make
+ocamlc -o survey ps0.ml
+
+$ ./survey 
+----------------------------------------
+Name: FIRST LAST
+
+FAS account: My FAS account (and forums.seas/cs51) username@fas.harvard.edu
+
+forums.seas/cs51 forum name: My FAS account (and forums.seas/cs51) username
+
+I am an Extension School degree candidate.
+
+I've taken -1 Extension School courses.
+
+I'm taking -1 other courses now.
+
+I'll be attending Wednesday night sections Other: I don't know yet
+
+CS Experience: My CS background is CSCI E-50a, and many hours playing Counterstrike.
+
+Math Experience: My math background is a course in Hyperspatial Topology
+
+I want to take CSCI E-250 because Ocaml is awesome!
+
+P(taking CSCI E-250) = 0.75
+
+Here's something interesting about me: I once wrestled a bear into a shark
+
+Languages in order of preference: C; C++; Java; Python; Ruby; LISP / Scheme; Ocaml; Haskell; Classical Latin
+
+----------------------------------------
+
+$ 
+</pre>
+
+<p>
+Check that the values are all filled in correctly.  Once they are,
+you just have to submit.
+
+<h3>Part 4: Submitting</h3>
+
+<p>
+To submit the assignment, first rename your <code>ps0.ml</code> to <code>userid.ps0.ml</code>,
+replacing <code>userid</code> with your FAS username. Then e-mail it to the TF at
+<a href="mailto:brian_young@post.harvard.edu">brian_young@post.harvard.edu</a> before the due date.
+
+<script type="text/javascript">
+colorize_all()
+</script>
+</body>
+</html>

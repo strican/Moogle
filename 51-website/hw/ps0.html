@@ -1,0 +1,179 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="refresh" content="1800">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>CS51 Problem Set 0: Getting started</title>
+<!-- <link rel="stylesheet" type="text/css"
+href="http://www.seas.harvard.edu/courses/cs51/pset-style.css" />
+<script
+src="http://www.seas.harvard.edu/courses/cs51/colorize.js"
+type="text/javascript"></script> -->
+</head>
+<body>
+<h1>CS51 Problem Set 0: Getting started</h1>
+<h3 align="left"> Due Sun, Jan 31, 2010, 11:59 pm.</h3>
+<hr>
+Updated Thur, Jan 28 (tweaked setup/Eclipse instructions in response to feedback; no change in assignment)
+<br>
+<h3>Instructions</h3> <p> The purpose of this assignment is to get you
+    set up for the real assignments to come.  You will set up an editing
+    environment for Ocaml, make sure you can compile and run some toy
+    programs, and figure out the assignment submission system.
+
+<h3>Part 1: Signing up for a bulletin board account</h3>
+
+Go
+to <a href="http://forums.seas.harvard.edu/cs51">forums.seas.harvard.edu/cs51</a>,
+click Register (top left), and sign up for an account.  If you have
+problems with any of the rest of this assignment (or any of the other
+assignments), post to this bulletin board.
+
+<h3>Part 2: Installing Ocaml</h3>
+
+<ul>
+<li>Ocaml is already installed on the FAS nice servers.  You can use
+  it there (run <code>ocaml</code>), but we'd recommend also
+  installing it on your own computer.  To do so, download the
+  appropriate package for your operating system from
+  the <a href="http://caml.inria.fr/download.en.html">Ocaml download
+  page</a> and then follow the directions.  Windows users: we recommend first installing the latest release of <a href="http://www.cygwin.com/">Cygwin</a>, and then getting the "MinGW-based" port of Ocaml (listed first on the Ocaml download page).
+
+<li>
+  To test that you can get Ocaml working on the FAS machines, use SSH to
+  login to <code>nice.fas.harvard.edu</code>: 
+  <ul>
+    <li>From a terminal,
+      type <code>ssh userid@nice.fas.harvard.edu</code>, using the
+      correct <code>userid</code> of course.
+    <li>From a graphical ssh client, follow the directions :)
+  </ul>
+  Now run <code>ocaml</code>.
+<li>To test locally, just run <code>ocaml</code> from a terminal 
+("Command Prompt" in Windows).
+
+
+Whether you're running on the server or locally, you should now see
+  the Ocaml prompt:
+<pre>
+$ ocaml
+        Objective Caml version 3.11.1
+
+#
+</pre>
+  <p>If you type 
+
+<pre>
+"are we there yet?";;
+</pre>
+you should get the output:
+<pre>
+- : string = "are we there yet?"
+</pre>
+<p>Congratulations!  If you got this far, Ocaml works.  Type 
+<pre>
+#quit;;
+</pre>
+or Ctrl-D to exit Ocaml. Now you just have to learn how to write useful programs.
+<li>
+If you prefer not to use a terminal-based text editor to complete your work, we have also provided <a href="../ocaml-install.html">instructions for getting
+  OCaml running in Eclipse</a>, 
+which is a free IDE that will also work for Java.
+
+</ul>
+
+<h3>Part 3: Downloading the code and filling out the survey </h3>
+
+<p>
+<a href="ps0.tgz">Click here</a> to
+download <code>ps0.tgz</code>.  Save it somewhere, run <code>tar -xzf
+  ps0.tgz</code> to unzip it (or use your favorite GUI program like
+winzip). As above, you can work on nice.fas or locally on your computer. 
+Save and unzip the file where you intend to do your work.
+
+<p>
+You should now have a directory with a <code>ps0.ml</code> file
+inside.  <b>Your job is to edit this file</b>, setting all the
+variables to appropriate values.  
+
+<p>
+<i>If you are using Eclipse</i>, you will have to create a new Ocaml 
+Managed Project (see instructions above for using Eclipse) for PS0. Copy 
+the files you downloaded and unzipped into the folder Eclipse creates 
+for your new project.  From within Eclipse, select File -> Refresh.  You should now see the ps0 files added to your Eclipse project, in the Navigator pane.  You can then edit ps0.ml by double clicking it.
+
+<p>
+Once you're done, make sure the file still compiles: if you're using
+Eclipse, use the instructions for that.  If you're using emacs, use
+the provided Makefile by typing <code>make</code> in
+the <code>ps0</code> directory:
+
+<pre>
+$ make
+ocamlc -o survey ps0.ml
+
+$ ./survey 
+----------------------------------------
+Name: FIRST LAST
+
+Huid: 12345678
+
+Year: Other: I haven't filled it in yet
+
+BB username: My forums.seas/cs51 forum username
+
+Concentration: Blacksmithing!
+
+CS Experience: My CS background is CS50, and many hours playing CounterStrike.
+
+Math Experience: My math background is a course in Hyperspacial Topology
+
+P(taking CS51) = 2.00
+
+I'm excited about ....!
+
+Sections in order of preference: Sun 3-4:30pm; Sun 7-8:30pm; Mon 10-11:30am; Mon 11am-12:30pm; Mon 1-2:30pm; Mon 2:30-4pm; Mon 3-4:30pm; Mon 4-5:30pm; Mon 5-6:30pm; Mon 7-8:30pm; Tue 2:30-4pm
+
+----------------------------------------
+
+$ 
+</pre>
+
+<p>
+Check that the values are all filled in correctly.  Once they are,
+you just have to submit.
+
+<h3>Part 4: Submitting</h3>
+
+<p>
+To submit the assignment, your assignment directory must be on nice.fas.
+If you were working on your computer, upload the directory 
+containing ps0.ml and the other downloaded files to nice. To upload, you'll need an FTP client
+(see <a href="../ocaml-install.html">instructions page</a>, under "Uploading your work to nice").
+
+<p>
+Run <code>make 
+submit</code>.  You should get
+output like the following:
+
+<p>
+<pre>
+$ % make submit
+./submit.sh
+Ok, submitting the files in /home/s/h/shnayder/release/ps0-submit
+Creating temporary directory /tmp/shnayder.submit...
+Copying assignment files to /tmp/shnayder.submit...
+Submitting lib51 assignment 0... Done!
+Temporary files removed.
+
+Done!
+$ 
+</pre>
+
+<p>If you've submitted successfully, you're done!
+
+<script type="text/javascript">
+colorize_all()
+</script>
+</body>
+</html>

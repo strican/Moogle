@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Eclipse Installation Instructions</title>
+<link href="cs51.css" rel="stylesheet" type="text/css">
+</head>
+
+<h2 class="header">Eclipse Installation Instructions</h2>
+
+<a href="index.html">CS51 Home</a>
+
+<h3>Installing Eclipse with a plugin for writing Ocaml code</h3>
+<ol>
+<li> Download Eclipse: download the "for Java Developers" version from
+<a href="http://www.eclipse.org/downloads/">http://www.eclipse.org/downloads/</a>.  If you already have Eclipse,
+ensure that you are running version 3.5.  Note that Eclipse does not
+have an installer; it is just a self-contained application (so you may
+want to move the unzipped folder into a place you'll remember).
+<li> Follow the exact instructions on the "Installation" section of
+the Install page of <a href="http://www.algo-prog.info/ocaide/">http://www.algo-prog.info/ocaide/</a> to install the
+OcaIDE plugin for Eclipse.
+<li> Restart Eclipse as directed.
+</ol>
+
+<h3>Getting started with Eclipse/OcaIDE</h3>
+
+<ol>
+<li> In Eclipse, select Window -> Preferences.  Expand OcaIDE, and
+click paths.  If the paths have not automatically been populated with
+executable files in the folder in which you installed Ocaml, browse
+for the files manually.  Otherwise, keep these defaults.
+<li> Select Window -> Open Perspective -> Other.  Select Ocaml from
+the list and click OK.
+<li> Select File -> New -> Ocaml Managed Project (not "Ocaml Project
+(ocamlbuild)").  Give your project a name.
+<li> You should see your new project in the Navigator pane on the
+left.  Right click on the project name, and select New->Module.  This
+will be your Ocaml source file.  Give it a name with no special
+characters and without a file extension (the .ml will be added
+automatically).
+<li> You should now see this file in the editor window.  Starting
+typing ML code!
+<li> To compile your code, simply save the file.  Click on the
+"Problems" tab or "OCaml Compiler Output" tab near the bottom of the
+screen to see any errors or warnings that were generated.
+<li> All that's left now is to be able to run your code.  To do this,
+right click on your module (.ml) file in the Navigator, and select
+Properties.  Check the box labelled "Make an executable named:" and
+click ok.  Now, after building again, you should see a corresponding
+executable file in the Navigator.  Right click on that, and select Run
+as -> Ocaml Executable.  Look for the output in a new "Console" tab in
+the bottom pane.  That's it!
+</ol>
+
+<p>
+<a href="index.html">CS51 Home</a>
+
+</body>
+
+</html>
+
+

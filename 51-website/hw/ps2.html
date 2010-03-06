@@ -1,0 +1,393 @@
+<html><head>
+
+<style type="text/css">
+
+</style>
+
+<title>Problem Set 2</title></head><body>
+<div class=column>
+
+<h1><span lang="en-us">Problem Set 2: Moothematica and Folding</span></h1>
+<h3 align="left">
+<span lang="en-us">Due Friday, February 12, 2010, 5:00 pm.</span></h3>
+<hr>
+
+<h3>Updates</h3>
+<p>We fixed a couple of bugs:
+<ul>
+  <li>2/07 -- <code>mult_odds</code> name now consistent between html
+    and <code>mapreduce.ml</code>
+  <li>2/07 -- Fixed bug with lexer in <code>expressions.ml</code>--it
+  now handles the "^" operator correctly.
+</ul>
+
+<h3><span lang="en-us">Objectives</span></h3>
+<p class="MsoNormal"><span lang="en-us">In this assignment, you will be
+given the opportunity to practice with higher order functions in Ocaml
+via map, reduce, and filter.  You will also write your own language for symbolic
+differentiation using OCaml.  Through this practice you will exercise
+important features of functional languages, such as recursion,
+pattern matching, datatypes, list processing, etc., not to mention the
+ability to design your own mini-language.</span></p>
+
+<p>To begin, download the <a href="ps2.tgz">assignment tarball</a>, and extract it.
+For this assignment, you will be working on two different files:
+<ul>
+<li><code>mapreduce.ml</code> contains declarations for each of the functions that you will implement in Part 1.
+<li><code>expression.ml</code> contains support code to help you complete your task,
+in addition to declarations for the functions that you will implement in Part 2.
+</ul>
+
+<p class="MsoNormal"><span lang="en-us">As in the previous assignment, all of
+your programs must compile. <font color="#ff0000">Programs that do not compile
+        will receive an automatic zero.</font>  Make sure that the functions you
+are asked to write have the correct names and the number and type of arguments
+specified in the assignment. Finally, please pay attention to style and
+follow the style guidelines posted on the course web site. Think carefully
+before writing the code, and try to come up with simple, elegant solutions.</span></p>
+
+<h3>Announcements</h3>
+<ul>
+<li> <strong> ** REQUIRED **: Testing.</strong> On the last problem set, we recommended that you test your code to gain some confidence that you had arrived at correct solutions.  This week, we ask that you explicitly add tests into your code.  For this purpose, Ocaml provides the function "assert" which takes a bool, does nothing if the bool is true, and throws an error if the bool is false.  We have included an example of a usage of assert in problem 1.2.a.  Begin by uncommenting this example after you write negate_all.  Then, we expect at least <b>2 tests, using assert, per function</b> that you write on this problem set.  Please follow the model shown in 1.2.a, of putting the tests just below the function being tested.
+<li> <strong> Grading: </strong> Recall that your code is evaluated both for correctness and for appropriate style (see the style guide).  A third component of evaluation, as mentioned above, will be testing.
+<li> <strong>Collaboration Policy:</strong> We expect individual work on this problem set. Down the line, we will have projects that provide opportunity for group collaboration. For more information please see our course policies.
+<li><strong>Planning:</strong>  A word of caution.  This problem set will most likely take you more time than Problem Set 1.  In particular, Part 2 may prove quite challenging.  We strongly encourage you to start early and ask questions if you get stuck.
+<li><strong>Time Spent:</strong> At the bottom of each file, you will notice an integer prompting you to enter the approximate number of minutes that you spent working on that file.  We are interested in your sincere answers, and this will help us tailor future problem sets to fit the needs of students.
+</ul>
+
+
+<h3>Part 1: Higher Order Functions: Map, Fold, and Filter (mapreduce.ml)</h3>
+<p>Mapping, folding, and filtering are important techniques in functional languages that allow the programmer
+to abstract out the details of traversing a list.  Each can be used to accomplish a great deal with very little code.
+In this part, you will get practice with higher-order functions by using map and fold to write a number of functions. 
+<br><br>map is implemented in Ocaml by the function <code>List.map</code>.
+<br><br>filter is implemented in Ocaml by the function <code>List.filter</code>.
+<br><br>fold is implemented in OCaml by the function
+<code>List.fold_right</code>.
+However, the library function has its arguments out of order (see the lecture slides).
+Thus, we have provided you with the function "reduce" which computes identically to fold_right
+but takes arguments in a different order (more later on why this is important).
+<br/><br/>
+<strong>1.1. As a quick comprehension check, you should:</strong>
+<ol type=a><li>Implement <code>reduce</code> using <code>List.fold_right</code>.</li><br/></ol>
+
+<strong>1.2. Higher-Order Arithmetic</strong>
+<ol type=a>
+<li><code> negate_all : int list -&gt; int list</code><br/>
+  Returns a list containing the elements of the original list, but with flipped signs.
+  For example, <code>negate_all [2;0;-4] = [-2;0;4]</code>.
+<li><code>sum : int list -&gt; int</code><br/>
+  Returns the sum of the elements of the list.
+<li><code>sum_rows : int list list -&gt; int list</code>. <br/>
+  Takes a list of integer lists (call the internal lists "rows").  Returns a
+one-dimensional list of integers with values equal to the sum of the elements of
+the corresponding rows of the passed list.  For example, <code>sum_rows [[1;2]; [3;4]] = [3; 7]</code>.
+<li><code>filter_odd : int list -&gt; int</code><br/>
+  Returns a list of the odd numbers appearing in the input list, in the order they appeared.<br/>
+  For example, <code>filter_odd [1;4;5;-3] = [1;5;-3]</code>.
+<li><code>num_occurs : int list -&gt; int -&gt; int</code><br/>
+  Returns the number of times a particular number appears in a list.<br/>
+  For example, <code>num_occurs [1;3;4;5;4] 4 = 2</code>.
+<li><code>super_sum : int list list -&gt; int</code><br/>
+  Returns the sum of the elements in the input list of lists.<br/>
+  For example, <code>super_sum [[1;2;3];[];[5]] = 11</code>.
+<li><code>filter_range : int list -&gt; int * int -&gt; int list</code><br/>
+  Returns a list of numbers in the input list within a given range (inclusive), in the same order they appeared in the input list.<br/>
+  For example, <code>filter_range [1;3;4;5;2] (1,3) = [1;3;2]</code>.
+</ol>
+
+<br />
+<strong>1.3. Higher-Order Fun with Types</strong>
+<ol type=a>
+<li><code>floats_of_ints : int list -&gt; float list</code>.   <br/>
+  Returns a list of floats equal in value to the corresponding integers in the original list.<br/>
+  For example, <code>floats_of_ints [3;6;2] = [3.0;6.0;2.0]</code>.
+<li><code>optionalize : 'a list -&gt; 'a option list</code>.   <br/>
+  Returns a list in which each element of the original list is converted into the corresponding option.
+  For example, <code>optionalize ["foo"; "bar"] = [Some "foo"; Some "bar"]</code>.
+<li><code>some_sum : int option list -&gt; int</code> <br />
+  Returns the sum of all integers in the list of int options, ignoring any <code>None</code> values.<br/>
+  For example, <code>some_sum [Some 2; None; Some 6] = 8</code>.
+<li><code>deoptionalize : 'a option list -&gt; 'a list</code><br/>
+  Extracts any values present in the list in <code>Some</code> values,
+  ignoring any <code>None</code> values.
+  For example, <code>deoptionalize [Some 3; None; Some 5; Some 10] = [3;5;10]</code>.
+<li><code>mult_odds : int list -&gt; int </code><br/>
+  Computes the product of all of the odd members in a list.<br/>
+  If the list contains no odd elements, the function should evaluate to <code>1</code>.<br/>
+  For example, <code>mult_odds [1;3;0;2;5] = 15</code>,
+    and <code>mult_odds [2] = 1</code>.
+<li><code>concat : 'a list list -&gt; 'a list</code><br />
+  Re-implement the <code>List.concat</code> method in the Ocaml library.
+  For example, <code>concat [[1;2;4];[];[1;5]] = [1;2;4;1;5]</code>.
+<li><code>filter_by_year : student list -&gt; year -&gt; name list</code><br/>
+  Using the type <code>student</code>, returns a list of the names of the students in a given year.
+</ol>
+
+<hr />
+
+<h3><span lang="en-us">Part 2: A Language for Symbolic Differentiation (expression.ml)</span></h3>
+
+<p class="MsoNormal"><span lang="en-us">In the Summer of 1958, John McCarthy
+(recipient of the Turing Award in 1971) made a major contribution to the
+field of programming languages. With the objective of writing a program that
+performed symbolic differentiation of algebraic expressions in a effective way,
+he noticed that some features that would have helped him to accomplish this task
+were absent in the programming languages of that time. This led him to the
+invention of LISP (published in Communications of the ACM in 1960) and other
+ideas, such as list processing (the name Lisp derives from "List Processing"),
+recursion and garbage collection, which are essential to modern programming
+languages, including Java. Nowadays, symbolic differentiation of algebraic
+expressions is a task that can be conveniently accomplished on modern
+mathematical packages, such as Mathematica and Maple.</span></p>
+
+<p>The objective of this part is to build a language that can
+differentiate and evaluate symbolically represented mathematical expressions
+that are functions of a single variable.
+Symbolic expressions consist of numbers,
+variables, and standard math functions (plus, minus, times, divide, sin, cos, etc). <span lang="en-us">To get you started, we have provided
+the datatype that defines the abstract syntax for such expressions in <code>expression.ml</code>. </span></p>
+<p> <b>Instructions</b>: Change to the directory where you
+saved the file <tt>expression.ml</tt>. In the OCaml environment type:</span></p>
+<p>
+<code>#use &quot;expression.ml&quot;;;</code>
+</p>
+<p>to start using the datatype.</p>
+
+<pre>(* abstract syntax tree *)
+
+(* Binary operators. *)
+type binop = Add | Sub | Mul | Div | Pow ;;
+
+(* Unary operators. *)
+type unop = Sin | Cos | Ln | Neg ;;
+
+type expression =
+  | Num of float
+  | Var
+  | Binop of binop * expression * expression
+  | Unop of unop * expression
+;;</pre>
+<p><span lang="en-us"><code>Var</code> represents an occurrence of the single variable,
+which we usually call &quot;x&quot;. <code>Unop(Ln, Var)</code> represents the natural logarithm of <code>x</code>.
+<code>Neg</code> is negation, and is denoted by the &quot;~&quot; symbol
+    (&quot;-&quot; is only used for subtraction). The rest should be
+    clear what they refer to.
+Mathematical expressions can be constructed using the
+constructors in the above datatype definition. For example, the expression
+<code>&quot;x^2 + sin(~x)&quot;</code> can be
+represented as: </span></p>
+<pre> Binop(Add, Binop(Pow, Var, Num(2.0)), Unop(Sin, Unop(Neg, Var)))</pre>
+
+<p>This represents a tree where nodes are the type constructors
+and the children of each node are the specific operator to use and the arguments of that
+constructor. Such a tree is called an abstract syntax tree (or AST for short). <span lang="en-us">For
+your convenience, we have provided a function <code>parse</code> which
+translates a string in infix form (such as <code>&quot;x^2 +
+      sin(~x)&quot;</code>) into an <code>expression</code> (treating
+    &quot;x&quot; as the variable).  The <code>parse</code> function parses
+    according to the standard order of operations - so
+    <code>&quot;5+x*8&quot;</code> will be read as
+    <code>&quot;5+(x*8)&quot;</code>.
+We have also provided functions <code>to_string</code> and <code>to_string_smart</code> that print
+expressions in a readable form, using infix
+    notation. The function <code>to_string</code> adds parentheses
+    around every binary operation so
+    that the output is completely unambiguous &mdash; however, that output
+    is often hard to read. The function <code>to_string_smart</code>
+    only adds parentheses when there may be ambiguity.</span></p>
+
+<pre>let e = Binop(Add,Binop(Pow,Var,Num 2.0),Unop(Sin,Binop(Div,Var,Num 5.0)))
+to_string(e) = &quot;((x^2.)+(sin((x/5.))))&quot;
+to_string_smart(e) = &quot;x^2.+sin(x/5.)&quot; </pre>
+
+<strong>2.1. Contains Variable</strong>
+<p><span lang="en-us">First, we want to be able to test whether an
+    expression contains a variable.  This will be useful later.  Your task is to implement a
+    function <code>containsVar</code> that takes an expression
+    <code>e</code> and returns <code>true</code> if there is a <code>Var</code> anywhere
+    in <code>e</code>, and <code>false</code> otherwise. The type of this function is <code>expression -&gt; bool</code>. </span></p>
+
+<strong>2.2. Evaluation</strong>
+<p><span lang="en-us">Second, we want to be able to evaluate expressions for
+specific values of x. For example, suppose we wanted to evaluate
+<code>e = x^2 + 3.0*x +2.0</code> with <code>x = 5.0</code>. Then the result of the
+evaluation of e at x is <code>5.0^2 + 3.0*5.0 + 2.0 = 42.0</code>.</span></p>
+
+<p>Your task is to implement an evaluation
+    function <code>evaluate</code> that takes an expression
+    <code>e</code> and a float <code>x</code>,
+    representing the value of the single variable, and evaluates
+    <code>e</code> to a floating point number. The type of
+    this function is <code>expression -&gt; float -&gt; float</code>.</p>
+
+<strong>2.3. Evaluation</strong>
+<p>Next, we want to develop a
+<span lang="en-us">function that takes an expression
+<code>e</code> as its argument and returns an expression
+<code>e'</code> representing the derivative of the expression with
+respect to x. This process is referred to as symbolic differentiation.</p>
+
+<p><span lang="en-us">When implementing this function, recall the chain rule from your freshman Calculus course:</span></p>
+<blockquote>
+	<p><img src="ChainRule.png"></p>
+</blockquote>
+<p><span lang="en-us">And recall how, using that, we can write the derivatives for the other functions in our
+language:</span></p>
+<blockquote>
+<br>
+	<p><img src="DerivRules.png"></p>
+</blockquote>
+
+<p>Note that there two cases provided for calculating the derivative of <code>f(x) ^ g(x)</code>,
+one for where <code>g(x) = h</code> does not contain any variables, and one for the general case.
+The first is a special case of the second, but it is useful to treat them separately, because when the first case applies, the second case produces
+unnecessarily complicated expressions.</code>
+
+<p>Your task is to implement the <code>derivative</code> function.
+The type of this function is <code>expression -> expression</code>.
+The result of
+your function must be correct, but need not be expressed in the simplest form.
+Take advantage of this in order to keep the code in this part as short
+as possible. You can implement this function in as little
+as 20&ndash;30 lines of code.</p>
+
+<p>To make your task easier, we have provided an outline of the function,
+with many of the cases filled in.  The portions of the function that require your attention read <code>raise (Failure "Not implemented")</code>.  Do not attempt to run the function until you have replaced all of the <code>raise</code> statements with valid code.</p>
+
+<strong>2.4. Zero Finding</strong>
+  <p>One application of the derivative of a function is to find zeros of a function. One way to do so is <a href="http://en.wikipedia.org/wiki/Newton%27s_method">Newton's method</a>. The function should take an expression, a starting guess for the zero, a precision requirement, and a limit on the number of times to repeat the process. It should return <code>None</code> if no zero was found within the desired precision by the time the limit was reached, and <code>Some r</code> if a zero was found at <code>r</code> within the desired precision.</p>
+
+  <p>Your task is to implement the <code>find_zero:expression -&gt;
+  float -&gt; float -&gt; int -&gt; float option</code> function. Note that there are
+  cases where Newton's method will fail to produce a zero, such as for
+  the function <span class=m><i>x</i><sup>1/3</sup></span>. You are not
+  responsible for finding a zero in those cases,
+   but just for the correct implementation of Newton's method.</p>
+
+<p><strong>Clarification (updated): </strong> If the expression that find_zero
+is operating on  is '<code>f(x)</code>' and the precision is
+<code>epsilon</code>, we are asking you to find a value
+<code>x</code>  such that <code>|f(x)| &lt; epsilon</code>.  That is, the
+value that the expression evaluates to at <code>x</code> is "within
+<code>epsilon</code>" of 0.
+<br>(We are <b>not</b> requiring you to find an <code>x</code> such that <code>|x -
+x<sub>0</sub>| &lt; epsilon</code> for some <code>x<sub>0</sub></code> for
+which <code>f(x<sub>0</sub>) = 0</code>.)</p>
+
+<strong>2.5. Simplification (Karma Problem)</strong>
+<p>This part is a karma problem that <b>is not required</b> for the problem set.
+It is included as a avenue for students to further explore issues associated
+with symbolic differentiation and the representation of expressions. We will grade
+it if you do it; you will receive no points but good karma if you do well.
+</p>
+
+<p><span lang="en-us">Consider the application of the derivative
+    function to the expression <code>x^2+sin(2*x)</code> and the corresponding output:
+</span></p>
+<pre>to_string_smart(derivative(parse &quot;x^2+sin(2*x)&quot;)) =
+                         &quot;2.*1.*x^(2.-1.)+cos(2.*x)*(2.*1.+0.*x)&quot;
+</pre>
+
+<span lang="en-us">This expression appears very complicated.
+    However, it can be
+greatly simplified to &quot;<code>2*x+cos(2*x)*2</code>&quot;. We can
+    reduce this using various elementary
+    simplifications.</p>
+
+    <p>Two basic types of reductions can be performed.
+    The first and more obvious is to carry out operations
+    that we have a simplified form for.
+    One such simplification is carrying out arithmetic on constants: if we
+    have two constants that are being added, multiplied, etc.,
+    we can reduce them to the result.
+    Additionally, some operations have predefined results for certain
+    constants, or when the operands are equal.
+    We could perform reductions for other values of ln, sin, and cos,
+    but it is not advisable to do so, as there can be a loss of precision.
+    We expect you to implement the following simplifying reductions:</p>
+<ol>
+	<li>All arithmetic on constants should be carried out
+        <li class=m>0 + <i>f</i> = <i>f</i>
+        <li class=m><i>f</i> + 0 = <i>f</i>
+        <li class=m>0 &minus; <i>f</i> = ~<i>f</i>
+        <li class=m><i>f</i> &minus; 0 = <i>f</i>
+        <li class=m>0 / <i>f</i> = 0
+        <li class=m><i>f</i> / 1 = <i>f</i>
+        <li class=m>1 * <i>f</i> = <i>f</i>
+        <li class=m><i>f</i> * 1 = <i>f</i>
+        <li class=m>0 * <i>f</i> = 0
+        <li class=m><i>f</i> * 0 = 0
+        <li class=m><i>f</i> ^ 0 = 1
+        <li class=m>0 ^ <i>f</i> = 0 (other than 0 ^ 0, which is de<i>f</i>ined as 1)
+        <li class=m><i>f</i> ^ 1 = <i>f</i>
+        <li class=m>ln(1) = 0
+        <li class=m>sin(0) = 0
+        <li class=m>cos(0) = 1
+        <li class=m>~0 = 0
+	<li class=m><i>f</i> + <i>f</i> = 2 * <i>f</i>
+        <li class=m><i>f</i> * <i>f</i> = <i>f</i> ^ 2
+        <li class=m><i>f</i> &minus; <i>f</i> = 0
+        <li class=m><i>f</i> / <i>f</i> = 1
+</ol>
+
+
+<p>The second type of reduction is to group similar operations, and move negations
+to the outside (as there are few real simplifications we can do when negation is involved,
+but many we can do with the other operations). In and of themselves, these reductions
+don't do very much; their true power is allowing us to apply other reductions. One of these
+reductions is to transform all negative constants into the unary operator negation applied
+to a positive constant. For example, consider <code>(-1)*f</code>.
+With the above reduction, it
+  will be converted to <code>(~1)*f</code>, and then other reductions will
+  will convert it to <code>~(1*f)</code> and then <code>~f</code>. Note that we write -n for an actual negative
+  constant (i.e., <code>Num(-5.0)</code>,
+  and ~n for the unary operator negation applied to something (i.e., <code>Unop(Neg,Num(5.0))</code>).
+  We expect you to implement the following reductions:</p>
+
+<ol>
+    <li class=m>&minus;<i>n</i> = ~<i>n</i>
+    <li class=m>~~<i>f</i> = <i>f</i>
+    <li class=m>~<i>f</i> + <i>g</i> = <i>g</i> &minus; <i>f</i>
+    <li class=m><i>f</i> + (~<i>g</i>) = <i>f</i> &minus; <i>g</i>
+    <li class=m><i>f</i> &minus; (~<i>g</i>) = <i>f</i> + <i>g</i>
+    <li class=m>~<i>f</i> &minus; <i>g</i> = ~(<i>f</i> + <i>g</i>)
+    <li class=m>(~<i>f</i>) * <i>g</i> = ~(<i>f</i> * <i>g</i>)
+    <li class=m><i>f</i> * (~<i>g</i>) = ~(<i>f</i> * <i>g</i>)
+    <li class=m>(<i>f</i>/<i>g</i>) * <i>h</i> = (<i>f</i> * <i>h</i>) / <i>g</i>
+    <li class=m><i>f</i> * (<i>g</i>/<i>h</i>) = (<i>f</i> * <i>g</i>) / <i>h</i>
+    <li class=m>(~<i>f</i>) / <i>g</i> = ~(<i>f</i> / <i>g</i>)
+    <li class=m><i>f</i> / (~<i>g</i>) = ~(<i>f</i> / <i>g</i>)
+    <li class=m>(<i>f</i> / <i>g</i>) / <i>h</i> = <i>f</i> / (<i>g</i> * <i>h</i>)
+    <li class=m><i>f</i> / (<i>g</i> / <i>h</i>) = (<i>f</i> * <i>h</i>) / <i>g</i>
+    <li class=m><i>f</i> ^ (~<i>g</i>) = 1 / (<i>f</i> ^ <i>g</i>)
+    <li class=m>(<i>f</i> ^ <i>g</i>) ^ <i>h</i> = <i>f</i> ^ (<i>g</i> * <i>h</i>)
+</ol>
+
+  <p>It is worth noting that applying one reduction to an expression may
+  result in being able to apply another. One implication of this is that subexpressions
+  must be reduced first. For example, to fully reduce
+  <code>x + (sin(x)&minus;sin(x))</code>, you must first reduce <code>sin(x)&minus;sin(x)</code> to 0,
+  transforming the expression to <code>x+0</code>, then reduce <code>x + 0</code> to <code>x</code>.
+  Further, note that as in the <code>(~1)*f</code> example above, you may need to apply multiple
+  reduction rules in sequence to an expression.
+
+<p>Your task is to implement a function <code>simplify</code> that
+  performs all these reductions.  The type of this function is <code>expression
+  -> expression</code>.</p>
+
+<hr>
+<h3>Submission:</h3>
+To submit, do the following:
+<ul>
+  <li>Copy your files to <code>nice.fas.harvard.edu</code>.  Make sure
+    you get both of the <code>ml</code> files!
+  <li>Run <code>make check</code>.  If it complains about lines > 80
+  lines, fix them.  If it doesn't want to run, please let us
+  know -- we're trying to track down this problem, and haven't been able
+      to reproduce it on our own accounts yet.
+  <li>Run <code>make submit</code>.  If it complains, post to the BB,
+  pasting in the output.
+
+</div>
+</body></html>

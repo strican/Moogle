@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>CS51: Setting Up Your Environment</title>
+<link href="cs51.css" rel="stylesheet" type="text/css">
+</head>
+
+<h2 class="header">CS51: Setting Up Your Environment</h2>
+
+<a href="index.html">CS51 Home</a>
+
+<p><h3>Installing OCaml, Java and dependencies</h3>
+<ol>
+<li> Windows only: Install the latest version of <a href="http://www.cygwin.com/">Cygwin</a>.
+<li> Download and install the latest release of <a href="http://caml.inria.fr/ocaml/release.en.html">Objective Caml</a> for
+your operating system.  Windows users should get the "MinGW-based"
+port (listed first), some of whose features require Cygwin.<br>
+  <b>NOTE:</b> It looks like some people are having trouble with
+  version 3.11.2 on OS X.
+  Try <a href="http://caml.inria.fr/pub/distrib/ocaml-3.11/ocaml-3.11.1-intel.dmg">3.11.1</a>
+  instead if 3.11.2 doesn't work.
+<li> Make sure that you are running either version 1.5 or version 1.6
+of the Java Virtual Machine.  If you don't know, go to
+<a href="http://java.com/en/download/help/testvm.xml">http://java.com/en/download/help/testvm.xml</a>.  If your setup is
+correct, your version will show up as either Java 5 or Java 6.  If
+needed, the latest JVM can be downloaded from
+<a href="http://java.com/en/download/index.jsp">http://java.com/en/download/index.jsp</a>
+</ol>
+
+<h3>Choose your editor</h3>
+<ol>
+<li><b><a href="emacs-install.html">Emacs instructions</a></b>
+<li><b><a href="eclipse-install.html">Eclipse instructions</a></b>
+</ol>
+
+<h3>Using the Ocaml toplevel</h3>
+
+<p>Ocaml gives you a way to interact with code that you've written called
+a "Toplevel" (read more about toplevels at
+<a href="http://en.wikipedia.org/wiki/Read-eval-print_loop">http://en.wikipedia.org/wiki/Read-eval-print_loop</a>). If you're using 
+Emacs with tuareg-mode, you can easily enter the toplevel (see 
+<a href="emacs-install.html">Emacs instructions</a>). Once we get to
+using modules, we'll show you a way to do this within Eclipse/OcaIDE.
+For now, you can simply open up the program "Objective Caml" that was
+installed in step 2, and either (1) File -> Open the .ml file containing 
+your code, or (2) copy and paste your code from Eclipse and hit enter. 
+Now you'll be able to interact with the code that you have pasted in.
+
+<h3>Uploading your work to nice</h3>
+
+<p><em>Windows users:</em> Download and install <a href="http://winscp.net/eng/download.php">WinSCP</a>, 
+an FTP client for Windows. Run WinSCP and login to your nice account. You can now drag and drop
+your local files (left panel) to your nice account (right panel), and
+vice versa.
+<p>
+  <em>Mac/Linux users:</em> You can just use the command
+  line <code>scp</code>, or find one of the many GUI versions.  From
+  the command line:
+
+<pre>
+$ scp -r ps0/ userid@nice.fas.harvard.edu:~/
+</pre>
+
+<p>
+<a href="index.html">CS51 Home</a>
+
+</body>
+
+</html>

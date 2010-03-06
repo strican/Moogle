@@ -30,6 +30,21 @@ module WordDict :
     val choose : dict -> (key * value * dict) option
     val fold : (key -> value -> 'a -> 'a) -> 'a -> dict -> 'a
   end
+module VisitSet :
+  sig
+    type elt = Util.CrawlerServices.link
+    type set
+    val empty : set
+    val is_empty : set -> bool
+    val insert : elt -> set -> set
+    val singleton : elt -> set
+    val union : set -> set -> set
+    val intersect : set -> set -> set
+    val remove : elt -> set -> set
+    val member : set -> elt -> bool
+    val choose : set -> (elt * set) option
+    val fold : (elt -> 'a -> 'a) -> 'a -> set -> 'a
+  end
 module Q :
   sig
     type query = Word of string | And of query * query | Or of query * query
@@ -39,6 +54,22 @@ module Q :
     val parse_query : string -> query
     val eval_query : WordDict.dict -> query -> LinkSet.set
   end
+module LinkQ :
+  sig
+    type 'a queue = 'a Queue_module.DoubleListQueue.queue
+    val empty : unit -> 'a queue
+    val enqueue : 'a -> 'a queue -> 'a queue
+    val is_empty : 'a queue -> bool
+    exception EmptyQueue
+    val dequeue : 'a queue -> 'a queue
+    val front : 'a queue -> 'a
+    val insert_list : 'a list -> 'a queue -> 'a queue
+  end
+val modify_link_set :
+  LinkSet.elt -> WordDict.dict -> WordDict.key -> WordDict.dict
+val bfs_loop :
+  VisitSet.elt LinkQ.queue ->
+  VisitSet.set -> WordDict.dict -> int -> WordDict.dict
 val crawler : unit -> WordDict.dict
 val std_response_header : string
 val moogle_home_page : string

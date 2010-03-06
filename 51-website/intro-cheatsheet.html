@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>Ocaml Hacking Cheatsheet for beginners</title>
+<link href="cs51.css" rel="stylesheet" type="text/css">
+</head>
+
+<h2 class="header">Ocaml Hacking Cheatsheet for beginners</h2>
+<p>
+<a href="index.html">CS51 Home</a>
+
+<p>
+This is a short reference sheet intended to remind you how to build
+and pull apart values of different types.
+
+<table>
+<tr>
+<th>Type
+<th>Building
+<th>Tearing apart
+</tr>
+
+<tr>
+<td>Primitive types: int, float, etc
+<td><code>12,"Hi",true</code>
+<td>
+</tr>
+
+<tr>
+<td>Lists
+<td><code>[1;2;4]</code>, <code>"a"::"b"::"c"::[]</code>
+<td>
+<code>match l with<br>
+  | [] -> ...<br>
+  | x :: xs -> ...
+</code>
+</tr>
+
+<tr>
+<td>Options
+<td><code>None</code>, <code>Some exp</code>
+<td><code>
+    match e with<br>
+    | None -> ...<br>
+    | Some e -> ...
+</code>
+</tr>
+
+<tr>
+<td>Tuples
+<td><code>(1, 2)</code><br>
+  <code>("hi", 42, Some ["1";"2";"three"])</code>
+<td><code>
+    let (x,y) = t in<br>
+      x+y;;<br><br>
+
+    match t with<br>
+    | (s,_,Some l) -> s::l <br>
+    | (s,42,None) -> [s ^ " 42!"]<br>
+    | (s,x,None) -> [s ^ " not 42 :("]<br>
+</code>
+</tr>
+
+<tr>
+<td>Records
+<td>Still to come...
+<td>
+</tr>
+
+<tr>
+<td>Lambdas
+<td>Still to come...
+<td>
+</tr>
+
+<tr>
+<td>Exceptions
+<td>Still to come...
+<td>
+</tr>
+
+
+</table>
+
+<p>
+<a href="index.html">CS51 Home</a>
+
+</body>
+
+</html>

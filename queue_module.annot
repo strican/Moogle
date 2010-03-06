@@ -1,0 +1,532 @@
+"Moogle\\queue_module.ml" 19 488 496 "Moogle\\queue_module.ml" 19 488 501
+type(
+  unit -> 'a queue
+)
+ident(
+  def empty "Moogle\\queue_module.ml" 20 531 535 "Moogle\\queue_module.ml" 36 1209 1214
+)
+"Moogle\\queue_module.ml" 19 488 501 "Moogle\\queue_module.ml" 19 488 503
+type(
+  unit
+)
+"Moogle\\queue_module.ml" 19 488 515 "Moogle\\queue_module.ml" 19 488 517
+type(
+  'a list
+)
+"Moogle\\queue_module.ml" 19 488 526 "Moogle\\queue_module.ml" 19 488 528
+type(
+  'a list
+)
+"Moogle\\queue_module.ml" 19 488 506 "Moogle\\queue_module.ml" 19 488 529
+type(
+  'a queue
+)
+"Moogle\\queue_module.ml" 20 531 539 "Moogle\\queue_module.ml" 20 531 546
+type(
+  'b -> 'b queue -> 'b queue
+)
+ident(
+  def enqueue "Moogle\\queue_module.ml" 21 590 594 "Moogle\\queue_module.ml" 36 1209 1214
+)
+"Moogle\\queue_module.ml" 20 531 547 "Moogle\\queue_module.ml" 20 531 548
+type(
+  'b
+)
+ident(
+  def x "Moogle\\queue_module.ml" 20 531 549 "Moogle\\queue_module.ml" 20 531 588
+)
+"Moogle\\queue_module.ml" 20 531 549 "Moogle\\queue_module.ml" 20 531 550
+type(
+  'b queue
+)
+ident(
+  def q "Moogle\\queue_module.ml" 20 531 553 "Moogle\\queue_module.ml" 20 531 588
+)
+"Moogle\\queue_module.ml" 20 531 562 "Moogle\\queue_module.ml" 20 531 563
+type(
+  'b queue
+)
+ident(
+  int_ref q "Moogle\\queue_module.ml" 20 531 549 "Moogle\\queue_module.ml" 20 531 550
+)
+"Moogle\\queue_module.ml" 20 531 562 "Moogle\\queue_module.ml" 20 531 569
+type(
+  'b list
+)
+"Moogle\\queue_module.ml" 20 531 578 "Moogle\\queue_module.ml" 20 531 579
+type(
+  'b
+)
+ident(
+  int_ref x "Moogle\\queue_module.ml" 20 531 547 "Moogle\\queue_module.ml" 20 531 548
+)
+"Moogle\\queue_module.ml" 20 531 581 "Moogle\\queue_module.ml" 20 531 582
+type(
+  'b queue
+)
+ident(
+  int_ref q "Moogle\\queue_module.ml" 20 531 549 "Moogle\\queue_module.ml" 20 531 550
+)
+"Moogle\\queue_module.ml" 20 531 581 "Moogle\\queue_module.ml" 20 531 587
+type(
+  'b list
+)
+"Moogle\\queue_module.ml" 20 531 578 "Moogle\\queue_module.ml" 20 531 587
+type(
+  'b list
+)
+"Moogle\\queue_module.ml" 20 531 553 "Moogle\\queue_module.ml" 20 531 588
+type(
+  'b queue
+)
+"Moogle\\queue_module.ml" 21 590 598 "Moogle\\queue_module.ml" 21 590 606
+type(
+  'c queue -> bool
+)
+ident(
+  def is_empty "Moogle\\queue_module.ml" 25 697 701 "Moogle\\queue_module.ml" 36 1209 1214
+)
+"Moogle\\queue_module.ml" 21 590 607 "Moogle\\queue_module.ml" 21 590 608
+type(
+  'c queue
+)
+ident(
+  def q "Moogle\\queue_module.ml" 22 612 618 "Moogle\\queue_module.ml" 24 672 695
+)
+"Moogle\\queue_module.ml" 22 612 624 "Moogle\\queue_module.ml" 22 612 625
+type(
+  'c queue
+)
+ident(
+  int_ref q "Moogle\\queue_module.ml" 21 590 607 "Moogle\\queue_module.ml" 21 590 608
+)
+"Moogle\\queue_module.ml" 22 612 624 "Moogle\\queue_module.ml" 22 612 631
+type(
+  'c list
+)
+"Moogle\\queue_module.ml" 22 612 633 "Moogle\\queue_module.ml" 22 612 634
+type(
+  'c queue
+)
+ident(
+  int_ref q "Moogle\\queue_module.ml" 21 590 607 "Moogle\\queue_module.ml" 21 590 608
+)
+"Moogle\\queue_module.ml" 22 612 633 "Moogle\\queue_module.ml" 22 612 639
+type(
+  'c list
+)
+"Moogle\\queue_module.ml" 22 612 624 "Moogle\\queue_module.ml" 22 612 639
+type(
+  'c list * 'c list
+)
+"Moogle\\queue_module.ml" 23 646 656 "Moogle\\queue_module.ml" 23 646 658
+type(
+  'c list
+)
+"Moogle\\queue_module.ml" 23 646 660 "Moogle\\queue_module.ml" 23 646 662
+type(
+  'c list
+)
+"Moogle\\queue_module.ml" 23 646 656 "Moogle\\queue_module.ml" 23 646 662
+type(
+  'c list * 'c list
+)
+"Moogle\\queue_module.ml" 23 646 666 "Moogle\\queue_module.ml" 23 646 670
+type(
+  bool
+)
+"Moogle\\queue_module.ml" 24 672 682 "Moogle\\queue_module.ml" 24 672 683
+type(
+  'c list
+)
+"Moogle\\queue_module.ml" 24 672 685 "Moogle\\queue_module.ml" 24 672 686
+type(
+  'c list
+)
+"Moogle\\queue_module.ml" 24 672 682 "Moogle\\queue_module.ml" 24 672 686
+type(
+  'c list * 'c list
+)
+"Moogle\\queue_module.ml" 24 672 690 "Moogle\\queue_module.ml" 24 672 695
+type(
+  bool
+)
+"Moogle\\queue_module.ml" 22 612 618 "Moogle\\queue_module.ml" 24 672 695
+type(
+  bool
+)
+"Moogle\\queue_module.ml" 26 723 731 "Moogle\\queue_module.ml" 26 723 734
+type(
+  'd queue -> 'd * 'd queue
+)
+ident(
+  def deq "Moogle\\queue_module.ml" 32 991 995 "Moogle\\queue_module.ml" 36 1209 1214
+)
+"Moogle\\queue_module.ml" 26 723 736 "Moogle\\queue_module.ml" 26 723 737
+type(
+  'd queue
+)
+ident(
+  def q "Moogle\\queue_module.ml" 26 723 749 "Moogle\\queue_module.ml" 31 947 989
+)
+"Moogle\\queue_module.ml" 27 769 781 "Moogle\\queue_module.ml" 27 769 782
+type(
+  'd queue
+)
+ident(
+  int_ref q "Moogle\\queue_module.ml" 26 723 736 "Moogle\\queue_module.ml" 26 723 737
+)
+"Moogle\\queue_module.ml" 27 769 781 "Moogle\\queue_module.ml" 27 769 788
+type(
+  'd list
+)
+"Moogle\\queue_module.ml" 28 795 805 "Moogle\\queue_module.ml" 28 795 806
+type(
+  'd
+)
+ident(
+  def h "Moogle\\queue_module.ml" 28 795 813 "Moogle\\queue_module.ml" 28 795 844
+)
+"Moogle\\queue_module.ml" 28 795 808 "Moogle\\queue_module.ml" 28 795 809
+type(
+  'd list
+)
+ident(
+  def t "Moogle\\queue_module.ml" 28 795 813 "Moogle\\queue_module.ml" 28 795 844
+)
+"Moogle\\queue_module.ml" 28 795 805 "Moogle\\queue_module.ml" 28 795 809
+type(
+  'd list
+)
+"Moogle\\queue_module.ml" 28 795 814 "Moogle\\queue_module.ml" 28 795 815
+type(
+  'd
+)
+ident(
+  int_ref h "Moogle\\queue_module.ml" 28 795 805 "Moogle\\queue_module.ml" 28 795 806
+)
+"Moogle\\queue_module.ml" 28 795 826 "Moogle\\queue_module.ml" 28 795 827
+type(
+  'd list
+)
+ident(
+  int_ref t "Moogle\\queue_module.ml" 28 795 808 "Moogle\\queue_module.ml" 28 795 809
+)
+"Moogle\\queue_module.ml" 28 795 836 "Moogle\\queue_module.ml" 28 795 837
+type(
+  'd queue
+)
+ident(
+  int_ref q "Moogle\\queue_module.ml" 26 723 736 "Moogle\\queue_module.ml" 26 723 737
+)
+"Moogle\\queue_module.ml" 28 795 836 "Moogle\\queue_module.ml" 28 795 842
+type(
+  'd list
+)
+"Moogle\\queue_module.ml" 28 795 817 "Moogle\\queue_module.ml" 28 795 843
+type(
+  'd queue
+)
+"Moogle\\queue_module.ml" 28 795 813 "Moogle\\queue_module.ml" 28 795 844
+type(
+  'd * 'd queue
+)
+"Moogle\\queue_module.ml" 29 846 856 "Moogle\\queue_module.ml" 29 846 858
+type(
+  'd list
+)
+"Moogle\\queue_module.ml" 29 846 868 "Moogle\\queue_module.ml" 29 846 876
+type(
+  'd list -> 'd list
+)
+ident(
+  ext_ref List.rev
+)
+"Moogle\\queue_module.ml" 29 846 877 "Moogle\\queue_module.ml" 29 846 878
+type(
+  'd queue
+)
+ident(
+  int_ref q "Moogle\\queue_module.ml" 26 723 736 "Moogle\\queue_module.ml" 26 723 737
+)
+"Moogle\\queue_module.ml" 29 846 877 "Moogle\\queue_module.ml" 29 846 883
+type(
+  'd list
+)
+"Moogle\\queue_module.ml" 29 846 868 "Moogle\\queue_module.ml" 29 846 883
+call(
+  stack
+)
+type(
+  'd list
+)
+"Moogle\\queue_module.ml" 30 890 910 "Moogle\\queue_module.ml" 30 890 911
+type(
+  'd
+)
+ident(
+  def h "Moogle\\queue_module.ml" 30 890 918 "Moogle\\queue_module.ml" 30 890 945
+)
+"Moogle\\queue_module.ml" 30 890 913 "Moogle\\queue_module.ml" 30 890 914
+type(
+  'd list
+)
+ident(
+  def t "Moogle\\queue_module.ml" 30 890 918 "Moogle\\queue_module.ml" 30 890 945
+)
+"Moogle\\queue_module.ml" 30 890 910 "Moogle\\queue_module.ml" 30 890 914
+type(
+  'd list
+)
+"Moogle\\queue_module.ml" 30 890 919 "Moogle\\queue_module.ml" 30 890 920
+type(
+  'd
+)
+ident(
+  int_ref h "Moogle\\queue_module.ml" 30 890 910 "Moogle\\queue_module.ml" 30 890 911
+)
+"Moogle\\queue_module.ml" 30 890 931 "Moogle\\queue_module.ml" 30 890 932
+type(
+  'd list
+)
+ident(
+  int_ref t "Moogle\\queue_module.ml" 30 890 913 "Moogle\\queue_module.ml" 30 890 914
+)
+"Moogle\\queue_module.ml" 30 890 941 "Moogle\\queue_module.ml" 30 890 943
+type(
+  'd list
+)
+"Moogle\\queue_module.ml" 30 890 922 "Moogle\\queue_module.ml" 30 890 944
+type(
+  'd queue
+)
+"Moogle\\queue_module.ml" 30 890 918 "Moogle\\queue_module.ml" 30 890 945
+type(
+  'd * 'd queue
+)
+"Moogle\\queue_module.ml" 31 947 967 "Moogle\\queue_module.ml" 31 947 969
+type(
+  'd list
+)
+"Moogle\\queue_module.ml" 31 947 973 "Moogle\\queue_module.ml" 31 947 978
+type(
+  exn -> 'd * 'd queue
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"Moogle\\queue_module.ml" 31 947 979 "Moogle\\queue_module.ml" 31 947 989
+type(
+  exn
+)
+"Moogle\\queue_module.ml" 31 947 973 "Moogle\\queue_module.ml" 31 947 989
+type(
+  'd * 'd queue
+)
+"Moogle\\queue_module.ml" 29 846 862 "Moogle\\queue_module.ml" 31 947 989
+type(
+  'd * 'd queue
+)
+"Moogle\\queue_module.ml" 27 769 775 "Moogle\\queue_module.ml" 31 947 989
+type(
+  'd * 'd queue
+)
+type(
+  'd * 'd queue
+)
+"Moogle\\queue_module.ml" 32 991 999 "Moogle\\queue_module.ml" 32 991 1006
+type(
+  'e queue -> 'e queue
+)
+ident(
+  def dequeue "Moogle\\queue_module.ml" 33 1046 1050 "Moogle\\queue_module.ml" 36 1209 1214
+)
+"Moogle\\queue_module.ml" 32 991 1008 "Moogle\\queue_module.ml" 32 991 1009
+type(
+  'e queue
+)
+ident(
+  def q "Moogle\\queue_module.ml" 32 991 1021 "Moogle\\queue_module.ml" 32 991 1044
+)
+"Moogle\\queue_module.ml" 32 991 1034 "Moogle\\queue_module.ml" 32 991 1037
+type(
+  'e * 'e queue -> 'e queue
+)
+ident(
+  ext_ref Pervasives.snd
+)
+"Moogle\\queue_module.ml" 32 991 1038 "Moogle\\queue_module.ml" 32 991 1041
+type(
+  'e queue -> 'e * 'e queue
+)
+ident(
+  int_ref deq "Moogle\\queue_module.ml" 26 723 731 "Moogle\\queue_module.ml" 26 723 734
+)
+"Moogle\\queue_module.ml" 32 991 1042 "Moogle\\queue_module.ml" 32 991 1043
+type(
+  'e queue
+)
+ident(
+  int_ref q "Moogle\\queue_module.ml" 32 991 1008 "Moogle\\queue_module.ml" 32 991 1009
+)
+"Moogle\\queue_module.ml" 32 991 1037 "Moogle\\queue_module.ml" 32 991 1044
+call(
+  stack
+)
+type(
+  'e * 'e queue
+)
+"Moogle\\queue_module.ml" 32 991 1034 "Moogle\\queue_module.ml" 32 991 1044
+type(
+  'e queue
+)
+type(
+  'e queue
+)
+"Moogle\\queue_module.ml" 33 1046 1054 "Moogle\\queue_module.ml" 33 1046 1059
+type(
+  'f queue -> 'f
+)
+ident(
+  def front "Moogle\\queue_module.ml" 34 1093 1097 "Moogle\\queue_module.ml" 36 1209 1214
+)
+"Moogle\\queue_module.ml" 33 1046 1061 "Moogle\\queue_module.ml" 33 1046 1062
+type(
+  'f queue
+)
+ident(
+  def q "Moogle\\queue_module.ml" 33 1046 1074 "Moogle\\queue_module.ml" 33 1046 1091
+)
+"Moogle\\queue_module.ml" 33 1046 1081 "Moogle\\queue_module.ml" 33 1046 1084
+type(
+  'f * 'f queue -> 'f
+)
+ident(
+  ext_ref Pervasives.fst
+)
+"Moogle\\queue_module.ml" 33 1046 1085 "Moogle\\queue_module.ml" 33 1046 1088
+type(
+  'f queue -> 'f * 'f queue
+)
+ident(
+  int_ref deq "Moogle\\queue_module.ml" 26 723 731 "Moogle\\queue_module.ml" 26 723 734
+)
+"Moogle\\queue_module.ml" 33 1046 1089 "Moogle\\queue_module.ml" 33 1046 1090
+type(
+  'f queue
+)
+ident(
+  int_ref q "Moogle\\queue_module.ml" 33 1046 1061 "Moogle\\queue_module.ml" 33 1046 1062
+)
+"Moogle\\queue_module.ml" 33 1046 1084 "Moogle\\queue_module.ml" 33 1046 1091
+call(
+  stack
+)
+type(
+  'f * 'f queue
+)
+"Moogle\\queue_module.ml" 33 1046 1081 "Moogle\\queue_module.ml" 33 1046 1091
+type(
+  'f
+)
+type(
+  'f
+)
+"Moogle\\queue_module.ml" 34 1093 1101 "Moogle\\queue_module.ml" 34 1093 1112
+type(
+  'g list -> 'g queue -> 'g queue
+)
+ident(
+  def insert_list "Moogle\\queue_module.ml" 35 1156 1205 "Moogle\\queue_module.ml" 36 1209 1214
+)
+"Moogle\\queue_module.ml" 34 1093 1114 "Moogle\\queue_module.ml" 34 1093 1115
+type(
+  'g list
+)
+ident(
+  def l "Moogle\\queue_module.ml" 34 1093 1127 "Moogle\\queue_module.ml" 35 1156 1205
+)
+"Moogle\\queue_module.ml" 34 1093 1128 "Moogle\\queue_module.ml" 34 1093 1129
+type(
+  'g queue
+)
+ident(
+  def q "Moogle\\queue_module.ml" 34 1093 1142 "Moogle\\queue_module.ml" 35 1156 1205
+)
+"Moogle\\queue_module.ml" 35 1156 1162 "Moogle\\queue_module.ml" 35 1156 1176
+type(
+  ('g queue -> 'g -> 'g queue) -> 'g queue -> 'g list -> 'g queue
+)
+ident(
+  ext_ref List.fold_left
+)
+"Moogle\\queue_module.ml" 35 1156 1182 "Moogle\\queue_module.ml" 35 1156 1183
+type(
+  'g queue
+)
+ident(
+  def b "Moogle\\queue_module.ml" 35 1156 1184 "Moogle\\queue_module.ml" 35 1156 1200
+)
+"Moogle\\queue_module.ml" 35 1156 1184 "Moogle\\queue_module.ml" 35 1156 1185
+type(
+  'g
+)
+ident(
+  def a "Moogle\\queue_module.ml" 35 1156 1189 "Moogle\\queue_module.ml" 35 1156 1200
+)
+"Moogle\\queue_module.ml" 35 1156 1189 "Moogle\\queue_module.ml" 35 1156 1196
+type(
+  'g -> 'g queue -> 'g queue
+)
+ident(
+  int_ref enqueue "Moogle\\queue_module.ml" 20 531 539 "Moogle\\queue_module.ml" 20 531 546
+)
+"Moogle\\queue_module.ml" 35 1156 1197 "Moogle\\queue_module.ml" 35 1156 1198
+type(
+  'g
+)
+ident(
+  int_ref a "Moogle\\queue_module.ml" 35 1156 1184 "Moogle\\queue_module.ml" 35 1156 1185
+)
+"Moogle\\queue_module.ml" 35 1156 1199 "Moogle\\queue_module.ml" 35 1156 1200
+type(
+  'g queue
+)
+ident(
+  int_ref b "Moogle\\queue_module.ml" 35 1156 1182 "Moogle\\queue_module.ml" 35 1156 1183
+)
+"Moogle\\queue_module.ml" 35 1156 1189 "Moogle\\queue_module.ml" 35 1156 1200
+call(
+  tail
+)
+type(
+  'g queue
+)
+"Moogle\\queue_module.ml" 35 1156 1177 "Moogle\\queue_module.ml" 35 1156 1201
+type(
+  'g queue -> 'g -> 'g queue
+)
+"Moogle\\queue_module.ml" 35 1156 1202 "Moogle\\queue_module.ml" 35 1156 1203
+type(
+  'g queue
+)
+ident(
+  int_ref q "Moogle\\queue_module.ml" 34 1093 1128 "Moogle\\queue_module.ml" 34 1093 1129
+)
+"Moogle\\queue_module.ml" 35 1156 1204 "Moogle\\queue_module.ml" 35 1156 1205
+type(
+  'g list
+)
+ident(
+  int_ref l "Moogle\\queue_module.ml" 34 1093 1114 "Moogle\\queue_module.ml" 34 1093 1115
+)
+"Moogle\\queue_module.ml" 35 1156 1162 "Moogle\\queue_module.ml" 35 1156 1205
+call(
+  tail
+)
+type(
+  'g queue
+)
+type(
+  'g queue
+)

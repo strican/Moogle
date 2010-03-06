@@ -6,6 +6,7 @@ let partner2 = "gehrlich";;
 open Util ;;    
 open CrawlerServices ;;
 open Order ;;
+open Queue_module ;;
 
 let link_compare (x:link) (y:link) : order = 
   match string_compare x.host y.host with 
@@ -21,19 +22,42 @@ let link_compare (x:link) (y:link) : order =
 (* Sets of crawler links *)
 (* You should replace this invocation of the ListSet functor with 
  * your RBTreeSet functor. *)
-module LinkSet = Set.ListSet(struct 
-                               type t = link
+module LinkSet = Set.DictSet(Dict.RBTreeDict(struct 
+                               type key = link
+															 type value = unit 
                                let compare = link_compare
-                             end) ;;
+                             end)) ;;
 
 (* Dictionaries mapping words (strings) to sets of crawler links *)
 (* You should replace this invocation of the WordDict functor with
  * your RBTreeDict functor. *)
+module WordDict = Dict.RBTreeDict(struct 
+                                       type key = string
+                                       type value = LinkSet.set
+                                       let compare = string_compare
+                                     end) ;;
+(*module LinkSet = Set.ListSet(struct 
+                               type t = link
+                               let compare = link_compare
+                             end) ;;
+
 module WordDict = Dict.AssocListDict(struct 
                                        type key = string
                                        type value = LinkSet.set
                                        let compare = string_compare
                                      end) ;;
+
+module VisitSet = Set.ListSet(struct 
+                               type t = link
+                               let compare = link_compare
+                             end) ;;*)
+
+(* Set that tracks whether a link has been visited *)
+module VisitSet = Set.DictSet(Dict.RBTreeDict(struct
+                                        type key = link
+                                        type value = unit
+                                        let compare = link_compare
+                                    end)) ;;
 
 (* A query module that uses LinkSet and WordDict *)
 module Q = Query.Query(struct
@@ -41,6 +65,9 @@ module Q = Query.Query(struct
                          module D = WordDict
                        end
                        ) ;;
+
+
+module LinkQ = Queue_module.DoubleListQueue ;;
 
 
 (********************************************************************)
@@ -54,11 +81,39 @@ module Q = Query.Query(struct
  * total.  
  *    
  *)
-let crawler () = 
-   (* change this definition -- this just constructs a dummy 
-    * dictionary. *)
-  WordDict.insert WordDict.empty "moogle" (LinkSet.singleton initial_link) 
+
+let modify_link_set (l : link) (d : WordDict.dict) (a : string) : WordDict.dict =
+    let new_set =
+      (match WordDict.lookup d a with
+         | None -> LinkSet.singleton l
+         | Some set -> LinkSet.insert l set) in
+    WordDict.insert d a new_set
 ;;
+
+
+let rec bfs_loop (q : link LinkQ.queue) (v : VisitSet.set) (d : WordDict.dict) (ct : int) : WordDict.dict  =
+  if ct >= CrawlerServices.num_pages_to_search then d
+  else if LinkQ.is_empty q then d
+	else
+			let l = LinkQ.front q in
+      let _ = Printf.printf "%s\n" (CrawlerServices.string_of_link l) in
+			let q = LinkQ.dequeue q in
+			let p = CrawlerServices.get_page l in
+			let wds = p.words in
+      let ls = List.filter (fun lnk -> not (VisitSet.member v lnk)) p.links in
+      let q = LinkQ.insert_list ls q in 
+			let v = List.fold_right VisitSet.insert ls v in
+			bfs_loop q v (List.fold_left (modify_link_set l) d wds) (ct + 1)
+;;
+
+
+let crawler () : WordDict.dict = 
+  let q = LinkQ.empty() in
+  let q = LinkQ.enqueue CrawlerServices.initial_link q in
+  bfs_loop q (VisitSet.singleton CrawlerServices.initial_link) WordDict.empty 0
+;;
+
+
 (*****************************************************************************)
 
 let std_response_header = 

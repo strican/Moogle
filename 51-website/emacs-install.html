@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>Emacs Installation Instructions</title>
+<link href="cs51.css" rel="stylesheet" type="text/css">
+</head>
+
+<h2 class="header">Emacs Installation Instructions</h2>
+
+<a href="index.html">CS51 Home</a>
+
+<h3>Installing Emacs</h3>
+<h4><em>Windows users</em></h4>
+<ol>
+<li> Follow the instructions at <a href="http://www.claremontmckenna.edu/math/ALee/emacs/emacs.html">http://www.claremontmckenna.edu/math/ALee/emacs/emacs.html</a> to get emacs installed. 
+<li> I would advise against step 5, but it has some important information. You'll often see the file ".emacs.d\init.el" referred to as your ".emacs" file. This file lets you modify emacs so that it does cooler things. We'll be editing it later to get OCaml working with emacs. If you do decide to do this step, make sure you name the file "init.el", <i>not</i> "init.el.txt"!
+<li> Also, step 9 is really convenient because it lets you start emacs in the directory that contains all of your cs51 psets rather than whatever crazy place you installed emacs.
+</ol>
+
+<h4><em>Mac/Linux users</em></h4>
+<p>Download and install the latest version of emacs from <a href="http://www.gnu.org/software/emacs/">http://www.gnu.org/software/emacs/</a>. Mac users may prefer to use <a href="http://aquamacs.org/">Aquamacs</a>.
+
+<h3>Installing mode for editing OCaml code</h3>
+<p>Download the latest version of the Tuareg mode, which enables syntax highlighting, automatic indentation for OCaml, easy evaluation of code in the toplevel, and more. The download is available at <a href="http://www-roc.inria.fr/~acohen/tuareg/mode/">http://www-roc.inria.fr/~acohen/tuareg/mode/</a>.
+
+<h4><em>Windows users</em></h4>
+<ol>
+<li> From the above link, download tuareg-mode.zip and extract the files from it. Open README, which will explain how to set up tuareg-mode.
+<li> To paraphrase, you need to put 2 files (camldebug.el and tuareg.el) into your c:\emacs\emacs-23.1\site-lisp\ folder (assuming you installed emacs in c:\emacs). Then add the following to the "c:\emacs\.emacs.d\init.el" file mentioned earlier:
+
+<pre>(setq auto-mode-alist (cons '("\\.ml\\w?" . tuareg-mode) auto-mode-alist))
+  (autoload 'tuareg-mode "tuareg" "Major mode for editing Caml code" t)
+  (autoload 'camldebug "camldebug" "Run the Caml debugger" t)
+</pre>
+
+If you are missing the file or the folder, use notepad to make an entirely new file and name it init.el (making sure to save as type "All files", not "Text documents"). Also, don't skip the "Getting started with tuareg-mode in Emacs" section below. This will tell you how to compile your code conveniently within emacs!
+</ol>
+
+<h4><em>Aquamacs users</em></h4>
+<ol>
+<li> Download tuareg-mode.tar.gz and extract the files from it. 
+<li> Copy tuareg.el and camldebug.el to Macintosh HD/Users/(your username)/Library/Preferences/Aquamacs Emacs/
+<li> In the above directory, find and open the file Preferences.el. Add the following to the end of the file:
+
+<pre>(setq auto-mode-alist (cons '("\\.ml\\w?" . tuareg-mode) auto-mode-alist))
+(autoload 'tuareg-mode "tuareg" "Major mode for editing Caml code" t)
+(autoload 'camldebug "camldebug" "Run the Caml debugger" t)
+</pre>
+</ol>
+
+<h4><em>Other users</em></h4>
+<p> Download tuareg-mode.tar.gz and extract the files from it. Locate your .emacs file and follow the instructions in README.
+
+<h3>Getting started with tuareg-mode in Emacs</h3>
+<ul>
+<li> After performing the above steps, restart emacs. 
+<li> You will automatically enter tuareg-mode if you open or create (C-x C-f) a .ml file. Do this now; if you have syntax highlighting, you have successfully installed tuareg-mode. (C- means press control with the next letter.)
+<li> You can compile an entire .ml file with C-c C-b or a single function with C-c C-e. Both of these commands will automatically open the toplevel in emacs.
+<li> Upon opening emacs, you can directly enter tuareg-mode by typing "M-x tuareg-mode." (M- means press the meta key with the next letter.) Now you can directly enter the toplevel by typing "M-x tuareg-run-caml" and pressing enter at the prompt. Unless you really only need the toplevel, it's usually easier to just open a .ml file to work with though.
+<li> There are tons of useful commands in emacs, and it will definitely pay off to check out some tutorials. You can check out all of the mode specific commands with C-h m, and if something goes wrong use C-g to cancel the commands.
+</ul>
+
+<p>
+<a href="index.html">CS51 Home</a>
+
+</body>
+
+</html>
+

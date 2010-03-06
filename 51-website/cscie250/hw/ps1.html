@@ -1,0 +1,266 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="refresh" content="1800">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>CSCI E-250 Problem Set 1: Introduction to OCaml</title>
+  </head>
+  <body>
+    <h1>CSCI E-250 Problem Set 1: Introduction to OCaml</h1>
+    <h3 align="left"> Due Sunday, February 7, 2010, 11:59 pm.</h3>
+
+	<a href="..">Back to CSCI E-250 Home</a>
+    <hr>
+    <h3>Instructions</h3> <p> This problem set contains some exercises
+      to introduce you to OCaml (and, more generally, to many of the ideas
+      underlying statically-typed functional languages).
+      First, you should download the <a href="ps1.tgz">assignment tarball</a>,
+      and extract it by saving it somewhere and running <code> tar -xzf ps1.tgz</code> (or using your favorite GUI program such as <a href="http://www.7-zip.org/">7-Zip</a>).
+      Within, you will find a solution template (<tt>ps1.ml</tt>)
+      that contains a commented-out stub for each function you are asked to implement;
+      you should uncomment them as you fill in your solutions.
+    </p>
+
+    <h3>Important notes</h3>
+    <ol>
+      <li><b>Compile errors:</b>
+        Your solution <em>must compile</em>.
+        If you omit problems, leave the corresponding definitions commented out
+        so that they will not confuse our automated grader as it checks the other problems.
+        If you are having difficulty getting your code to compile,
+        please visit office hours.
+
+      <li><b>Magic and its order:</b>
+        You may encounter comments in our template files of the form: <br/>
+        <center><code>(*>* Some text here *>*)</code></center>
+        These are magical incantations to our automated grader.
+        Please leave them intact, and make sure to insert your code at the
+        appropriate point in the file (relative to the magic).
+        Do not remove magic, even if you omit problems.
+        If your solutions are out of order, and/or you modify/add/remove magic,
+        we will probably have to test your code manually,
+        which will make us sad.
+      </li>
+
+      <li><b>Testing:</b>
+        Don't wait for our automated grader to point out bugs in your code;
+        test it yourself!
+        OCaml's static type system catches a lot of errors, but not all of them.
+        Thorough testing will not only help you avoid making mistakes,
+        but will also help you evaluate your design choices
+        (notably, short functions with conceptually clear roles
+        are much easier to test).
+      </li>
+
+      <li><b>Auxiliary functions:</b>
+        Feel free to use them when they make your code cleaner,
+        more modular, and/or easier to test &mdash;
+        that's what functions are for!
+        Just make sure that if we name a particular function that you have to write
+        (either in the assignment text, or in a template file),
+        that you preserve its name
+        so that our automated grader can find it.
+      </li>
+
+      <li><b>Style:</b>
+        Finally, please pay attention to style.
+        Take the extra time to think about
+        the problems and find the most elegant solutions before coding them up.
+        Even though only the second problem (below) explicitly addresses
+        the style issue, good style is important throughout the assignment,
+        and indeed the entire course (and In Real Life!).
+        For reference,
+        you may consult the <a href="../../ocaml_style_guide.html">OCaml style guide</a>
+        and the <a href="../../lectures.html">lecture notes</a>,
+        and you are also encouraged to bring style questions to the TFs at office hours.
+      </li>
+    </ol>
+    <h3>Problem 1: Fun With Types</h3>
+    <p> Give the type of each of the following OCaml expressions.
+      For example, the type of <code>(1, 2)</code> is <code>int * int</code>.</p>
+
+    <ol type="a">
+      <li>
+        <code>[("CS", 50); ("CS", 51)]</code>
+      </li>
+      <li>
+        <code>(fun (x, y) -> x *. y) (4.0, 5.0)</code>
+      </li>
+      <li>
+        <code>(<a href = "http://ocaml-lib.sourceforge.net/doc/Option.html">Some</a> 123, <a href = "http://ocaml-lib.sourceforge.net/doc/Option.html">None</a>)</code>
+      </li>
+    </ol>
+
+    <span style="font-family: Courier New; background-color: #bddddd"></span>
+
+    <p>
+      Give expressions that have the following types:</p>
+
+    <ol type="a" start="4">
+      <li>
+        <code>((int * float) list * string) list </code>
+      </li>
+      <li>
+        <code>(float -> float -> float) * (int * int -> int)</code>
+      </li>
+    </ol>
+
+    <p>Replace <code>???</code> with an expression that makes the code
+      type-check correctly.  You might start by adding types to the
+      declarations.</p>
+    <ol type="a" start="6">
+      <li>
+        <pre>
+          let rec foo bar =
+          match bar with
+          | ((a, b), c) :: xs -> a * (b + c + (foo xs))
+          | _ -> 1
+          in foo (???)
+        </pre>
+      </li>
+      <li>
+        <pre>
+	  let v = (32.0, 28.0) in
+	  let square x = x *. x in
+	  let squared_norm (w:float * float) : float = ??? in
+	  let d = sqrt (squared_norm v) in
+	  int_of_float d
+        </pre>
+      </li>
+    </ol>
+
+    <h3>Problem 2: Style Emergency</h3>
+    <p>The following function is computationally correct, but it was written with poor style.
+      You may want to consult the <a href="../ocaml_style_guide.html">OCaml
+        style guide</a>. Rewrite this function using pattern matching, so
+      that it does the same thing, but with style.  You may not use the
+      standard library function <code>List.merge</code> for this problem.
+    </p>
+
+    <pre>
+      let rec merge (a: int list) (b: int list) : int list =
+      if (List.length a) = 0 && (List.length b) = 0 then b
+      else if (List.length b) = 0 then a
+      else if (List.length a) = 0 then b
+      else if (List.hd(a) < List.hd(b)) = true then [List.hd a]
+                            @ (merge (List.tl a) b) else [List.hd b] @ (merge a (List.tl b))
+                            </pre>
+
+    <h3>Problem 3: A Series of Tasks</h3>
+    <p>
+      <ol type="a">
+        <li>
+          <p>
+            Write a function <code>sorted : int list -> bool</code> that
+returns true if the items in the list are in non-descending
+order. The empty list is considered to be sorted.
+</p>
+<p>For example, <code>sorted [1; 1; 2; 4] = true</code> and <code>sorted [1; 2; 3; 1] = false</code>.</p>
+</li>
+<li>
+  <p>Write a function <code>partition : int list -> int -> int list * int list</code>
+	that takes an <code>int list</code> and returns a tuple <code>(less,
+      greater)</code> where <code>less</code> is a list containing
+    all the values from the given list that are less than or
+    equal to the given integer, and <code>greater</code> is a list of all the values
+    greater than the given integer.  If a value appears multiple times in
+    the input list, then it should appear the same number of times in one of the 
+    returned lists.  You should <em>not</em> assume the input list is sorted,
+	and you should ensure that you return the partitioned elements of
+	each list in the same order as they appeared in the input list.  For example, <code>partition [1;3;6;2;5] 3 = ([1;3;2], [6;5])</code>. 
+</li>
+<li>
+  <p>Write a function
+    <code>unzip : (int * int) list -> int list * int list</code>
+    which, given a list of pairs, returns a pair of lists, the first
+    of which contains each first element of each pair, and the second
+    of which contains each second element.  The returned lists should
+    have the elements in the order that they appeared in the input.
+    So, for instance,
+    <code>unzip [(1,2);(3,4);(5,6)] = ([1;3;5],[2;4;6])</code>.
+</li>
+<li>
+  Write a function <code>variance : float list -> float option</code>
+  that returns the <a href = "http://mathworld.wolfram.com/SampleVariance.html">sample variance</a>
+  of the numbers in its input list, if
+  the list has at least two elements
+  (otherwise, it should return <code>None</code>).
+  On an input list (containing at least two elements),
+  the sample variance is defined to be <img src = "variance.gif" align = "middle"><!--\frac{1}{N}\sum_{i}^{N-1}{(x_i - m)^2}--> where x<sub>i</sub> is the <i>i</i>th value of the input list,
+  <i>N</i> is the number of values in the input list, and <i>m</i> is the arithmetic mean: <!-- \frac{1}{N}\sum_{i}^{N}x_i --> 
+  <img src = "mean.gif" align = "middle">.  For example,
+  <code>variance [1.0; 2.0; 3.0; 4.0; 5.0] = Some 2.5</code>,
+  while <code>variance [1.0] = None</code> and <code>variance [] = None</code>.
+  Remember to use the floating point version of the arithmetic operators when operating on floats (i.e. use <code>+.</code>, <code>*.</code>, and <code>/.</code> instead of <code>+</code>,
+  <code>*</code>, and <code>/</code>)</code>.  You can use the <code>float</code> function to cast an <code>int</code> to a <code>float</code>.
+</li><br/>
+<li>
+  <p>Write a function <code>perfect : int -> bool</code> that returns
+    true if its input is a <a href =
+                              "http://en.wikipedia.org/wiki/Perfect_number">perfect number</a>. A
+    perfect number is a positive integer that is equal to the sum of its
+    positive divisors except itself.</p>
+  <p>For example, <code>perfect 6 = true</code> and <code>perfect 100 = false</code>.</p>
+</li>
+<li>
+  <b>Challenge</b> (<em>for karma, not for credit &mdash;
+	but you're encouraged to at least attempt it, since it contains some cool ideas</em>):
+  Write a function <code>permutations : int list -> int list list</code> such that <code>permutations lst</code> returns a list containing every
+  permutation of <code>lst</code>.  For example, one correct answer to <code>permutations [1;
+	2; 3]</code> is <code>[[1; 2; 3]; [2; 1; 3]; [2; 3; 1]; [1; 3; 2];
+	[3; 1; 2]; [3; 2; 1]]</code>.  It doesn't matter what order the
+  permutations appear in the returned list.  Note that if the input
+  list is of length <code>n</code> then the answer should be of length
+  <code>n!</code>.
+
+  <br/><br/>
+  <b>Hint:</b>
+  One way to do this is to write an auxiliary function,
+  <code>interleave : int -> int list -> int list list</code>,
+  that yields all interleavings of its first argument into its second:
+  <code>interleave 1 [2;3] = [ [1;2;3]; [2;1;3]; [2;3;1] ]</code>.
+  You may also find occasion for the library functions
+  <code>List.map</code>
+  and <code>List.concat</code>.
+
+</li>
+</ol>
+
+<h3>Submitting</h3>
+
+<p>
+To submit the assignment, your assignment directory must be on <tt>nice.fas</tt>.
+If you were working on your computer, upload the directory 
+containing <tt>ps1.ml</tt> and the other downloaded files to nice. To upload, you'll need an FTP client
+(see <a href="../../ocaml-install.html">instructions page</a>, under "Uploading your work to nice").
+
+<p>
+Run <code>make 
+submit</code>.  You should get
+output like the following:
+
+
+<p>
+<pre>
+$ % make submit
+./submit.sh
+Ok, submitting the files in /home/b/y/byoung/release/ps1-submit
+Creating temporary directory /tmp/byoung.submit...
+Copying assignment files to /tmp/byoung.submit...
+Submitting cscie250 assignment 1... Done!
+Temporary files removed.
+
+Done!
+$ 
+</pre>
+
+<p>If you've submitted successfully, you're done!
+
+
+<a href="..">Back to CSCI E-250 Home</a>
+
+<script type="text/javascript">
+  colorize_all()
+</script>
+</body>
+</html>

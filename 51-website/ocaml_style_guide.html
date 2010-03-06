@@ -1,0 +1,614 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<title>CS51 OCaml Style Guide</title>
+</head>
+
+<a href="index.html">CS51 Home</a>
+
+<body>
+
+<h1>CS51 OCaml Style Guide</h1>
+
+<p><b>Updated 2/05/10</b>: changed convention for multi-word
+  variable/function names from <code>camlCase</code>
+  to <code>underscore_case</code>.
+
+<p> You have spent many years in secondary school
+learning English style and usage.&nbsp; Programming languages are no different.&nbsp; Every programming language
+has its own idioms and idiosyncrasies, and forcing one language's style upon another
+is like trying to speak French using the rules of English grammar.&nbsp; Of course there are some elements
+that are shared between all languages, which you will discover in the course of
+learning OCaml and comparing it with languages you already know.&nbsp; But there
+are some fundamental differences that make programming in OCaml quite different
+from programming in C or Java.</p>
+<p>One of our main goals in this class is for you to develop an appreciation for concise,
+precise, and elegant code.&nbsp; This is in part reflected in your programming
+style.&nbsp; As you will soon realize, this class takes style very seriously.&nbsp; Listed
+below are some stylistic rules for OCaml which we would like you to follow.&nbsp; We will
+initially be quite strict and will deduct points for stylistic infractions, even if
+your program is functionally correct.</p>
+<hr>
+<h3>File Submission</h3>
+<p><a name="1"></a><b>80 Column Limit.</b> No line of code may have more than
+    80 columns.&nbsp; Using more than 80 columns causes your code to wrap around
+    to the next line, which is devastating to readability.&nbsp;
+    </p>
+<p><a name="2"></a><b>No Tab Characters.</b> Do not use the tab character
+    (0x09).&nbsp; Instead, use spaces to control indenting. This is because the width of a
+    tab is not uniform across all computers, and what looks good on your machine
+    may look terrible on mine, especially if you have mixed spaces and tabs.</p>
+<p><a name="4"></a><b>Code Must Compile.</b> Any code you submit must compile
+    under OCaml without errors or warnings.&nbsp; If it does not compile, we
+    will not grade it.&nbsp; That means you
+    will not receive any points for that problem.&nbsp; There is no excuse for it to
+    not compile.&nbsp; Never submit anything that you have changed, no matter
+    how small the change, without checking that it still compiles.&nbsp; You should treat compiler warnings as
+    errors.</p>
+<h3>Comments</h3>
+<a name="5"></a><b>Comments Go Above the Code They Reference,</b> as in the
+following example:
+      <pre>
+<span class="comment">(* Sums a list of integers. *)</span>
+<span class="keyword">let</span> sum = List.fold_left (+) 0</pre>
+<p><a name="6"></a><b>Avoid Useless Comments.</b> Avoid comments that merely repeat
+    the code they reference or state the obvious.&nbsp; Comments should state the invariants, the non-obvious, or
+    any references that have more information about the code.
+<p><a name="7"></a><b>Avoid Over-commenting.</b> Very many or very long comments
+    in the code body are more distracting than helpful.&nbsp; Long comments may appear at the top of a file
+    if you wish to explain the overall design of the code or refer to any
+    sources that have more information about the algorithms or data
+    structures.&nbsp; All other comments in the file should be as short as
+    possible.&nbsp; A good place for a comment is just before a function declaration.&nbsp;
+    Judicious choice of variable names can help minimize the need for comments.
+<p><a name="8"></a><b>Line Breaks.</b> Empty lines should only be included between value declarations within a <tt>struct</tt> block, especially
+    between function declarations.&nbsp; It is not necessary to put empty
+    lines between other declarations unless you are separating the different
+    types of declarations (such as structures, types, exceptions and
+    values).&nbsp; Unless function declarations within a <tt>let</tt> block are
+    long, there should be no empty lines within a let block. There should never be an empty line within an expression.
+<p><a name="9"></a><b> Multi-line Commenting.</b> When comments are
+    printed on paper, the reader lacks the advantage of color highlighting
+    performed by an editor such as Emacs.&nbsp; Multiline comments can be
+    distinguished from code by preceding each line of the comment with a <tt>*</tt> similar to the following:
+<pre><span class="comment">(* This is one of those rare but long comments
+ * that need to span multiple lines because
+ * the code is unusually complex and requires
+ * extra explanation. *)</span>
+<span class="keyword">fun</span> complicated_function () = ...</pre>
+<h3>Naming and Declarations</h3>
+<a name="10"></a><b>Naming Conventions.</b> The best way to tell at a glance something about the type of a variable
+    is to use the standard OCaml naming conventions.&nbsp;
+  The following are the preferred rules that are followed by the standard OCaml libraries:<br>
+<br>
+      <table style="border: 0.5pt solid black" cellspacing="0" width="774">
+        <col>
+        <col width="10">
+        <col>
+        <col width="10">
+        <col>
+        <tr style="background-color:silver;color:black">
+          <td valign="top" style="border-bottom: 0.5pt solid black" width="75"><b>Token</b></td>
+          <td valign="top" style="border-bottom: 0.5pt solid black" width="10">&nbsp;</td>
+          <td valign="top" style="border-bottom: 0.5pt solid black" width="670"><b>OCaml
+            Naming Convention</b></td>
+          <td valign="top" style="border-bottom: 0.5pt solid black" width="38">&nbsp;</td>
+          <td valign="top" style="border-bottom: 0.5pt solid black" width="165"><b>Example</b></td>
+        </tr>
+        <tr>
+          <td valign="top" style="border-bottom: 0.5pt solid black" width="75"><i>Variables</i></td>
+          <td valign="top" style="border-bottom: 0.5pt solid black" width="10">&nbsp;</td>
+          <td valign="top" style="border-bottom: 0.5pt solid black" width="670">Symbolic or
+            initial lower case. Use underscores for multiword names.</td>
+          <td valign="top" style="border-bottom: 0.5pt solid black" width="38">&nbsp;</td>
+          <td valign="top" style="border-bottom: 0.5pt solid black" width="165"><tt>get_item</tt></td>
+        </tr>
+        <tr>
+          <td valign="top" style="border-bottom: 0.5pt solid black" width="75"><i>Constructors</i></td>
+          <td valign="top" style="border-bottom: 0.5pt solid black" width="10">&nbsp;</td>
+          <td valign="top" style="border-bottom: 0.5pt solid black" width="670">Initial upper
+            case.&nbsp; Use embedded caps for multiword names.&nbsp; Historic
+            exceptions are <tt>nil</tt>, <tt>true</tt>, and <tt>false</tt>.&nbsp;
+            Rarely are symbolic names like <tt>::</tt> used.</td>
+          <td valign="top" style="border-bottom: 0.5pt solid black" width="38">&nbsp;</td>
+          <td valign="top" style="border-bottom: 0.5pt solid black" width="165"><tt>Node<br>
+            EmptyQueue</tt></td>
+        </tr>
+        <tr>
+          <td valign="top" style="border-bottom: 0.5pt solid black" width="75"><i>Types</i></td>
+          <td valign="top" style="border-bottom: 0.5pt solid black" width="10">&nbsp;</td>
+          <td valign="top" style="border-bottom: 0.5pt solid black" width="670">All lower
+            case.&nbsp; Use underscores for multiword names.</td>
+          <td valign="top" style="border-bottom: 0.5pt solid black" width="38">&nbsp;</td>
+          <td valign="top" style="border-bottom: 0.5pt solid black" width="165"><tt>priority_queue</tt></td>
+        </tr>
+        <tr>
+          <td valign="top" style="border-bottom: 0.5pt solid black" width="75"><i>Signatures</i></td>
+          <td valign="top" style="border-bottom: 0.5pt solid black" width="10">&nbsp;</td>
+          <td valign="top" style="border-bottom: 0.5pt solid black" width="670">All upper
+            case.&nbsp; Use underscores for multiword names.</td>
+          <td valign="top" style="border-bottom: 0.5pt solid black" width="38">&nbsp;</td>
+          <td valign="top" style="border-bottom: 0.5pt solid black" width="165"><tt>PRIORITY_QUEUE</tt></td>
+        </tr>
+        <tr>
+          <td valign="top" style="border-bottom: 0.5pt solid black" width="75"><i>Structures</i></td>
+          <td valign="top" style="border-bottom: 0.5pt solid black" width="10">&nbsp;</td>
+          <td valign="top" style="border-bottom: 0.5pt solid black" width="670">Initial upper
+            case.&nbsp; Use embedded caps for multiword names.</td>
+          <td valign="top" style="border-bottom: 0.5pt solid black" width="38">&nbsp;</td>
+          <td valign="top" style="border-bottom: 0.5pt solid black" width="165"><tt>PriorityQueue</tt></td>
+        <tr>
+          <td valign="top" width="73"><i>Functors</i></td>
+          <td valign="top" width="8">&nbsp;</td>
+          <td valign="top" width="668">Same as structure convention, except Fn completes the
+            name.</td>
+          <td valign="top" width="38">&nbsp;</td>
+          <td valign="top" width="163"><tt>PriorityQueueFn</tt></td>
+      </table>
+<p>These conventions are not enforced by the compiler, though
+    violations of the variable/constructor conventions ought to cause warning
+    messages because of the danger of a constructor turning into a variable when
+    it is misspelled.</p>
+
+<p><a name="10"></a><b>Use Meaningful Names.</b> Another way of conveying information is to use meaningful variable names that
+reflect their intended use.&nbsp; Choose words or combinations of words
+    describing the value.&nbsp; Variable names may be one letter in short let
+    blocks.&nbsp; Functions used in a fold, filter,
+    or map are often bound to the name <tt>f</tt>.&nbsp; Here is an example for short
+    variable names:</p>
+      <pre><span class="keyword">let</span> d = Unix.localtime(Unix.time()) <span class="keyword">in</span>
+<span class="keyword">let</span> m = d.Unix.tm_min <span class="keyword">in</span>
+<span class="keyword">let</span> s = d.Unix.tm_sec <span class="keyword">in</span>
+<span class="keyword">let</span> f n = (n mod 3) = 0 <span class="keyword">in</span>
+  List.filter f [m;s]</pre>
+<p><a name="11"></a><b>Type Annotations.</b> Top-level functions and values
+    should always be declared with types.&nbsp; Consider the difference between the following:</p>
+      <pre><span class="keyword">let</span> foo x = x+1
+
+<span class="keyword">let</span> foo(x:int):int = x+1</pre>
+<p><a name="12"></a><b>Avoid Global Mutable Variables.</b> Mutable values should be local to closures and almost never declared as a structure's
+    value.&nbsp; Global mutable values cause many problems.&nbsp;
+    First, it is difficult to ensure that the mutable value is in the proper
+    state, since it might have been modified outside the
+    function or by a previous execution of the algorithm.&nbsp; This is
+    especially problematic with concurrent threads.&nbsp; Second, and more
+    importantly, having global mutable values makes it more likely that your
+    code is nonreentrant.&nbsp; Without proper knowledge of the ramifications,
+    declaring global mutable values can extend beyond bad style to incorrect
+    code.</p>
+<p><a name="13"></a><b>When to Rename Variables.</b> You should rarely need
+    to rename values, in fact this is a sure way to obfuscate code.&nbsp;
+    Renaming a value should be backed up with a very good reason. One instance
+    where renaming a variable is common and encouraged is when aliasing structures.
+    In these cases, other structures used by functions within the current
+    structure are aliased to one or two letter variables at the top of the <tt>struct</tt>
+    block. This serves two purposes: it shortens the name of the structure and
+    it documents the structures you use. Here is an example:</p>
+      <pre><span class="keyword">struct</span>
+  <span class="keyword">module</span> H = HashTable
+  <span class="keyword">module</span> A = Array
+  ...
+<span class="keyword">end</span></pre>
+<p><a name="14"></a><b>Order of Declarations in a Structure.</b> When
+    declaring elements in a structure, you should first alias the structures you intend
+    to use, followed by the types, followed by exceptions, and lastly list all
+    the value declarations for the structure. Here is an example:</p>
+          <pre><span class="keyword">struct</span>
+  <span class="keyword">module</span> L = List
+  <span class="keyword">type</span> foo = unit
+  <span class="keyword">exception</span> InternalError
+  <span class="keyword">let</span> first list = L.nth(list,0)
+<span class="keyword">end
+</span></pre>
+    <p>Every declaration within the structure should be indented the same
+    amount.</p>
+<h3>Indenting</h3>
+<p><a name="15"></a><b>Indent by two or three spaces.</b>&nbsp; Be consistent.</p>
+<p><a name="15"></a><b>Long expressions</b> can be broken up and the parts
+aligned, as in the second example.&nbsp; Either is acceptable.</p>
+      <pre><span class="keyword">let</span> x = <span class="string">&quot;Long line...&quot;</span>^
+  <span class="string">&quot;Another long line.&quot;</span>
+
+<span class="keyword">let</span> x = <span class="string">&quot;Long line...&quot;</span>^
+        <span class="string">&quot;Another long line.&quot;</span></pre>
+<p><a name="15"></a><b>Match expressions</b> should be indented as follows:</p>
+      <pre><span class="keyword">match</span> expr <span class="keyword">with</span>
+  pat1 -&gt; ...
+| pat2 -&gt; ...</pre>
+<p>If the code for each case is long or requies multiple lines, it should be indented as follows:</p>
+      <pre><span class="keyword">match</span> expr <span class="keyword">with</span>
+  pat1 -&gt;
+    ...
+| pat2 -&gt;
+    ...</pre>
+<p><a name="15"></a><b>If expressions</b> should be indented according to one of
+the following schemes:</p>
+      <pre><span class="keyword">if</span> exp1 <span class="keyword">then</span> exp2              <span class="keyword">if</span> exp1 <span class="keyword">then</span>
+<span class="keyword">else</span> <span class="keyword">if</span> exp3 <span class="keyword">then</span> exp4           exp2
+<span class="keyword">else</span> <span class="keyword">if</span> exp5 <span class="keyword">then</span> exp6         <span class="keyword">else</span> exp3
+<span class="keyword">else</span> exp8
+
+<span class="keyword">if</span> exp1 <span class="keyword">then</span> exp2 <span class="keyword">else</span> exp3    <span class="keyword">if</span> exp1 <span class="keyword">then</span> exp2
+                               <span class="keyword">else</span> exp3</pre>
+<p><a name="15"></a><b>Comments</b> should be indented to
+    the level of the line of code that follows the comment.</p>
+<h3>Parentheses</h3>
+<p><a name="16"></a><b>Over Parenthesizing.&nbsp;</b> Parentheses have many
+    semantic purposes in OCaml, including constructing tuples, grouping sequences
+    of side-effect expressions, forcing a non-default parse of an expression, and grouping structures for functor arguments.&nbsp;
+Their usage is very different from C or Java.&nbsp; Avoid using unnecessary
+parentheses when their presence makes your code harder to understand.</p>
+<p><a name="15"></a><b>Match expressions.</b>&nbsp; Wrap <tt>match</tt>
+ expressions with parentheses.&nbsp;
+    This avoids a common error involving
+    nested <tt>match</tt>  expressions. If the <tt>match</tt>
+    expression is already wrapped by a <tt>let</tt>...<tt>in</tt>...
+    block, you can drop the parentheses.</p>
+<p><a name="15"></a><b>Block Styles.</b> Blocks of code such as <tt>let</tt>...<tt>in</tt>,
+    should be indented as follows.</p>
+          <pre><span class="keyword">let</span> foo bar =
+  <span class="keyword">let</span> p = 4 <span class="keyword">in</span>
+  <span class="keyword">let</span> q = 38 <span class="keyword">in</span>
+    bar * (p+q)</pre>
+<p>Blocks of code such as <tt>struct</tt>...<tt>end</tt>, and <tt>sig</tt>...<tt>end</tt>
+   should be indented as follows.</p>
+          <pre><span class="keyword">module</span> <span class="keyword">type</span> S =
+<span class="keyword">sig</span>
+   <span class="keyword">type</span> t
+   <span class="keyword">type</span> u
+   <span class="keyword">val</span> x : t
+<span class="keyword">end</span></pre>
+<h3>Pattern Matching</h3>
+<p><a name="20"></a><b>No Incomplete Pattern Matches.&nbsp;</b> Incomplete pattern
+    matches are flagged with compiler warnings, which are tantamount to errors
+for grading purposes.&nbsp; Thus, if your program exhibits this behavior, the problem
+    will get no points.</p>
+<p><a name="21"></a><b>Pattern Match in the Function Arguments When
+Possible.&nbsp;</b> Tuples, records and datatypes can be deconstructed using pattern
+    matching.&nbsp; If you simply deconstruct the function argument before you
+    do anything useful, it is better to pattern match in the function argument.
+    Consider these examples:</p>
+      <table cellspacing="0" cellpadding="0">
+        <tr>
+          <td><b>Bad</b></td>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</td>
+          <td><b>Good</b></td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <pre><span class="keyword">let</span> f arg1 arg2 =
+  <span class="keyword">let</span> x = fst arg1 <span class="keyword">in</span>
+  <span class="keyword">let</span> y = snd arg1 <span class="keyword">in</span>
+  <span class="keyword">let</span> z = fst arg2 <span class="keyword">in</span>
+    ...
+</pre>
+          </td>
+          <td>&nbsp;</td>
+          <td valign="top">
+            <pre><span class="keyword">fun</span> f (x,y) (z,_) = ...</pre>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <pre><span class="keyword">let</span> f arg1 = <span class="keyword">let</span>
+  <span class="keyword">let</span> x = arg1.foo <span class="keyword">in</span>
+  <span class="keyword">let</span> y = arg1.bar <span class="keyword">in</span>
+  <span class="keyword">let</span> baz = arg1.baz <span class="keyword">in</span>
+    ...
+</pre>
+          <td>&nbsp;</td>
+          <td valign="top">
+            <pre><span class="keyword">let</span> f {foo=x, bar=y, baz=baz} = ...</pre>
+          </td>
+        </tr>
+      </table>
+<a name="22"><br>
+</a>
+<p><a name="23"></a><b>Function Arguments Should Not Use Values for Patterns.</b>
+    You should only deconstruct values with variable names and/or wildcards in
+    function arguments.&nbsp; If you want to pattern match against a specific
+    value, use a <tt>match</tt> expression or an <tt>if</tt> expression.&nbsp; We
+    include this rule because there are too many errors that can occur when you
+    don't do this exactly right.&nbsp; Thus of the following two examples, you
+should use the latter:</p>
+      <pre><span class="keyword">let</span> <span class="keyword">rec</span> fact = <span class="keyword">function</span>
+    0 -> 1
+  | n -> n * fact(n-1)
+
+<span class="keyword">let</span> <span class="keyword">rec</span> fact n =
+  <span class="keyword">if</span> n=0 <span class="keyword">then</span> 1
+  <span class="keyword">else</span> n * fact(n-1)
+</pre>
+<p><a name="23"></a><b>Avoid Unnecessary Projections.&nbsp;</b> Prefer pattern
+matching to projections with function arguments or a
+    value declarations.&nbsp; Using projections is okay as long as it
+    is infrequent and the meaning is clearly understood from the context.&nbsp;
+    The above rule shows how to pattern-match in the function arguments.&nbsp;
+    Here is an example for pattern matching with value declarations.</p>
+      <table>
+        <tr>
+          <td><b>Bad</b></td>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</td>
+          <td><b>Good</b></td>
+        </tr>
+        <tr>
+          <td valign="top">
+            <pre><span class="keyword">val</span> v = some_function()<span class="keyword">in</span>
+<span class="keyword">let</span> x = fst v<span class="keyword">in</span>
+<span class="keyword">let</span> y = snd v<span class="keyword">in</span>
+  x+y</pre>
+          </td>
+          <td>&nbsp;</td>
+          <td valign="top">
+            <pre><span class="keyword">let</span> (x,y) = some_function() <span class="keyword">in</span>
+  x+y</pre>
+          </td>
+        </tr>
+      </table>
+<p><a name="24"><br>
+</a><b>Combine nested <tt>match</tt> Expressions.&nbsp;</b> Rather than nest <tt>match</tt> expressions, you can combine
+    them by pattern matching against a tuple, provided the tests in the <tt>match</tt>
+expressions are independent.&nbsp; Here is an example:</p>
+      <b>Bad</b>
+      <pre style="margin-top:0px;margin-bottom:0px;"><span class="keyword">let</span> d = Unix.localtime(Unix.time()) <span class="keyword">in</span>
+  <span class="keyword">match</span> d.Unix.tm_mon <span class="keyword">with</span>
+    0 -&gt; (<span class="keyword">match</span> d.Unix.tm_mday <span class="keyword">with</span>
+             1 -&gt; print_string "Happy New Year"
+           | _ -&gt; ())
+  | 5 -&gt; (<span class="keyword">match</span> d.Unix.tm_mday <span class="keyword">with</span>
+            4 -&gt; print_string "Happy Independence Day"
+          | _ -&gt; ())
+  | 9 -&gt; (<span class="keyword">match</span> d.Unix.tm_mday <span class="keyword">with</span>
+             10 -&gt; print_string "Happy Metric Day"
+           | _ -&gt; ())</span></pre><br>
+      <b>Good</b>
+      <pre><span class="keyword">let</span> d = Unix.localtime(Unix.time()) <span class="keyword">in</span>
+  <span class="keyword">match</span> (d.Unix.tm_mon, d.Unix.tm_day) <span class="keyword">with</span>
+    (0, 1) -&gt; print_string <span class="string">&quot;Happy New Year&quot;</span>
+  | (5, 4) -&gt; print_string <span class="string">&quot;Happy Independence Day&quot;</span>
+  | (9, 10) -&gt; print_string <span class="string">&quot;Happy Metric Day&quot;</span>
+  | _ -&gt; ()</pre>
+<p><a name="25"></a><b>Avoid the use of <tt>List.hd</tt> and <tt>List.tl</tt>.</b>&nbsp;
+The functions <tt>List.hd</tt> and <tt>List.tl</tt> are used to
+    deconstruct list types.&nbsp; However, they raise exceptions on
+    certain inputs.&nbsp; You should avoid these functions altogether.&nbsp; It
+is usually easy to achieve the same effect with pattern matching.&nbsp; If you cannot
+manage to avoid them, you should handle any exceptions that
+they might raise.</p>
+<h3>Factoring</h3>
+<p><a name="26"></a><b>Avoid breaking expressions over multiple lines.&nbsp;</b> If a
+    tuple consists of more than two or three elements, you should consider using
+    a record instead of a tuple.&nbsp; Records have the advantage of placing
+    each name on a separate line and still looking good.&nbsp; Constructing a
+    tuple over multiple lines makes for ugly code.&nbsp; Other
+    expressions that take up multiple lines should be done with a lot of
+    thought.&nbsp; The best way to transform code that constructs expressions
+    over multiple lines to something that has good style is to factor the code
+    using a <tt>let</tt> expression.&nbsp; Consider the following:</p>
+<b>Bad</b>
+      <pre>     <span class="keyword">let</span> third = fun (x,y,z) -> z <span class="keyword">in</span>
+     <span class="keyword">let</span> euclid (m,n) : (int * int * int) =
+       <span class="keyword">if</span> n=0
+         <span class="keyword">then</span> (b 1, b 0, m)
+       <span class="keyword">else</span> (snd (euclid (n, m mod n)), u - (m div n) *</pre>
+      <pre>               (euclid (n, m mod n)), third (euclid (n, m mod n)))
+</pre>
+<b>Better</b>
+      <pre>     <span class="keyword">let</span> third = fun (x,y,z) -> z <span class="keyword">in</span>
+     <span class="keyword">fun</span> euclid (m,n) : (int * int * int) =
+       <span class="keyword">if</span> n=0
+         <span class="keyword">then</span> (b 1, b 0, m)
+       <span class="keyword">else</span> (snd (euclid (n, m mod n)),
+       u - (m div n) * (euclid (n, m mod n)),
+       third (euclid (n, m mod n)))
+</pre>
+<b>Best</b>
+<pre>     <span class="keyword">let</span> euclid (m,n) : (int * int * int) =
+       <span class="keyword">if</span> n=0
+         <span class="keyword">then</span> (b 1, b 0, m)
+       <span class="keyword">else</span>
+         <span class="keyword">let</span> q = m div n <span class="keyword">in</span>
+         <span class="keyword">let</span> r = n mod n <span class="keyword">in</span>
+         <span class="keyword">let</span> (u,v,g) = euclid (n,r) <span class="keyword">in</span>
+           (v, u - q*v, g)
+</span></pre>
+<p><a name="28"></a><b>Do not factor unnecessarily.</b></p>
+      <p><b>Bad</b></p>
+      <pre>     <span class="keyword">let</span> x = input_line stdin <span class="keyword">in</span>
+       <span class="keyword">match</span> x <span class="keyword">with</span>
+         ...
+</pre>
+      <p><b>Good</b></p>
+      <pre>     <span class="keyword">match</span> input_line stdin <span class="keyword">with</span>
+       ...
+</pre>
+      <p><b>Bad</b> (provided y is not a large expression)</p>
+<blockquote>
+      <pre><span class="keyword">let</span> <span class="keyword">val</span> x = y*y <span class="keyword">in</span> x+z</pre>
+</blockquote>
+<p><b>Good</b></p>
+<blockquote>
+<pre>y*y + z</pre>
+</blockquote>
+<h3>Verbosity</h3>
+<p><a name="29"></a><b>Don't Rewrite Library Functions.</b> The
+    OCaml library has a great number of functions and data structures --
+    use them!&nbsp; Often students will recode <tt>List.filter</tt>, <tt>List.map</tt>,
+    and similar functions.&nbsp; A more subtle situation for recoding is all the
+    fold functions.&nbsp; Writing a function that recursively walks down the
+    list should make vigorous use of <tt>List.fold_left</tt> or <tt>List.fold_right</tt>.&nbsp;
+    Other data structures often have a folding function; use them whenever they
+    are available.</p>
+<p><a name="30"></a><b>Misusing <tt>if</tt>  Expressions.&nbsp;</b> Remember that
+    the type of the condition in an <tt>if</tt> expression is <tt>bool</tt>. In
+    general, the type of an <tt>if</tt> expression is <tt>'a</tt>, but in the
+    case that the type is <tt>bool</tt>, you should not be using <tt>if</tt> at
+    all. Consider the following:</p>
+    <br>
+      <table cellspacing="0" style="border:solid 0.5pt black">
+        <tr style="background-color:silver;color:black">
+          <td style="border-bottom:solid 0.5pt black"><b>Bad</b></td>
+          <td style="border-bottom:solid 0.5pt black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;</td>
+          <td style="border-bottom:solid 0.5pt black"><b>Good</b></td>
+        </tr>
+        <tr>
+          <td style="border-bottom:solid 0.5pt black"><tt><span class="keyword">if</span>
+            e <span class="keyword">then</span> true <span class="keyword">else</span>
+            false</tt></td>
+          <td style="border-bottom:solid 0.5pt black">&nbsp;</td>
+          <td style="border-bottom:solid 0.5pt black"><tt>e</tt></td>
+        </tr>
+        <tr>
+          <td style="border-bottom:solid 0.5pt black"><tt><span class="keyword">if</span>
+            e <span class="keyword">then</span> false <span class="keyword">else</span>
+            true</tt></td>
+          <td style="border-bottom:solid 0.5pt black">&nbsp;</td>
+          <td style="border-bottom:solid 0.5pt black"><tt>not e</tt></td>
+        </tr>
+        <tr>
+          <td style="border-bottom:solid 0.5pt black"><tt><span class="keyword">if</span>
+            beta <span class="keyword">then</span> beta <span class="keyword">else</span>
+            false</tt></td>
+          <td style="border-bottom:solid 0.5pt black">&nbsp;</td>
+          <td style="border-bottom:solid 0.5pt black"><tt>beta</tt></td>
+        </tr>
+        <tr>
+          <td style="border-bottom:solid 0.5pt black"><tt><span class="keyword">if</span>
+            not e <span class="keyword">then</span> x <span class="keyword">else</span>
+            y</tt></td>
+          <td style="border-bottom:solid 0.5pt black">&nbsp;</td>
+          <td style="border-bottom:solid 0.5pt black"><tt><span class="keyword">if</span>
+            e <span class="keyword">then</span> y <span class="keyword">else</span>
+            x</tt></td>
+        </tr>
+        <tr>
+          <td style="border-bottom:solid 0.5pt black"><tt><span class="keyword">if</span>
+            x <span class="keyword">then</span> true <span class="keyword">else</span>
+            y</tt></td>
+          <td style="border-bottom:solid 0.5pt black">&nbsp;</td>
+          <td style="border-bottom:solid 0.5pt black"><tt>x <span class="keyword">||</span>
+            y</tt></td>
+        </tr>
+        <tr>
+          <td style="border-bottom:solid 0.5pt black"><tt><span class="keyword">if</span>
+            x <span class="keyword">then</span> y <span class="keyword">else</span>
+            false</tt></td>
+          <td style="border-bottom:solid 0.5pt black">&nbsp;</td>
+          <td style="border-bottom:solid 0.5pt black"><tt>x <span class="keyword">&&</span>
+            y</tt></td>
+        </tr>
+        <tr>
+          <td style="border-bottom:solid 0.5pt black"><tt><span class="keyword">if</span>
+            x <span class="keyword">then</span> false <span class="keyword">else</span>
+            y</tt></td>
+          <td style="border-bottom:solid 0.5pt black">&nbsp;</td>
+          <td style="border-bottom:solid 0.5pt black"><tt>not x <span class="keyword">&&</span>
+            y</tt></td>
+        </tr>
+        <tr>
+          <td><tt><span class="keyword">if</span> x <span class="keyword">then</span>
+            y <span class="keyword">else</span> true</tt></td>
+          <td>&nbsp;</td>
+          <td><tt>not x <span class="keyword">||</span> y</tt></td>
+        </tr>
+      </table>
+<p><a name="31"><br>
+</a><b>Misusing <tt>match</tt>  Expressions.&nbsp;</b> The <tt>match</tt>
+    expression is misused in two common situations.&nbsp; First, <tt>match</tt>
+    should never be used in place of an <tt>if</tt> expression (that's why <tt>if</tt>
+    exists).&nbsp; Note the following:</p>
+          <pre><span class="keyword">match</span> e <span class="keyword">with</span>
+  true -&gt; x
+| false -&gt; y
+
+<span class="keyword">if</span> e <span class="keyword">then</span> x <span class="keyword">else</span> y
+</pre>
+    <p>The latter is much better.&nbsp; Another situation where <tt>if</tt>
+    expressions are preferred over <tt>match</tt> expressions is as follows:</p>
+      <pre><span class="keyword">match</span> e <span class="keyword">with</span>
+  c -&gt; x   <span class="comment">(* c is a constant value *)</span>
+| _ -&gt; y
+
+<span class="keyword">if</span> e=c <span class="keyword">then</span> x <span class="keyword">else</span> y
+</pre>
+    <p>The latter is definitely better.&nbsp; The other misuse is using <tt>match</tt>
+    when pattern matching with a <tt>val</tt> declaration is enough. Consider
+    the following:</p>
+      <pre><span class="keyword">let</span> x = <span class="keyword">match</span> expr <span class="keyword">with</span> (y,z) -&gt; y
+
+<span class="keyword">let</span> (x,_) = expr
+</pre>
+    <p>The latter is better.</p>
+<p><a name="32"></a><b>Other Common Misuses.&nbsp;</b> Here are some other
+    common mistakes to watch out for:</p>
+      <table cellspacing="0" style="border: 0.5pt solid black" width="506">
+        <tr style="background-color:silver;color:black">
+          <td style="border-bottom: 0.5pt solid black" width="189"><b>Bad</b></td>
+          <td style="border-bottom: 0.5pt solid black" width="40">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;</td>
+          <td style="border-bottom: 0.5pt solid black" width="269"><b>Good</b></td>
+        </tr>
+        <tr>
+          <td style="border-bottom: 0.5pt solid black" width="189"><tt>l::nil</tt></td>
+          <td style="border-bottom: 0.5pt solid black" width="40">&nbsp;</td>
+          <td style="border-bottom: 0.5pt solid black" width="269"><tt>[l]</tt></td>
+        </tr>
+        <tr>
+          <td style="border-bottom: 0.5pt solid black" width="189"><tt>l::[]</tt></td>
+          <td style="border-bottom: 0.5pt solid black" width="40">&nbsp;</td>
+          <td style="border-bottom: 0.5pt solid black" width="269"><tt>[l]</tt></td>
+        </tr>
+        <tr>
+          <td style="border-bottom: 0.5pt solid black" width="189"><tt>length + 0</tt></td>
+          <td style="border-bottom: 0.5pt solid black" width="40">&nbsp;</td>
+          <td style="border-bottom: 0.5pt solid black" width="269"><tt>length</tt></td>
+        </tr>
+        <tr>
+          <td style="border-bottom: 0.5pt solid black" width="189"><tt>length * 1</tt></td>
+          <td style="border-bottom: 0.5pt solid black" width="40">&nbsp;</td>
+          <td style="border-bottom: 0.5pt solid black" width="269"><tt>length</tt></td>
+        </tr>
+        <tr>
+          <td style="border-bottom: 0.5pt solid black" width="189"><tt>big exp * same big exp</tt></td>
+          <td style="border-bottom: 0.5pt solid black" width="40">&nbsp;</td>
+          <td style="border-bottom: 0.5pt solid black" width="269"><tt><span class="keyword">let</span>
+            <span class="keyword">val</span> x = big exp <span class="keyword">in</span>
+            x*x</tt></td>
+        </tr>
+        <tr>
+          <td style="border-bottom: 0.5pt solid black" width="189"><tt><span class="keyword">if</span>
+            x <span class="keyword">then</span> f a b c1<br>
+            <span class="keyword">else</span> f a b c2</tt></td>
+          <td style="border-bottom: 0.5pt solid black" width="40">&nbsp;</td>
+          <td style="border-bottom: 0.5pt solid black" width="269"><tt>f a b (<span class="keyword">if</span>
+            x <span class="keyword">then</span> c1 <span class="keyword">else</span>
+            c2)</tt></td>
+        </tr>
+      </table>
+<p><a name="33"><br>
+</a><b>Don't Rewrap Functions.&nbsp; </b>When passing a function as an argument to another function, don't rewrap the function
+unnecessarily.&nbsp; Here's an example:</p>
+      <pre>List.map (<span class="keyword">fun</span> x -&gt; sqrt x) [1.0, 4.0, 9.0, 16.0]
+
+List.map sqrt [1.0, 4.0, 9.0, 16.0]
+</pre>
+    <p>The latter is better. Another case for rewrapping a function is often
+    associated with infix binary operators. To prevent rewrapping the binary
+    operator, put parentheses around the operator to refer to the function form,
+    as in the following example:</p>
+      <pre>List.fold_left (<span class="keyword">fun</span> (x,y) -&gt; x + y) 0
+
+List.fold_left (+) 0
+</pre>
+    <p>The latter is better.</p>
+<p><a name="35"></a><b>Avoid Computing Values Twice.&nbsp;</b> If you compute a
+value twice, you're wasting CPU time and making your program ugly. The
+    best way to avoid computing values twice is to create a <tt>let</tt>
+    expression and bind the computed value to a variable name. This has the
+    added benefit of letting you document the purpose of the value with a name.</p>
+
+</body>
+<a href="index.html">CS51 Home</a>
+      </html>

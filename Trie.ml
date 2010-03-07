@@ -1,9 +1,9 @@
-(* Courtesy of Greg Morrisett *)
-(* Lecture 5 - Slide 41 *)
+(* UNSUCCESSFUL!!!!!!!!!!!!!!!!!!!!*)
+(* Woulda been cool.......
 
-module type QUEUE = 
+module type TRIE = 
   sig
-    type 'a queue
+    type 'a trie
     val empty : unit -> 'a queue
     val enqueue : 'a -> 'a queue -> 'a queue
     val is_empty : 'a queue -> bool
@@ -15,9 +15,19 @@ module type QUEUE =
 
 module DoubleListQueue : QUEUE =
   struct
-    type 'a queue = {front: 'a list; rear: 'a list}
-    let empty() = {front = []; rear = []}
-    let enqueue x q = {front = q.front; rear = x::q.rear}
+    type 'a trie = {value: char option; children: char trie list}
+    let empty() = {value = None; children = []}
+    
+    let single (s : string) : 'a trie =
+      
+    
+    let insert_loop (s : string) (t : 'a trie) (c : int) =
+      match t.value with
+        | None -> single
+      if (String.get s c) = t.value
+    
+    let insert s t = 
+      if (String.get s 0) {front = q.front; rear = x::q.rear}
     let is_empty q =
       match q.front, q.rear with
         | [], [] -> true
@@ -34,3 +44,10 @@ module DoubleListQueue : QUEUE =
     let insert_list (l : 'a list) (q : 'a queue) : 'a queue =
       List.fold_left (fun b a -> enqueue a b) q l;;
   end
+  
+  
+  
+  (*reduce (fun a b -> if (get_page a).visted = true then b else (get_page a).visited = true a::b)*)
+  
+  
+  *)

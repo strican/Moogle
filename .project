@@ -36,6 +36,11 @@
 			<location>C:/Program Files (x86)/Objective Caml/lib/printf.mli</location>
 		</link>
 		<link>
+			<name>External files/set.mli</name>
+			<type>1</type>
+			<location>C:/Program Files (x86)/Objective Caml/lib/set.mli</location>
+		</link>
+		<link>
 			<name>External files/str.mli</name>
 			<type>1</type>
 			<location>C:/Program Files (x86)/Objective Caml/lib/str.mli</location>

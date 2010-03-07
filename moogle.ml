@@ -82,7 +82,8 @@ module LinkQ = Queue_module.DoubleListQueue ;;
  *    
  *)
 
-let modify_link_set (l : link) (d : WordDict.dict) (a : string) : WordDict.dict =
+let modify_link_set (l : link) (d : WordDict.dict) (a : string) : 
+      WordDict.dict =
     let new_set =
       (match WordDict.lookup d a with
          | None -> LinkSet.singleton l
@@ -90,25 +91,24 @@ let modify_link_set (l : link) (d : WordDict.dict) (a : string) : WordDict.dict 
     WordDict.insert d a new_set
 ;;
 
-let visit (l : link) ((v, q): VisitSet.set * link LinkQ.queue) : (VisitSet.set * link LinkQ.queue) =
+let visit (l : link) ((v, q): VisitSet.set * link LinkQ.queue) : 
+      (VisitSet.set * link LinkQ.queue) =
   if ((VisitSet.member v l) = true) then (v, q)
   else (VisitSet.insert l v, LinkQ.enqueue l q)
 ;;
 
-let rec bfs_loop (q : link LinkQ.queue) (v : VisitSet.set) (d : WordDict.dict) (ct : int) (case : bool) : WordDict.dict  =
+let rec bfs_loop (q : link LinkQ.queue) (v : VisitSet.set) 
+                 (d : WordDict.dict) (ct : int) (case : bool) : 
+                      WordDict.dict  =
   if ct >= CrawlerServices.num_pages_to_search then d
   else if LinkQ.is_empty q then d
 	else
-			let l = LinkQ.front q in
-      let _ = Printf.printf "%s\n" (CrawlerServices.string_of_link l) in
-			let q = LinkQ.dequeue q in
-			let p = CrawlerServices.get_page l in
-			let wds = (if case then p.words else List.map String.lowercase p.words) in
-      let (v, q) = List.fold_right visit p.links (v, q) in
-   (*   let ls = List.filter (fun lnk -> not (VisitSet.member v lnk)) p.links in
-      let q = LinkQ.insert_list ls q in 
-(*this is the problem nothing ever becomes visited*)
-			let v = List.fold_right VisitSet.insert ls v in*)
+	  let l = LinkQ.front q in
+    let _ = Printf.printf "%s\n" (CrawlerServices.string_of_link l) in
+		let q = LinkQ.dequeue q in
+		let p = CrawlerServices.get_page l in
+		let wds = (if case then p.words else List.map String.lowercase p.words) in
+    let (v, q) = List.fold_right visit p.links (v, q) in
 			bfs_loop q v (List.fold_left (modify_link_set l) d wds) (ct + 1) case
 ;;
 
@@ -116,7 +116,8 @@ let rec bfs_loop (q : link LinkQ.queue) (v : VisitSet.set) (d : WordDict.dict) (
 let crawler (case : bool) : WordDict.dict = 
   let q = LinkQ.empty() in
   let q = LinkQ.enqueue CrawlerServices.initial_link q in
-  bfs_loop q (VisitSet.singleton CrawlerServices.initial_link) WordDict.empty 0 case
+  bfs_loop q (VisitSet.singleton CrawlerServices.initial_link) 
+           WordDict.empty 0 case
 ;;
 
 
@@ -185,14 +186,15 @@ let http_get_re =
 
 (* process a request -- we're expecting a GET followed by a query
  * "?q=word+word".  If we find something that this matches, then we feed the
- * query to the query parser to get query abstract syntax.  Then we evaluate the
- * query, using the index we built earlier, to get a set of links.  Then we put
- * the result in an html document to send back to the client.  If we don't
- * understand the request, then we send the default page (which is just
+ * query to the query parser to get query abstract syntax.  Then we evaluate 
+ * the query, using the index we built earlier, to get a set of links.  Then
+ * we put the result in an html document to send back to the client.  If we 
+ * don't understand the request, then we send the default page (which is just
  * moogle.html in this directory).  *)
 let rec hamming_loop (s1: string) (s2:string) (l : int) (i :int) : int =
   let x = if i >= l then 0 
-  else (if (String.sub s1 i 1 = String.sub s2 i 1) then 0 else 1) + hamming_loop s1 s2 l (i+1) in
+  else (if (String.sub s1 i 1 = String.sub s2 i 1) then 0 else 1)
+         + hamming_loop s1 s2 l (i+1) in
   x
   ;;
 
@@ -206,7 +208,8 @@ let hamming_d (s1 : string) (s2 : string) : int =
 ;;
 
 let get_possible (ind : WordDict.dict) (a : string) : string list =
-  WordDict.fold (fun k v acc -> (if (hamming_d a k) <= 1 then k::acc else acc)) [] ind
+  WordDict.fold (fun k v acc -> (if (hamming_d a k) <= 1 then k::acc else acc))
+     [] ind
 ;;
 
 let spell_suggest (index : WordDict.dict) (words : string list) : string list =
@@ -215,7 +218,8 @@ let spell_suggest (index : WordDict.dict) (words : string list) : string list =
 ;;  
 
 let suggest_body (wds : string list) : string = 
-  moogle_search_bar ^ "<h4>Did you mean...</h4>" ^ (List.fold_left (fun s wd -> "<li>" ^ wd ^ "</li>" ^ s) "" wds)
+  moogle_search_bar ^ "<h4>Did you mean...</h4>" ^ 
+    (List.fold_left (fun s wd -> "<li>" ^ wd ^ "</li>" ^ s) "" wds)
 ;;
 
 let process_request client_fd request index = 
@@ -225,7 +229,9 @@ let process_request client_fd request index =
     let (query, case) = Q.parse_query query_string in
     let ind = if case then fst index else snd index in
     let links = Q.eval_query ind query in
-    let response_body = if (LinkSet.is_empty links) then suggest_body (spell_suggest ind (Q.query_to_string query_string)) else html_of_urlset links in
+    let response_body = if (LinkSet.is_empty links) 
+        then suggest_body (spell_suggest ind (Q.query_to_string query_string))
+        else html_of_urlset links in
     let response = 
       query_response_header ^ response_body ^ query_response_footer in
       Unix.send client_fd response 0 (String.length response) []

@@ -47,7 +47,8 @@ struct
       let words = Str.split term_sep_re qs in
       let sens = (try Str.search_forward case_re s 0 with Not_found -> 0) in
       let case = Str.string_match case_re s sens in
-        (if case then remove_case_type words else List.map String.lowercase words)
+        (if case then remove_case_type words 
+         else List.map String.lowercase words)
     else raise (Failure "query not understood")
   ;;
 
@@ -57,20 +58,7 @@ struct
     let case = Str.string_match case_re s sens in
     (parse_words q, case)
   ;;
- (*   
-    if Str.string_match query_re s 0 then
-      let qs = Str.matched_group 1 s in 
-      let words = Str.split term_sep_re qs in
-      let sens = (try Str.search_forward case_re s 0 with Not_found -> 0) in
-      let case = Str.string_match case_re s sens in
-      let _ = Printf.printf "\n%s\n" s in
-      let _ = Printf.printf "%b" case in 
-      let _ = flush_all ()
-      in
-      let _ = print_list words in
-        (parse_words (if case then remove_case_type words else List.map String.lowercase words), case)
-    else raise (Failure "query not understood")
-      *)
+
   (* Evaluate a query given an index *)
   let rec eval_query (idx : D.dict) (q:query) : S.set = 
     match q with 

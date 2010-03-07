@@ -47,7 +47,4 @@ module DoubleListQueue : QUEUE =
   
   
   
-  (*reduce (fun a b -> if (get_page a).visted = true then b else (get_page a).visited = true a::b)*)
-  
-  
   *)
